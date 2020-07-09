@@ -1,0 +1,149 @@
+<!--index.wxml-->
+<view class="index_container">
+  <view class="fixed">
+    <view class='startBar' style='height:{{startBarHeight}}px'></view>
+    <view class="search_box" style="height:{{navgationHeight}}px">
+      <image class="location_icon" src="../../images/location_icon.png" bindtap="getLocationInfo"></image>
+      <view class="location_text" bindtap="getLocationInfo">乌兰浩特</view>
+      <view class="search_input" bindtap="search">
+        <image class="search_icon" src="../../images/search_icon.png"></image>
+        <view class="input_text">搜店铺 福利</view>
+      </view>
+      <view class="zhan"></view>
+    </view>
+  </view>
+  <view style="margin-top:{{startBarHeight + navgationHeight}}px">
+    <view class="top_back">
+      <!-- 轮播图 -->
+      <swiper class="banner_box" autoplay="true" interval="5000" duration="80">
+        <swiper-item wx:for="{{banner_list}}" wx:key="id">
+          <image class="banner_img" src="{{item.img_url}}"></image>
+        </swiper-item>
+      </swiper>
+    </view>
+    <!-- 分类 -->
+    <view class="category_row">
+      <view class="category_item" bindtap="service">
+        <image class="cate_icon" src="../../images/cate_02.png"></image>
+        <view class="cate_txt">美食</view>
+      </view>
+      <view class="category_item" bindtap="service">
+        <image class="cate_icon" src="../../images/cate_03.png"></image>
+        <view class="cate_txt">休闲娱乐</view>
+      </view>
+      <view class="category_item" bindtap="service">
+        <image class="cate_icon" src="../../images/cate_04.png"></image>
+        <view class="cate_txt">丽人</view>
+      </view>
+      <view class="category_item" bindtap="service">
+        <image class="cate_icon" src="../../images/cate_05.png"></image>
+        <view class="cate_txt">酒店</view>
+      </view>
+    </view>
+    <view class="content">
+      <!-- 今日特价 -->
+      <view class="hot_box">
+        <view class="hot_left">
+          <view class="line"></view>
+          <view class="hot_text">今日特价</view>
+        </view>
+      </view>
+      <swiper class="offer_box" next-margin="50rpx">
+        <swiper-item>
+          <view class="offer_item">
+            <view class="store_name">
+              <view class="name_icon"></view>
+              <view class="name">星巴克（故宫店）</view>
+            </view>
+            <view class="store_content">
+              <view class="store_left">
+                <image class="store_icon" src="../../images/banner_02.jpg"></image>
+                <view class="remaining">仅剩18份</view>
+              </view>
+              <view class="store_right">
+                <view class="right_top">
+                  <view class="store_title">108元抢原价238元的【烤串3-4人套餐】</view>
+                  <view class="sold">已售108</view>
+                </view>
+                <view class="right_bottom">
+                  <view class="price">¥108
+                    <text class="hua">¥238</text>
+                  </view>
+                  <view class="rob">马上抢</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </swiper-item>
+        <swiper-item>
+          <view class="offer_item">
+            <view class="store_name">
+              <view class="name_icon"></view>
+              <view class="name">星巴克（故宫店）</view>
+            </view>
+            <view class="store_content">
+              <view class="store_left">
+                <image class="store_icon" src="../../images/banner_02.jpg"></image>
+                <view class="remaining">仅剩18份</view>
+              </view>
+              <view class="store_right">
+                <view class="right_top">
+                  <view class="store_title">108元抢原价238元的【烤串3-4人套餐】</view>
+                  <view class="sold">已售108</view>
+                </view>
+                <view class="right_bottom">
+                  <view class="price">¥108
+                    <text class="hua">¥238</text>
+                  </view>
+                  <view class="rob">马上抢</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </swiper-item>
+        <swiper-item>
+          <view class="offer_item">
+            <view class="store_name">
+              <view class="name_icon"></view>
+              <view class="name">星巴克（故宫店）</view>
+            </view>
+            <view class="store_content">
+              <view class="store_left">
+                <image class="store_icon" src="../../images/banner_02.jpg"></image>
+                <view class="remaining">仅剩18份</view>
+              </view>
+              <view class="store_right">
+                <view class="right_top">
+                  <view class="store_title">108元抢原价238元的【烤串3-4人套餐】</view>
+                  <view class="sold">已售108</view>
+                </view>
+                <view class="right_bottom">
+                  <view class="price">¥108
+                    <text class="hua">¥238</text>
+                  </view>
+                  <view class="rob">马上抢</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </swiper-item>
+      </swiper>
+      <!-- 热门发布 -->
+      <view class="hot_box">
+        <view class="hot_left">
+          <view class="line"></view>
+          <view class="hot_text">精品推荐</view>
+        </view>
+      </view>
+      <!-- 发布列表 -->
+      <!-- <push_item wx:for="{{info_list}}" wx:key="info_id" infoItem="{{item}}" /> -->
+      <push_item/>
+      <push_item/>
+      <push_item/>
+    </view>
+  </view>
+
+  <!-- <bottom wx:if="{{!isLoad && page >= 2}}" /> -->
+
+
+</view>

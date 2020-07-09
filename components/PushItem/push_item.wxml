@@ -1,0 +1,17 @@
+<!--components/PushItem/push_item.wxml-->
+<view class="push_container">
+  <view class="top_box">
+    <image class="goods_img" src="../../images/banner_03.jpg"></image>
+    <view class="remaining">仅剩：<text class="num">6</text> 份</view>
+  </view>
+  <view class="name_box">
+    <view class="store_name">品牌：同学少年 湘派小串</view>
+    <view class="price">¥108 <text class="hua">¥238</text></view>
+  </view>
+  
+  <view class="desc">108元抢原价283元的【烤串3-4人套餐】/ 桌只能使用1份套餐，请提前购买，请在有效期内使用。</view>
+  <view class="bottom_box">
+    <view>使用期限：07.06 - 08.06</view>
+    <view>已售：182</view>
+  </view>
+</view>
