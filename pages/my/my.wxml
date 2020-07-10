@@ -1,0 +1,30 @@
+<!--pages/my/my.wxml-->
+<view class="my_container">
+  <view class="top_back">
+    <view class="user_img_box" wx:if="{{wxUser}}">
+      <image class="user_img" src="{{wxUser.avatarUrl}}"></image>
+    </view>
+    <image class="rh_icon" src="../../images/rh_icon.png" wx:else></image>
+    <view class="user_content">
+      <view class="username">{{wxUser?wxUser.nickName:'热乎'}}</view>
+      <view class="desc" wx:if="{{wxUser}}">热乎，给你最新鲜的福利</view>
+      <view class="desc" wx:else>快速登录，获取更多福利</view>
+    </view>
+  </view>
+  <view class="my_item" wx:if="{{wxUser}}">
+    <view class="item_left">
+      <image class="order_icon" src="../../images/order_icon.png"></image>
+      <text class="item_text">我的订单</text>
+    </view>
+    <image class="right_icon" src="../../images/right.png"></image>
+  </view>
+  <view class="my_item">
+    <button class="feek_but" open-type="feedback"></button>
+    <view class="item_left">
+      <image class="order_icon" src="../../images/feedback.png"></image>
+      <view class="item_text">意见反馈</view>
+    </view>
+    <image class="right_icon" src="../../images/right.png"></image>
+  </view>
+  <button class="login" wx:if="{{!wxUser}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">快速登录</button>
+</view>

@@ -1,0 +1,116 @@
+/* pages/order/order.wxss */
+.order_contailer{
+  background: #efefef;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tab_box{
+  margin-top: 30rpx;
+  border: 1rpx solid #dc384c;
+  width: 560rpx;
+  height: 70rpx;
+  border-radius: 35rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tab_item{
+  width: 280rpx;
+  text-align: center;
+  color: #dc384c;
+}
+.active_tab_item{
+  background-image: linear-gradient(to right, #dd5d43 , #dc384c);
+  width: 380rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-radius: 35rpx;
+  color: #fff;
+}
+
+.list_box{
+  margin-top: 30rpx;
+  width: 100%;
+}
+.store_item{
+  border-radius: 15rpx;
+  background: #fff;
+  width: 100%;
+  padding: 20rpx;
+}
+.store_title{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.store_icon{
+  margin-right: 15rpx;
+  border-radius: 8rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+.store_name{
+  font-size: 30rpx;
+  color: #333;
+  font-weight: 700;
+}
+
+.coupons{
+  margin-top: 20rpx;
+  width: 100%;
+  height: 240rpx;
+  display: flex;
+  align-items: center;
+}
+.coupons_left{
+  border-radius: 20rpx;
+  padding: 10rpx 20rpx;
+  height: 100%;
+  background: #faeeeb;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+.coupons_title{
+  font-size: 30rpx;
+  color: #333;
+  font-weight: 700;
+}
+.coupons_toast{
+  font-size: 26rpx;
+  color: #ff5858;
+}
+.end_time{
+  font-size: 26rpx;
+  color: #ff5858;
+}
+.line{
+  width: 2rpx;
+  border-left:1rpx dashed #f2afbd;
+  height: 200rpx;
+}
+.coupons_right{
+  border-radius: 20rpx;
+  height: 100%;
+  background: #faeeeb;
+  width: 200rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.use{
+  background: #dc384c;
+  padding: 15rpx 35rpx;
+  font-size: 24rpx;
+  color: #fff;
+}

@@ -11,7 +11,7 @@
   
   <view class="desc">108元抢原价283元的【烤串3-4人套餐】/ 桌只能使用1份套餐，请提前购买，请在有效期内使用。</view>
   <view class="bottom_box">
-    <view>使用期限：07.06 - 08.06</view>
+    <view class="num">使用期限：07.06-08.06</view>
     <view>已售：182</view>
   </view>
 </view>

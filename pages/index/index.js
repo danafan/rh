@@ -27,7 +27,8 @@ Page({
     isLoad: true,    //默认可以加载
     category_list: [],
     startBarHeight: 0,
-    navgationHeight: 0
+    navgationHeight: 0,
+    scrollTop:0,          //距离顶部距离（顶部透明度）
   },
   onLoad: function (options) {
     //获取粉丝总数
@@ -41,6 +42,11 @@ Page({
     //获取信息列表
     // let req = { level_01_id: 0 }
     // this.getInfoList(req);
+  },
+  onPageScroll: function (e) { // 页面滚动监听
+    this.setData({
+      scrollTop: (e.scrollTop)/100
+    })
   },
   //获取粉丝总数
   getFansTotal() {

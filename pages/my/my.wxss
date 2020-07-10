@@ -1,0 +1,121 @@
+/* pages/my/my.wxss */
+
+.my_container {
+  background: #efefef;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.top_back {
+  background: #0b0d1d;
+  width: 100%;
+  height: 260rpx;
+  display: flex;
+  align-items: center;
+}
+
+.user_img_box {
+  border: 7rpx solid #d1b171;
+  margin-right: 20rpx;
+  border-radius: 50%;
+  width: 160rpx;
+  height: 160rpx;
+  position: relative;
+}
+
+.user_img {
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.rh_icon {
+  margin-right: 20rpx;
+  width: 110rpx;
+  height: 110rpx;
+}
+
+.user_content {
+  flex: 1;
+  height: 120rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.username {
+  font-size: 36rpx;
+  color: #d1b171;
+  font-weight: 700;
+}
+
+.desc {
+  font-size: 26rpx;
+  color: #fff;
+}
+
+.my_item {
+  margin-top: 30rpx;
+  background: #fff;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  position: relative;
+}
+
+.item_left {
+  display: flex;
+  align-items: center;
+}
+
+.order_icon {
+  margin-right: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.item_text {
+  font-size: 32rpx;
+  color: #333;
+}
+
+.right_icon {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.feek_but {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100rpx !important;
+  z-index: 1;
+  opacity: 0;
+}
+
+.login {
+  margin: 50rpx auto;
+  background: #dc384c;
+  border-radius: 40rpx;
+  width: 80%!important;
+  text-align: center!important;
+  font-size: 32rpx;
+  color: #fff;
+}
+
+.login::after {
+  height: 80rpx!important;
+  line-height: 80rpx!important;
+  border: none;
+}
