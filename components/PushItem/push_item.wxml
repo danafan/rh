@@ -3,6 +3,10 @@
   <view class="top_box">
     <image class="goods_img" src="../../images/banner_03.jpg"></image>
     <view class="remaining">仅剩：<text class="num">6</text> 份</view>
+    <view class="grass">
+      <image class="grass_icon" src="../../images/grass.png"></image>
+      <text>4238</text>
+    </view>
   </view>
   <view class="name_box">
     <view class="store_name">品牌：同学少年 湘派小串</view>

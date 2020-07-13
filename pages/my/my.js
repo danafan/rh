@@ -16,6 +16,12 @@ Page({
       url: '/pages/auth/auth',
     });
   },
+  //我的订单
+  goOrder(){
+    wx.navigateTo({
+      url: '/pages/order/order',
+    });
+  },
   bindGetUserInfo(e) {
     app.globalData.wxUser = e.detail.userInfo;
     this.setData({

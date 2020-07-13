@@ -178,7 +178,7 @@
 .offer_box {
   margin-bottom: 20rpx;
   width: 100%;
-  height: 280rpx;
+  height: 320rpx;
 }
 
 .offer_item {
@@ -209,7 +209,7 @@
 .store_content {
   box-shadow: 0 0 15rpx #bfbfbf;
   border-radius: 15rpx;
-  height: 200rpx;
+  height: 240rpx;
   width: 100%;
   display: flex;
 }
@@ -217,8 +217,9 @@
 .store_left {
   border-radius: 15rpx 0 0 15rpx;
   position: relative;
-  width: 200rpx;
-  height: 200rpx;
+  overflow: hidden;
+  width: 240rpx;
+  height: 240rpx;
 }
 
 .store_icon {
@@ -231,20 +232,21 @@
 }
 
 .remaining {
-  border-radius: 0 0 0 15rpx;
+  background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  top: 20rpx;
+  right: -35rpx;
+  height: 36rpx;
+  width: 150rpx;
   text-align: center;
-  height: 40rpx;
-  line-height: 40rpx;
-  background: rgba(0, 0, 0, 0.6);
-  font-size: 24rpx;
+  line-height: 36rpx;
+  font-size: 22rpx;
   color: #fff;
-  z-index: 1;
+  transform: rotate(45deg);
 }
-
+.num{
+  color: #ff5858;
+}
 .store_right {
   flex: 1;
   display: flex;
@@ -274,7 +276,10 @@
 .price {
   font-size: 22rpx;
 }
-
+.red_color_l{
+  font-size: 56rpx;
+  color: #ff5858;
+}
 .red_color {
   color: #ff5858;
 }
@@ -323,8 +328,8 @@
   top: 10rpx;
   left: 10rpx;
   background: #ff5858;
-  border-radius: 20rpx;
-  height: 40rpx;
+  border-radius: 24rpx;
+  height: 48rpx;
   padding-left: 15rpx;
   padding-right: 15rpx;
   display: flex;
@@ -336,15 +341,29 @@
 
 .on_pin {
   position: absolute;
-  bottom: 10rpx;
-  right: 10rpx;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 8rpx 10rpx;
+  width: 100%;
+  bottom: 0;
+  left: 0;
   font-size: 22rpx;
-  color: #fff;
   z-index: 1;
+  display: flex;
+  justify-content: space-between;
 }
-
+.on_the_pin{
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 0 15rpx 0 15rpx;
+  padding: 8rpx 10rpx;
+  color: #fff;
+}
+.grass_num {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15rpx 0 15rpx 0;
+  padding: 8rpx 15rpx;
+  color: #fff;
+}
+.one_num{
+  color:#ff5858;
+}
 .tt {
   height: 360rpx;
   flex: 1;

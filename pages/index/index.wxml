@@ -26,11 +26,11 @@
       <view class="category_row">
         <view class="category_item" bindtap="service">
           <image class="cate_icon" src="../../images/cate_05.png"></image>
-          <view class="cate_txt">美食</view>
+          <view class="cate_txt">吃喝</view>
         </view>
         <view class="category_item" bindtap="service">
           <image class="cate_icon" src="../../images/cate_04.png"></image>
-          <view class="cate_txt">果蔬</view>
+          <view class="cate_txt">玩乐</view>
         </view>
         <view class="category_item" bindtap="service">
           <image class="cate_icon" src="../../images/cate_03.png"></image>
@@ -38,11 +38,11 @@
         </view>
         <view class="category_item" bindtap="service">
           <image class="cate_icon" src="../../images/cate_02.png"></image>
-          <view class="cate_txt">休闲娱乐</view>
+          <view class="cate_txt">休闲</view>
         </view>
          <view class="category_item" bindtap="service">
           <image class="cate_icon" src="../../images/cate_05.png"></image>
-          <view class="cate_txt">生活服务</view>
+          <view class="cate_txt">爱车</view>
         </view>
       </view>
     </view>
@@ -62,12 +62,12 @@
             <view class="store_content">
               <view class="store_left">
                 <image class="store_icon" src="../../images/banner_02.jpg"></image>
-                <view class="remaining">仅剩18份</view>
+                <view class="remaining">仅剩<text class="num">18</text>份</view>
               </view>
               <view class="store_right">
                 <view class="right_top">
                   <view class="store_title">
-                    <text class="red_color">0</text>元抢【星巴克】<text class="red_color">20</text>元现金消费券（满200可用）</view>
+                    <text class="red_color_l">0</text>元抢【星巴克】<text class="red_color">20</text>元现金消费券（满200可用）</view>
                   <view class="sold">108人已抢</view>
                 </view>
                 <view class="right_bottom">
@@ -87,7 +87,7 @@
             <view class="store_content">
               <view class="store_left">
                 <image class="store_icon" src="../../images/banner_01.png"></image>
-                <view class="remaining">仅剩1份</view>
+                <view class="remaining">仅剩<text class="num">1</text>份</view>
               </view>
               <view class="store_right">
                 <view class="right_top">
@@ -112,7 +112,7 @@
             <view class="store_content">
               <view class="store_left">
                 <image class="store_icon" src="../../images/banner_03.jpg"></image>
-                <view class="remaining">仅剩8份</view>
+                <view class="remaining">仅剩<text class="num">8</text>份</view>
               </view>
               <view class="store_right">
                 <view class="right_top">
@@ -139,7 +139,10 @@
         <view class="one">
           <view class="as_store_name">千岛湖酸菜鱼</view>
           <image class="one_icon" src="../../images/banner_01.png"></image>
-          <view class="on_pin">月销：152</view>
+          <view class="on_pin">
+            <text class="on_the_pin">月销：<text class="one_num">152</text></text>
+            <text class="grass_num"><text class="one_num">48</text>种草</text>
+          </view>
         </view>
         <view class="tt">
           <view class="tt_icon_box">

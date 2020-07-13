@@ -11,7 +11,7 @@
       <view class="desc" wx:else>快速登录，获取更多福利</view>
     </view>
   </view>
-  <view class="my_item" wx:if="{{wxUser}}">
+  <view class="my_item" wx:if="{{wxUser}}" bindtap="goOrder">
     <view class="item_left">
       <image class="order_icon" src="../../images/order_icon.png"></image>
       <text class="item_text">我的订单</text>
