@@ -106,7 +106,7 @@
 
 .login {
   margin: 50rpx auto;
-  background: #dc384c;
+  background: #ff5858;
   border-radius: 40rpx;
   width: 80%!important;
   text-align: center!important;

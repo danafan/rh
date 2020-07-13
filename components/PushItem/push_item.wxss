@@ -47,7 +47,7 @@
   padding-left: 20rpx;
   padding-right: 20rpx;
   font-size: 24rpx;
-  color: #dc384c;
+  color: #ff5858;
   display: flex;
   align-items: center;
 }

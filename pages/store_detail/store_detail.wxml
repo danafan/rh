@@ -1,0 +1,96 @@
+<!--pages/store_detail/store_detail.wxml-->
+<view class="detail_box">
+  <view class="top_box">
+    <!-- 轮播图 -->
+    <swiper class="banner_box" autoplay="true" interval="5000" duration="80" bindchange="changeBanner">
+      <swiper-item wx:for="{{banner_list}}" wx:key="id" data-index="{{index}}" bindtap="openBigImg">
+        <image class="banner_img" src="{{item.img_url}}"></image>
+      </swiper-item>
+    </swiper>
+    <!-- 标志图 -->
+    <view class="tag_img">
+      <image class="tag_img_icon" src="../../images/banner_01.png"></image>
+    </view>
+  </view>
+  <!-- 下面内容 -->
+  <view class="content_box">
+    <!-- 店铺名 -->
+    <view class="store_name">108元抢原价283元的【烤串3-4人套餐】，请提前购买，请在有效期内使用。</view>
+    <!-- 价格和种草 -->
+    <view class="setting_box">
+      <view class="price_box">
+        <view class="price">¥108</view>
+        <view class="hua">门店价：¥238</view>
+      </view>
+      <view class="grass_box" bindtap="grassSet">
+        <image class="grass_icon" src="../../images/active_grass.png" wx:if="{{isGrass}}"></image>
+        <image class="grass_icon" src="../../images/black_grass_icon.png" wx:else></image>
+        <view class="grass_text {{isGrass?'active_grass_text':''}}">种草</view>
+      </view>
+    </view>
+    <!-- 已售 -->
+    <view class="sold_box">
+      <view class="sold_top">
+        <view class="sold_left">
+          <image class="crowd_icon" src="../../images/crowd.png"></image>
+          <view class="sold_num">已售323份</view>
+        </view>
+        <view class="sold_right">邀请好友一起抢</view>
+      </view>
+      <view class="solds">
+        <image class="sold_icon" src="../../images/banner_01.png"></image>
+        <image class="sold_icon" src="../../images/banner_01.png"></image>
+        <image class="sold_icon" src="../../images/banner_01.png"></image>
+        <image class="sold_icon" src="../../images/banner_01.png"></image>
+        <image class="sold_icon" src="../../images/banner_01.png"></image>
+        <view class="dians">
+          <view class="dian"></view>
+          <view class="dian bian"></view>
+          <view class="dian"></view>
+        </view>
+      </view>
+    </view>
+    <!-- 使用规则 -->
+    <view class="rules">
+      <view class="rule_item">
+        <image class="rule_icon" src="../../images/selected.png"></image>
+        <view class="rule_text">每桌限用1份</view>
+      </view>
+      <view class="rule_item">
+        <image class="rule_icon" src="../../images/selected.png"></image>
+        <view class="rule_text">满400可用</view>
+      </view>
+      <view class="rule_item">
+        <image class="rule_icon" src="../../images/selected.png"></image>
+        <view class="rule_text">不与其他优惠叠加使用</view>
+      </view>
+      <view class="rule_item">
+        <image class="rule_icon" src="../../images/selected.png"></image>
+        <view class="rule_text">营业时间：9:00 -- 22:00</view>
+      </view>
+      <view class="rule_item">
+        <image class="rule_icon" src="../../images/selected.png"></image>
+        <view class="rule_text">使用期限：2020-07-26至2020-08-26（周末、法定节假日通用）</view>
+      </view>
+    </view>
+    <!-- 温馨提示 -->
+    <view class="toast_desc">
+      温馨提示：特价产品不支持退款，过期自动退扣20%手续费，请提前购买，在有效期内使用。
+    </view>
+    <!-- 详情图片 -->
+    <image class="detail_icon" wx:for="{{banner_list}}" wx:key="id" data-index="{{index}}" src="{{item.img_url}}" bindtap="openBigImg"></image>
+  </view>
+  <!-- 购买按钮 -->
+  <view class="bottom_but">
+    <view class="but_left">
+      <view class="but_price_box">
+        <text class="but_price">¥108</text>
+        <text class="reamin">仅剩：18份</text>
+      </view>
+      <view class="market_price">最高门店价：288</view>
+    </view>
+    <view class="buy_but">立即抢购</view>
+  </view>
+  <!-- 大图 -->
+  <big_img wx:if="{{show_img}}" big_imgs="{{banner_list}}" current_index="{{current_index}}" bind:onEmit="close" />
+</view>

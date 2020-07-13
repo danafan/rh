@@ -1,5 +1,5 @@
 <!--components/PushItem/push_item.wxml-->
-<view class="push_container">
+<view class="push_container" bindtap="goDetail">
   <view class="top_box">
     <image class="goods_img" src="../../images/banner_03.jpg"></image>
     <view class="remaining">仅剩：<text class="num">6</text> 份</view>

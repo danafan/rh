@@ -1,13 +1,15 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/store_detail/store_detail",
     "pages/order/order",
     "pages/my/my",
     "pages/auth/auth"
+    
   ],
   "tabBar": {
     "color": "#bfbfbf",
-    "selectedColor": "#dc384c",
+    "selectedColor": "#ff5858",
     "borderStyle": "black",
     "list": [
       {
@@ -27,7 +29,7 @@
   "window": {
     "enablePullDownRefresh": true,
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#dc384c",
+    "navigationBarBackgroundColor": "#ff5858",
     "navigationBarTitleText": "热乎",
     "navigationBarTextStyle": "white"
   },

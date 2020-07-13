@@ -21,6 +21,12 @@ Component({
     current_index: 0, //当前选中的大图下标
   },
   methods: {
+    //进入详情
+    goDetail() {
+      wx.navigateTo({
+        url: '/pages/store_detail/store_detail',
+      });
+    },
     // //获取图片真实宽度
     // imageLoad(e) {
     //   var imgwidth = e.detail.width,

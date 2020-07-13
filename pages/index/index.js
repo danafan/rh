@@ -43,6 +43,12 @@ Page({
     // let req = { level_01_id: 0 }
     // this.getInfoList(req);
   },
+  //进入详情
+  goDetail(){
+    wx.navigateTo({
+      url: '/pages/store_detail/store_detail',
+    });
+  },
   onPageScroll: function (e) { // 页面滚动监听
     this.setData({
       scrollTop: (e.scrollTop)/100

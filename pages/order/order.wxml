@@ -1,8 +1,11 @@
 <!--pages/order/order.wxml-->
 <view class="order_contailer">
-  <view class="tab_box">
-    <view class="tab_item {{tab_index == 1?'active_tab_item':''}}" data-index="1" bindtap="checkTab">优惠券</view>
-    <view class="tab_item {{tab_index == 2?'active_tab_item':''}}" data-index="2" bindtap="checkTab">现金券</view>
+  <view class="tab_back">
+    <view class="tab_box">
+      <view class="tab_item {{tab_index == 1?'active_tab_item':''}}" data-index="1" bindtap="checkTab">优惠券</view>
+      <view class="tab_item {{tab_index == 2?'active_tab_item':''}}" data-index="2" bindtap="checkTab">现金券</view>
+    </view>
+
   </view>
   <!-- 优惠券 -->
   <view class="list_box" wx:if="{{tab_index == '1'}}">
@@ -20,7 +23,11 @@
           </view>
           <view class="end_time">使用期限：07.08-08.08</view>
         </view>
-        <view class="line"></view>
+        <view class="line_box_v">
+          <view class="kou_top_v"></view>
+          <view class="line_shu_v"></view>
+          <view class="kou_bottom_v"></view>
+        </view>
         <view class="coupons_right">
           <view class="use">使用</view>
         </view>
@@ -35,7 +42,11 @@
           </view>
           <view class="end_time">使用期限：07.08-08.08</view>
         </view>
-        <view class="line"></view>
+        <view class="line_box_v">
+          <view class="kou_top_v"></view>
+          <view class="line_shu_v"></view>
+          <view class="kou_bottom_v"></view>
+        </view>
         <view class="coupons_right">
           <view class="use">使用</view>
         </view>
@@ -49,13 +60,18 @@
       <view class="coupons">
         <view class="coupons_left">
           <view>
-            <view class="coupons_title">108元抢原价283元的【烤串3-4人套餐】</view>
+            <view class="coupons_title">66元抢366元抵扣券</view>
             <view class="coupons_toast">- 每桌限用1份</view>
+            <view class="coupons_toast">- 满400可用</view>
             <view class="coupons_toast">- 不与其他优惠叠加使用</view>
           </view>
           <view class="end_time">使用期限：07.08-08.08</view>
         </view>
-        <view class="line"></view>
+        <view class="line_box_v">
+          <view class="kou_top_v"></view>
+          <view class="line_shu_v"></view>
+          <view class="kou_bottom_v"></view>
+        </view>
         <view class="coupons_right">
           <view class="use">使用</view>
         </view>
@@ -70,7 +86,11 @@
           </view>
           <view class="end_time">使用期限：07.08-08.08</view>
         </view>
-        <view class="line"></view>
+        <view class="line_box_v">
+          <view class="kou_top_v"></view>
+          <view class="line_shu_v"></view>
+          <view class="kou_bottom_v"></view>
+        </view>
         <view class="coupons_right">
           <view class="use">使用</view>
         </view>

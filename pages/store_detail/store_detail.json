@@ -1,0 +1,6 @@
+{
+  "backgroundColor": "#ff5858",
+  "usingComponents": {
+    "big_img": "../../components/BigImg/big_img"
+  }
+}

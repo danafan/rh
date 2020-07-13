@@ -18,7 +18,7 @@
     <view class="top_back">
       <!-- 轮播图 -->
       <swiper class="banner_box" autoplay="true" interval="5000" duration="80">
-        <swiper-item wx:for="{{banner_list}}" wx:key="id">
+        <swiper-item wx:for="{{banner_list}}" wx:key="id" bindtap="goDetail">
           <image class="banner_img" src="{{item.img_url}}"></image>
         </swiper-item>
       </swiper>
@@ -53,7 +53,7 @@
         <image class="thunder_icon" src="../../images/thunder_icon.png"></image>
       </view>
       <swiper class="offer_box" next-margin="50rpx">
-        <swiper-item>
+        <swiper-item bindtap="goDetail">
           <view class="offer_item">
             <view class="store_name">
               <view class="name_icon"></view>
@@ -78,7 +78,7 @@
             </view>
           </view>
         </swiper-item>
-        <swiper-item>
+        <swiper-item bindtap="goDetail">
           <view class="offer_item">
             <view class="store_name">
               <view class="name_icon"></view>
@@ -92,7 +92,7 @@
               <view class="store_right">
                 <view class="right_top">
                   <view class="store_title">
-                    <text class="red_color">0</text>元抢【同学少年 湘派小串】<text class="red_color">80</text>元现金消费券</view>
+                    <text class="red_color_l">0</text>元抢【同学少年 湘派小串】<text class="red_color">80</text>元现金消费券</view>
                   <view class="sold">19人已抢</view>
                 </view>
                 <view class="right_bottom">
@@ -103,7 +103,7 @@
             </view>
           </view>
         </swiper-item>
-        <swiper-item>
+        <swiper-item bindtap="goDetail">
           <view class="offer_item">
             <view class="store_name">
               <view class="name_icon"></view>
@@ -117,7 +117,7 @@
               <view class="store_right">
                 <view class="right_top">
                   <view class="store_title">
-                    <text class="red_color">0</text>元抢【外婆家】<text class="red_color">30</text>元现金消费券（满00可用）</view>
+                    <text class="red_color_l">0</text>元抢【外婆家】<text class="red_color">30</text>元现金消费券（满00可用）</view>
                   <view class="sold">25人已抢</view>
                 </view>
                 <view class="right_bottom">
@@ -136,7 +136,7 @@
         <image class="wings" src="../../images/wings_right.png"></image>
       </view>
       <view class="as_box">
-        <view class="one">
+        <view class="one" bindtap="goDetail">
           <view class="as_store_name">千岛湖酸菜鱼</view>
           <image class="one_icon" src="../../images/banner_01.png"></image>
           <view class="on_pin">
@@ -145,12 +145,12 @@
           </view>
         </view>
         <view class="tt">
-          <view class="tt_icon_box">
+          <view class="tt_icon_box" bindtap="goDetail">
             <view class="as_store_name">千岛湖酸菜鱼</view>
             <image class="tt_icon" src="../../images/banner_02.jpg"></image>
             <view class="on_pin_small">月销：152</view>
           </view>
-          <view class="tt_icon_box">
+          <view class="tt_icon_box" bindtap="goDetail">
             <view class="as_store_name">千岛湖酸菜鱼</view>
             <image class="tt_icon" src="../../images/banner_03.jpg"></image>
             <view class="on_pin_small">月销：152</view>
