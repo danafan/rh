@@ -12,9 +12,9 @@ Page({
       img_url: "../../images/banner_03.jpg"
     }], //轮播图
     isGrass:false,        //默认未点击种草
-    current_index: 0, //默认选中图片的下标
-    show_img: false, //默认不显示大图
-    shu: 1, //默认banner当前数
+    // current_index: 0, //默认选中图片的下标
+    // show_img: false, //默认不显示大图
+    // shu: 1, //默认banner当前数
   },
   onLoad: function(options) {
     //设置导航栏

@@ -1,11 +1,11 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/store_detail/store_detail",
     "pages/order/order",
+    "pages/store_detail/store_detail",
     "pages/my/my",
-    "pages/auth/auth"
-    
+    "pages/auth/auth",
+    "pages/category/category"
   ],
   "tabBar": {
     "color": "#bfbfbf",

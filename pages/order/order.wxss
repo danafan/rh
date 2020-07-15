@@ -82,8 +82,7 @@
 }
 
 .coupons {
-  background-image: linear-gradient(to right, #ff5858,#f37464);
-  border-radius: 10rpx;
+  background: #faeeeb;
   margin-top: 20rpx;
   width: 100%;
   display: flex;
@@ -98,12 +97,14 @@
   flex-direction: column;
   justify-content: space-between;
 }
-
+.coupons_left_top{
+  margin-bottom: 30rpx;
+}
 .coupons_title {
-  margin-bottom: 15rpx;
-  font-size: 32rpx;
-  color: #fff;
-  font-weight: 800;
+  margin-bottom: 10rpx;
+  font-size: 30rpx;
+  color: #333;
+  font-weight: 700;
 }
 
 .coupons_toast {
@@ -112,13 +113,10 @@
   font-size: 24rpx;
   color: #ff5858;
 }
-
 .end_time {
-  margin-top: 30rpx;
-  font-size: 24rpx;
-  color: #fff;
+  font-size: 26rpx;
+  color: #bfbfbf;
 }
-
 .line_box_v {
   position: absolute;
   top: 0;
@@ -129,7 +127,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  
 }
 
 .kou_top_v {
@@ -141,7 +138,7 @@
 
 .line_shu_v {
   height: 60%;
-  border-left: 2rpx dashed #fff;
+  border-left: 2rpx dashed #8a8a8a;
 }
 
 .kou_bottom_v {
@@ -152,7 +149,6 @@
 }
 
 .coupons_right {
-  border-radius: 20rpx;
   height: 100%;
   width: 200rpx;
   display: flex;
@@ -161,24 +157,13 @@
 }
 
 .use {
-  border-radius: 25rpx;
-  border: 1rpx solid #fff;
-  height: 50rpx;
-  line-height: 50rpx;
-  width: 110rpx;
-  text-align: center;
-  font-size: 26rpx;
-  color: #fff;
-}
-
-.use_money {
   background-image: linear-gradient(to right, #f37464, #ff5858);
-  height: 50rpx;
-  line-height: 50rpx;
+  height: 56rpx;
+  line-height: 56rpx;
   width: 120rpx;
   text-align: center;
   font-size: 28rpx;
-  border-radius: 24rpx;
+  border-radius: 28rpx;
   color: #fff;
 }
 
@@ -190,12 +175,13 @@
   justify-content: space-between;
   height: 30rpx;
 }
-
+/* 现金券 */
+.coupons_money {
+  margin-top: 20rpx;
+  width: 100%;
+}
 .kou_left {
-  box-shadow: inset -1px 1px 0 1px #bfbfbf;
-  position: relative;
-  left: -4rpx;
-  background: #ededed;
+  background: #fff;
   width: 30rpx;
   height: 30rpx;
   border-radius: 0 15rpx 15rpx 0;
@@ -207,11 +193,8 @@
 }
 
 .kou_right {
-  position: relative;
-  right: -4rpx;
   border-radius: 15rpx 0 0 15rpx;
-  background: #ededed;
-  box-shadow: inset 1px 1px 0 1px #bfbfbf;
+  background: #fff;
   width: 30rpx;
   height: 30rpx;
 }
@@ -223,12 +206,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 10rpx 20rpx;
-}
-
-.coupons_money {
-  box-shadow: 0 0 4rpx #bfbfbf;
-  margin-top: 20rpx;
-  width: 100%;
 }
 
 .coupons_top {
@@ -264,13 +241,6 @@
   font-weight: 700;
 }
 
-.desc {
-  margin-bottom: 10rpx;
-  font-size: 30rpx;
-  font-weight: 700;
-  color: #333;
-}
-
 .money {
   margin-left: 15rpx;
   display: table-cell;
@@ -286,7 +256,4 @@
   font-weight: 800rpx;
 }
 
-.end_time_money {
-  font-size: 26rpx;
-  color: #bfbfbf;
-}
+

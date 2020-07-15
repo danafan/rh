@@ -22,10 +22,31 @@
         <view class="price">¥108</view>
         <view class="hua">门店价：¥238</view>
       </view>
+      <view class="setting_right">
+      <view class="grass_box">
+        <image class="grass_icon" src="../../images/share.png"></image>
+        <view class="grass_text">分享</view>
+      </view>
       <view class="grass_box" bindtap="grassSet">
         <image class="grass_icon" src="../../images/active_grass.png" wx:if="{{isGrass}}"></image>
         <image class="grass_icon" src="../../images/black_grass_icon.png" wx:else></image>
         <view class="grass_text {{isGrass?'active_grass_text':''}}">种草</view>
+      </view>
+      </view>
+      
+    </view>
+    <!-- 位置和电话 -->
+    <view class="location_phone">
+      <view class="location_box">
+        <view class="location_top">
+          <image class="location_icon" src="../../images/location_icon.png"></image>
+          <view class="location_text">杭州市萧山区宁围街道107号国泰科技大厦a幢16楼</view>
+        </view>
+        <view class="distance">5.2km</view>
+      </view>
+      <view class="center_line"></view>
+      <view class="phone_box">
+      <image class="phone_icon" src="../../images/phone_icon.png"></image>
       </view>
     </view>
     <!-- 已售 -->
@@ -48,6 +69,26 @@
           <view class="dian bian"></view>
           <view class="dian"></view>
         </view>
+      </view>
+    </view>
+    <!-- 其他福利 -->
+    <view class="other_box">
+      <view class="other_title">其他福利（2）</view>
+      <view class="bus_item">
+        <image class="store_banner" src="../../images/banner_02.jpg"></image>
+        <view class="bus_content">
+          <view class="bus_title">108元抢原价283元的【烤串3-4人套餐】</view>
+          <view class="bus_price">¥78</view>
+        </view>
+        <view class="but">立即抢购</view>
+      </view>
+      <view class="bus_item">
+        <image class="store_banner" src="../../images/banner_03.jpg"></image>
+        <view class="bus_content">
+          <view class="bus_title">0元抢【星巴克】元现金消费券（满200可用）</view>
+          <view class="bus_price">0元秒杀</view>
+        </view>
+        <view class="but">马上抢</view>
       </view>
     </view>
     <!-- 使用规则 -->
@@ -77,6 +118,27 @@
     <view class="toast_desc">
       温馨提示：特价产品不支持退款，过期自动退扣20%手续费，请提前购买，在有效期内使用。
     </view>
+    <!-- 套餐（只有套餐才显示） -->
+    <view class="package_box">
+      <view class="package_title">-- 套餐内容 --</view>
+      <view class="package_item">
+        <view class="package_name">大丰收</view>
+        <view class="num">x1</view>
+        <view class="item_money">¥48</view>
+      </view>
+      <view class="package_item">
+        <view class="package_name">毛血旺</view>
+        <view class="num">x1</view>
+        <view class="item_money">¥52</view>
+      </view>
+       <view class="package_item">
+        <view class="package_name">火爆大头菜</view>
+        <view class="num">x1</view>
+        <view class="item_money">¥18</view>
+      </view>
+      <view class="store_price">门店价：¥288</view>
+       <view class="total_money">总价：¥78</view>
+    </view>
     <!-- 详情图片 -->
     <image class="detail_icon" wx:for="{{banner_list}}" wx:key="id" data-index="{{index}}" src="{{item.img_url}}" bindtap="openBigImg"></image>
   </view>
@@ -87,7 +149,7 @@
         <text class="but_price">¥108</text>
         <text class="reamin">仅剩：18份</text>
       </view>
-      <view class="market_price">最高门店价：288</view>
+      <view class="market_price">门店价：¥288</view>
     </view>
     <view class="buy_but">立即抢购</view>
   </view>

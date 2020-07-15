@@ -23,7 +23,40 @@ Page({
       img_url: "../../images/banner_03.jpg"
     }], //轮播图
     page: 1,       //当前页码
-    info_list: [], //信息列表
+    info_list: [{
+      store_id: '1',
+      page_img: "../../images/banner_01.png",
+      remaining_num: '8',
+      sold_num: '182',
+      grass_num: "1442",
+      store_name: "同学少年 湘派小串",
+      desc: "108元抢原价283元的【烤串3-4人套餐】",
+      end_time: "2020.07.08-2020.08.08",
+      price: "108",
+      original_price: "288",
+    }, {
+        store_id: '2',
+        page_img: "../../images/banner_01.png",
+        remaining_num: '8',
+        sold_num: '182',
+        grass_num: "1442",
+        store_name: "同学少年 湘派小串",
+        desc: "108元抢原价283元的【烤串3-4人套餐】",
+        end_time: "2020.07.08-2020.08.08",
+        price: "108",
+        original_price: "288",
+      }, {
+        store_id: '3',
+        page_img: "../../images/banner_01.png",
+        remaining_num: '8',
+        sold_num: '182',
+        grass_num: "1442",
+        store_name: "同学少年 湘派小串",
+        desc: "108元抢原价283元的【烤串3-4人套餐】",
+        end_time: "2020.07.08-2020.08.08",
+        price: "108",
+        original_price: "288",
+      }], //信息列表
     isLoad: true,    //默认可以加载
     category_list: [],
     startBarHeight: 0,
@@ -265,11 +298,11 @@ Page({
   },
   //点击跳转到服务页面
   service(e) {
-    // let id = e.currentTarget.dataset.id;
-    // let index = e.currentTarget.dataset.index;
-    // wx.navigateTo({
-    //   url: '/pages/service/service?id=' + id + '&index=' + index
-    // })
+    let id = e.currentTarget.dataset.id;
+    let index = e.currentTarget.dataset.index;
+    wx.navigateTo({
+      url: '/pages/category/category?id=' + id + '&index=' + index
+    })
   },
 
 

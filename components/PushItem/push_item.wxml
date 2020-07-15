@@ -2,20 +2,20 @@
 <view class="push_container" bindtap="goDetail">
   <view class="top_box">
     <image class="goods_img" src="../../images/banner_03.jpg"></image>
-    <view class="remaining">仅剩：<text class="num">6</text> 份</view>
+    <view class="remaining">仅剩：<text class="num">{{infoItem.remaining_num}}</text> 份</view>
     <view class="grass">
       <image class="grass_icon" src="../../images/grass.png"></image>
-      <text>4238</text>
+      <text>{{infoItem.grass_num}}</text>
     </view>
   </view>
   <view class="name_box">
-    <view class="store_name">品牌：同学少年 湘派小串</view>
-    <view class="price">¥108 <text class="hua">¥238</text></view>
+    <view class="store_name">品牌：{{infoItem.store_name}}</view>
+    <view class="price">¥{{infoItem.price}}<text class="hua">¥{{infoItem.original_price}}</text></view>
   </view>
   
-  <view class="desc">108元抢原价283元的【烤串3-4人套餐】/ 桌只能使用1份套餐，请提前购买，请在有效期内使用。</view>
+  <view class="desc">{{infoItem.desc}}，请提前购买，请在有效期内使用。</view>
   <view class="bottom_box">
-    <view class="num">使用期限：07.06-08.06</view>
-    <view>已售：182</view>
+    <view class="num">使用期限：{{infoItem.end_time}}</view>
+    <view>已售：{{infoItem.sold_num}}</view>
   </view>
 </view>
