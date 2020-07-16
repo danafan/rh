@@ -76,10 +76,16 @@ Page({
     // let req = { level_01_id: 0 }
     // this.getInfoList(req);
   },
+  //进入店铺详情
+  storeDetail() {
+    wx.navigateTo({
+      url: '/pages/store_detail/store_detail',
+    });
+  },
   //进入详情
   goDetail(){
     wx.navigateTo({
-      url: '/pages/store_detail/store_detail',
+      url: '/pages/goods_detail/goods_detail',
     });
   },
   onPageScroll: function (e) { // 页面滚动监听

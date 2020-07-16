@@ -24,7 +24,7 @@ Component({
     //进入详情
     goDetail() {
       wx.navigateTo({
-        url: '/pages/store_detail/store_detail',
+        url: '/pages/goods_detail/goods_detail',
       });
     },
     // //获取图片真实宽度

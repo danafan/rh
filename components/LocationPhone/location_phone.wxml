@@ -1,0 +1,15 @@
+<!--components/LocationPhone/location_phone.wxml-->
+<!-- 位置和电话 -->
+<view class="location_phone">
+  <view class="location_box">
+    <view class="location_top">
+      <image class="location_icon" src="../../images/location_icon.png"></image>
+      <view class="location_text">杭州市萧山区宁围街道107号国泰科技大厦a幢16楼</view>
+    </view>
+    <view class="distance">5.2km</view>
+  </view>
+  <view class="center_line"></view>
+  <view class="phone_box">
+    <image class="phone_icon" src="../../images/phone_icon.png"></image>
+  </view>
+</view>

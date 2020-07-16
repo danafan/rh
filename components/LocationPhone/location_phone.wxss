@@ -1,0 +1,54 @@
+/* components/LocationPhone/location_phone.wxss */
+.location_phone {
+  /* margin-top: 30rpx; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.location_box {
+  flex: 1;
+}
+
+.location_top {
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  color: #515151;
+}
+
+.location_icon {
+  margin-right: 10rpx;
+  width: 38rpx;
+  height: 38rpx;
+}
+.location_text{
+  flex: 1;
+}
+.distance {
+  margin-top: 5rpx;
+  font-size: 26rpx;
+  color: #8a8a8a;
+}
+
+.center_line {
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  height: 50rpx;
+  width: 1rpx;
+  background: #8a8a8a;
+}
+
+.phone_box {
+  width: 100rpx;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone_icon {
+  width: 50rpx;
+  height: 50rpx;
+}
