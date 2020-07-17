@@ -1,0 +1,16 @@
+<!--components/WelfareItem/welfare_item.wxml-->
+<view class="bus_item {{border_type == '2'?'shadow':''}}">
+  <image class="store_banner" src="../../images/banner_02.jpg"></image>
+  <view class="bus_content">
+    <view class="bus_title">108元抢原价283元的【烤串3-4人套餐】</view>
+    <view class="bus_price">
+      <text>¥78</text>
+      <text class="hua">¥188</text>
+    </view>
+  </view>
+  <view class="right_box">
+    <view class="but">立即抢购</view>
+    <view class="desc">108人已抢</view>
+  </view>
+
+</view>

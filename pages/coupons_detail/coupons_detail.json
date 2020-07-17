@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "优惠券详情",
+  "navigationBarBackgroundColor": "#0b0d1d",
+  "usingComponents": {
+    "goods_item": "../../components/GoodsItem/goods_item"
+  }
+}

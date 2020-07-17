@@ -1,8 +1,9 @@
 {
   "navigationBarTitleText": "店铺详情",
-  "backgroundColor": "#0b0d1d",
   "navigationBarBackgroundColor": "#0b0d1d",
   "usingComponents": {
-    "location_phone": "../../components/LocationPhone/location_phone"
+    "location_phone": "../../components/LocationPhone/location_phone",
+    "welfare_item": "../../components/WelfareItem/welfare_item",
+    "goods_item": "../../components/GoodsItem/goods_item"
   }
 }

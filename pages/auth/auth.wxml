@@ -1,7 +1,7 @@
 <!--pages/auth/auth.wxml-->
 <view class="auth_box">
   <image class="logo" src="../../images/rh_icon.png"></image>
-  <view class="title">-- 热乎，给你最新鲜的福利 --</view>
+  <view class="title">-- 上热乎，吃点儿好的 --</view>
   <view class="toast">欢迎加入「热乎」</view>
   <view class="auth_content">
     <view class="qing">请确认授权以下信息</view>

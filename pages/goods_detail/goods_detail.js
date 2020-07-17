@@ -11,7 +11,6 @@ Page({
       id: "3",
       img_url: "../../images/banner_03.jpg"
     }], //轮播图
-    isGrass: false,        //默认未点击种草
     // current_index: 0, //默认选中图片的下标
     // show_img: false, //默认不显示大图
     // shu: 1, //默认banner当前数
@@ -19,6 +18,18 @@ Page({
   onLoad: function (options) {
     //设置导航栏
     // wx.setNavigationBarTitle({ title: 'i热乎' })
+  },
+  //进入店铺详情
+  storeDetail() {
+    wx.navigateTo({
+      url: '/pages/store_detail/store_detail',
+    });
+  },
+  //点击其他优惠
+  goDetail(){
+    wx.redirectTo({
+      url: '/pages/goods_detail/goods_detail',
+    });
   },
   //点击种草
   grassSet() {

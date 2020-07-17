@@ -1,10 +1,11 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/my/my",
     "pages/store_detail/store_detail",
+    "pages/coupons_detail/coupons_detail",
     "pages/goods_detail/goods_detail",
     "pages/order/order",
-    "pages/my/my",
     "pages/auth/auth",
     "pages/category/category"
   ],
@@ -29,10 +30,11 @@
   },
   "window": {
     "enablePullDownRefresh": true,
+    "backgroundColor": "#0b0d1d",
+    "navigationBarBackgroundColor": "#0b0d1d",
+    "navigationBarTextStyle": "white",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#ff5858",
-    "navigationBarTitleText": "热乎",
-    "navigationBarTextStyle": "white"
+    "navigationBarTitleText": "热乎"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

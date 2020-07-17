@@ -1,21 +1,22 @@
 <!--components/PushItem/push_item.wxml-->
-<view class="push_container" bindtap="goDetail">
+<view class="push_container" data-preferential_type="{{infoItem.preferential_type}}" bindtap="goDetail">
   <view class="top_box">
     <image class="goods_img" src="../../images/banner_03.jpg"></image>
-    <view class="remaining">仅剩：<text class="num">{{infoItem.remaining_num}}</text> 份</view>
-    <view class="grass">
-      <image class="grass_icon" src="../../images/grass.png"></image>
-      <text>{{infoItem.grass_num}}</text>
-    </view>
+    <view class="grass" catchtap="storeDetail">进店看看>></view>
   </view>
   <view class="name_box">
     <view class="store_name">品牌：{{infoItem.store_name}}</view>
-    <view class="price">¥{{infoItem.price}}<text class="hua">¥{{infoItem.original_price}}</text></view>
+    <view class="price_box">
+      <view class="price red_color">¥{{infoItem.price}}</view>
+      <view class="hua">门店价：¥{{infoItem.original_price}}</view>
+    </view>
   </view>
-  
+  <view class="sort_box_row">
+    <view class="sort_box">萧山区烤鱼人气第一名</view>
+  </view>
   <view class="desc">{{infoItem.desc}}，请提前购买，请在有效期内使用。</view>
   <view class="bottom_box">
-    <view class="num">使用期限：{{infoItem.end_time}}</view>
+    <view class="red_color">使用期限：{{infoItem.end_time}}</view>
     <view>已售：{{infoItem.sold_num}}</view>
   </view>
 </view>

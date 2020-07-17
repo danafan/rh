@@ -1,0 +1,57 @@
+<!--pages/coupons_detail/coupons_detail.vue.wxml-->
+<view class="coupons_box">
+  <!-- 代金券 -->
+  <view class="coupons_info">
+    <view class="store_name">【千岛湖酸菜鱼】</view>
+    <view class="coupons_text">88元代100元代金券</view>
+  </view>
+  <!-- 使用规则 -->
+  <view class="coupons_money_box">
+    <view class="rules_title">使用规则</view>
+    <view class="rules">
+      <view class="rule_item">
+        <image class="rule_icon" src="../../images/selected.png"></image>
+        <view class="rule_text">每桌限用1份</view>
+      </view>
+      <view class="rule_item">
+        <image class="rule_icon" src="../../images/selected.png"></image>
+        <view class="rule_text">满400可用</view>
+      </view>
+      <view class="rule_item">
+        <image class="rule_icon" src="../../images/selected.png"></image>
+        <view class="rule_text">不与其他优惠叠加使用</view>
+      </view>
+      <view class="rule_item">
+        <image class="rule_icon" src="../../images/selected.png"></image>
+        <view class="rule_text">营业时间：9:00 -- 22:00</view>
+      </view>
+      <view class="rule_item">
+        <image class="rule_icon" src="../../images/selected.png"></image>
+        <view class="rule_text">使用期限：2020-07-26至2020-08-26（周末、法定节假日通用）</view>
+      </view>
+    </view>
+  </view>
+  <view class="coupons_money_box">
+    <view class="coupons_title">
+      <view class="rules_title">商家推荐</view>
+      <view class="go_store" bindtap="storeDetail">进店看看>></view>
+    </view>
+    <view class="goods_list">
+      <goods_item/>
+      <goods_item/>
+      <goods_item/>
+    </view>
+  </view>
+  <view class="bottom_but">
+    <view class="but_left">
+      <view class="but_price_box">
+        <text class="but_price">¥108</text>
+        <text class="reamin">6.5折</text>
+      </view>
+      <view class="market_price">门店价：
+        <text class="hua">¥288</text>
+      </view>
+    </view>
+    <view class="buy_but">立即抢购</view>
+  </view>
+</view>

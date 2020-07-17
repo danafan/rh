@@ -2,25 +2,31 @@
 const app = getApp();
 Page({
   data: {
-    wxUser:null,        //微信用户信息
+    wxUser: null, //微信用户信息
   },
-  onLoad: function (options) {
+  onLoad: function(options) {
     console.log(app.globalData.wxUser)
     this.setData({
       wxUser: app.globalData.wxUser
     })
   },
   //点击登录
-  login(){
+  login() {
     wx.navigateTo({
       url: '/pages/auth/auth',
     });
   },
   //我的订单
-  goOrder(){
-    wx.navigateTo({
-      url: '/pages/order/order',
-    });
+  goOrder() {
+    if (!this.data.wxUser) {
+      wx.navigateTo({
+        url: '/pages/auth/auth',
+      });
+    } else {
+      wx.navigateTo({
+        url: '/pages/order/order',
+      });
+    }
   },
   bindGetUserInfo(e) {
     app.globalData.wxUser = e.detail.userInfo;
@@ -29,7 +35,7 @@ Page({
     })
   },
   //分享自定义
-  onShareAppMessage: function (res) {
+  onShareAppMessage: function(res) {
     return app.globalData.shareObj
   }
 })

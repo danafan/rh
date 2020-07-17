@@ -1,5 +1,6 @@
 <!--pages/my/my.wxml-->
 <view class="my_container">
+  <!-- 顶部黑色 -->
   <view class="top_back">
     <view class="user_img_box" wx:if="{{wxUser}}">
       <image class="user_img" src="{{wxUser.avatarUrl}}"></image>
@@ -7,24 +8,50 @@
     <image class="rh_icon" src="../../images/rh_icon.png" wx:else></image>
     <view class="user_content">
       <view class="username">{{wxUser?wxUser.nickName:'热乎'}}</view>
-      <view class="desc" wx:if="{{wxUser}}">热乎，给你最新鲜的福利</view>
+      <view class="desc" wx:if="{{wxUser}}">上热乎，吃点儿好的</view>
       <view class="desc" wx:else>快速登录，获取更多福利</view>
     </view>
   </view>
-  <view class="my_item" wx:if="{{wxUser}}" bindtap="goOrder">
-    <view class="item_left">
-      <image class="order_icon" src="../../images/order_icon.png"></image>
-      <text class="item_text">我的订单</text>
+  <view class="content_box">
+    <!-- 订单框 -->
+    <view class="order_box">
+      <view class="order_title">我的套餐</view>
+      <view class="order_list_box">
+        <view class="order_item">
+          <image class="order_box_icon" src="../../images/cate_02.png"></image>
+          <view class="order_label">待使用</view>
+        </view>
+        <view class="order_item">
+          <image class="order_box_icon" src="../../images/cate_03.png"></image>
+          <view class="order_label">待支付</view>
+        </view>
+        <view class="order_item">
+          <image class="order_box_icon" src="../../images/cate_04.png"></image>
+          <view class="order_label">退款/售后</view>
+        </view>
+        <view class="order_item" bindtap="goOrder">
+          <image class="order_box_icon" src="../../images/cate_05.png"></image>
+          <view class="order_label">全部订单</view>
+        </view>
+      </view>
     </view>
-    <image class="right_icon" src="../../images/right.png"></image>
-  </view>
-  <view class="my_item">
-    <button class="feek_but" open-type="feedback"></button>
-    <view class="item_left">
-      <image class="order_icon" src="../../images/feedback.png"></image>
-      <view class="item_text">意见反馈</view>
+    <view class="my_item">
+      <button class="feek_but" open-type="feedback"></button>
+      <view class="item_left">
+        <image class="order_icon" src="../../images/vouchers.png"></image>
+        <view class="item_text">代金券</view>
+      </view>
+      <image class="right_icon" src="../../images/right.png"></image>
     </view>
-    <image class="right_icon" src="../../images/right.png"></image>
+    <view class="my_item">
+      <button class="feek_but" open-type="feedback"></button>
+      <view class="item_left">
+        <image class="order_icon" src="../../images/feedback.png"></image>
+        <view class="item_text">意见反馈</view>
+      </view>
+      <image class="right_icon" src="../../images/right.png"></image>
+    </view>
+    <button class="login" wx:if="{{!wxUser}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">快速登录</button>
   </view>
-  <button class="login" wx:if="{{!wxUser}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">快速登录</button>
+
 </view>

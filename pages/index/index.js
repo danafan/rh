@@ -22,8 +22,9 @@ Page({
       id: "3",
       img_url: "../../images/banner_03.jpg"
     }], //轮播图
-    page: 1,       //当前页码
+    page: 1, //当前页码
     info_list: [{
+      preferential_type: "1",
       store_id: '1',
       page_img: "../../images/banner_01.png",
       remaining_num: '8',
@@ -35,35 +36,37 @@ Page({
       price: "108",
       original_price: "288",
     }, {
-        store_id: '2',
-        page_img: "../../images/banner_01.png",
-        remaining_num: '8',
-        sold_num: '182',
-        grass_num: "1442",
-        store_name: "同学少年 湘派小串",
-        desc: "108元抢原价283元的【烤串3-4人套餐】",
-        end_time: "2020.07.08-2020.08.08",
-        price: "108",
-        original_price: "288",
-      }, {
-        store_id: '3',
-        page_img: "../../images/banner_01.png",
-        remaining_num: '8',
-        sold_num: '182',
-        grass_num: "1442",
-        store_name: "同学少年 湘派小串",
-        desc: "108元抢原价283元的【烤串3-4人套餐】",
-        end_time: "2020.07.08-2020.08.08",
-        price: "108",
-        original_price: "288",
-      }], //信息列表
-    isLoad: true,    //默认可以加载
+      preferential_type: "2",
+      store_id: '2',
+      page_img: "../../images/banner_01.png",
+      remaining_num: '8',
+      sold_num: '182',
+      grass_num: "1442",
+      store_name: "同学少年 湘派小串",
+      desc: "108元抢原价283元的【烤串3-4人套餐】",
+      end_time: "2020.07.08-2020.08.08",
+      price: "108",
+      original_price: "288",
+    }, {
+      preferential_type: "1",
+      store_id: '3',
+      page_img: "../../images/banner_01.png",
+      remaining_num: '8',
+      sold_num: '182',
+      grass_num: "1442",
+      store_name: "同学少年 湘派小串",
+      desc: "108元抢原价283元的【烤串3-4人套餐】",
+      end_time: "2020.07.08-2020.08.08",
+      price: "108",
+      original_price: "288",
+    }], //信息列表
+    isLoad: true, //默认可以加载
     category_list: [],
     startBarHeight: 0,
     navgationHeight: 0,
-    scrollTop:0,          //距离顶部距离（顶部透明度）
+    scrollTop: 0, //距离顶部距离（顶部透明度）
   },
-  onLoad: function (options) {
+  onLoad: function(options) {
     //获取粉丝总数
     // this.getFansTotal();
     //获取顶部导航栏信息
@@ -83,14 +86,14 @@ Page({
     });
   },
   //进入详情
-  goDetail(){
+  goDetail() {
     wx.navigateTo({
       url: '/pages/goods_detail/goods_detail',
     });
   },
-  onPageScroll: function (e) { // 页面滚动监听
+  onPageScroll: function(e) { // 页面滚动监听
     this.setData({
-      scrollTop: (e.scrollTop)/100
+      scrollTop: (e.scrollTop) / 100
     })
   },
   //获取粉丝总数
@@ -169,7 +172,10 @@ Page({
             } else if (k == 'origin_time') {
               type = "乘车时间";
             }
-            diffArr.push({ type: type, val: diffObj[k] })
+            diffArr.push({
+              type: type,
+              val: diffObj[k]
+            })
           }
           item.diff_data = diffArr
         }
@@ -275,7 +281,7 @@ Page({
     })
   },
   //分享自定义
-  onShareAppMessage: function (res) {
+  onShareAppMessage: function(res) {
     return app.globalData.shareObj
   },
   //下拉刷新

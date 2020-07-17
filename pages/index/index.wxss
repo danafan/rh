@@ -12,6 +12,7 @@
 
 .fixed {
   background: #ff5858;
+  /* background: #0b0d1d; */
   position: fixed;
   top: 0;
   left: 0;
@@ -105,18 +106,26 @@
 }
 
 .category_item {
-  display: inline-block;
   height: 160rpx;
   width: 20%;
-}
-
-.item_content {
-  height: 100%;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.category_tag{
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 15rpx 15rpx 15rpx 0;
+  height: 30rpx;
+  padding-left: 5rpx;
+  padding-right: 5rpx;
+  background: #ff5858;
+  font-size: 20rpx;
+  color: #fff;
 }
 
 .cate_icon {
@@ -176,21 +185,17 @@
 .swiper_second {
   position: relative;
   top: -10rpx;
-  border-radius: 28rpx 18rpx 18rpx 0;
-  background: #f9d9d0;
   width: 200rpx;
   height: 36rpx;
 }
 
 .swiper_second_text {
   height: 36rpx;
-  white-space: nowrap;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
   font-size: 20rpx;
   color: #ff5858;
+  font-weight: 700;
 }
 
 .kill {
@@ -233,7 +238,8 @@
 
 .offer_box {
   width: 100%;
-  height: 320rpx;
+  /* height: 320rpx; */
+  height: 350rpx;
 }
 
 .offer_item {
@@ -399,8 +405,8 @@
 
 .one {
   border-radius: 6rpx;
-  width: 360rpx;
-  height: 360rpx;
+  width: 343rpx;
+  height: 343rpx;
   position: relative;
   margin-right: 10rpx;
 }
@@ -452,38 +458,33 @@
   background: #ae4ff6;
 }
 
-.on_the_pin {
+.on_pin_big {
   position: absolute;
   top: 72rpx;
   left: 0;
-  background: rgba(0, 0, 0, 0.6);
-  padding-left: 10rpx;
-  padding-right: 10rpx;
-  height: 44rpx;
-  line-height: 44rpx;
-  color: #fff;
+  padding: 3rpx 5rpx;
   font-size: 22rpx;
+  background: #f9d9d0;
+  color: #ff5858;
+  
 }
 
 .grass_num {
+  border-radius: 0 22rpx 22rpx 22rpx;
   position: absolute;
   top: 136rpx;
   left: 0;
   background: rgba(0, 0, 0, 0.6);
-  padding-left: 10rpx;
-  padding-right: 10rpx;
-  height: 44rpx;
-  line-height: 44rpx;
-  color: #fff;
+  padding-left: 12rpx;
+  padding-right: 12rpx;
+  height: 42rpx;
+  line-height: 42rpx;
+  color: #ff5858;
   font-size: 22rpx;
 }
 
-.one_num {
-  color: #ff5858;
-}
-
 .tt {
-  height: 360rpx;
+  height: 343rpx;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -493,7 +494,7 @@
 .tt_icon_box {
   border-radius: 6rpx;
   width: 100%;
-  height: 175rpx;
+  height: 168rpx;
   position: relative;
 }
 
@@ -507,12 +508,14 @@
 }
 
 .on_pin_small {
+  background: #f9d9d0;
+  font-size: 20rpx;
+  color: #ff5858;
+  padding-left: 5rpx;
+  padding-right: 5rpx;
   position: absolute;
   bottom: 10rpx;
-  right: 10rpx;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 5rpx 8rpx;
-  font-size: 20rpx;
-  color: #fff;
+  right: 0;
+  padding: 3rpx 5rpx;
   z-index: 1;
 }

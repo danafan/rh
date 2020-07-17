@@ -1,22 +1,34 @@
 <!--pages/store_detail/store_detail.wxml-->
 <view class="store_box">
-  <view class="top_back"></view>
+  <view class="top_back">
+    <image class="back_img" src="../../images/banner_02.jpg"></image>
+    <view class="mask"></view>
+  </view>
   <view class="content_box">
     <!-- 店铺信息 -->
     <view class="shadow_box">
       <image class="store_img" src="../../images/banner_02.jpg"></image>
       <!-- 店铺名 -->
       <view class="store_name">木屋烤鱼·有机鱼馆</view>
-      <!-- 类型和排名 -->
-      <view class="type_sort">
-        <view class="store_type">烤鱼</view>
-        <view class="sort_box">萧山区烤鱼人气第一名</view>
-      </view>
-      <!-- 标签 -->
-      <view class="tags">
-        <view class="tag">免费wifi</view>
-        <view class="tag">有宝宝椅</view>
-        <view class="tag">免费停车</view>
+      <view class="store_center_box">
+        <view class="center_box_left">
+          <!-- 类型和排名 -->
+          <view class="type_sort">
+            <view class="store_type">烤鱼</view>
+            <view class="sort_box">萧山区烤鱼人气第一名</view>
+          </view>
+          <!-- 标签 -->
+          <view class="tags">
+            <view class="tag">免费wifi</view>
+            <view class="tag">有宝宝椅</view>
+            <view class="tag">免费停车</view>
+          </view>
+        </view>
+        <view class="center_box_right" bindtap="changeGrass">
+          <image class="grass_icon" src="../../images/active_grass.png" wx:if="{{isGrass}}"></image>
+          <image class="grass_icon" src="../../images/black_grass_icon.png" wx:else></image>
+          <view class="grass_num">32种草</view>
+        </view>
       </view>
       <!-- 位置和电话 -->
       <location_phone style="width:670rpx;" />
@@ -38,9 +50,17 @@
         <view class="active_line" wx:if="{{active_tab == '2'}}"></view>
       </view>
     </view>
-    <!-- 套餐列表 -->
-    <view class="shadow_box">
-      
+    <!-- 套餐/券 -->
+    <view wx:if="{{active_tab == '1'}}">
+      <welfare_item border_type="2" />
+      <welfare_item border_type="2" />
+      <welfare_item border_type="2" />
+    </view>
+    <!-- 菜品 -->
+    <view class="goods_list" wx:if="{{active_tab == '2'}}">
+      <goods_item/>
+      <goods_item/>
+      <goods_item/>
     </view>
   </view>
 </view>

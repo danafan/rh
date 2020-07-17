@@ -1,8 +1,8 @@
 {
-  "backgroundColor": "#0b0d1d",
   "navigationBarBackgroundColor": "#0b0d1d",
   "usingComponents": {
     "location_phone": "../../components/LocationPhone/location_phone",
-    "big_img": "../../components/BigImg/big_img"
+    "big_img": "../../components/BigImg/big_img",
+    "welfare_item": "../../components/WelfareItem/welfare_item"
   }
 }
