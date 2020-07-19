@@ -1,0 +1,12 @@
+/* components/Tag/tag.wxss */
+.tag {
+  border-radius: 18rpx 18rpx 18rpx 0;
+  height: 36rpx;
+  line-height: 36rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  font-size: 22rpx;
+}
+.margin{
+   margin-right: 15rpx;
+}

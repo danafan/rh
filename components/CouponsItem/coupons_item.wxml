@@ -1,0 +1,27 @@
+<!--components/CouponsItem/coupons_item.wxml-->
+<view class="store_content {{page_type == 'list'?'margin':''}}" data-type="{{coupons_info.type}}" bindtap="goDetail">
+  <view class="store_left">
+    <image class="store_icon" src="../../images/banner_02.jpg"></image>
+    <view class="remaining" wx:if="{{page_type == 'index' && coupons_info.total_num}}">仅剩
+      <text class="red_color">{{coupons_info.total_num-coupons_info.rob_num}}</text>份
+    </view>
+  </view>
+  <view class="store_right">
+    <view>
+      <view class="store_title">{{coupons_info.goods_name}}</view>
+      <view class="has_rob" wx:if="{{page_type == 'index'}}">{{coupons_info.rob_num}}人已抢</view>
+      <view class="has_rob" wx:if="{{page_type == 'list'}}">{{coupons_info.store_name}}</view>
+    </view>
+    <view class="right_bottom">
+      <view class="price_box">
+        <view class="price red_color">¥{{coupons_info.now_price}}</view>
+        <view>
+          <tag val="{{coupons_info.discount}}折" background="#f9d9d0" color="#ff5858" />
+          <view class="hua">¥{{coupons_info.old_price}}</view>
+        </view>
+      </view>
+      <view class="rob" wx:if="{{page_type == 'index'}}">马上抢</view>
+      <view class="rob_num red_color" wx:if="{{page_type == 'list'}}">{{coupons_info.rob_num}}人已抢</view>
+    </view>
+  </view>
+</view>

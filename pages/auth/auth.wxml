@@ -1,5 +1,5 @@
 <!--pages/auth/auth.wxml-->
-<view class="auth_box">
+<view class="container auth_box">
   <image class="logo" src="../../images/rh_icon.png"></image>
   <view class="title">-- 上热乎，吃点儿好的 --</view>
   <view class="toast">欢迎加入「热乎」</view>

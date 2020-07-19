@@ -1,0 +1,2 @@
+<!--components/Sort/sort.wxml-->
+<view class="sort_box">{{val}}</view>

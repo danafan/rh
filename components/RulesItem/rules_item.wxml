@@ -1,0 +1,5 @@
+<!--components/ RulesItem/rules_item.wxml-->
+<view class="rule_item">
+  <image class="rule_icon" src="../../images/selected.png"></image>
+  <view class="rule_text">{{val}}</view>
+</view>

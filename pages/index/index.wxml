@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="index_container">
+<view class="container index_container">
   <view class="fixed" style='opacity:{{scrollTop}};height:{{startBarHeight + navgationHeight}}px'>
   </view>
   <view class="navgation_box">
@@ -9,7 +9,14 @@
       <image class="location_icon" src="../../images/xia.png" bindtap="getLocationInfo"></image>
       <view class="search_input" bindtap="search">
         <image class="search_icon" src="../../images/search_icon.png"></image>
-        <view class="input_text">搜店铺 福利</view>
+        <swiper class="swiper_search" autoplay interval="3000" circular vertical>
+            <swiper-item>
+              <view class="input_text">搜店铺 优惠</view>
+            </swiper-item>
+            <swiper-item>
+              <view class="input_text">上热乎 吃点儿好的</view>
+            </swiper-item>
+          </swiper>
       </view>
       <view class="zhan"></view>
     </view>
@@ -23,47 +30,63 @@
         </swiper-item>
       </swiper>
       <!-- 分类 -->
-      <view class="category_row">
-        <view class="category_item" data-id="1" data-index="0" bindtap="service">
-          <image class="cate_icon" src="../../images/cate_05.png"></image>
-          <view class="cate_txt">火锅</view>
+      <view class="category_box">
+        <view class="category_row">
+          <view class="category_item" data-id="1" data-index="0" bindtap="service">
+            <image class="cate_icon" src="../../images/cate_05.png"></image>
+            <view class="cate_txt">火锅</view>
+          </view>
+          <view class="category_item" data-id="2" data-index="1" bindtap="service">
+            <image class="cate_icon" src="../../images/cate_04.png"></image>
+            <view class="cate_txt">烧烤</view>
+          </view>
+          <view class="category_item" data-id="3" data-index="2" bindtap="service">
+            <image class="cate_icon" src="../../images/cate_03.png"></image>
+            <view class="cate_txt">烤鱼</view>
+          </view>
+          <view class="category_item" data-id="5" data-index="4" bindtap="service">
+            <image class="cate_icon" src="../../images/cate_04.png"></image>
+            <view class="cate_txt">海鲜</view>
+          </view>
+          <view class="category_item" data-id="4" data-index="3" bindtap="service">
+            <image class="cate_icon" src="../../images/cate_02.png"></image>
+            <view class="cate_txt">自助餐</view>
+          </view>
+          <view class="category_item" data-id="6" data-index="5" bindtap="service">
+            <image class="cate_icon" src="../../images/cate_05.png"></image>
+            <view class="cate_txt">内蒙菜</view>
+          </view>
+          <view class="category_item" data-id="5" data-index="4" bindtap="service">
+            <tag class="category_tag" val="无辣不欢" background="#ff5858" color="#fff" />
+            <image class="cate_icon" src="../../images/cate_04.png"></image>
+            <view class="cate_txt">川湘菜</view>
+          </view>
+          <view class="category_item" data-id="5" data-index="4" bindtap="service">
+            <image class="cate_icon" src="../../images/cate_04.png"></image>
+            <view class="cate_txt">日韩料理</view>
+          </view>
+          <view class="category_item" data-id="6" data-index="5" bindtap="service">
+            <image class="cate_icon" src="../../images/cate_05.png"></image>
+            <view class="cate_txt">西餐</view>
+          </view>
+          <view class="category_item" data-id="5" data-index="4" bindtap="service">
+            <image class="cate_icon" src="../../images/cate_04.png"></image>
+            <view class="cate_txt">蛋糕</view>
+          </view>
         </view>
-        <view class="category_item" data-id="2" data-index="1" bindtap="service">
-          <image class="cate_icon" src="../../images/cate_04.png"></image>
-          <view class="cate_txt">烧烤</view>
-        </view>
-        <view class="category_item" data-id="3" data-index="2" bindtap="service">
-          <image class="cate_icon" src="../../images/cate_03.png"></image>
-          <view class="cate_txt">烤鱼</view>
-        </view>
-        <view class="category_item" data-id="5" data-index="4" bindtap="service">
-          <image class="cate_icon" src="../../images/cate_04.png"></image>
-          <view class="cate_txt">海鲜</view>
-        </view>
-        <view class="category_item" data-id="4" data-index="3" bindtap="service">
-          <image class="cate_icon" src="../../images/cate_02.png"></image>
-          <view class="cate_txt">自助餐</view>
-        </view>
-        <view class="category_item" data-id="6" data-index="5" bindtap="service">
-          <image class="cate_icon" src="../../images/cate_05.png"></image>
-          <view class="cate_txt">内蒙菜</view>
-        </view>
-        <view class="category_item" data-id="5" data-index="4" bindtap="service">
-          <view class="category_tag">无辣不欢</view>
-          <image class="cate_icon" src="../../images/cate_04.png"></image>
-          <view class="cate_txt">川湘菜</view>
-        </view>
-        <view class="category_item" data-id="5" data-index="4" bindtap="service">
-          <image class="cate_icon" src="../../images/cate_04.png"></image>
-          <view class="cate_txt">日韩料理</view>
-        </view>
-        <view class="category_item" data-id="6" data-index="5" bindtap="service">
-          <image class="cate_icon" src="../../images/cate_05.png"></image>
-          <view class="cate_txt">西餐</view>
-        </view>
-        <view class="category_item" data-id="5" data-index="4" bindtap="service">
-          <image class="cate_icon" src="../../images/cate_04.png"></image>
-          <view class="cate_txt">蛋糕</view>
+        <view class="web_tags">
+          <view class="web_tag_item">
+            <image class="tag_item_icon" src="../../images/hook.png"></image>
+            <view class="tag_item_text">随时退</view>
+          </view>
+          <view class="web_tag_item">
+            <image class="tag_item_icon" src="../../images/hook.png"></image>
+            <view class="tag_item_text">免预约</view>
+          </view>
+          <view class="web_tag_item">
+            <image class="tag_item_icon" src="../../images/hook.png"></image>
+            <view class="tag_item_text">过期自动退</view>
+          </view>
         </view>
       </view>
     </view>
@@ -87,121 +110,42 @@
               <text class="swiper_second_text">好吃不上火</text>
             </swiper-item>
           </swiper>
+          <view class="all" bindtap="goList">
+            <view>发现更多优惠</view>
+            <image class="more_right" src="../../images/more_right.png"></image>
+          </view>
         </view>
         <swiper class="offer_box" next-margin="50rpx" indicator-dots="true" indicator-color="rgba(255,255,255,0.8)" indicator-active-color="#ff5858">
-          <swiper-item bindtap="goDetail">
+          <swiper-item wx:for="{{preferential}}" wx:key="index">
             <view class="offer_item">
               <view class="store_name">
                 <view class="name_icon"></view>
-                <view class="name">星巴克（故宫店）</view>
+                <view class="name">{{item.store_name}}</view>
               </view>
-              <view class="store_content">
-                <view class="store_left">
-                  <image class="store_icon" src="../../images/banner_02.jpg"></image>
-                  <view class="remaining">仅剩
-                    <text class="red_color">18</text>份</view>
-                </view>
-                <view class="store_right">
-                  <view class="store_title">【星巴克】红茶玛奇朵1份星巴克】红茶玛奇朵1份星巴克】红茶玛奇朵1份</view>
-                  <view class="has_rob">118人已抢</view>
-                  <view class="right_bottom">
-                    <view class="price_box">
-                      <view class="price red_color">¥12.9</view>
-                      <view>
-                        <view class="discount">8.5折</view>
-                        <view class="hua">¥39</view>
-                      </view>
-                    </view>
-                    <view class="rob">马上抢</view>
-                  </view>
-                </view>
-              </view>
-            </view>
-          </swiper-item>
-          <swiper-item bindtap="goDetail">
-            <view class="offer_item">
-              <view class="store_name">
-                <view class="name_icon"></view>
-                <view class="name">星巴克（故宫店）</view>
-              </view>
-              <view class="store_content">
-                <view class="store_left">
-                  <image class="store_icon" src="../../images/banner_02.jpg"></image>
-                  <view class="remaining">仅剩
-                    <text class="red_color">18</text>份</view>
-                </view>
-                <view class="store_right">
-                  <view class="store_title">【星巴克】红茶玛奇朵1份星巴克】红茶玛奇朵1份星巴克】红茶玛奇朵1份</view>
-                  <view class="has_rob">118人已抢</view>
-                  <view class="right_bottom">
-                    <view class="price_box">
-                      <view class="price red_color">¥12.9</view>
-                      <view>
-                        <view class="discount">8.5折</view>
-                        <view class="hua">¥39</view>
-                      </view>
-                    </view>
-                    <view class="rob">马上抢</view>
-                  </view>
-                </view>
-              </view>
-            </view>
-          </swiper-item>
-          <swiper-item bindtap="goDetail">
-            <view class="offer_item">
-              <view class="store_name">
-                <view class="name_icon"></view>
-                <view class="name">星巴克（故宫店）</view>
-              </view>
-              <view class="store_content">
-                <view class="store_left">
-                  <image class="store_icon" src="../../images/banner_02.jpg"></image>
-                  <view class="remaining">仅剩
-                    <text class="red_color">18</text>份</view>
-                </view>
-                <view class="store_right">
-                  <view class="store_title">【星巴克】红茶玛奇朵1份星巴克】红茶玛奇朵1份星巴克】红茶玛奇朵1份</view>
-                  <view class="has_rob">118人已抢</view>
-                  <view class="right_bottom">
-                    <view class="price_box">
-                      <view class="price red_color">¥12.9</view>
-                      <view>
-                        <view class="discount">8.5折</view>
-                        <view class="hua">¥39</view>
-                      </view>
-                    </view>
-                    <view class="rob">马上抢</view>
-                  </view>
-                </view>
-              </view>
+              <coupons_item coupons_info="{{item}}" page_type="index"/>
             </view>
           </swiper-item>
         </swiper>
       </view>
       <!-- 人气标榜 -->
       <view class="as_box">
-        <view class="sentiment_box">
-          <image class="wings" src="../../images/wings_left.png"></image>
-          <view class="sentiment_text">人气飙榜</view>
-          <image class="wings" src="../../images/wings_right.png"></image>
-        </view>
+        <view class="sentiment_box">人气飙榜</view>
         <view class="store_list">
           <view class="one" bindtap="storeDetail">
             <view class="as_store_name_one">千岛湖酸菜鱼</view>
             <image class="one_icon" src="../../images/banner_01.png"></image>
-            <text class="on_pin_big">全城火锅人气第一名</text>
-            <text class="grass_num">48种草</text>
+            <sort class="on_pin_big" val="全城火锅人气第一名" />
           </view>
           <view class="tt">
             <view class="tt_icon_box" bindtap="storeDetail">
               <view class="as_store_name as_store_name_two">千岛湖酸菜鱼</view>
               <image class="tt_icon" src="../../images/banner_02.jpg"></image>
-              <view class="on_pin_small">全城火锅人气第二名</view>
+              <sort class="on_pin_small" val="全城火锅人气第二名" />
             </view>
             <view class="tt_icon_box" bindtap="storeDetail">
               <view class="as_store_name as_store_name_three">千岛湖酸菜鱼</view>
               <image class="tt_icon" src="../../images/banner_03.jpg"></image>
-              <view class="on_pin_small">全城烧烤人气第一名</view>
+              <sort class="on_pin_small" val="全城烧烤人气第一名" />
             </view>
           </view>
         </view>
@@ -213,9 +157,6 @@
       </view>
       <!-- 优选列表 -->
       <push_item wx:for="{{info_list}}" wx:key="store_id" infoItem="{{item}}" />
-      <!-- <push_item/>
-      <push_item/>
-      <push_item/> -->
     </view>
   </view>
 

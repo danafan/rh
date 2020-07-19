@@ -14,7 +14,7 @@
 }
 
 .recommended {
-  background-image: linear-gradient(to right, #f37464, #ff5858);
+  background: #d1b171;
   border-radius: 0 21rpx 21rpx 21rpx;
   position: absolute;
   top: 0;

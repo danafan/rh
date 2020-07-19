@@ -1,0 +1,64 @@
+/* pages/coupons_list/coupons_list.wxss */
+.tab_row {
+  padding-left: 15rpx;
+  background: #44ad99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.tab_item {
+  margin-right: 25rpx;
+  height: 60rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.tab_label {
+  font-size: 32rpx;
+  color: #fff;
+}
+.active_tab_label{
+  font-size: 34rpx;
+  font-weight: 700;
+}
+
+.active_tab {
+  border-radius: 3rpx;
+  position: absolute;
+  bottom: 0;
+  width: 60%;
+  height: 6rpx;
+  background: #ff5858;
+}
+
+.content {
+  position: relative;
+}
+
+.top_back {
+  border-radius: 0 0 50rpx 50rpx;
+  background-image: linear-gradient(to bottom, #44ad99, #48b9a3);
+  height: 320rpx;
+}
+
+.list_box{
+  margin-bottom: 20rpx;
+  box-shadow: 0 0 8rpx #bfbfbf;
+  position: absolute;
+  top: 100rpx;
+  left: 50%;
+  transform: translate(-50%);
+  width: 710rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  padding: 10rpx;
+}
+

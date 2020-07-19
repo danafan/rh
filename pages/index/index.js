@@ -22,7 +22,55 @@ Page({
       id: "3",
       img_url: "../../images/banner_03.jpg"
     }], //轮播图
-    page: 1, //当前页码
+    preferential: [{
+      id: "1",
+      store_name: "一点点（人民路店）",
+      goods_name: "红茶玛奇朵一份",
+      total_num:200,
+      rob_num: 118,
+      old_price: "39",
+      now_price: "12.9",
+      discount: "8.5",
+      type: "1"
+    }, {
+      id: "2",
+      store_name: "外婆家",
+      goods_name: "100元代金券一张",
+      total_num: 200,
+      rob_num: 32,
+      old_price: "100",
+      now_price: "80",
+      discount: "8.0",
+      type: "2"
+    }, {
+      id: "3",
+      store_name: "叫了只炸鸡",
+      goods_name: "椒盐整鸡一份",
+      rob_num: 65,
+      old_price: "42.5",
+      now_price: "19.8",
+      discount: "7.5",
+      type: "1"
+    }, {
+      id: "2",
+      store_name: "江南民家",
+      goods_name: "200元代金券一张",
+      total_num: 200,
+      rob_num: 12,
+      old_price: "200",
+      now_price: "150",
+      discount: "8.5",
+      type: "2"
+    }, {
+      id: "1",
+      store_name: "星巴克（西湖店）",
+      goods_name: "摩卡一杯",
+      rob_num: 16,
+      old_price: "28",
+      now_price: "12",
+      discount: "8.5",
+      type: "1"
+    }],       //优惠列表
     info_list: [{
       preferential_type: "1",
       store_id: '1',
@@ -59,12 +107,13 @@ Page({
       end_time: "2020.07.08-2020.08.08",
       price: "108",
       original_price: "288",
-    }], //信息列表
-    isLoad: true, //默认可以加载
-    category_list: [],
+    }], //套餐列表
+    category_list: [], //分类列表
     startBarHeight: 0,
     navgationHeight: 0,
     scrollTop: 0, //距离顶部距离（顶部透明度）
+    isLoad: true, //默认可以加载
+    page: 1, //当前页码
   },
   onLoad: function(options) {
     //获取粉丝总数
@@ -85,10 +134,10 @@ Page({
       url: '/pages/store_detail/store_detail',
     });
   },
-  //进入详情
-  goDetail() {
+  //进入优惠列表
+  goList(){
     wx.navigateTo({
-      url: '/pages/goods_detail/goods_detail',
+      url: '/pages/coupons_list/coupons_list',
     });
   },
   onPageScroll: function(e) { // 页面滚动监听

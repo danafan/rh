@@ -2,7 +2,7 @@
 <view class="push_container" data-preferential_type="{{infoItem.preferential_type}}" bindtap="goDetail">
   <view class="top_box">
     <image class="goods_img" src="../../images/banner_03.jpg"></image>
-    <view class="grass" catchtap="storeDetail">进店看看>></view>
+    <view class="grass">火锅</view>
   </view>
   <view class="name_box">
     <view class="store_name">品牌：{{infoItem.store_name}}</view>
@@ -12,7 +12,7 @@
     </view>
   </view>
   <view class="sort_box_row">
-    <view class="sort_box">萧山区烤鱼人气第一名</view>
+    <sort val="萧山区烤鱼人气第一名"/>
   </view>
   <view class="desc">{{infoItem.desc}}，请提前购买，请在有效期内使用。</view>
   <view class="bottom_box">

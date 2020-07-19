@@ -1,27 +1,13 @@
 /* pages/coupons_detail/coupons_detail.vue.wxss */
-
-.coupons_box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 10rpx;
-}
-
-.coupons_money_box {
-  margin-bottom: 20rpx;
-  box-shadow: 5rpx 5rpx 10rpx #bfbfbf;
-  padding: 10rpx;
-}
-
+/* 代金券 */
 .coupons_info{
+  margin-top: 30rpx;
   border-radius: 20rpx 20rpx 0 0;
   position: relative;
   left: 50%;
   transform: translate(-50%);
   background-image: linear-gradient(to bottom, #0B0C12,#1B2837);
-  width: 90%;
+  width: 680rpx;
   height: 160rpx;
   color: #d1b171;
   text-align: center;
@@ -36,6 +22,34 @@
 .coupons_text{
   font-size: 46rpx;
   font-weight: 700;
+}
+/* 特价菜 */
+.special_box{
+  box-shadow: 5rpx 5rpx 10rpx #bfbfbf;
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+  border-radius: 20rpx 20rpx 0 0;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 580rpx;
+  padding: 15rpx;
+}
+.food_name{
+  margin-bottom: 15rpx;
+  font-size: 32rpx;
+  color: #333;
+  font-weight: 800;
+}
+.food_icon{
+  width: 550rpx;
+  height: 380rpx;
+}
+
+.coupons_money_box {
+  margin-bottom: 20rpx;
+  box-shadow: 5rpx 5rpx 10rpx #bfbfbf;
+  padding: 10rpx;
 }
 .coupons_title{
   width: 100%;
@@ -56,22 +70,6 @@
 }
 .rules {
   margin-top: 15rpx;
-}
-
-.rule_item {
-  margin-bottom: 8rpx;
-  display: flex;
-}
-
-.rule_icon {
-  margin-right: 8rpx;
-  width: 30rpx;
-  height: 30rpx;
-}
-
-.rule_text {
-  font-size: 25rpx;
-  color: #333;
 }
 
 .goods_list{

@@ -1,13 +1,4 @@
 /* pages/store_detail/store_detail.wxss */
-
-.detail_box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .top_box {
   width: 100%;
   height: 320rpx;
@@ -105,15 +96,7 @@
   font-size: 28rpx;
   color: #fff;
 }
-.sort_box{
-  background: #f9d9d0;
-  height: 34rpx;
-  padding-left: 12rpx;
-  padding-right: 12rpx;
-  line-height: 34rpx;
-  font-size: 22rpx;
-  color: #ff5858;
-}
+
 .tags {
   position: absolute;
   bottom: 0;
@@ -121,18 +104,6 @@
   width: 100%;
   display: flex;
   align-content: center;
-}
-
-.tag {
-  margin-right: 15rpx;
-  border-radius: 18rpx 18rpx 18rpx 0;
-  background: #fdf0dd;
-  height: 36rpx;
-  line-height: 36rpx;
-  padding-left: 10rpx;
-  padding-right: 10rpx;
-  font-size: 22rpx;
-  color: #ff5858;
 }
 
 .setting_box {
@@ -268,22 +239,6 @@
 
 .rules {
   margin-top: 15rpx;
-}
-
-.rule_item {
-  margin-bottom: 8rpx;
-  display: flex;
-}
-
-.rule_icon {
-  margin-right: 8rpx;
-  width: 30rpx;
-  height: 30rpx;
-}
-
-.rule_text {
-  font-size: 25rpx;
-  color: #333;
 }
 
 .toast_desc {

@@ -1,0 +1,2 @@
+<!--components/Tag/tag.wxml-->
+<view class="tag {{margin?'margin':''}}" style="background:{{background}};color:{{color}}">{{val}}</view>

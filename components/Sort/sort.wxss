@@ -1,0 +1,11 @@
+/* components/Sort/sort.wxss */
+.sort_box{
+  position: relative;
+  background: #f9d9d0;
+  height: 34rpx;
+  line-height: 34rpx;
+  padding-left: 12rpx;
+  padding-right: 12rpx;
+  font-size: 22rpx;
+  color: #ff5858;
+}

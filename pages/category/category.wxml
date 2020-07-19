@@ -1,5 +1,5 @@
 <!--pages/service/service.wxml-->
-<view class="service_container">
+<view class="container service_container">
   <!-- 顶部导航 -->
   <swiper class="tab_list" display-multiple-items="5" current="{{active_index}}">
     <swiper-item wx:for="{{category_list}}" wx:key="category_id">

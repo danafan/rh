@@ -1,5 +1,5 @@
 <!--pages/my/my.wxml-->
-<view class="my_container">
+<view class="container my_container">
   <!-- 顶部黑色 -->
   <view class="top_back">
     <view class="user_img_box" wx:if="{{wxUser}}">

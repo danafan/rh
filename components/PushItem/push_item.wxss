@@ -27,7 +27,7 @@
 .grass{
   position: absolute;
   bottom: 20rpx;
-  right: 8rpx;
+  left: 8rpx;
   border-radius: 24rpx;
   background: rgba(0, 0, 0, .6);
   height: 48rpx;
@@ -35,7 +35,7 @@
   padding-left: 20rpx;
   padding-right: 20rpx;
   font-size: 22rpx;
-  color: #ff5858;
+  color: #fff;
 }
 
 .name_box{
@@ -88,15 +88,6 @@
   padding-left: 8rpx;
   display: flex;
   align-items: center;
-}
-.sort_box{
-  background: #f9d9d0;
-  height: 34rpx;
-  padding-left: 12rpx;
-  padding-right: 12rpx;
-  line-height: 34rpx;
-  font-size: 22rpx;
-  color: #ff5858;
 }
 .bottom_box{
   margin-top: 15rpx;

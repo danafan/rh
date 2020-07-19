@@ -4,6 +4,8 @@
   "usingComponents": {
     "location_phone": "../../components/LocationPhone/location_phone",
     "welfare_item": "../../components/WelfareItem/welfare_item",
-    "goods_item": "../../components/GoodsItem/goods_item"
+    "goods_item": "../../components/GoodsItem/goods_item",
+    "tag": "../../components/Tag/tag",
+    "sort": "../../components/Sort/sort"
   }
 }
