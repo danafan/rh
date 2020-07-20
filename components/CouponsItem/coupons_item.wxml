@@ -1,10 +1,12 @@
 <!--components/CouponsItem/coupons_item.wxml-->
 <view class="store_content {{page_type == 'list'?'margin':''}}" data-type="{{coupons_info.type}}" bindtap="goDetail">
   <view class="store_left">
-    <image class="store_icon" src="../../images/banner_02.jpg"  wx:if="{{coupons_info.type == '1'}}"></image>
+    <image class="store_icon" src="../../images/banner_02.jpg" wx:if="{{coupons_info.type == '1'}}"></image>
     <view class="store_icon vouchers_back" wx:if="{{coupons_info.type == '2'}}">
-      <text class="money_icon">¥</text>
-      <text class="money_text">100</text>
+      <view class="money_center">
+        <text class="money_icon">¥</text>
+        <text class="money_text">100</text>
+      </view>
     </view>
     <view class="remaining" wx:if="{{page_type == 'index' && coupons_info.total_num}}">仅剩
       <text class="red_color">{{coupons_info.total_num-coupons_info.rob_num}}</text>份
@@ -25,7 +27,9 @@
         </view>
       </view>
       <view class="rob" wx:if="{{page_type == 'index'}}">马上抢</view>
-      <view class="rob_num red_color" wx:if="{{page_type == 'list'}}">{{coupons_info.rob_num}}人已抢</view>
+      <view class="rob_num red_color" wx:if="{{page_type == 'list'}}">
+        {{coupons_info.rob_num}}人已抢
+      </view>
     </view>
   </view>
 </view>

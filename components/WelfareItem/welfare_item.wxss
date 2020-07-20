@@ -1,8 +1,17 @@
 /* components/WelfareItem/welfare_item.wxss */
 .bus_item{
   border-bottom:1rpx solid #e6e6e6;
-  padding-bottom: 15rpx;
-  padding-top: 15rpx;
+  padding: 15rpx 10rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.special{
+  margin-bottom: 20rpx;
+  box-shadow: 0 0 6rpx #bfbfbf;
+  padding: 15rpx 10rpx;
   width: 100%;
   display: flex;
   align-items: center;
@@ -10,12 +19,12 @@
 }
 .store_banner{
   margin-right: 10rpx;
-  width: 150rpx;
-  height: 150rpx;
+  width: 180rpx;
+  height: 180rpx;
 }
 .bus_content{
   flex: 1;
-  height: 150rpx;
+  height: 180rpx;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -30,13 +39,23 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
+
+.bus_price_top{
+  display: flex;
+}
 .bus_price{
-  font-size: 32rpx;
+  font-size: 34rpx;
   font-weight: 700;
   color: #ff5858;
 }
+.tag_icon{
+  position: relative;
+  top: -10rpx;
+  right: -5rpx;
+}
 .hua{
   margin-left: 8rpx;
+  margin-right: 8rpx;
   text-decoration:line-through;
   font-size: 26rpx;
   color: #8a8a8a;

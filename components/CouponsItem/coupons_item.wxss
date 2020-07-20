@@ -30,7 +30,15 @@
   align-items: center;
   justify-content: center;
   color: #fff;
+}
+.money_center{
+  height:110rpx;
+  display:table-cell;
   vertical-align:bottom;
+}
+.money_icon{
+  font-size: 32rpx;
+  font-weight: 700;
 }
 .money_text{
   font-size: 72rpx;

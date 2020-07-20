@@ -49,33 +49,20 @@
     </view>
     <!-- 套餐/券 -->
     <view wx:if="{{active_tab == '1'}}">
-      <view class="special" data-type="1" bindtap="goDetail">
-        <image class="store_banner" src="../../images/banner_02.jpg"></image>
-        <view class="bus_content">
-          <view class="bus_title">【特价】泰式珍珠蟹一份</view>
-          <view>
-            <view class="bus_price_top">
-              <view class="bus_price">¥78</view>
-              <tag class="tag_icon" val="7.8折" background="#f9d9d0" color="#ff5858" />
-            </view>
-            <view class="hua">门店价：¥188</view>
-          </view>
-        </view>
-        <view class="right_box">
-          <view class="but">马上抢</view>
-          <view class="desc">108人已抢</view>
-        </view>
-      </view>
+      <!-- 特价菜 -->
+      <welfare_item type="1" />
+      <!-- 优惠券 -->
       <view class="package_list">
         <view class="package_title">优惠券</view>
-        <vouchers data-type="2" bindtap="goDetail"/>
-        <vouchers data-type="2" bindtap="goDetail"/>
+        <vouchers data-type="2" bindtap="goDetail" />
+        <vouchers data-type="2" bindtap="goDetail" />
       </view>
+      <!-- 套餐 -->
       <view class="package_list">
         <view class="package_title">到店套餐</view>
-        <welfare_item/>
-        <welfare_item/>
-        <welfare_item/>
+        <welfare_item type="2" />
+        <welfare_item type="2" />
+        <welfare_item type="2" />
       </view>
     </view>
     <!-- 菜品 -->

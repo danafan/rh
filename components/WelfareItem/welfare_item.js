@@ -4,7 +4,11 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    
+    // 1:特价菜；2:套餐（店铺页面）
+    type: {
+      type: String,
+      value: "1"
+    }
   },
 
   /**
@@ -19,10 +23,18 @@ Component({
    */
   methods: {
     //进入详情
-    goDetail() {
-      wx.navigateTo({
-        url: '/pages/goods_detail/goods_detail',
-      });
+    goDetail(e) {
+      let type = e.currentTarget.dataset.type;
+      if (type == '1') {
+        wx.navigateTo({
+          url: '/pages/coupons_detail/coupons_detail',
+        });
+      } else if (type == '2') {
+        wx.navigateTo({
+          url: '/pages/goods_detail/goods_detail',
+        });
+      }
+
     },
   }
 })
