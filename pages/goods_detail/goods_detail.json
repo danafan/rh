@@ -6,6 +6,8 @@
     "welfare_item": "../../components/WelfareItem/welfare_item",
     "tag": "../../components/Tag/tag",
     "sort": "../../components/Sort/sort",
-    "rules_item": "../../components/RulesItem/rules_item"
+    "rules_item": "../../components/RulesItem/rules_item",
+    "sold": "../../components/Sold/sold",
+    "web_tag": "../../components/WebTag/web_tag"
   }
 }

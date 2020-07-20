@@ -58,12 +58,21 @@
 .price_box{
   display: flex;
   flex-direction: column;
+}
+.zhe{
+  display: flex;
   align-items: center;
 }
 .price{
   font-size: 36rpx;
   color: #ff5858;
   font-weight: 700;
+  
+}
+.discount{
+  position: relative;
+  top: -16rpx;
+  right: -5rpx;
 }
 .hua{
   text-decoration:line-through;

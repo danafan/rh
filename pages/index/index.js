@@ -26,7 +26,7 @@ Page({
       id: "1",
       store_name: "一点点（人民路店）",
       goods_name: "红茶玛奇朵一份",
-      total_num:200,
+      total_num: 200,
       rob_num: 118,
       old_price: "39",
       now_price: "12.9",
@@ -70,43 +70,37 @@ Page({
       now_price: "12",
       discount: "8.5",
       type: "1"
-    }],       //优惠列表
+    }], //优惠列表
     info_list: [{
-      preferential_type: "1",
       store_id: '1',
       page_img: "../../images/banner_01.png",
-      remaining_num: '8',
       sold_num: '182',
-      grass_num: "1442",
       store_name: "同学少年 湘派小串",
       desc: "108元抢原价283元的【烤串3-4人套餐】",
       end_time: "2020.07.08-2020.08.08",
       price: "108",
       original_price: "288",
+      discount: "8.5"
     }, {
-      preferential_type: "2",
       store_id: '2',
       page_img: "../../images/banner_01.png",
-      remaining_num: '8',
       sold_num: '182',
-      grass_num: "1442",
       store_name: "同学少年 湘派小串",
       desc: "108元抢原价283元的【烤串3-4人套餐】",
       end_time: "2020.07.08-2020.08.08",
       price: "108",
       original_price: "288",
+      discount: "8.0"
     }, {
-      preferential_type: "1",
       store_id: '3',
       page_img: "../../images/banner_01.png",
-      remaining_num: '8',
       sold_num: '182',
-      grass_num: "1442",
       store_name: "同学少年 湘派小串",
       desc: "108元抢原价283元的【烤串3-4人套餐】",
       end_time: "2020.07.08-2020.08.08",
       price: "108",
       original_price: "288",
+      discount: "7.0"
     }], //套餐列表
     category_list: [], //分类列表
     startBarHeight: 0,
@@ -135,7 +129,7 @@ Page({
     });
   },
   //进入优惠列表
-  goList(){
+  goList() {
     wx.navigateTo({
       url: '/pages/coupons_list/coupons_list',
     });

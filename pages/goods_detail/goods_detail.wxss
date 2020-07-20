@@ -154,77 +154,6 @@
   align-items: center;
 }
 
-.sold_box {
-  margin-top: 30rpx;
-  box-shadow: 0 0 15rpx #bfbfbf;
-  width: 100%;
-  padding: 30rpx 10rpx;
-}
-
-.sold_top {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.sold_left {
-  display: flex;
-  align-items: center;
-}
-
-.crowd_icon {
-  margin-right: 10rpx;
-  width: 40rpx;
-  height: 40rpx;
-}
-
-.sold_num {
-  font-size: 24rpx;
-  color: #515151;
-}
-
-.sold_right {
-  background: #ff5858;
-  width: 200rpx;
-  text-align: center;
-  height: 56rpx;
-  line-height: 56rpx;
-  font-size: 25rpx;
-  color: #fff;
-}
-
-.solds {
-  margin-top: 30rpx;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.sold_icon {
-  border-radius: 50%;
-  width: 100rpx;
-  height: 100rpx;
-}
-
-.dians {
-  background: #e6e6e6;
-  border-radius: 50%;
-  width: 100rpx;
-  height: 100rpx;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.dian {
-  background: #fff;
-  border-radius: 50%;
-  width: 10rpx;
-  height: 10rpx;
-}
-
 .other_title {
   margin-top: 30rpx;
   font-size: 30rpx;
@@ -249,6 +178,7 @@
 }
 
 .package_box {
+  margin-top: 15rpx;
   margin-bottom: 10rpx;
   box-shadow: 0 0 5rpx #bfbfbf;
   width: 100%;

@@ -1,0 +1,15 @@
+<!--components/WebTag/web_tag.wxml-->
+<view class="web_tags">
+  <view class="web_tag_item">
+    <image class="tag_item_icon" src="../../images/hook.png"></image>
+    <view class="tag_item_text">随时退</view>
+  </view>
+  <view class="web_tag_item">
+    <image class="tag_item_icon" src="../../images/hook.png"></image>
+    <view class="tag_item_text">免预约</view>
+  </view>
+  <view class="web_tag_item">
+    <image class="tag_item_icon" src="../../images/hook.png"></image>
+    <view class="tag_item_text">过期自动退</view>
+  </view>
+</view>

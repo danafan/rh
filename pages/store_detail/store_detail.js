@@ -2,7 +2,6 @@
 Page({
   data: {
     active_tab:'1',         //选中的导航
-    isGrass:false,          //默认未种草
     tag_list: [{
       id: '1',
       val: '有宝宝椅'
@@ -17,11 +16,12 @@ Page({
   onLoad: function (options) {
 
   },
-  //种草
-  changeGrass(){
-    this.setData({
-      isGrass: !this.data.isGrass
-    })
+  //进入优惠详情
+  goDetail(e) {
+    let type = e.currentTarget.dataset.type;
+    wx.navigateTo({
+      url: '/pages/coupons_detail/coupons_detail?type=' + type,
+    });
   },
   //切换导航
   checkTab(e){

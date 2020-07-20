@@ -10,13 +10,13 @@
       <view class="search_input" bindtap="search">
         <image class="search_icon" src="../../images/search_icon.png"></image>
         <swiper class="swiper_search" autoplay interval="3000" circular vertical>
-            <swiper-item>
-              <view class="input_text">搜店铺 优惠</view>
-            </swiper-item>
-            <swiper-item>
-              <view class="input_text">上热乎 吃点儿好的</view>
-            </swiper-item>
-          </swiper>
+          <swiper-item>
+            <view class="input_text">搜店铺 优惠</view>
+          </swiper-item>
+          <swiper-item>
+            <view class="input_text">上热乎 吃点儿好的</view>
+          </swiper-item>
+        </swiper>
       </view>
       <view class="zhan"></view>
     </view>
@@ -74,20 +74,7 @@
             <view class="cate_txt">蛋糕</view>
           </view>
         </view>
-        <view class="web_tags">
-          <view class="web_tag_item">
-            <image class="tag_item_icon" src="../../images/hook.png"></image>
-            <view class="tag_item_text">随时退</view>
-          </view>
-          <view class="web_tag_item">
-            <image class="tag_item_icon" src="../../images/hook.png"></image>
-            <view class="tag_item_text">免预约</view>
-          </view>
-          <view class="web_tag_item">
-            <image class="tag_item_icon" src="../../images/hook.png"></image>
-            <view class="tag_item_text">过期自动退</view>
-          </view>
-        </view>
+        <web_tag/>
       </view>
     </view>
     <view class="content">
@@ -122,31 +109,29 @@
                 <view class="name_icon"></view>
                 <view class="name">{{item.store_name}}</view>
               </view>
-              <coupons_item coupons_info="{{item}}" page_type="index"/>
+              <coupons_item coupons_info="{{item}}" page_type="index" />
             </view>
           </swiper-item>
         </swiper>
       </view>
       <!-- 人气标榜 -->
-      <view class="as_box">
-        <view class="sentiment_box">人气飙榜</view>
-        <view class="store_list">
-          <view class="one" bindtap="storeDetail">
-            <view class="as_store_name_one">千岛湖酸菜鱼</view>
-            <image class="one_icon" src="../../images/banner_01.png"></image>
-            <sort class="on_pin_big" val="全城火锅人气第一名" />
+      <view class="sentiment_box">人气飙榜</view>
+      <view class="store_list">
+        <view class="one" bindtap="storeDetail">
+          <view class="as_store_name_one">千岛湖酸菜鱼</view>
+          <image class="one_icon" src="../../images/banner_01.png"></image>
+          <sort class="on_pin_big" val="全城火锅人气第一名" />
+        </view>
+        <view class="tt">
+          <view class="tt_icon_box" bindtap="storeDetail">
+            <view class="as_store_name as_store_name_two">千岛湖酸菜鱼</view>
+            <image class="tt_icon" src="../../images/banner_02.jpg"></image>
+            <sort class="on_pin_small" val="全城火锅人气第二名" />
           </view>
-          <view class="tt">
-            <view class="tt_icon_box" bindtap="storeDetail">
-              <view class="as_store_name as_store_name_two">千岛湖酸菜鱼</view>
-              <image class="tt_icon" src="../../images/banner_02.jpg"></image>
-              <sort class="on_pin_small" val="全城火锅人气第二名" />
-            </view>
-            <view class="tt_icon_box" bindtap="storeDetail">
-              <view class="as_store_name as_store_name_three">千岛湖酸菜鱼</view>
-              <image class="tt_icon" src="../../images/banner_03.jpg"></image>
-              <sort class="on_pin_small" val="全城烧烤人气第一名" />
-            </view>
+          <view class="tt_icon_box" bindtap="storeDetail">
+            <view class="as_store_name as_store_name_three">千岛湖酸菜鱼</view>
+            <image class="tt_icon" src="../../images/banner_03.jpg"></image>
+            <sort class="on_pin_small" val="全城烧烤人气第一名" />
           </view>
         </view>
       </view>

@@ -1,0 +1,24 @@
+/* components/WebTag/web_tag.wxss */
+.web_tags {
+  margin-top: 10rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.web_tag_item {
+  display: flex;
+  align-items: center;
+}
+
+.tag_item_icon {
+  margin-right: 8rpx;
+  width: 28rpx;
+  height: 28rpx;
+}
+
+.tag_item_text {
+  font-size: 24rpx;
+  color: #bfbfbf;
+}

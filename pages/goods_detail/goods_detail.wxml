@@ -30,33 +30,13 @@
     <!-- 位置和电话 -->
     <location_phone/>
     <!-- 已售 -->
-    <view class="sold_box">
-      <view class="sold_top">
-        <view class="sold_left">
-          <image class="crowd_icon" src="../../images/crowd.png"></image>
-          <view class="sold_num">已售323份</view>
-        </view>
-        <view class="sold_right">邀请好友一起抢</view>
-      </view>
-      <view class="solds">
-        <image class="sold_icon" src="../../images/banner_01.png"></image>
-        <image class="sold_icon" src="../../images/banner_01.png"></image>
-        <image class="sold_icon" src="../../images/banner_01.png"></image>
-        <image class="sold_icon" src="../../images/banner_01.png"></image>
-        <image class="sold_icon" src="../../images/banner_01.png"></image>
-        <view class="dians">
-          <view class="dian"></view>
-          <view class="dian bian"></view>
-          <view class="dian"></view>
-        </view>
-      </view>
-    </view>
+    <sold/>
     <!-- 其他福利 -->
-    <view class="other_title">其他福利（2）</view>
+    <!-- <view class="other_title">其他福利（2）</view>
     <view class="other_box">
       <welfare_item/>
       <welfare_item/>
-    </view>
+    </view> -->
     <!-- 使用规则 -->
     <view class="other_title">使用规则</view>
     <view class="rules">
@@ -66,6 +46,7 @@
     <view class="toast_desc">
       温馨提示：特价产品不支持退款，过期自动退扣20%手续费，请提前购买，在有效期内使用。
     </view>
+    <web_tag/>
     <!-- 套餐（只有套餐才显示） -->
     <view class="package_box">
       <view class="package_title">-- 套餐内容 --</view>

@@ -21,24 +21,11 @@ Component({
     current_index: 0, //当前选中的大图下标
   },
   methods: {
-    //进入店铺详情
-    storeDetail() {
+    //进入详情
+    goDetail() {
       wx.navigateTo({
-        url: '/pages/store_detail/store_detail',
+        url: '/pages/goods_detail/goods_detail',
       });
-    },
-    //进入详情(套餐或优惠券)
-    goDetail(e) {
-      let preferential_type = e.currentTarget.dataset.preferential_type;
-      if (preferential_type == '1') { //套餐
-        wx.navigateTo({
-          url: '/pages/goods_detail/goods_detail',
-        });
-      } else { //优惠券
-        wx.navigateTo({
-          url: '/pages/coupons_detail/coupons_detail',
-        });
-      }
     },
     // //获取图片真实宽度
     // imageLoad(e) {

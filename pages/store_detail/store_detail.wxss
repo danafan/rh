@@ -31,7 +31,7 @@
   padding-right: 10rpx;
 }
 .shadow_box{
-  box-shadow: 0 0 8rpx #bfbfbf;
+  box-shadow: 0 0 6rpx #bfbfbf;
   border-radius: 15rpx;
   margin: 30rpx auto;
   background: #fff;
@@ -85,14 +85,14 @@
   flex-direction: column;
   align-items: center;
 }
-.grass_icon{
-  width: 42rpx;
-  height: 42rpx;
+.share_icon{
+  width: 58rpx;
+  height: 58rpx;
 }
-.grass_num{
+.share_text{
   margin-top: 5rpx;
   font-size: 24rpx;
-  color: #ff5858;
+  color: #515151;
 }
 .business_hours{
   margin-top: 20rpx;
@@ -135,12 +135,101 @@
   width: 80%;
   height: 6rpx;
 }
+
+.special{
+  margin-bottom: 20rpx;
+  box-shadow: 0 0 6rpx #bfbfbf;
+  padding: 15rpx 10rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.store_banner{
+  margin-right: 10rpx;
+  width: 180rpx;
+  height: 180rpx;
+}
+.bus_content{
+  flex: 1;
+  height: 180rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bus_title{
+  font-size: 28rpx;
+  font-weight: 700;
+  color: #0b0d1d;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.bus_price_top{
+  display: flex;
+}
+.bus_price{
+  font-size: 34rpx;
+  font-weight: 700;
+  color: #ff5858;
+}
+.tag_icon{
+  position: relative;
+  top: -10rpx;
+  right: -5rpx;
+}
+.hua{
+  margin-left: 8rpx;
+  margin-right: 8rpx;
+  text-decoration:line-through;
+  font-size: 26rpx;
+  color: #8a8a8a;
+}
+.right_box{
+  width: 130rpx;
+  height: 150rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.but{
+  background-image: linear-gradient(to right, #f37464, #ff5858);
+  height: 50rpx;
+  line-height: 50rpx;
+  width: 125rpx;
+  text-align: center;
+  font-size: 24rpx;
+  border-radius: 25rpx;
+  color: #fff;
+}
+.desc{
+  position: absolute;
+  bottom: 0;
+  font-size: 22rpx;
+  color: #8a8a8a;
+}
+/* 到店套餐 */
+.package_list{
+  margin-bottom: 20rpx;
+  box-shadow: 0 0 6rpx #bfbfbf;
+  padding: 10rpx;
+}
+.package_title{
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+  color: #333;
+}
 /*  菜品列表 */
 .goods_list{
   box-shadow: 0 0 8rpx #bfbfbf;
   border-radius: 15rpx;
-  /* margin-top: 20rpx;
-  background: #fff; */
   width: 100%;
   padding: 10rpx;
   display: flex;

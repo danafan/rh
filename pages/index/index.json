@@ -8,6 +8,7 @@
     "coupons_item": "../../components/CouponsItem/coupons_item",
     "bottom": "../../components/Bottom/bottom",
     "tag": "../../components/Tag/tag",
-    "sort": "../../components/Sort/sort"
+    "sort": "../../components/Sort/sort",
+    "web_tag": "../../components/WebTag/web_tag"
   }
 }

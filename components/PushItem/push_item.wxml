@@ -1,5 +1,5 @@
 <!--components/PushItem/push_item.wxml-->
-<view class="push_container" data-preferential_type="{{infoItem.preferential_type}}" bindtap="goDetail">
+<view class="push_container" bindtap="goDetail">
   <view class="top_box">
     <image class="goods_img" src="../../images/banner_03.jpg"></image>
     <view class="grass">火锅</view>
@@ -7,7 +7,10 @@
   <view class="name_box">
     <view class="store_name">品牌：{{infoItem.store_name}}</view>
     <view class="price_box">
-      <view class="price red_color">¥{{infoItem.price}}</view>
+      <view class="zhe">
+        <view class="price red_color">¥{{infoItem.price}}</view>
+        <tag class="discount" val="{{infoItem.discount}}折" background="#f9d9d0" color="#ff5858" />
+      </view>
       <view class="hua">门店价：¥{{infoItem.original_price}}</view>
     </view>
   </view>
@@ -16,7 +19,7 @@
   </view>
   <view class="desc">{{infoItem.desc}}，请提前购买，请在有效期内使用。</view>
   <view class="bottom_box">
-    <view class="red_color">使用期限：{{infoItem.end_time}}</view>
-    <view>已售：{{infoItem.sold_num}}</view>
+    <view>使用期限：{{infoItem.end_time}}</view>
+    <view class="red_color">{{infoItem.sold_num}}已抢</view>
   </view>
 </view>

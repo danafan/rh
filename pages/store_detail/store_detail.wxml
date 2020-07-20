@@ -15,17 +15,16 @@
           <!-- 类型和排名 -->
           <view class="type_sort">
             <view class="store_type">烤鱼</view>
-            <sort val="萧山区烤鱼人气第一名"/>
+            <sort val="萧山区烤鱼人气第一名" />
           </view>
           <!-- 标签 -->
           <view class="tags">
             <tag val="{{item.val}}" background="#fdf0dd" color="#ff5858" margin="{{true}}" wx:for="{{tag_list}}" wx:key="id" />
           </view>
         </view>
-        <view class="center_box_right" bindtap="changeGrass">
-          <image class="grass_icon" src="../../images/active_grass.png" wx:if="{{isGrass}}"></image>
-          <image class="grass_icon" src="../../images/black_grass_icon.png" wx:else></image>
-          <view class="grass_num">32种草</view>
+        <view class="center_box_right">
+          <image class="share_icon" src="../../images/share.png"></image>
+          <view class="share_text">分享给好友</view>
         </view>
       </view>
       <!-- 位置和电话 -->
@@ -33,14 +32,14 @@
       <!-- 营业时间 -->
       <view class="business_hours">
         <!-- <text>营业中</text> -->
-        <tag val="休息中" background="#dbdbdb" color="#fff"/>
+        <tag val="休息中" background="#dbdbdb" color="#fff" />
         <view class="time_text">10:00-2:00（周一到周日）</view>
       </view>
     </view>
-    <!-- 套餐/券 菜品 -->
+    <!-- 店铺优惠 菜品 -->
     <view class="store_tabs">
       <view class="tab" data-tab_index="1" bindtap="checkTab">
-        <view class="tab_label {{active_tab == '1'?'active_label':''}}">套餐/券</view>
+        <view class="tab_label {{active_tab == '1'?'active_label':''}}">店铺优惠</view>
         <view class="active_line" wx:if="{{active_tab == '1'}}"></view>
       </view>
       <view class="tab" data-tab_index="2" bindtap="checkTab">
@@ -50,9 +49,34 @@
     </view>
     <!-- 套餐/券 -->
     <view wx:if="{{active_tab == '1'}}">
-      <welfare_item border_type="2" />
-      <welfare_item border_type="2" />
-      <welfare_item border_type="2" />
+      <view class="special" data-type="1" bindtap="goDetail">
+        <image class="store_banner" src="../../images/banner_02.jpg"></image>
+        <view class="bus_content">
+          <view class="bus_title">【特价】泰式珍珠蟹一份</view>
+          <view>
+            <view class="bus_price_top">
+              <view class="bus_price">¥78</view>
+              <tag class="tag_icon" val="7.8折" background="#f9d9d0" color="#ff5858" />
+            </view>
+            <view class="hua">门店价：¥188</view>
+          </view>
+        </view>
+        <view class="right_box">
+          <view class="but">马上抢</view>
+          <view class="desc">108人已抢</view>
+        </view>
+      </view>
+      <view class="package_list">
+        <view class="package_title">优惠券</view>
+        <vouchers data-type="2" bindtap="goDetail"/>
+        <vouchers data-type="2" bindtap="goDetail"/>
+      </view>
+      <view class="package_list">
+        <view class="package_title">到店套餐</view>
+        <welfare_item/>
+        <welfare_item/>
+        <welfare_item/>
+      </view>
     </view>
     <!-- 菜品 -->
     <view class="goods_list" wx:if="{{active_tab == '2'}}">
