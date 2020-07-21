@@ -32,46 +32,10 @@
       <!-- 分类 -->
       <view class="category_box">
         <view class="category_row">
-          <view class="category_item" data-id="1" data-index="0" bindtap="service">
-            <image class="cate_icon" src="../../images/cate_05.png"></image>
-            <view class="cate_txt">火锅</view>
-          </view>
-          <view class="category_item" data-id="2" data-index="1" bindtap="service">
-            <image class="cate_icon" src="../../images/cate_04.png"></image>
-            <view class="cate_txt">烧烤</view>
-          </view>
-          <view class="category_item" data-id="3" data-index="2" bindtap="service">
-            <image class="cate_icon" src="../../images/cate_03.png"></image>
-            <view class="cate_txt">烤鱼</view>
-          </view>
-          <view class="category_item" data-id="5" data-index="4" bindtap="service">
-            <image class="cate_icon" src="../../images/cate_04.png"></image>
-            <view class="cate_txt">海鲜</view>
-          </view>
-          <view class="category_item" data-id="4" data-index="3" bindtap="service">
-            <image class="cate_icon" src="../../images/cate_02.png"></image>
-            <view class="cate_txt">自助餐</view>
-          </view>
-          <view class="category_item" data-id="6" data-index="5" bindtap="service">
-            <image class="cate_icon" src="../../images/cate_05.png"></image>
-            <view class="cate_txt">内蒙菜</view>
-          </view>
-          <view class="category_item" data-id="5" data-index="4" bindtap="service">
-            <tag class="category_tag" val="无辣不欢" background="#ff5858" color="#fff" />
-            <image class="cate_icon" src="../../images/cate_04.png"></image>
-            <view class="cate_txt">川湘菜</view>
-          </view>
-          <view class="category_item" data-id="5" data-index="4" bindtap="service">
-            <image class="cate_icon" src="../../images/cate_04.png"></image>
-            <view class="cate_txt">日韩料理</view>
-          </view>
-          <view class="category_item" data-id="6" data-index="5" bindtap="service">
-            <image class="cate_icon" src="../../images/cate_05.png"></image>
-            <view class="cate_txt">西餐</view>
-          </view>
-          <view class="category_item" data-id="5" data-index="4" bindtap="service">
-            <image class="cate_icon" src="../../images/cate_04.png"></image>
-            <view class="cate_txt">蛋糕</view>
+          <view class="category_item" wx:for="{{category_list}}" wx:key="id" data-id="{{item.id}}" data-index="{{index}}" bindtap="goCategory">
+            <tag class="category_tag" val="{{item.tag}}" background="#ff5858" color="#fff" wx:if="{{item.tag}}" />
+            <image class="cate_icon" src="{{item.iocn}}"></image>
+            <view class="cate_txt">{{item.name}}</view>
           </view>
         </view>
         <web_tag/>

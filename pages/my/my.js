@@ -17,16 +17,20 @@ Page({
     });
   },
   //我的订单
-  goOrder() {
-    if (!this.data.wxUser) {
-      wx.navigateTo({
-        url: '/pages/auth/auth',
-      });
-    } else {
-      wx.navigateTo({
-        url: '/pages/order/order',
-      });
-    }
+  goOrder(e) {
+    let index = e.currentTarget.dataset.index;
+    wx.navigateTo({
+      url: '/pages/order/order?index=' + index
+    });
+    // if (!this.data.wxUser) {
+    //   wx.navigateTo({
+    //     url: '/pages/auth/auth',
+    //   });
+    // } else {
+    //   wx.navigateTo({
+    //     url: '/pages/order/order',
+    //   });
+    // }
   },
   bindGetUserInfo(e) {
     app.globalData.wxUser = e.detail.userInfo;

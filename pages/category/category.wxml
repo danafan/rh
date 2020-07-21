@@ -1,10 +1,10 @@
 <!--pages/service/service.wxml-->
 <view class="container service_container">
   <!-- 顶部导航 -->
-  <swiper class="tab_list" display-multiple-items="5" current="{{active_index}}">
+  <swiper class="tab_list" display-multiple-items="5" current="{{show_index}}">
     <swiper-item wx:for="{{category_list}}" wx:key="category_id">
       <view class="tab {{active_index == index? 'active_color' : ''}}" data-id="{{item.category_id}}" data-index="{{index}}" bindtap="changeCurrent">
-        {{item.category_name}}
+        {{item.name}}
         <view class="active_tab" wx:if="{{active_index == index}}"></view>
       </view>
     </swiper-item>

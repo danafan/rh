@@ -1,0 +1,123 @@
+/* components/OrderItem/order_item.wxss */
+.order_item{
+  border-radius: 10rpx;
+  background: #fff;
+  margin-bottom: 20rpx;
+  box-shadow: 0 0 6rpx #bfbfbf;
+  padding: 10rpx;
+  width: 100%;
+}
+/* 顶部店铺信息 */
+.item_top{
+  border-bottom:2rpx solid #e6e6e6;
+  padding-bottom: 10rpx;
+  padding-right: 20rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.store_info{
+  display: flex;
+  align-items: center;
+}
+.store_icon{
+  margin-right: 15rpx;
+  border-radius: 50%;
+  width: 80rpx;
+  height: 80rpx;
+}
+.store_name{
+  font-size: 28rpx;
+  color: #333;
+  font-weight: 700;
+}
+.order_status{
+  font-size: 26rpx;
+  color: #333;
+}
+/* 中间优惠券或套餐信息 */
+.center_box{
+  border-bottom:1rpx dashed #e6e6e6;
+  padding-bottom: 10rpx;
+  margin-top: 10rpx;
+  width: 100%;
+  display: flex;
+}
+.preferential_icon{
+  border-radius:8rpx; 
+  width: 120rpx;
+  height: 120rpx;
+}
+.vouchers_back{
+  background-image: linear-gradient(to right, #f37464, #ff5858);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.money_center{
+  height:60rpx;
+  display:table-cell;
+  vertical-align:bottom;
+}
+.money_icon{
+  font-size: 28rpx;
+  font-weight: 700;
+}
+.money_text{
+  font-size: 42rpx;
+  font-weight: 700;
+}
+/* 右侧文字信息 */
+.center_info{
+  margin-left: 15rpx;
+}
+.preferential_name{
+  margin-bottom: 10rpx;
+  font-size: 26rpx;
+  color: #333;
+  font-weight: 700;
+}
+.info_item{
+  margin-bottom: 5rpx;
+  font-size: 24rpx;
+  color: #8a8a8a; 
+}
+/* 底部操作栏 */
+.bottom_box{
+  margin-top: 10rpx;
+  width: 100%;
+  height: 56rpx;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.end_time{
+  position: absolute;
+  left: 0;
+  font-size: 24rpx;
+  color: #ff5858;
+}
+.buts{
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+.but{
+  margin-left: 15rpx;
+  border:1rpx solid #8a8a8a;
+  border-radius: 10rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  padding-left: 12rpx;
+  padding-right: 12rpx;
+  font-size: 26rpx;
+  color: #8a8a8a;
+}
+.but_back{
+  border:none;
+  background-image: linear-gradient(to right, #f37464, #ff5858);
+  color: #fff;
+}

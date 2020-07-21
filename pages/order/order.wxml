@@ -1,107 +1,26 @@
 <!--pages/order/order.wxml-->
-<view class="order_contailer">
+<view class="container order_container">
   <view class="tab_back">
-    <view class="tab_box">
-      <view class="tab_item {{tab_index == 1?'active_tab_item':''}}" data-index="1" bindtap="checkTab">优惠券</view>
-      <view class="tab_item {{tab_index == 2?'active_tab_item':''}}" data-index="2" bindtap="checkTab">现金券</view>
+    <view class="tab_item" data-index="0" bindtap="checkTab">
+        <view class="tab_label {{tab_index == '0'?'active_tab_label':''}}">全部</view>
+        <view class="active_tab" wx:if="{{tab_index == '0'}}"></view>
+    </view>
+     <view class="tab_item" data-index="1" bindtap="checkTab">
+        <view class="tab_label {{tab_index == '1'?'active_tab_label':''}}">待使用</view>
+        <view class="active_tab" wx:if="{{tab_index == '1'}}"></view>
+    </view>
+     <view class="tab_item" data-index="2" bindtap="checkTab">
+        <view class="tab_label {{tab_index == '2'?'active_tab_label':''}}">待支付</view>
+        <view class="active_tab" wx:if="{{tab_index == '2'}}"></view>
+    </view>
+     <view class="tab_item" data-index="3" bindtap="checkTab">
+        <view class="tab_label {{tab_index == '3'?'active_tab_label':''}}">退款/售后</view>
+        <view class="active_tab" wx:if="{{tab_index == '3'}}"></view>
     </view>
   </view>
-  <!-- 优惠券 -->
-  <view class="list_box" wx:if="{{tab_index == '1'}}">
-    <view class="store_item">
-      <view class="store_title">
-        <image class="store_icon" src="../../images/banner_03.jpg"></image>
-        <view class="store_name">星巴克（西湖店）</view>
-      </view>
-      <view class="coupons">
-        <view class="coupons_left">
-          <view class="coupons_left_top">
-            <view class="coupons_title">108元抢原价283元的【烤串3-4人套餐】</view>
-            <view class="coupons_toast">- 每桌限用1份</view>
-            <view class="coupons_toast">- 不与其他优惠叠加使用</view>
-          </view>
-          <view class="end_time">使用期限：07.08-08.08</view>
-        </view>
-        <view class="line_box_v">
-          <view class="kou_top_v"></view>
-          <view class="line_shu_v"></view>
-          <view class="kou_bottom_v"></view>
-        </view>
-        <view class="coupons_right">
-          <view class="use">使用</view>
-        </view>
-      </view>
-      <view class="coupons">
-        <view class="coupons_left">
-          <view class="coupons_left_top">
-            <view class="coupons_title">108元抢原价283元的【烤串3-4人套餐】</view>
-            <view class="coupons_toast">- 每桌限用1份</view>
-            <view class="coupons_toast">- 不与其他优惠叠加使用</view>
-          </view>
-          <view class="end_time">使用期限：07.08-08.08</view>
-        </view>
-        <view class="line_box_v">
-          <view class="kou_top_v"></view>
-          <view class="line_shu_v"></view>
-          <view class="kou_bottom_v"></view>
-        </view>
-        <view class="coupons_right">
-          <view class="use">使用</view>
-        </view>
-      </view>
-    </view>
+  <!-- 列表 -->
+  <view class="list_box">
+    <order_item order_info="{{item}}" wx:for="{{order_list}}" wx:key="order_id"/>
   </view>
-  <!-- 现金 -->
-  <view class="list_box" wx:if="{{tab_index == '2'}}">
-    <view class="store_item">
-      <view class="store_title">
-        <image class="store_icon" src="../../images/banner_03.jpg"></image>
-        <view class="store_name">星巴克（西湖店）</view>
-      </view>
-      <view class="coupons_money">
-        <view class="coupons_top">
-          <view class="top_left">
-            <view class="coupons_title">店铺现金消费券（0元秒杀获得）</view>
-            <view class="coupons_toast">- 每桌限用1份</view>
-            <view class="coupons_toast">- 不与其他优惠叠加使用</view>
-          </view>
-          <view class="money">
-            <text class="money_val">20</text>
-            <text>元</text>
-          </view>
-        </view>
-        <view class="line_box">
-          <view class="kou_left"></view>
-          <view class="line_heng"></view>
-          <view class="kou_right"></view>
-        </view>
-        <view class="coupons_bottom">
-          <view class="end_time">使用期限：07.08-08.08</view>
-          <view class="use">使用</view>
-        </view>
-      </view>
-      <view class="coupons_money">
-        <view class="coupons_top">
-          <view class="top_left">
-            <view class="coupons_title">店铺现金消费券（0元秒杀获得）</view>
-            <view class="coupons_toast">- 每桌限用1份</view>
-            <view class="coupons_toast">- 不与其他优惠叠加使用</view>
-          </view>
-          <view class="money">
-            <text class="money_val">20</text>
-            <text>元</text>
-          </view>
-        </view>
-        <view class="line_box">
-          <view class="kou_left"></view>
-          <view class="line_heng"></view>
-          <view class="kou_right"></view>
-        </view>
-        <view class="coupons_bottom">
-          <view class="end_time">使用期限：07.08-08.08</view>
-          <view class="use">使用</view>
-        </view>
-      </view>
-    </view>
-  </view>
+  
 </view>

@@ -22,6 +22,48 @@ Page({
       id: "3",
       img_url: "../../images/banner_03.jpg"
     }], //轮播图
+    category_list: [{
+      id: '1',
+      iocn: '../../images/cate_02.png',
+      name: '火锅'
+    }, {
+      id: '2',
+      iocn: '../../images/cate_03.png',
+      name: '烧烤烤肉'
+    }, {
+      id: '3',
+      iocn: '../../images/cate_05.png',
+      name: '海鲜'
+    }, {
+      id: '4',
+      iocn: '../../images/cate_02.png',
+      name: '自助餐'
+    }, {
+      id: '5',
+      iocn: '../../images/cate_03.png',
+      name: '特色菜'
+    }, {
+      id: '6',
+      iocn: '../../images/cate_04.png',
+      name: '川湘菜',
+      tag: '无辣不欢'
+    }, {
+      id: '7',
+      iocn: '../../images/cate_05.png',
+      name: '日韩料理'
+    }, {
+      id: '8',
+      iocn: '../../images/cate_02.png',
+      name: '小吃快餐'
+    }, {
+      id: '9',
+      iocn: '../../images/cate_04.png',
+        name: '西餐'
+    }, {
+      id: '10',
+      iocn: '../../images/cate_03.png',
+      name: '蛋糕奶茶'
+    }], //分类列表
     preferential: [{
       id: "1",
       store_name: "一点点（人民路店）",
@@ -102,7 +144,6 @@ Page({
       original_price: "288",
       discount: "7.0"
     }], //套餐列表
-    category_list: [], //分类列表
     startBarHeight: 0,
     navgationHeight: 0,
     scrollTop: 0, //距离顶部距离（顶部透明度）
@@ -351,8 +392,8 @@ Page({
     //   this.getInfoList(req);
     // }
   },
-  //点击跳转到服务页面
-  service(e) {
+  //点击跳转到分类页面
+  goCategory(e) {
     let id = e.currentTarget.dataset.id;
     let index = e.currentTarget.dataset.index;
     wx.navigateTo({

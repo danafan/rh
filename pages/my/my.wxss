@@ -71,13 +71,6 @@
   padding: 20rpx;
 }
 
-.order_title {
-  margin-bottom: 10rpx;
-  font-size: 28rpx;
-  color: #333;
-  font-weight: 700;
-}
-
 .order_list_box {
   display: flex;
   align-items: center;
@@ -88,6 +81,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .order_box_icon {
@@ -99,7 +93,11 @@
   font-size: 26rpx;
   color: #333;
 }
-
+.number{
+  position: absolute;
+  top: -10rpx;
+  right: -10rpx;
+}
 .my_item {
   box-shadow: 0 0 8rpx #bfbfbf;
   margin-top: 30rpx;

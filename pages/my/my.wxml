@@ -7,31 +7,31 @@
     </view>
     <image class="rh_icon" src="../../images/rh_icon.png" wx:else></image>
     <view class="user_content">
-      <view class="username">{{wxUser?wxUser.nickName:'热乎'}}</view>
+      <view class="username">{{wxUser?wxUser.nickName:'热乎优选'}}</view>
       <view class="desc" wx:if="{{wxUser}}">上热乎，吃点儿好的</view>
-      <view class="desc" wx:else>快速登录，获取更多福利</view>
+      <view class="desc" wx:else>快速登录，抢更多优惠</view>
     </view>
   </view>
   <view class="content_box">
     <!-- 订单框 -->
     <view class="order_box">
-      <view class="order_title">我的套餐</view>
       <view class="order_list_box">
-        <view class="order_item">
+        <view class="order_item" data-index="0" bindtap="goOrder">
+          <image class="order_box_icon" src="../../images/cate_05.png"></image>
+          <view class="order_label">我的订单</view>
+        </view>
+        <view class="order_item" data-index="1" bindtap="goOrder">
           <image class="order_box_icon" src="../../images/cate_02.png"></image>
           <view class="order_label">待使用</view>
+          <tag class="number" val="21" background="#ff5858" color="#fff" />
         </view>
-        <view class="order_item">
+        <view class="order_item" data-index="2" bindtap="goOrder">
           <image class="order_box_icon" src="../../images/cate_03.png"></image>
           <view class="order_label">待支付</view>
         </view>
-        <view class="order_item">
+        <view class="order_item" data-index="3" bindtap="goOrder">
           <image class="order_box_icon" src="../../images/cate_04.png"></image>
           <view class="order_label">退款/售后</view>
-        </view>
-        <view class="order_item" bindtap="goOrder">
-          <image class="order_box_icon" src="../../images/cate_05.png"></image>
-          <view class="order_label">全部订单</view>
         </view>
       </view>
     </view>

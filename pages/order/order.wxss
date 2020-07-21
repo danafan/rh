@@ -2,258 +2,49 @@
 
 .order_contailer {
   background: #ededed;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding-left: 15rpx;
-  padding-right: 15rpx;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
-.tab_back{
+
+.tab_back {
   position: fixed;
   background: #fff;
   width: 100%;
-  height: 120rpx;
+  height: 90rpx;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: space-around;
   z-index: 1;
-}
-.tab_box {
-  border: 1rpx solid #ff5858;
-  width: 560rpx;
-  height: 70rpx;
-  border-radius: 35rpx;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .tab_item {
-  width: 280rpx;
-  text-align: center;
-  color: #ff5858;
-}
-
-.active_tab_item {
-  background-image: linear-gradient(to right, #f37464, #ff5858);
-  width: 360rpx;
-  height: 70rpx;
-  line-height: 70rpx;
-  border-radius: 35rpx;
-  color: #fff;
-}
-
-.list_box {
-  margin-top: 150rpx;
-  width: 100%;
-}
-
-.store_item {
-  box-shadow: 0 0 15rpx #bfbfbf;
-  margin-bottom: 20rpx;
-  border-radius: 15rpx;
-  background: #fff;
-  width: 100%;
-  padding: 20rpx;
-}
-
-.store_title {
-  width: 100%;
+  height: 90rpx;
   display: flex;
+  flex-direction: column;
   align-items: center;
-}
-
-.store_icon {
-  margin-right: 15rpx;
-  border-radius: 50%;
-  width: 100rpx;
-  height: 100rpx;
-}
-
-.store_name {
-  font-size: 30rpx;
-  color: #333;
-  font-weight: 700;
-}
-
-.coupons {
-  background: #f9d9d0;
-  margin-top: 20rpx;
-  width: 100%;
-  display: flex;
-  align-items: center;
+  justify-content: center;
   position: relative;
 }
 
-.coupons_left {
-  padding: 10rpx 20rpx;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.coupons_left_top{
-  margin-bottom: 30rpx;
-}
-.coupons_title {
-  margin-bottom: 10rpx;
-  font-size: 30rpx;
-  color: #333;
-  font-weight: 700;
-}
-
-.coupons_toast {
-  margin-bottom: 5rpx;
-  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
-  font-size: 24rpx;
-  color: #ff5858;
-}
-.end_time {
-  font-size: 26rpx;
-  color: #bfbfbf;
-}
-.line_box_v {
-  position: absolute;
-  top: 0;
-  right: 185rpx;
-  width: 30rpx;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.kou_top_v {
-  background: #fff;
-  width: 26rpx;
-  height: 26rpx;
-  border-radius: 0 0 13rpx 13rpx;
-}
-
-.line_shu_v {
-  height: 60%;
-  border-left: 2rpx dashed #8a8a8a;
-}
-
-.kou_bottom_v {
-  border-radius: 13rpx 13rpx 0 0;
-  background: #fff;
-  width: 26rpx;
-  height: 26rpx;
-}
-
-.coupons_right {
-  height: 100%;
-  width: 200rpx;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.use {
-  background-image: linear-gradient(to right, #f37464, #ff5858);
-  height: 56rpx;
-  line-height: 56rpx;
-  width: 120rpx;
-  text-align: center;
+.tab_label {
   font-size: 28rpx;
-  border-radius: 28rpx;
-  color: #fff;
-}
-
-.line_box {
-  background: #f9d9d0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 30rpx;
-}
-/* 现金券 */
-.coupons_money {
-  margin-top: 20rpx;
-  width: 100%;
-}
-.kou_left {
-  background: #fff;
-  width: 30rpx;
-  height: 30rpx;
-  border-radius: 0 15rpx 15rpx 0;
-}
-
-.line_heng {
-  width: 80%;
-  border-top: 2rpx dashed #8a8a8a;
-}
-
-.kou_right {
-  border-radius: 15rpx 0 0 15rpx;
-  background: #fff;
-  width: 30rpx;
-  height: 30rpx;
-}
-
-.coupons_bottom {
-  width: 100%;
-  background: #f9d9d0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10rpx 20rpx;
-}
-
-.coupons_top {
-  width: 100%;
-  padding: 10rpx 20rpx;
-  background: #f9d9d0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.top_left {
-  flex: 1;
-}
-
-.store_title_money {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10rpx;
-}
-
-.store_icon_money {
-  margin-right: 15rpx;
-  border-radius: 50%;
-  width: 66rpx;
-  height: 66rpx;
-}
-
-.store_name_money {
-  font-size: 26rpx;
   color: #333;
+}
+.active_tab_label{
   font-weight: 700;
 }
 
-.money {
-  margin-left: 15rpx;
-  display: table-cell;
-  vertical: bottom;
-  font-size: 24rpx;
-  font-weight: 700rpx;
-  color: #ff5858;
+.active_tab {
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(to right, #f37464, #ff5858);
+  width: 80%;
+  height: 8rpx;
+  border-radius: 4rpx;
 }
 
-.money_val {
-  font-size: 70rpx;
-  color: #ff5858;
-  font-weight: 800rpx;
+.list_box {
+  padding: 15rpx;
+  background: #ededed;
+  margin-top: 90rpx;
+  width: 100%;
 }
-
 

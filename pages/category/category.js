@@ -6,36 +6,59 @@ var app = getApp();
 Page({
   data: {
     category_list: [{
-      category_id: '1',
-      category_name: '吃喝'
+      id: '1',
+      iocn: '../../images/cate_02.png',
+      name: '火锅'
     }, {
-        category_id: '2',
-        category_name: '玩乐'
+      id: '2',
+      iocn: '../../images/cate_03.png',
+      name: '烧烤烤肉'
     }, {
-        category_id: '3',
-        category_name: '丽人'
+      id: '3',
+      iocn: '../../images/cate_05.png',
+      name: '海鲜'
     }, {
-        category_id: '4',
-        category_name: '休闲'
+      id: '4',
+      iocn: '../../images/cate_02.png',
+      name: '自助餐'
     }, {
-        category_id: '5',
-        category_name: '运动'
+      id: '5',
+      iocn: '../../images/cate_03.png',
+      name: '特色菜'
     }, {
-        category_id: '6',
-        category_name: '爱车'
-    }], //一级分类列表
+      id: '6',
+      iocn: '../../images/cate_04.png',
+      name: '川湘菜',
+      tag: '无辣不欢'
+    }, {
+      id: '7',
+      iocn: '../../images/cate_05.png',
+      name: '日韩料理'
+    }, {
+      id: '8',
+      iocn: '../../images/cate_02.png',
+      name: '小吃快餐'
+    }, {
+      id: '9',
+      iocn: '../../images/cate_04.png',
+      name: '西餐'
+    }, {
+      id: '10',
+      iocn: '../../images/cate_03.png',
+      name: '蛋糕奶茶'
+    }], //分类列表
     active_index: 0, //默认选中的顶部导航下标
     service_list: [{
-      store_id:'1',
-      page_img:"../../images/banner_01.png",
-      remaining_num:'8',
-      sold_num:'182',
-      grass_num:"1442",
-      store_name:"同学少年 湘派小串",
-      desc:"108元抢原价283元的【烤串3-4人套餐】",
-      end_time:"2020.07.08-2020.08.08",
-      price:"108",
-      original_price:"288",
+      store_id: '1',
+      page_img: "../../images/banner_01.png",
+      remaining_num: '8',
+      sold_num: '182',
+      grass_num: "1442",
+      store_name: "同学少年 湘派小串",
+      desc: "108元抢原价283元的【烤串3-4人套餐】",
+      end_time: "2020.07.08-2020.08.08",
+      price: "108",
+      original_price: "288",
     }], //信息列表
     show_index: 0, //解决顶部滑动bug
     info_id: "",
@@ -47,12 +70,13 @@ Page({
     return app.globalData.shareObj
   },
   onLoad(option) {
+    console.log(option)
     this.setData({
       active_index: parseInt(option.index) + 1,
-      show_index: option.index >= 5 ? 5 : parseInt(option.index) + 1,
+      show_index: parseInt(option.index) >= 9 ? 6 : parseInt(option.index) >= 5 ?  5: parseInt(option.index),
       info_id: option.id
     })
-    console.log(this.data.show_index)
+    // console.log(this.data.show_index)
     //获取一级分类列表
     this.getCateGory();
     //获取信息列表
@@ -61,8 +85,8 @@ Page({
   //获取一级分类列表
   getCateGory() {
     let obj = {
-      category_id: 0,
-      category_name: '全部'
+      id: 0,
+      name: '全部分类'
     }
     let hh = this.data.category_list;
     hh.unshift(obj);

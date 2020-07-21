@@ -1,0 +1,48 @@
+<!--components/OrderItem/order_item.wxml-->
+<view class="order_item">
+  <!-- 顶部店铺信息 -->
+  <view class="item_top">
+    <view class="store_info">
+      <image class="store_icon" src="{{order_info.store_icon}}"></image>
+      <view class="store_name">{{order_info.store_name}}</view>
+    </view>
+    <view class="order_status" wx:if="{{order_info.order_status == '1'}}">待使用</view>
+    <view class="order_status" wx:if="{{order_info.order_status == '2'}}">待支付</view>
+    <view class="order_status" wx:if="{{order_info.order_status == '3'}}">退款/售后</view>
+    <view class="order_status" wx:if="{{order_info.order_status == '4'}}">已完成</view>
+  </view>
+  <!-- 中间套餐或优惠券信息 -->
+  <view class="center_box">
+    <!-- 左侧图片 -->
+    <!-- 套餐 -->
+    <image class="preferential_icon" src="{{order_info.package_icon}}" wx:if="{{order_info.order_type == '1'}}"></image>
+    <!-- 特价菜 -->
+    <image class="preferential_icon" src="{{order_info.food_icon}}" wx:if="{{order_info.order_type == '3'}}"></image>
+    <!-- 优惠券 -->
+    <view class="preferential_icon vouchers_back" wx:if="{{order_info.order_type == '2'}}">
+      <view class="money_center">
+        <text class="money_icon">¥</text>
+        <text class="money_text">{{order_info.vouchers_money}}</text>
+      </view>
+    </view>
+    <!-- 右侧优惠信息文字 -->
+    <view class="center_info">
+      <view class="preferential_name" wx:if="{{order_info.order_type == '1'}}">{{order_info.package_name}}</view>
+      <view class="preferential_name" wx:if="{{order_info.order_type == '2'}}">{{order_info.vouchers_money}}元代金券</view>
+      <view class="preferential_name" wx:if="{{order_info.order_type == '3'}}">{{order_info.food_name}}</view>
+      <view class="info_item">下单时间：{{order_info.create_time}}</view>
+      <view class="info_item">数量：{{order_info.number}}</view>
+      <view class="info_item">总价：¥{{order_info.total_money}}</view>
+    </view>
+  </view>
+  <!-- 下面操作栏 -->
+  <view class="bottom_box">
+    <view class="end_time" wx:if="{{order_info.order_status == '1'}}">有效期至：{{order_info.end_time}}</view>
+    <view class="buts">
+      <view class="but but_back" wx:if="{{order_info.order_status == '1'}}">去使用</view>
+      <view class="but but_back" wx:if="{{order_info.order_status == '4'}}">再来一单</view>
+      <view class="but but_back" wx:if="{{order_info.order_status == '2'}}">去付款</view>
+      <view class="but" wx:if="{{order_info.order_status == '3'}}">退款进度</view>
+    </view>
+  </view>
+</view>
