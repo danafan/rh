@@ -2,7 +2,6 @@
 <view class="store_item" bindtap="storeDetail">
   <view class="store_img_box">
     <image class="store_img" src="{{store_info.store_img}}"></image>
-    <view class="grass">{{store_info.store_type}}</view>
   </view>
   <view class="store_info">
     <view class="store_name">{{store_info.store_name}}</view>
@@ -21,9 +20,6 @@
     <view class="tag" wx:if="{{store_info.quan != ''}}">
       <view class="tag_label quan">券</view>
       <view class="tag_val">{{store_info.quan}}</view>
-    </view>
-    <view class="on_the_pin">
-      月销：{{store_info.on_the_pin}}
     </view>
   </view>
 </view>

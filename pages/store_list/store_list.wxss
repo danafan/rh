@@ -6,8 +6,6 @@
 .advertising_list {
   background: #fbfbfb;
   width: 100%;
-  /* display: flex;
-  justify-content: space-between; */
 }
 .store_children{
   width: 100%;
@@ -18,15 +16,8 @@
   width: 355rpx;
 }
 .store_cate_name {
-  background-image: linear-gradient(to right, #0b0d1d, #fff);
-  margin-bottom: 20rpx;
-  padding-left: 30rpx;
-  width: 90%;
-  height: 80rpx;
-  border-radius: 40rpx 0 0 40rpx;
-  display: flex;
-  align-items: center;
   font-size: 32rpx;
   color: #d1b171;
   font-weight: 700;
+  margin-bottom: 20rpx;
 }

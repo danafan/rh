@@ -1,4 +1,4 @@
-/* pages/coupons_detail/coupons_detail.vue.wxss */
+/* pages/food_detail/food_detail.wxss */
 /* 代金券 */
 .coupons_info{
   margin-top: 30rpx;
@@ -22,6 +22,29 @@
 .coupons_text{
   font-size: 46rpx;
   font-weight: 700;
+}
+/* 特价菜 */
+.special_box{
+  box-shadow: 5rpx 5rpx 10rpx #bfbfbf;
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+  border-radius: 20rpx 20rpx 0 0;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 580rpx;
+  padding: 15rpx;
+}
+.food_name{
+  width:100%;
+  text-align: center;
+  font-size: 32rpx;
+  color: #333;
+  font-weight: 800;
+}
+.food_icon{
+  width: 550rpx;
+  height: 380rpx;
 }
 
 .coupons_money_box {

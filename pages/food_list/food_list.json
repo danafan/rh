@@ -1,9 +1,9 @@
 {
-  "navigationBarTitleText": "券商场",
+  "navigationBarTitleText": "特价菜列表",
   "backgroundColor": "#44AD99",
   "navigationBarBackgroundColor": "#44AD99",
   "enablePullDownRefresh": true,
   "usingComponents": {
-    "coupons_item": "../../components/CouponsItem/coupons_item"
+    "food_item": "../../components/FoodItem/food_item"
   }
 }

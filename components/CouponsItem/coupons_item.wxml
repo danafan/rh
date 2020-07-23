@@ -1,9 +1,7 @@
 <!--components/CouponsItem/coupons_item.wxml-->
-<view class="store_content {{page_type == 'list'?'margin':''}}" data-type="{{coupons_info.type}}" bindtap="goDetail">
-  <!-- 特价菜 -->
-  <image class="store_icon" src="https://p0.meituan.net/dealwatera/7b90611c137f2c2dc0122a79c7e58ade95682.jpg@130w_130h_1e_1c" wx:if="{{coupons_info.type == '1'}}"></image>
+<view class="store_content" data-id="{{coupons_info.id}}" bindtap="goDetail">
   <!-- 代金券 -->
-  <view class="vouchers_back" wx:if="{{coupons_info.type == '2'}}">
+  <view class="vouchers_back">
     <view class="border_box"></view>
     <view class="money_center">
       <text class="money_icon">¥</text>
@@ -19,8 +17,7 @@
   <view class="store_right">
     <view>
       <view class="store_title">{{coupons_info.goods_name}}</view>
-      <view class="has_rob" wx:if="{{page_type == 'index'}}">{{coupons_info.rob_num}}人已抢</view>
-      <view class="has_rob" wx:if="{{page_type == 'list'}}">{{coupons_info.store_name}}</view>
+      <view class="has_rob">{{coupons_info.store_name}}</view>
     </view>
     <view class="right_bottom">
       <view class="price_box">
@@ -30,8 +27,7 @@
           <view class="hua">¥{{coupons_info.old_price}}</view>
         </view>
       </view>
-      <view class="rob" wx:if="{{page_type == 'index'}}">马上抢</view>
-      <view class="rob_num red_color" wx:if="{{page_type == 'list'}}">
+      <view class="rob_num red_color">
         {{coupons_info.rob_num}}人已抢
       </view>
     </view>

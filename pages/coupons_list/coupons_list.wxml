@@ -1,23 +1,7 @@
 <!--pages/coupons_list/coupons_list.wxml-->
 <view class="container">
-  <view class="tab_row">
-    <view class="tab_item" data-type="0" bindtap="checkTab">
-      <view class="tab_label {{active_tab == '0'?'active_tab_label':''}} ">全部</view>
-      <view class="active_tab" wx:if="{{active_tab == '0'}}"></view>
-    </view>
-    <view class="tab_item" data-type="1" bindtap="checkTab">
-      <view class="tab_label {{active_tab ==   '1'?'active_tab_label':''}} ">特价菜</view>
-      <view class="active_tab" wx:if="{{active_tab == '1'}}"></view>
-    </view>
-    <view class="tab_item" data-type="2" bindtap="checkTab">
-      <view class="tab_label {{active_tab == '2'?'active_tab_label':''}} ">代金券</view>
-      <view class="active_tab" wx:if="{{active_tab == '2'}}"></view>
-    </view>
-  </view>
-  <view class="content">
-    <view class="top_back"></view>
-    <view class="list_box">
-      <coupons_item coupons_info="{{item}}" page_type="list" wx:for="{{preferential}}" wx:key="index" />
-    </view>
+  <view class="top_back"></view>
+  <view class="list_box">
+    <coupons_item coupons_info="{{item}}" wx:for="{{preferential}}" wx:key="index" />
   </view>
 </view>

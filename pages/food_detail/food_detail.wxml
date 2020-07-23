@@ -1,6 +1,12 @@
-<!--pages/coupons_detail/coupons_detail.vue.wxml-->
+<!--pages/food_detail/food_detail.wxml-->
 <view class="container">
-  <view class="coupons_info">
+  <!-- 特价菜 -->
+  <view class="special_box" wx:if="{{type == '1'}}">
+    <image class="food_icon" src="../../images/banner_02.jpg"></image>
+    <view class="food_name">新鲜石锅鱼</view>
+  </view>
+  <!-- 代金券 -->
+  <view class="coupons_info" wx:if="{{type == '2'}}">
     <view class="store_name">【千岛湖酸菜鱼】</view>
     <view class="coupons_text">88元代100元代金券</view>
   </view>
@@ -25,10 +31,10 @@
       <rules_item wx:for="{{rules_list}}" wx:key="id" val="{{item.val}}" />
     </view>
     <!-- 温馨提示 -->
-    <view class="toast_desc">
+    <view class="toast_desc" wx:if="{{type == '1'}}">
       温馨提示：特价产品不支持退款，请提前购买，在有效期内使用。
     </view>
-    <web_tag />
+    <web_tag wx:if="{{type == '2'}}" />
   </view>
   <view class="coupons_money_box">
     <view class="coupons_title">

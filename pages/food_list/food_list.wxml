@@ -1,0 +1,7 @@
+<!--pages/food_list/food_list.wxml-->
+<view class="container">
+    <view class="top_back"></view>
+    <view class="list_box">
+      <food_item food_info="{{item}}" page_type="list" wx:for="{{preferential}}" wx:key="id" />
+    </view>
+</view>

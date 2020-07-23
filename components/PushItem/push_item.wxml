@@ -8,7 +8,7 @@
     <view class="store_name">品牌：{{storeItem.store_name}}</view>
   </view>
   <view class="sort_box_row">
-    <view class="rh_star_box">热力值：{{storeItem.star_num}}</view>
+    <view class="rh_star_box">热度：{{storeItem.star_num}}</view>
     <sort val="全城{{storeItem.store_type}}人气第{{storeItem.sort}}名" wx:if="{{storeItem.sort != ''}}"/>
   </view>
   <view class="tag_list">

@@ -1,7 +1,6 @@
 <!--index.wxml-->
-<view class="container index_container">
-  <view class="fixed" style='opacity:{{scrollTop}};height:{{startBarHeight + navgationHeight}}px'>
-  </view>
+<view class="container">
+  <!-- 顶部标题栏 -->
   <view class="navgation_box">
     <view class='startBar' style='height:{{startBarHeight}}px'></view>
     <view class="search_box" style="height:{{navgationHeight}}px">
@@ -21,71 +20,66 @@
       <view class="zhan"></view>
     </view>
   </view>
-  <view>
-    <view class="top_back">
-      <!-- 轮播图 -->
-      <swiper class="banner_box" autoplay="true" interval="5000" duration="80">
-        <swiper-item wx:for="{{banner_list}}" wx:key="id" bindtap="goDetail">
-          <image class="banner_img" src="{{item.img_url}}"></image>
-        </swiper-item>
-      </swiper>
-      <!-- 分类 -->
-      <view class="category_box">
-        <view class="category_row">
-          <view class="category_item" wx:for="{{category_list}}" wx:key="id" data-id="{{item.id}}" data-index="{{index}}" bindtap="goCategory">
-            <tag class="category_tag" val="{{item.tag}}" background="#ff5858" color="#fff" wx:if="{{item.tag}}" />
-            <image class="cate_icon" src="{{item.iocn}}"></image>
-            <view class="cate_txt">{{item.name}}</view>
-          </view>
+  <!-- 背景色和分类 -->
+  <view class="top_back">
+    <view class="category_box">
+      <view class="category_row">
+        <view class="category_item" wx:for="{{category_list}}" wx:key="id" data-id="{{item.id}}" data-index="{{index}}" bindtap="goCategory">
+          <tag class="category_tag" val="{{item.tag}}" background="#ff5858" color="#fff" wx:if="{{item.tag}}" />
+          <image class="cate_icon" src="{{item.iocn}}"></image>
+          <view class="cate_txt">{{item.name}}</view>
         </view>
-        <web_tag/>
       </view>
+      <web_tag/>
     </view>
-    <view class="content">
-      <!-- 限时特价 -->
-      <view class="seconds_box">
-        <view class="seconds_top">
-          <view>
-            <view class="kill">今日特价</view>
-            <view class="time_out">
-              <text class="timeout_box left">11</text>:
-              <text class="timeout_box center">28</text>:
-              <text class="timeout_box right">00</text>
-            </view>
-          </view>
-          <swiper class="swiper_second" autoplay interval="3000" circular vertical>
-            <swiper-item>
-              <text class="swiper_second_text">0元福利 每天上新</text>
-            </swiper-item>
-            <swiper-item>
-              <text class="swiper_second_text">好吃不上火</text>
-            </swiper-item>
-          </swiper>
-          <view class="all" bindtap="goList">
-            <view>发现更多</view>
-            <image class="more_right" src="../../images/more_right.png"></image>
+  </view>
+  <!-- 下面内容 -->
+  <view class="content">
+    <!-- 限时特价 -->
+    <view class="seconds_box">
+      <view class="seconds_top">
+        <view>
+          <view class="kill">今日特价</view>
+          <view class="time_out">
+            <text class="timeout_box left">11</text>:
+            <text class="timeout_box center">28</text>:
+            <text class="timeout_box right">00</text>
           </view>
         </view>
-        <swiper class="offer_box" next-margin="50rpx" indicator-dots="true" indicator-color="rgba(255,255,255,0.8)" indicator-active-color="#ff5858">
-          <swiper-item wx:for="{{preferential}}" wx:key="index">
-            <view class="offer_item">
-              <view class="store_name">
-                <view class="name_icon"></view>
-                <view class="name">{{item.store_name}}</view>
-              </view>
-              <coupons_item coupons_info="{{item}}" page_type="index" />
-            </view>
+        <swiper class="swiper_second" autoplay interval="3000" circular vertical>
+          <swiper-item>
+            <text class="swiper_second_text">0元福利 每天上新</text>
+          </swiper-item>
+          <swiper-item>
+            <text class="swiper_second_text">好吃不上火</text>
           </swiper-item>
         </swiper>
+        <view class="all" bindtap="goList">
+          <view>发现更多</view>
+          <image class="more_right" src="../../images/more_right.png"></image>
+        </view>
       </view>
-      <!-- 热乎优选 -->
-      <view class="hot_box">
-        <image class="good_icon" src="../../images/good_icon.png"></image>
+      <swiper class="offer_box" next-margin="50rpx" indicator-dots="true" indicator-color="rgba(255,255,255,0.8)" indicator-active-color="#ff5858">
+        <swiper-item wx:for="{{preferential}}" wx:key="index">
+          <view class="offer_item">
+            <view class="store_name">
+              <view class="name_icon"></view>
+              <view class="name">{{item.store_name}}</view>
+            </view>
+            <food_item food_info="{{item}}" />
+          </view>
+        </swiper-item>
+      </swiper>
+    </view>
+    <!-- 热乎优选 -->
+    <view class="title_box">
+      <view class="title">
+        <image class="good_icon" src="../../images/big_line.png"></image>
         <view class="good_text">热乎优选</view>
       </view>
-      <!-- 优选列表 -->
-      <push_item wx:for="{{store_list}}" wx:key="store_id" storeItem="{{item}}" />
     </view>
+    <!-- 优选列表 -->
+    <push_item wx:for="{{store_list}}" wx:key="store_id" storeItem="{{item}}" />
   </view>
 
   <!-- <bottom wx:if="{{!isLoad && page >= 2}}" /> -->

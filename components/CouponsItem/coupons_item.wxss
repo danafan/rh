@@ -5,15 +5,7 @@
   width: 100%;
   display: flex;
 }
-.margin{
-  margin-bottom: 20rpx;
-}
 
-.store_icon {
-  border-radius: 15rpx 0 0 15rpx;
-  width: 240rpx;
-  height: 240rpx;
-}
 .vouchers_back{
   width: 225rpx;
   height: 240rpx;

@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "特价菜详情",
+  "navigationBarBackgroundColor": "#0b0d1d",
+  "usingComponents": {
+    "location_phone": "../../components/LocationPhone/location_phone",
+    "goods_item": "../../components/GoodsItem/goods_item",
+    "rules_item": "../../components/RulesItem/rules_item",
+    "tag": "../../components/Tag/tag",
+    "sort": "../../components/Sort/sort",
+    "sold": "../../components/Sold/sold",
+    "web_tag": "../../components/WebTag/web_tag"
+  }
+}

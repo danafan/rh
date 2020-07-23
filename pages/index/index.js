@@ -10,18 +10,7 @@ const app = getApp()
 Page({
   data: {
     baseUrl: app.globalData.baseUrl,
-    fans_total: 0,
     location: "",
-    banner_list: [{
-      id: "1",
-      img_url: "https://img.meituan.net/msmerchant/cf9cf32e457cd22a17229bf0f99f7b58169052.jpg@220w_125h_1e_1c"
-    }, {
-      id: "2",
-        img_url: "https://img.meituan.net/600.600/msmerchant/7eb66c5543fb8af1774d8c067ae3a29d113147.jpg@220w_125h_1e_1c"
-    }, {
-      id: "3",
-        img_url: "https://img.meituan.net/600.600/msmerchant/b33ba6be51d364aaee842cf66ecce7fe3489451.jpg@220w_125h_1e_1c"
-    }], //轮播图
     category_list: [{
       id: '1',
       iocn: '../../images/cate_02.png',
@@ -58,7 +47,7 @@ Page({
     }, {
       id: '9',
       iocn: '../../images/cate_04.png',
-        name: '西餐'
+      name: '西餐'
     }, {
       id: '10',
       iocn: '../../images/cate_03.png',
@@ -66,96 +55,76 @@ Page({
     }], //分类列表
     preferential: [{
       id: "1",
+      food_img: 'https://p0.meituan.net/dealwatera/7b90611c137f2c2dc0122a79c7e58ade95682.jpg@130w_130h_1e_1c',
       store_name: "一点点（人民路店）",
       goods_name: "红茶玛奇朵一份",
       total_num: 200,
       rob_num: 118,
       old_price: "39",
       now_price: "12.9",
-      discount: "8.5",
-      type: "1"
+      discount: "8.5"
     }, {
       id: "2",
+        food_img: 'https://p0.meituan.net/dealwatera/7b90611c137f2c2dc0122a79c7e58ade95682.jpg@130w_130h_1e_1c',
       store_name: "外婆家",
-      goods_name: "100元代金券一张",
+      goods_name: "西湖醋鱼",
       total_num: 200,
       rob_num: 32,
-      old_price: "100",
-      now_price: "80",
-      discount: "8.0",
-      type: "2"
+      old_price: "88",
+      now_price: "68",
+      discount: "8.0"
     }, {
       id: "3",
+        food_img: 'https://p0.meituan.net/dealwatera/7b90611c137f2c2dc0122a79c7e58ade95682.jpg@130w_130h_1e_1c',
       store_name: "叫了只炸鸡",
       goods_name: "椒盐整鸡一份",
       rob_num: 65,
       old_price: "42.5",
       now_price: "19.8",
-      discount: "7.5",
-      type: "1"
-    }, {
-      id: "2",
-      store_name: "江南民家",
-      goods_name: "200元代金券一张",
-      total_num: 200,
-      rob_num: 12,
-      old_price: "200",
-      now_price: "150",
-      discount: "8.5",
-      type: "2"
-    }, {
-      id: "1",
-      store_name: "星巴克（西湖店）",
-      goods_name: "摩卡一杯",
-      rob_num: 16,
-      old_price: "28",
-      now_price: "12",
-      discount: "8.5",
-      type: "1"
-    }], //优惠列表
+      discount: "7.5"
+    }], //特价菜列表
     store_list: [{
       store_id: '1',
       store_img: "https://img.meituan.net/msmerchant/c79e7df9b2f6af4c5ed51f76cf9b5ea5199546.jpg@220w_125h_1e_1c",
-      store_type:"火锅",
+      store_type: "火锅",
       store_name: "狼一家铁锅炖",
       star_num: '4.8',
-      sort:'1',
-      te:'',
-      hui:'3',
-      quan:'2',
-      location_text:'宁围街道',
-      distance:'5.2',
-      on_the_pin:'198',
-    },{
-        store_id: '2',
-        store_img: "https://p0.meituan.net/bbia/924694704c857ad6509d4254fe53fbe2959847.gif@130w_130h_1e_1c",
-        store_type: "自助餐",
-        store_name: "金鲨自助烤场",
-        star_num: '5.0',
-        sort: '',
-        te: '1',
-        hui: '4',
-        quan: '3',
-        location_text: '人民路',
-        distance: '3.6',
-        on_the_pin: '66',
-      }, {
-        store_id: '3',
-        store_img: "https://p0.meituan.net/bbia/1938bea7c5349478ea3d7c27a392384266681.jpg@130w_130h_1e_1c",
-        store_type: "海鲜",
-        store_name: "胖子海鲜大排档",
-        star_num: '4.9',
-        sort: '2',
-        te: '1',
-        hui: '3',
-        quan: '',
-        location_text: '大学路',
-        distance: '11.5',
-        on_the_pin: '88',
-      }], //套餐列表
+      sort: '1',
+      te: '',
+      hui: '3',
+      quan: '2',
+      location_text: '宁围街道',
+      distance: '5.2',
+      on_the_pin: '198',
+    }, {
+      store_id: '2',
+      store_img: "https://p0.meituan.net/bbia/924694704c857ad6509d4254fe53fbe2959847.gif@130w_130h_1e_1c",
+      store_type: "自助餐",
+      store_name: "金鲨自助烤场",
+      star_num: '5.0',
+      sort: '',
+      te: '1',
+      hui: '4',
+      quan: '3',
+      location_text: '人民路',
+      distance: '3.6',
+      on_the_pin: '66',
+    }, {
+      store_id: '3',
+      store_img: "https://p0.meituan.net/bbia/1938bea7c5349478ea3d7c27a392384266681.jpg@130w_130h_1e_1c",
+      store_type: "海鲜",
+      store_name: "胖子海鲜大排档",
+      star_num: '4.9',
+      sort: '2',
+      te: '1',
+      hui: '3',
+      quan: '',
+      location_text: '大学路',
+      distance: '11.5',
+      on_the_pin: '88',
+    }], //套餐列表
     startBarHeight: 0,
     navgationHeight: 0,
-    scrollTop: 0, //距离顶部距离（顶部透明度）
     isLoad: true, //默认可以加载
     page: 1, //当前页码
   },
@@ -178,10 +147,10 @@ Page({
       url: '/pages/store_detail/store_detail',
     });
   },
-  //进入优惠列表
+  //进入特价菜列表
   goList() {
     wx.navigateTo({
-      url: '/pages/coupons_list/coupons_list',
+      url: '/pages/food_list/food_list',
     });
   },
   onPageScroll: function(e) { // 页面滚动监听

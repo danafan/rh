@@ -1,21 +1,7 @@
 /**index.wxss**/
 
-.index_container {
-  display: flex;
-  flex-direction: column;
-}
-
-.fixed {
-  background: #ff5858;
-  /* background: #0b0d1d; */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 2;
-}
-
 .navgation_box {
+  background: #e9532b;
   position: fixed;
   top: 0;
   left: 0;
@@ -74,30 +60,20 @@
   width: 210rpx;
 }
 
-/* banner */
+/* 顶部背景色 */
 
 .top_back {
+  background-image: linear-gradient(to bottom, #e9532b,#e9532b,#e9532b, #f07f52,#ffffff);
   width: 100%;
   height: 480rpx;
   position: relative;
-}
-
-.banner_box {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.banner_img {
-  width: 100%;
-  height: 100%;
 }
 
 /* 分类 */
 
 .category_box {
   position: absolute;
-  bottom: -220rpx;
+  bottom: -80rpx;
   left: 50%;
   transform: translate(-50%);
   border-radius: 20rpx 20rpx 0 0;
@@ -139,14 +115,14 @@
 /* 下面部分 */
 
 .content {
-  margin-top: 240rpx;
+  margin-top: 100rpx;
   padding: 0 15rpx;
 }
 
 /* 限时特价 */
 
 .seconds_box {
-  background: rgba(72, 185, 163, 0.3);
+  background: rgba(72, 185, 163, 0.1);
   padding-left: 10rpx;
   padding-top: 20rpx;
   width: 100%;
@@ -255,26 +231,35 @@
 }
 
 /* 热乎优选 */
-
-.hot_box {
-  background-image: linear-gradient(to right, #d1b171, #fff);
-  margin-top: 20rpx;
-  margin-bottom: 20rpx;
-  padding-left: 15rpx;
-  width: 100%;
+.title_box{
+  display: flex;
+}
+.title {
   height: 90rpx;
   display: flex;
   align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 150rpx;
 }
-
+.good_icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 120rpx;
+  height: 36rpx;
+}
 .good_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%,-50%);
   font-size: 36rpx;
   color: #0b0d1d;
   font-weight: 800;
+  z-index: 1;
 }
 
-.good_icon {
-  margin-right: 10rpx;
-  width: 42rpx;
-  height: 45rpx;
-}
+

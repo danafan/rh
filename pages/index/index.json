@@ -5,10 +5,9 @@
   "enablePullDownRefresh": true,
   "usingComponents": {
     "push_item": "../../components/PushItem/push_item",
-    "coupons_item": "../../components/CouponsItem/coupons_item",
+    "food_item": "../../components/FoodItem/food_item",
     "bottom": "../../components/Bottom/bottom",
     "tag": "../../components/Tag/tag",
-    "sort": "../../components/Sort/sort",
     "web_tag": "../../components/WebTag/web_tag"
   }
 }

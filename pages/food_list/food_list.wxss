@@ -1,4 +1,4 @@
-/* pages/coupons_list/coupons_list.wxss */
+/* pages/food_list/food_list.wxss */
 .top_back {
   border-radius: 0 0 50rpx 50rpx;
   background-image: linear-gradient(to bottom, #44ad99, #48b9a3);
