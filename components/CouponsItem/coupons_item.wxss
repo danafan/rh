@@ -6,30 +6,32 @@
   display: flex;
 }
 .margin{
-  margin-bottom: 10rpx;
-}
-.store_left {
-  border-radius: 15rpx 0 0 15rpx;
-  position: relative;
-  overflow: hidden;
-  width: 240rpx;
-  height: 240rpx;
+  margin-bottom: 20rpx;
 }
 
 .store_icon {
   border-radius: 15rpx 0 0 15rpx;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  width: 240rpx;
+  height: 240rpx;
 }
 .vouchers_back{
-  background-image: linear-gradient(to right, #f37464, #ff5858);
+  width: 225rpx;
+  height: 240rpx;
+  border-radius: 15rpx 0 0 15rpx;
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: #ff5858;
+  position: relative;
+}
+.border_box{
+  border-radius: 15rpx 0 0 15rpx;
+  position: absolute;
+  left: 0;
+  width: 20rpx;
+  height: 240rpx;
+  background-image: linear-gradient(to right, #f37464, #ff5858); 
 }
 .money_center{
   height:110rpx;
@@ -44,20 +46,42 @@
   font-size: 72rpx;
   font-weight: 800;
 }
-.remaining {
-  background-color: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  top: 18rpx;
-  right: -35rpx;
-  width: 150rpx;
-  text-align: center;
-  height: 42rpx;
-  line-height: 42rpx;
-  font-size: 22rpx;
-  color: #fff;
-  transform: rotate(45deg);
+.line_box_v {
+  /* position: absolute;
+  top: 0;
+  right: 185rpx; */
+  background: #fff;
+  width: 30rpx;
+  height: 240rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.kou_top_v {
+  background: rgba(72, 185, 163, 0.3);
+  width: 26rpx;
+  height: 26rpx;
+  border-radius: 0 0 13rpx 13rpx;
+}
+.kou_top_v_list{
+  background: #ededed;
+}
+.line_shu_v {
+  height: 60%;
+  border-left: 2rpx dashed #ff5858;
+}
+
+.kou_bottom_v {
+  border-radius: 13rpx 13rpx 0 0;
+  background: rgba(72, 185, 163, 0.3);
+  width: 26rpx;
+  height: 26rpx;
+}
+.kou_bottom_v_list{
+  background: #ededed;
+}
 .store_right {
   border-radius: 0 15rpx 15rpx 0;
   background: #fff;
@@ -65,12 +89,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10rpx;
+  padding: 15rpx 10rpx;
 }
 
 .store_title {
   margin-bottom: 10rpx;
-  font-size: 28rpx;
+  font-size: 30rpx;
   color: #333;
   font-weight: 700;
   display: -webkit-box;

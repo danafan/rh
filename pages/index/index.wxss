@@ -146,7 +146,7 @@
 /* 限时特价 */
 
 .seconds_box {
-  background-image: linear-gradient(to top, rgba(72, 185, 163, 0.5), rgba(72, 185, 163, 0.3));
+  background: rgba(72, 185, 163, 0.3);
   padding-left: 10rpx;
   padding-top: 20rpx;
   width: 100%;
@@ -254,124 +254,11 @@
   font-weight: 700;
 }
 
-/* 人气标榜 */
-
-.sentiment_box {
-  margin-top: 30rpx;
-  margin-bottom: 20rpx;
-  font-size: 36rpx;
-  color: #d1b171;
-  font-weight: 700;
-}
-
-.store_list {
-  width: 100%;
-  display: flex;
-}
-
-.one {
-  border-radius: 6rpx;
-  width: 343rpx;
-  height: 343rpx;
-  position: relative;
-  margin-right: 10rpx;
-}
-
-.one_icon {
-  border-radius: 6rpx;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.as_store_name {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 6rpx 0 6rpx 0;
-  height: 46rpx;
-  padding-left: 15rpx;
-  padding-right: 15rpx;
-  display: flex;
-  align-items: center;
-  font-size: 22rpx;
-  color: #fff;
-  z-index: 1;
-}
-
-.as_store_name_one {
-  border-radius: 6rpx 0 6rpx 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 52rpx;
-  line-height: 52rpx;
-  padding-left: 15rpx;
-  padding-right: 15rpx;
-  background: #ff5858;
-  font-size: 26rpx;
-  color: #fff;
-  z-index: 1;
-}
-
-.as_store_name_two {
-  background: #4ca5f6;
-}
-
-.as_store_name_three {
-  background: #ae4ff6;
-}
-
-.on_pin_big {
-  position: absolute;
-  top: 72rpx;
-  left: 0;
-}
-
-.tt {
-  height: 343rpx;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.tt_icon_box {
-  border-radius: 6rpx;
-  width: 100%;
-  height: 168rpx;
-  position: relative;
-}
-
-.tt_icon {
-  border-radius: 6rpx;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.on_pin_small {
-  background: #f9d9d0;
-  font-size: 20rpx;
-  color: #ff5858;
-  padding-left: 5rpx;
-  padding-right: 5rpx;
-  position: absolute;
-  bottom: 10rpx;
-  right: 0;
-  padding: 3rpx 5rpx;
-  z-index: 1;
-}
-
 /* 热乎优选 */
 
 .hot_box {
   background-image: linear-gradient(to right, #d1b171, #fff);
-  margin-top: 30rpx;
+  margin-top: 20rpx;
   margin-bottom: 20rpx;
   padding-left: 15rpx;
   width: 100%;
@@ -382,7 +269,7 @@
 
 .good_text {
   font-size: 36rpx;
-  color: #333;
+  color: #0b0d1d;
   font-weight: 800;
 }
 

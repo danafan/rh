@@ -10,8 +10,9 @@
     <view class="store_name">【千岛湖酸菜鱼】</view>
     <view class="coupons_text">88元代100元代金券</view>
   </view>
-  <!-- 使用规则 -->
+  <!-- 下面内容 -->
   <view class="coupons_money_box">
+    <!-- 商家信息 -->
     <view class="store_info">
       <view class="store_name_box">
         <view class="store_name">全聚德烤鸭</view>
@@ -33,7 +34,7 @@
     <view class="toast_desc" wx:if="{{type == '1'}}">
       温馨提示：特价产品不支持退款，请提前购买，在有效期内使用。
     </view>
-    <web_tag wx:if="{{type == '2'}}"/>
+    <web_tag wx:if="{{type == '2'}}" />
   </view>
   <view class="coupons_money_box">
     <view class="coupons_title">

@@ -1,7 +1,7 @@
 /* pages/service/service.wxss */
 
 .service_container {
-  background: #ededed;
+  background: #fbfbfb;
 }
 
 .tab_list {
@@ -39,8 +39,9 @@
 }
 
 .advertising_list {
-  padding: 15rpx;
-  background: #ededed;
-  margin-top: 90rpx;
   width: 100%;
+  padding: 15rpx;
+  background: #fbfbfb;
+  margin-top: 90rpx;
+
 }

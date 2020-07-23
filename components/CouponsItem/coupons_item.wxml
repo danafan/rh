@@ -1,17 +1,21 @@
 <!--components/CouponsItem/coupons_item.wxml-->
 <view class="store_content {{page_type == 'list'?'margin':''}}" data-type="{{coupons_info.type}}" bindtap="goDetail">
-  <view class="store_left">
-    <image class="store_icon" src="../../images/banner_02.jpg" wx:if="{{coupons_info.type == '1'}}"></image>
-    <view class="store_icon vouchers_back" wx:if="{{coupons_info.type == '2'}}">
-      <view class="money_center">
-        <text class="money_icon">¥</text>
-        <text class="money_text">100</text>
-      </view>
-    </view>
-    <view class="remaining" wx:if="{{page_type == 'index' && coupons_info.total_num}}">仅剩
-      <text class="red_color">{{coupons_info.total_num-coupons_info.rob_num}}</text>份
+  <!-- 特价菜 -->
+  <image class="store_icon" src="https://p0.meituan.net/dealwatera/7b90611c137f2c2dc0122a79c7e58ade95682.jpg@130w_130h_1e_1c" wx:if="{{coupons_info.type == '1'}}"></image>
+  <!-- 代金券 -->
+  <view class="vouchers_back" wx:if="{{coupons_info.type == '2'}}">
+    <view class="border_box"></view>
+    <view class="money_center">
+      <text class="money_icon">¥</text>
+      <text class="money_text">100</text>
     </view>
   </view>
+  <view class="line_box_v" wx:if="{{coupons_info.type == '2'}}">
+    <view class="kou_top_v {{page_type == 'list'?'kou_top_v_list':''}}"></view>
+    <view class="line_shu_v"></view>
+    <view class="kou_bottom_v {{page_type == 'list'?'kou_bottom_v_list':''}}"></view>
+  </view>
+  <!-- 右侧 -->
   <view class="store_right">
     <view>
       <view class="store_title">{{coupons_info.goods_name}}</view>

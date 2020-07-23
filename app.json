@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/category/category",
     "pages/order/order",
     "pages/my/my",
     "pages/store_detail/store_detail",
@@ -8,11 +9,10 @@
     "pages/coupons_list/coupons_list",
     "pages/goods_detail/goods_detail",
     "pages/auth/auth",
-    "pages/category/category"
-   
+    "pages/store_list/store_list"
   ],
   "tabBar": {
-    "color": "#bfbfbf",
+    "color": "#8a8a8a",
     "selectedColor": "#ff5858",
     "borderStyle": "black",
     "list": [
@@ -21,6 +21,12 @@
         "iconPath": "/images/index.png",
         "selectedIconPath": "/images/index_active.png",
         "text": "首页"
+      },
+      {
+        "pagePath": "pages/store_list/store_list",
+        "iconPath": "/images/brand.png",
+        "selectedIconPath": "/images/brand_active.png",
+        "text": "品牌榜"
       },
       {
         "pagePath": "pages/my/my",

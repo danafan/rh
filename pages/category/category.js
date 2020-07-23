@@ -48,20 +48,50 @@ Page({
       name: '蛋糕奶茶'
     }], //分类列表
     active_index: 0, //默认选中的顶部导航下标
-    service_list: [{
-      store_id: '1',
-      page_img: "../../images/banner_01.png",
-      remaining_num: '8',
-      sold_num: '182',
-      grass_num: "1442",
-      store_name: "同学少年 湘派小串",
-      desc: "108元抢原价283元的【烤串3-4人套餐】",
-      end_time: "2020.07.08-2020.08.08",
-      price: "108",
-      original_price: "288",
-    }], //信息列表
     show_index: 0, //解决顶部滑动bug
-    info_id: "",
+    info_id: "", //选中的导航ID
+    store_left_list: [],
+    store_right_list:[],
+    store_list: [{
+      store_id: '1',
+      store_img: "../../images/banner_02.jpg",
+      store_type: "火锅",
+      store_name: "狼一家铁锅炖",
+      star_num: '4.8',
+      sort: '1',
+      te: '',
+      hui: '3',
+      quan: '2',
+      location_text: '宁围街道',
+      distance: '5.2',
+      on_the_pin: '198',
+    }, {
+      store_id: '2',
+      store_img: "../../images/banner_01.png",
+      store_type: "自助餐",
+      store_name: "金鲨自助烤场",
+      star_num: '5.0',
+      sort: '',
+      te: '1',
+      hui: '4',
+      quan: '3',
+      location_text: '人民路',
+      distance: '3.6',
+      on_the_pin: '66',
+    }, {
+      store_id: '3',
+      store_img: "../../images/banner_03.jpg",
+      store_type: "海鲜",
+      store_name: "胖子海鲜大排档",
+      star_num: '4.9',
+      sort: '2',
+      te: '1',
+      hui: '3',
+      quan: '',
+      location_text: '大学路',
+      distance: '11.5',
+      on_the_pin: '88',
+    }], //套餐列表
     isLoad: true,
     page: 1
   },
@@ -70,17 +100,16 @@ Page({
     return app.globalData.shareObj
   },
   onLoad(option) {
-    console.log(option)
     this.setData({
       active_index: parseInt(option.index) + 1,
-      show_index: parseInt(option.index) >= 9 ? 6 : parseInt(option.index) >= 5 ?  5: parseInt(option.index),
+      show_index: parseInt(option.index) >= 9 ? 6 : parseInt(option.index) >= 5 ? 5 : parseInt(option.index),
       info_id: option.id
     })
     // console.log(this.data.show_index)
     //获取一级分类列表
     this.getCateGory();
     //获取信息列表
-    // this.getInfoList();
+    this.getInfoList();
   },
   //获取一级分类列表
   getCateGory() {
@@ -110,112 +139,59 @@ Page({
   },
   //点击切换顶部导航
   changeCurrent(e) {
+    let option = e.currentTarget.dataset;
     this.setData({
-      info_id: e.currentTarget.dataset.id,
-      service_list: [],
-      active_index: e.currentTarget.dataset.index,
-      isLoad: true,
-      page: 1
+      active_index: parseInt(option.index),
+      info_id: option.id,
+      // store_list: [],
+      // isLoad: true,
+      // page: 1
     })
     //获取信息列表
-    this.getInfoList();
+    // this.getInfoList();
   },
   //上拉加载
   onReachBottom() {
-    if (this.data.isLoad) {
-      this.setData({
-        page: this.data.page + 1
-      })
-      //获取信息列表
-      this.getInfoList();
-    }
+    console.log("上拉加载...");
+    // if (this.data.isLoad) {
+    //   this.setData({
+    //     page: this.data.page + 1
+    //   })
+    //   //获取信息列表
+    //   this.getInfoList();
+    // }
   },
   //获取信息列表
   getInfoList() {
-    let req = {
-      level_01_id: this.data.info_id,
-      page: this.data.page
-    };
-    util.get(api.infoList, req).then(res => {
-      if (res.data.length < 8) {
+    this.data.store_list.map((item,index) => {
+      if((index + 1)%2 == 0){
+        let arr = this.data.store_right_list;
+        arr.push(item)
         this.setData({
-          isLoad: false
+          store_right_list: arr
+        })
+      }else{
+        let arr = this.data.store_left_list;
+        arr.push(item)
+        this.setData({
+          store_left_list: arr
         })
       }
-      res.data.map(item => {
-        //处理文件数组
-        if (item.file_list) {
-          item.files = item.file_list.split("_");
-        }
-        //区分图片或视频
-        if (item.file_list && item.file_list.indexOf('mp4') > -1) {
-          item.file_type = 'video'
-        } else {
-          item.file_type = 'image'
-        }
-        //处理标签数组
-        if (item.tag_txts) {
-          item.tag_txts = item.tag_txts.split("_");
-        }
-        //处理时间显示
-        item.ddd = dateTime.getFormatTime(item.create_time);
-        //处理不同的信息
-        if (item.diff_data) {
-          let diffObj = JSON.parse(item.diff_data);
-          var diffArr = [];
-          for (var k in diffObj) {
-            var type = "";
-            if (k == 'check_sneq') {
-              type = "类型";
-            } else if (k == 'sex') {
-              type = "性别";
-            } else if (k == 'company') {
-              type = "公司名称";
-            } else if (k == 'wage') {
-              type = "薪资";
-            } else if (k == 'work_addres') {
-              type = "工作地址";
-            } else if (k == 'experience') {
-              type = "工作经验";
-            } else if (k == 'age') {
-              type = "年龄";
-            } else if (k == 'house_location') {
-              type = "房屋地址";
-            } else if (k == 'destination') {
-              type = "目的地";
-            } else if (k == 'origin') {
-              type = "出发地";
-            } else if (k == 'number') {
-              type = "乘坐人数";
-            } else if (k == 'origin_time') {
-              type = "乘车时间";
-            }
-            diffArr.push({
-              type: type,
-              val: diffObj[k]
-            })
-          }
-          item.diff_data = diffArr
-        }
-      })
-      this.setData({
-        service_list: [...this.data.service_list, ...res.data]
-      })
     })
   },
-  //拨打电话
-  call(v) {
-    if (!app.globalData.userInfo) {
-      wx.navigateTo({
-        url: '/pages/auth/auth',
-      });
-    } else {
-      let phone = v.currentTarget.dataset.phone;
-      wx.makePhoneCall({
-        phoneNumber: phone
-      })
-    }
-  },
+  // //拨打电话
+  // call(v) {
+  //   if (!app.globalData.userInfo) {
+  //     wx.navigateTo({
+  //       url: '/pages/auth/auth',
+  //     });
+  //   } else {
+  //     let phone = v.currentTarget.dataset.phone;
+  //     wx.makePhoneCall({
+  //       phoneNumber: phone
+  //     })
+  //   }
+  // },
   //点击进入详情
   detail() {
     wx.navigateTo({

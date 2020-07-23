@@ -1,25 +1,23 @@
 <!--components/PushItem/push_item.wxml-->
 <view class="push_container" bindtap="goDetail">
   <view class="top_box">
-    <image class="goods_img" src="../../images/banner_03.jpg"></image>
-    <view class="grass">火锅</view>
+    <image class="store_img" mode="scaleToFill" src="{{storeItem.store_img}}"></image>
+    <view class="store_type">{{storeItem.store_type}}</view>
   </view>
-  <view class="name_box">
-    <view class="store_name">品牌：{{infoItem.store_name}}</view>
-    <view class="price_box">
-      <view class="zhe">
-        <view class="price red_color">¥{{infoItem.price}}</view>
-        <tag class="discount" val="{{infoItem.discount}}折" background="#f9d9d0" color="#ff5858" />
-      </view>
-      <view class="hua">门店价：¥{{infoItem.original_price}}</view>
-    </view>
+  <view class="store_name_box">
+    <view class="store_name">品牌：{{storeItem.store_name}}</view>
   </view>
   <view class="sort_box_row">
-    <sort val="萧山区烤鱼人气第一名"/>
+    <view class="rh_star_box">热力值：{{storeItem.star_num}}</view>
+    <sort val="全城{{storeItem.store_type}}人气第{{storeItem.sort}}名" wx:if="{{storeItem.sort != ''}}"/>
   </view>
-  <view class="desc">{{infoItem.desc}}，请提前购买，请在有效期内使用。</view>
+  <view class="tag_list">
+    <tag val="特价菜{{storeItem.te}}个" background="#f7bf38" color="#fff" margin="true" wx:if="{{storeItem.te != ''}}"/>
+    <tag val="优惠套餐{{storeItem.hui}}种" background="#ff5858" color="#fff" margin="true" wx:if="{{storeItem.hui != ''}}"/>
+    <tag val="代金券{{storeItem.quan}}张" background="#48b9a3" color="#fff" margin="true" wx:if="{{storeItem.quan != ''}}"/>
+  </view>
   <view class="bottom_box">
-    <view>使用期限：{{infoItem.end_time}}</view>
-    <view class="red_color">{{infoItem.sold_num}}已抢</view>
+    <view class="bottom_text">{{storeItem.location_text}} | {{storeItem.distance}}km</view>
+    <view class="bottom_text">月销{{storeItem.on_the_pin}}</view>
   </view>
 </view>

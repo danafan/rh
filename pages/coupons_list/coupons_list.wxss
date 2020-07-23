@@ -57,7 +57,7 @@
   left: 50%;
   transform: translate(-50%);
   width: 710rpx;
-  background: #fff;
+  background: #ededed;
   border-radius: 10rpx;
   padding: 10rpx;
 }

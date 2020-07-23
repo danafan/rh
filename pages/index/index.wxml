@@ -46,7 +46,7 @@
       <view class="seconds_box">
         <view class="seconds_top">
           <view>
-            <view class="kill">限时特价</view>
+            <view class="kill">今日特价</view>
             <view class="time_out">
               <text class="timeout_box left">11</text>:
               <text class="timeout_box center">28</text>:
@@ -62,7 +62,7 @@
             </swiper-item>
           </swiper>
           <view class="all" bindtap="goList">
-            <view>发现更多优惠</view>
+            <view>发现更多</view>
             <image class="more_right" src="../../images/more_right.png"></image>
           </view>
         </view>
@@ -78,34 +78,13 @@
           </swiper-item>
         </swiper>
       </view>
-      <!-- 人气标榜 -->
-      <view class="sentiment_box">人气飙榜</view>
-      <view class="store_list">
-        <view class="one" bindtap="storeDetail">
-          <view class="as_store_name_one">千岛湖酸菜鱼</view>
-          <image class="one_icon" src="../../images/banner_01.png"></image>
-          <sort class="on_pin_big" val="全城火锅人气第一名" />
-        </view>
-        <view class="tt">
-          <view class="tt_icon_box" bindtap="storeDetail">
-            <view class="as_store_name as_store_name_two">千岛湖酸菜鱼</view>
-            <image class="tt_icon" src="../../images/banner_02.jpg"></image>
-            <sort class="on_pin_small" val="全城火锅人气第二名" />
-          </view>
-          <view class="tt_icon_box" bindtap="storeDetail">
-            <view class="as_store_name as_store_name_three">千岛湖酸菜鱼</view>
-            <image class="tt_icon" src="../../images/banner_03.jpg"></image>
-            <sort class="on_pin_small" val="全城烧烤人气第一名" />
-          </view>
-        </view>
-      </view>
       <!-- 热乎优选 -->
       <view class="hot_box">
         <image class="good_icon" src="../../images/good_icon.png"></image>
         <view class="good_text">热乎优选</view>
       </view>
       <!-- 优选列表 -->
-      <push_item wx:for="{{info_list}}" wx:key="store_id" infoItem="{{item}}" />
+      <push_item wx:for="{{store_list}}" wx:key="store_id" storeItem="{{item}}" />
     </view>
   </view>
 

@@ -1,0 +1,18 @@
+<!--pages/store_list/store_list.wxml-->
+<view class="container store_list_box">
+  <view class="advertising_list">
+    <view class="store_cate_item" wx:for="{{store_list}}" wx:key="title">
+      <view class="store_cate_name">{{item.title}}</view>
+      <view class="store_children">
+        <!-- 左侧列表 -->
+        <view class="column">
+          <store_item wx:for="{{item.store_left_list}}" wx:key="store_id" wx:for-item="storeItem" store_info="{{storeItem}}" />
+        </view>
+        <!-- 右侧列表 -->
+        <view class="column">
+          <store_item wx:for="{{item.store_right_list}}" wx:key="store_id" wx:for-item="storeItem" store_info="{{storeItem}}" />
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
