@@ -35,41 +35,60 @@
   </view>
   <!-- 下面内容 -->
   <view class="content">
-    <!-- 限时特价 -->
+    <!-- 中间模块 -->
     <view class="seconds_box">
+      <!-- 顶部标题 -->
       <view class="seconds_top">
-        <view>
-          <view class="kill">今日特价</view>
-          <view class="time_out">
-            <text class="timeout_box left">11</text>:
-            <text class="timeout_box center">28</text>:
-            <text class="timeout_box right">00</text>
-          </view>
+        <view class="seconds_top_left">
+          <view class="kill">精选套餐</view>
+          <swiper class="swiper_second" autoplay interval="3600" circular vertical>
+            <swiper-item>
+              <text class="swiper_second_text">0元福利 每天上新</text>
+            </swiper-item>
+            <swiper-item>
+              <text class="swiper_second_text">好吃不上火</text>
+            </swiper-item>
+          </swiper>
         </view>
-        <swiper class="swiper_second" autoplay interval="3000" circular vertical>
-          <swiper-item>
-            <text class="swiper_second_text">0元福利 每天上新</text>
-          </swiper-item>
-          <swiper-item>
-            <text class="swiper_second_text">好吃不上火</text>
-          </swiper-item>
-        </swiper>
         <view class="all" bindtap="goList">
           <view>发现更多</view>
           <image class="more_right" src="../../images/more_right.png"></image>
         </view>
       </view>
-      <swiper class="offer_box" next-margin="50rpx" indicator-dots="true" indicator-color="rgba(255,255,255,0.8)" indicator-active-color="#ff5858">
-        <swiper-item wx:for="{{preferential}}" wx:key="index">
-          <view class="offer_item">
-            <view class="store_name">
-              <view class="name_icon"></view>
-              <view class="name">{{item.store_name}}</view>
-            </view>
-            <food_item food_info="{{item}}" />
-          </view>
+      <!-- 精选套餐轮播 -->
+      <swiper class="offer_box" autoplay="true" circular="true" duration="50" interval="3000">
+        <swiper-item wx:for="{{package_list}}" wx:key="package_id">
+          <index_package_item package_info="{{item}}" />
         </swiper-item>
       </swiper>
+      <!-- 横线 -->
+      <view class="cross_line"></view>
+      <!-- 下面特价菜和代金券 -->
+      <view class="food_vouchers">
+        <!-- 左侧特价菜 -->
+        <view class="food_box">
+          <view class="food_box_top">
+            <view class="food_title">特价好菜</view>
+            <view class="all_food">查看全部</view>
+          </view>
+          <view class="food_toast">红包+商家补贴</view>
+          <swiper class="food_swiper" autoplay="true" circular="true" display-multiple-items="2" interval="2000">
+            <swiper-item wx:for="{{preferential}}" wx:key="id">
+              <view class="food_item">
+                <image class="food_img" src="{{item.food_img}}"></image>
+                <view class="food_name">{{item.goods_name}}</view>
+                <view class="food_price_box">
+                  <text class="food_price_icon">¥</text>
+                  <text class="food_now_price">{{item.now_price}}</text>
+                  <text class="food_old_price">¥{{item.old_price}}</text>
+                </view>
+              </view>
+            </swiper-item>
+          </swiper>
+        </view>
+        <view class="longitudinal_line"></view>
+        <view class="vouchers_box"></view>
+      </view>
     </view>
     <!-- 热乎优选 -->
     <view class="title_box">

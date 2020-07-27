@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "sort": "../../components/Sort/sort",
+    "tag": "../../components/Tag/tag"
+  }
+}

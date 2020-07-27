@@ -42,6 +42,7 @@ Page({
     // shu: 1, //默认banner当前数
   },
   onLoad: function(options) {
+    console.log(options.id);//套餐id
     //设置导航栏
     // wx.setNavigationBarTitle({ title: 'i热乎' })
   },

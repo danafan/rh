@@ -1,0 +1,19 @@
+<!--首页精选套餐item-->
+<view class="food_content" data-id="{{package_info.package_id}}" bindtap="goDetail">
+  <!-- 左侧图片 -->
+  <image class="food_icon" src="{{package_info.package_img}}"></image>
+  <!-- 右侧 -->
+  <view class="store_right">
+    <view class="store_title">{{package_info.store_name}} {{package_info.package_name}}</view>
+    <view class="rob_num red_color">
+      月售{{package_info.sold_num}}
+    </view>
+    <view class="right_bottom">
+      <view class="price_box">
+        <text class="price red_color">¥{{package_info.now_price}}</text>
+        <text class="hua">¥{{package_info.old_price}}</text>
+      </view>
+      <view class="rob">立即抢购</view>
+    </view>
+  </view>
+</view>

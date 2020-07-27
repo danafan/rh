@@ -1,4 +1,4 @@
-<!--components/PushItem/push_item.wxml-->
+<!--分类列表商家item-->
 <view class="store_container" bindtap="goDetail">
   <image class="store_img" src="{{storeItem.store_img}}"></image>
   <view class="store_right">
@@ -11,12 +11,36 @@
       </view>
       <sort val="全城{{storeItem.store_type}}人气第{{storeItem.sort}}名" wx:if="{{storeItem.sort != ''}}" />
     </view>
-     <view class="store_tag">'味道超级赞，之后还会再来的'</view>
+    <view class="store_tag">'味道超级赞，之后还会再来的'</view>
     <view class="location_box">
       <view class="on_the_pin">重庆火锅</view>
       <view class="on_the_pin">五一广场</view>
     </view>
-    <view class="tag" wx:if="{{storeItem.te != ''}}">
+    <view class="preferential_list">
+      <view class="tag_label hui">优惠套餐2个</view>
+      <view class="tag_label quan">代金券3张</view>
+      <view class="tag_label te">特价菜3个</view>
+    </view>
+    <view class="package_list_box">
+      <scroll-view class="package_list" scroll-x="true" style="width:100%">
+        <view class="package_item" wx:for="{{storeItem.package_list}}" wx:key="package_id">
+          <image class="package_img" src="{{item.package_img}}"></image>
+          <view class="package_name">{{item.package_name}}重庆火锅重庆火锅</view>
+          <view>
+          <text class="price_box">
+            <text class="now_price">
+              <text class="price_icon">¥</text>
+              <text class="price_text">{{item.now_price}}</text>
+            </text>
+            <text class="old_price">¥{{item.old_price}}</text>
+          </text>
+          </view>
+          
+        </view>
+      </scroll-view>
+    </view>
+
+    <!-- <view class="tag" wx:if="{{storeItem.te != ''}}">
       <view class="tag_label te">特</view>
       <view class="tag_val">{{storeItem.te}}</view>
     </view>
@@ -27,7 +51,7 @@
     <view class="tag" wx:if="{{storeItem.quan != ''}}">
       <view class="tag_label quan">券</view>
       <view class="tag_val">{{storeItem.quan}}</view>
-    </view>
+    </view> -->
 
   </view>
 </view>

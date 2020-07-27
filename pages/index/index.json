@@ -5,6 +5,7 @@
   "enablePullDownRefresh": true,
   "usingComponents": {
     "push_item": "../../components/PushItem/push_item",
+    "index_package_item": "../../components/IndexPackageItem/index_package_item",
     "food_item": "../../components/FoodItem/food_item",
     "bottom": "../../components/Bottom/bottom",
     "tag": "../../components/Tag/tag",

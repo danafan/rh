@@ -1,12 +1,12 @@
 /* components/StoreItem/store_item.wxss */
 .store_item{
   box-shadow: 0 0 6rpx #bfbfbf;
-  width: 355rpx;
+  width: 360rpx;
   margin-bottom: 15rpx;
 }
 .store_img_box{
-  width: 355rpx;
-  height: 280rpx;
+  width: 360rpx;
+  height: 270rpx;
   position: relative;
 }
 .store_img{

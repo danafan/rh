@@ -11,7 +11,7 @@
   </swiper>
   <!-- 底部列表 -->
   <view class="advertising_list">
-    <push_item wx:for="{{store_list}}" wx:key="store_id" storeItem="{{item}}" />
+    <cate_store_item wx:for="{{store_list}}" wx:key="store_id" storeItem="{{item}}" />
   </view>
   <!-- 空 -->
   <null_page toast_text="这里啥都没有，赶快去发布吧～" wx:if="{{service_list.length == 0}}" bind:goPush="goPush" />

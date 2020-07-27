@@ -53,19 +53,44 @@ Page({
       iocn: '../../images/cate_03.png',
       name: '蛋糕奶茶'
     }], //分类列表
+    package_list: [{
+      package_id: '1',
+      package_img: "https://img.ivsky.com/img/tupian/t/202002/28/riben_meishi-001.jpg",
+      store_name: "虾小哥 浇汁大虾",
+      package_name: "大吉大利今晚吃鸡套餐",
+      old_price: "38",
+      now_price: "12",
+      sold_num: "182"
+    }, {
+      package_id: '2',
+      package_img: "https://img.ivsky.com/img/tupian/t/202002/28/riben_meishi-005.jpg",
+      store_name: "老男孩 川湘菜",
+      package_name: "美味单人套餐（含米饭）",
+      old_price: "42",
+      now_price: "18",
+      sold_num: "160"
+    }, {
+      package_id: '3',
+      package_img: "https://img.ivsky.com/img/tupian/t/202002/14/xican_meishi-001.jpg",
+      store_name: "好生活麻辣香锅",
+      package_name: "干锅有机花菜套餐",
+      old_price: "29",
+      now_price: "12.8",
+      sold_num: "78"
+    }], //套餐列表
     preferential: [{
       id: "1",
-      food_img: 'https://p0.meituan.net/dealwatera/7b90611c137f2c2dc0122a79c7e58ade95682.jpg@130w_130h_1e_1c',
+      food_img: 'https://img.ivsky.com/img/tupian/t/202002/14/xican_meishi.jpg',
       store_name: "一点点（人民路店）",
       goods_name: "红茶玛奇朵一份",
       total_num: 200,
       rob_num: 118,
       old_price: "39",
       now_price: "12.9",
-      discount: "8.5"
+      discount: "8.5",
     }, {
       id: "2",
-        food_img: 'https://p0.meituan.net/dealwatera/7b90611c137f2c2dc0122a79c7e58ade95682.jpg@130w_130h_1e_1c',
+      food_img: 'https://img.ivsky.com/img/tupian/t/202002/14/xican_meishi-005.jpg',
       store_name: "外婆家",
       goods_name: "西湖醋鱼",
       total_num: 200,
@@ -75,7 +100,7 @@ Page({
       discount: "8.0"
     }, {
       id: "3",
-        food_img: 'https://p0.meituan.net/dealwatera/7b90611c137f2c2dc0122a79c7e58ade95682.jpg@130w_130h_1e_1c',
+      food_img: 'https://img.ivsky.com/img/tupian/t/202002/28/riben_meishi-007.jpg',
       store_name: "叫了只炸鸡",
       goods_name: "椒盐整鸡一份",
       rob_num: 65,
@@ -90,9 +115,9 @@ Page({
       store_name: "狼一家铁锅炖",
       star_num: '4.8',
       sort: '1',
-      te: '',
-      hui: '3',
-      quan: '2',
+      te: "锅包肉18元",
+      hui: "2人餐48元，4人餐88元，3人餐99元，4-6人餐128元",
+      quan: "88代100元，70代100元",
       location_text: '宁围街道',
       distance: '5.2',
       on_the_pin: '198',
@@ -103,9 +128,9 @@ Page({
       store_name: "金鲨自助烤场",
       star_num: '5.0',
       sort: '',
-      te: '1',
-      hui: '4',
-      quan: '3',
+      te: "锅包肉18元",
+      hui: "2人餐48元，4人餐88元，4-6人餐128元",
+      quan: "88代100元，70代100元",
       location_text: '人民路',
       distance: '3.6',
       on_the_pin: '66',
@@ -116,13 +141,13 @@ Page({
       store_name: "胖子海鲜大排档",
       star_num: '4.9',
       sort: '2',
-      te: '1',
-      hui: '3',
-      quan: '',
+      te: "锅包肉18元",
+      hui: "2人餐48元，4人餐88元，4-6人餐128元",
+      quan: "88代100元，70代100元",
       location_text: '大学路',
       distance: '11.5',
       on_the_pin: '88',
-    }], //套餐列表
+    }], //店铺列表
     startBarHeight: 0,
     navgationHeight: 0,
     isLoad: true, //默认可以加载

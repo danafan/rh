@@ -1,0 +1,75 @@
+/* components/IndexPackageItem/index_package_item.wxss */
+
+.food_content {
+  border-radius: 15rpx;
+  height: 198rpx;
+  width: 100%;
+  display: flex;
+}
+
+.food_icon {
+  border-radius: 15rpx 0 0 15rpx;
+  width: 242rpx;
+  height: 198rpx;
+}
+
+.store_right {
+  height: 198rpx;
+  border-radius: 0 15rpx 15rpx 0;
+  background: #fff;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10rpx 10rpx 0;
+}
+
+.store_title {
+  font-size: 30rpx;
+  color: #333;
+  font-weight: 700;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.right_bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price_box {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.price {
+  margin-right: 10rpx;
+  font-size: 40rpx;
+  font-weight: 700;
+}
+
+.red_color {
+  color: #ff5858;
+}
+
+.hua {
+  text-decoration: line-through;
+  font-size: 26rpx;
+  color: #8a8a8a;
+}
+
+.rob_num {
+  font-size: 24rpx;
+}
+
+.rob {
+  background:#ff5858;
+  border-radius: 8rpx;
+  padding: 10rpx 15rpx;
+  font-size: 24rpx;
+  color: #fff;
+}

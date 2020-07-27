@@ -1,4 +1,4 @@
-// components/PushItem/push_item.js
+// components/CateStoreItem/cate_store_item.js
 var app = getApp();
 Component({
   properties: {

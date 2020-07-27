@@ -13,7 +13,7 @@
   justify-content: space-between;
 }
 .column{
-  width: 355rpx;
+  width: 360rpx;
 }
 .store_cate_name {
   font-size: 32rpx;

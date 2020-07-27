@@ -2,7 +2,7 @@
   "navigationBarTitleText": "分类",
   "navigationBarBackgroundColor": "#0b0d1d",
   "usingComponents": {
-    "push_item": "../../components/PushItem/push_item",
+    "cate_store_item": "../../components/CateStoreItem/cate_store_item",
     "bottom": "../../components/Bottom/bottom"
   }
 }

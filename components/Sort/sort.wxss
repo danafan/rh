@@ -1,11 +1,13 @@
 /* components/Sort/sort.wxss */
 .sort_box{
-  position: relative;
-  background: #f9d9d0;
-  height: 34rpx;
-  line-height: 34rpx;
+  border:1rpx solid #EC722E;
+  height: 32rpx;
+  /* line-height: 32rpx; */
+  display: flex;
+  align-items: center;
+  border-radius: 16rpx 16rpx 16rpx 0;
   padding-left: 12rpx;
   padding-right: 12rpx;
-  font-size: 22rpx;
-  color: #ff5858;
+  font-size: 20rpx;
+  color: #EC722E;
 }

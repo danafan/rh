@@ -1,4 +1,4 @@
-<!--pages/store_detail/store_detail.wxml-->
+<!--套餐详情-->
 <view class="container">
   <view class="top_box">
     <!-- 轮播图 -->
