@@ -56,7 +56,7 @@
         </view>
       </view>
       <!-- 精选套餐轮播 -->
-      <swiper class="offer_box" autoplay="true" circular="true" duration="50" interval="3000">
+      <swiper class="offer_box" autoplay="true" circular="true" duration="80" interval="3000">
         <swiper-item wx:for="{{package_list}}" wx:key="package_id">
           <index_package_item package_info="{{item}}" />
         </swiper-item>
@@ -87,7 +87,11 @@
           </swiper>
         </view>
         <view class="longitudinal_line"></view>
-        <view class="vouchers_box"></view>
+        <view class="vouchers_box">
+          <view class="food_title">券商场</view>
+          <view class="vouchers_toast">大额神券 等你来拿</view>
+          <image class="vouchers_img" src="https://photo-static-api.fotomore.com/creative/vcg/176/new/e2447eaa43844379aeb4c76e1726cc7a.jpg"></image>
+        </view>
       </view>
     </view>
     <!-- 热乎优选 -->
