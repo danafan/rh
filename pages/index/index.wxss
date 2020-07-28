@@ -1,4 +1,5 @@
 /**index.wxss**/
+
 .navgation_box {
   background-image: linear-gradient(to left, #e84d2a, #ec722e);
   position: fixed;
@@ -166,50 +167,60 @@
 }
 
 .all {
-  font-size: 24rpx;
-  color: #bfbfbf;
   display: flex;
   align-items: center;
+  font-size: 22rpx;
+  color: #8a8a8a;
 }
 
 .more_right {
   width: 30rpx;
   height: 30rpx;
 }
-.offer_box{
+
+.offer_box {
   height: 198rpx;
 }
+
 /* 横线 */
-.cross_line{
+
+.cross_line {
   margin-top: 30rpx;
   margin-bottom: 20rpx;
   width: 100%;
   border-top: 1rpx solid #e6e6e6;
 }
+
 /* 特价菜和券 */
-.food_vouchers{
+
+.food_vouchers {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
+
 /* 特价菜 */
-.food_box{
+
+.food_box {
   width: 50%;
 }
-.food_box_top{
+
+.food_box_top {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-right: 10rpx;
 }
-.food_title{
+
+.food_title {
   font-size: 30rpx;
   color: #333;
   font-weight: 700;
 }
-.all_food{
-  border:1rpx solid #F6B837;
+
+.all_food {
+  border: 1rpx solid #f6b837;
   height: 30rpx;
   display: flex;
   align-items: center;
@@ -217,13 +228,15 @@
   border-radius: 15rpx;
   width: 100rpx;
   font-size: 20rpx;
-  color: #F6B837;
+  color: #f6b837;
 }
-.food_toast{
+
+.food_toast {
   font-size: 26rpx;
-  color: #F6B837;
+  color: #f6b837;
 }
-.vouchers_toast{
+
+.vouchers_toast {
   background-image: linear-gradient(to right, #48b9a3, #fff);
   height: 38rpx;
   line-height: 38rpx;
@@ -232,21 +245,25 @@
   /* color: #48b9a3; */
   color: #fff;
 }
-.food_swiper{
+
+.food_swiper {
   margin-top: 10rpx;
   width: 100%;
   height: 230rpx;
 }
-.food_item{
+
+.food_item {
   width: 165rpx;
   margin-right: 10rpx;
 }
-.food_img{
+
+.food_img {
   border-radius: 10rpx 10rpx 0 0;
   width: 100%;
   height: 130rpx;
 }
-.food_name{
+
+.food_name {
   width: 100%;
   text-align: center;
   font-size: 26rpx;
@@ -258,43 +275,52 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.food_price_box{
+
+.food_price_box {
   width: 100%;
   text-align: center;
 }
-.food_price_icon{
+
+.food_price_icon {
   font-size: 20rpx;
   color: #ff5858;
   font-weight: 700;
 }
-.food_now_price{
+
+.food_now_price {
   font-size: 26rpx;
   color: #ff5858;
   font-weight: 700;
 }
-.food_old_price{
+
+.food_old_price {
   margin-left: 10rpx;
   text-decoration: line-through;
   font-size: 20rpx;
   color: #8a8a8a;
 }
+
 /* 竖线 */
-.longitudinal_line{
+
+.longitudinal_line {
   /* margin-left: 10rpx; */
   margin-right: 10rpx;
   height: 300rpx;
   border-left: 3rpx solid #e6e6e6;
 }
-.vouchers_box{
+
+.vouchers_box {
   /* border:1rpx solid red; */
   width: 50%;
   height: 200rpx;
 }
-.vouchers_img{
+
+.vouchers_img {
   margin-top: 10rpx;
   width: 100%;
   height: 215rpx;
 }
+
 /* 热乎优选 */
 
 .title_box {

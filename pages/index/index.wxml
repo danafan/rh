@@ -51,7 +51,7 @@
           </swiper>
         </view>
         <view class="all" bindtap="goList">
-          <view>发现更多</view>
+          <view class="all_text">发现更多</view>
           <image class="more_right" src="../../images/more_right.png"></image>
         </view>
       </view>
@@ -87,7 +87,7 @@
           </swiper>
         </view>
         <view class="longitudinal_line"></view>
-        <view class="vouchers_box">
+        <view class="vouchers_box" bindtap="goCoupons">
           <view class="food_title">券商场</view>
           <view class="vouchers_toast">大额神券 等你来拿</view>
           <image class="vouchers_img" src="https://photo-static-api.fotomore.com/creative/vcg/176/new/e2447eaa43844379aeb4c76e1726cc7a.jpg"></image>

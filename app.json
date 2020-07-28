@@ -25,12 +25,6 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/coupons_list/coupons_list",
-        "iconPath": "/images/my.png",
-        "selectedIconPath": "/images/my_active.png",
-        "text": "券商场"
-      },
-      {
         "pagePath": "pages/store_list/store_list",
         "iconPath": "/images/brand.png",
         "selectedIconPath": "/images/brand_active.png",

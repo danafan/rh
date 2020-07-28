@@ -61,7 +61,7 @@
 }
 .store_tag{
   margin-top: 6rpx;
-  font-size: 20rpx;
+  font-size: 22rpx;
   color: #e84d2a;
 }
 .tag{

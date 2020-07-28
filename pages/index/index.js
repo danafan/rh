@@ -178,6 +178,12 @@ Page({
       url: '/pages/food_list/food_list',
     });
   },
+  //券商场
+  goCoupons() {
+    wx.navigateTo({
+      url: '/pages/coupons_list/coupons_list',
+    });
+  },
   onPageScroll: function(e) { // 页面滚动监听
     this.setData({
       scrollTop: (e.scrollTop) / 100
