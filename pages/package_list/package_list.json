@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "精选套餐",
+  "navigationBarBackgroundColor": "#ff5858",
+  "usingComponents": {
+    "package_item": "../../components/PackageItem/package_item"
+  }
+}

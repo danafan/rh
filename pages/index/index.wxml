@@ -50,7 +50,7 @@
             </swiper-item>
           </swiper>
         </view>
-        <view class="all" bindtap="goList">
+        <view class="all" bindtap="packageList">
           <view class="all_text">发现更多</view>
           <image class="more_right" src="../../images/more_right.png"></image>
         </view>
@@ -68,10 +68,10 @@
         <!-- 左侧特价菜 -->
         <view class="food_box">
           <view class="food_box_top">
-            <view class="food_title">特价好菜</view>
-            <view class="all_food">查看全部</view>
+            <view class="food_title">今日特价</view>
+            <view class="all_food" bindtap="foodList">全部特价</view>
           </view>
-          <view class="food_toast">红包+商家补贴</view>
+          <view class="food_toast">低价好菜，限量抢购</view>
           <swiper class="food_swiper" autoplay="true" circular="true" display-multiple-items="2" interval="2000">
             <swiper-item wx:for="{{preferential}}" wx:key="id">
               <view class="food_item">
@@ -87,7 +87,7 @@
           </swiper>
         </view>
         <view class="longitudinal_line"></view>
-        <view class="vouchers_box" bindtap="goCoupons">
+        <view class="vouchers_box" bindtap="vouchersList">
           <view class="food_title">券商场</view>
           <view class="vouchers_toast">大额神券 等你来拿</view>
           <image class="vouchers_img" src="https://photo-static-api.fotomore.com/creative/vcg/176/new/e2447eaa43844379aeb4c76e1726cc7a.jpg"></image>

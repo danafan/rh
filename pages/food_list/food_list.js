@@ -3,7 +3,7 @@ Page({
   data: {
     preferential: [{
       id: "1",
-      food_img: 'https://p0.meituan.net/dealwatera/7b90611c137f2c2dc0122a79c7e58ade95682.jpg@130w_130h_1e_1c',
+      food_img: 'https://imagev2.xmcdn.com/group83/M08/95/B2/wKg5HV8D-qqjXsIpAA0b8M5shq8828.jpg!strip=1&quality=7&magick=jpg&op_type=5&upload_type=cover&name=web_large&device_type=ios',
       store_name: "一点点（人民路店）",
       goods_name: "红茶玛奇朵一份",
       total_num: 200,
@@ -13,7 +13,7 @@ Page({
       discount: "8.5"
     }, {
       id: "2",
-      food_img: 'https://p0.meituan.net/dealwatera/7b90611c137f2c2dc0122a79c7e58ade95682.jpg@130w_130h_1e_1c',
+        food_img: 'https://imagev2.xmcdn.com/group80/M03/47/33/wKgPEV7LRkGD-JQCABewM-Bp26Y577.png!strip=1&quality=7&magick=jpg&op_type=5&upload_type=cover&name=web_large&device_type=ios',
       store_name: "外婆家",
       goods_name: "西湖醋鱼",
       total_num: 200,
@@ -23,7 +23,7 @@ Page({
       discount: "8.0"
     }, {
       id: "3",
-      food_img: 'https://p0.meituan.net/dealwatera/7b90611c137f2c2dc0122a79c7e58ade95682.jpg@130w_130h_1e_1c',
+        food_img: 'https://imagev2.xmcdn.com/group78/M02/D0/3D/wKgO1l6FqoSCAuDoAAvSp1EA3IE294.jpg!strip=1&quality=7&magick=jpg&op_type=5&upload_type=cover&name=web_large&device_type=ios',
       store_name: "叫了只炸鸡",
       goods_name: "椒盐整鸡一份",
       rob_num: 65,

@@ -1,7 +1,7 @@
-<!--pages/food_list/food_list.wxml-->
-<view class="container">
-    <view class="top_back"></view>
-    <view class="list_box">
-      <food_item food_info="{{item}}" page_type="list" wx:for="{{preferential}}" wx:key="id" />
-    </view>
+<!--首页今日特价列表-->
+<view class="container food_list_box">
+  <view class="package_list_box">
+    <food_item food_info="{{item}}" page_type="list" wx:for="{{preferential}}" wx:key="id" />
+  </view>
+
 </view>

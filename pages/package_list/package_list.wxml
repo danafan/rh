@@ -1,0 +1,14 @@
+<!--首页套餐列表-->
+<view class="container">
+  <view class="package_list_box">
+    <package_item/>
+    <package_item/>
+    <package_item/>
+    <package_item/>
+    <package_item/>
+    <package_item/>
+    <package_item/>
+    <package_item/>
+  </view>
+
+</view>

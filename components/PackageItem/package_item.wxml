@@ -1,0 +1,26 @@
+<!--套餐列表中套餐item-->
+<view class="package_item">
+  <view class="item_top">
+    <view class="package_img_box">
+      <image class="package_img" src="../../images/banner_01.png"></image>
+      <view class="rate">87%好评</view>
+    </view>
+    <view class="package_right">
+      <view class="package_name">大吉大利今晚吃鸡套餐大吉大利今晚吃鸡套餐</view>
+      <view class="package_desc">我是散养的鸡，我只吃虫子和粗粮，从不吃饲料，所以我很健康我是散养的鸡，我只吃虫子和粗粮，从不吃饲料，所以我很健康</view>
+      <view class="border_box">月售176</view>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="bottom_info">
+    <item_store/>
+    <view class="price_box">
+      <view class="old_price">¥238.3</view>
+      <view class="now_price">
+        <text class="price_icon">¥</text>
+        <text class="price_text">328.8</text>
+      </view>
+    </view>
+    <view class="button">立即抢购</view>
+  </view>
+</view>

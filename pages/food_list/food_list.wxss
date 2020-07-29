@@ -1,20 +1,12 @@
 /* pages/food_list/food_list.wxss */
-.top_back {
-  border-radius: 0 0 50rpx 50rpx;
-  background-image: linear-gradient(to bottom, #44ad99, #48b9a3);
-  height: 320rpx;
+.food_list_box{
+  background: #f6b837;
+  padding: 15rpx;
 }
-
-.list_box{
-  margin-bottom: 20rpx;
-  box-shadow: 0 0 8rpx #bfbfbf;
-  position: absolute;
-  top: 100rpx;
-  left: 50%;
-  transform: translate(-50%);
-  width: 710rpx;
-  background: #ededed;
-  border-radius: 10rpx;
-  padding: 10rpx;
+.package_list_box{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 

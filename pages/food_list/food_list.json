@@ -1,7 +1,7 @@
 {
-  "navigationBarTitleText": "特价菜列表",
-  "backgroundColor": "#44AD99",
-  "navigationBarBackgroundColor": "#44AD99",
+  "navigationBarTitleText": "今日特价",
+  "backgroundColor": "#f6b837",
+  "navigationBarBackgroundColor": "#f6b837",
   "enablePullDownRefresh": true,
   "usingComponents": {
     "food_item": "../../components/FoodItem/food_item"

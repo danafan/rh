@@ -10,7 +10,7 @@
   display: flex;
 }
 .store_img{
-  border-radius: 15rpx;
+  border-radius: 10rpx;
   width: 216rpx;
   height: 162rpx;
 }

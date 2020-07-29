@@ -1,35 +1,73 @@
 <!--components/CouponsItem/coupons_item.wxml-->
-<view class="store_content" data-id="{{coupons_info.id}}" bindtap="goDetail">
-  <!-- 代金券 -->
-  <view class="vouchers_back">
-    <view class="border_box"></view>
-    <view class="money_center">
-      <text class="money_icon">¥</text>
-      <text class="money_text">100</text>
-    </view>
-  </view>
-  <view class="line_box_v" wx:if="{{coupons_info.type == '2'}}">
-    <view class="kou_top_v {{page_type == 'list'?'kou_top_v_list':''}}"></view>
-    <view class="line_shu_v"></view>
-    <view class="kou_bottom_v {{page_type == 'list'?'kou_bottom_v_list':''}}"></view>
-  </view>
-  <!-- 右侧 -->
-  <view class="store_right">
-    <view>
-      <view class="store_title">{{coupons_info.goods_name}}</view>
-      <view class="has_rob">{{coupons_info.store_name}}</view>
-    </view>
-    <view class="right_bottom">
-      <view class="price_box">
-        <view class="price red_color">¥{{coupons_info.now_price}}</view>
-        <view>
-          <tag val="{{coupons_info.discount}}折" background="#f9d9d0" color="#ff5858" />
-          <view class="hua">¥{{coupons_info.old_price}}</view>
+<view class="coupons_content" data-id="{{coupons_info.id}}" bindtap="goDetail">
+  <!-- 顶部店铺信息 -->
+  <item_store/>
+  <!-- 券轮播图 -->
+  <swiper class="vouchers_box" circular="true" next-margin="120rpx">
+    <swiper-item>
+      <!-- 代金券 -->
+      <view class="vouchers_content">
+        <view class="vouchers_back">
+          <view class="border_box"></view>
+          <view class="money_center">
+            <text class="money_icon">¥</text>
+            <text class="money_text">100</text>
+          </view>
+        </view>
+        <view class="line_box_v">
+          <view class="kou_top_v"></view>
+          <view class="line_shu_v"></view>
+          <view class="kou_bottom_v"></view>
+        </view>
+        <!-- 右侧 -->
+        <view class="store_right">
+          <view>
+            <view class="store_title">华莱士 100元代金券</view>
+            <view class="has_rob">月销182</view>
+          </view>
+          <view class="right_bottom">
+            <view class="price_box">
+              <text class="price_icon">¥</text>
+              <text class="price_text">80</text>
+              <text class="hua">¥100</text>
+            </view>
+            <view class="button">去抢购</view>
+          </view>
         </view>
       </view>
-      <view class="rob_num red_color">
-        {{coupons_info.rob_num}}人已抢
+    </swiper-item>
+    <swiper-item>
+      <!-- 代金券 -->
+      <view class="vouchers_content">
+        <view class="vouchers_back">
+          <view class="border_box"></view>
+          <view class="money_center">
+            <text class="money_icon">¥</text>
+            <text class="money_text">100</text>
+          </view>
+        </view>
+        <view class="line_box_v">
+          <view class="kou_top_v"></view>
+          <view class="line_shu_v"></view>
+          <view class="kou_bottom_v"></view>
+        </view>
+        <!-- 右侧 -->
+        <view class="store_right">
+          <view>
+            <view class="store_title">华莱士 100元代金券</view>
+            <view class="has_rob">月销182</view>
+          </view>
+          <view class="right_bottom">
+            <view class="price_box">
+              <text class="price_icon">¥</text>
+              <text class="price_text">80</text>
+              <text class="hua">¥100</text>
+            </view>
+            <view class="button">去抢购</view>
+          </view>
+        </view>
       </view>
-    </view>
-  </view>
+    </swiper-item>
+  </swiper>
+
 </view>

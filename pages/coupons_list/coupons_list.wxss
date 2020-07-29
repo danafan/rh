@@ -6,15 +6,14 @@
 }
 
 .list_box{
-  margin-bottom: 20rpx;
-  box-shadow: 0 0 8rpx #bfbfbf;
+  background: #fff;
   position: absolute;
-  top: 100rpx;
+  top: 15rpx;
   left: 50%;
   transform: translate(-50%);
   width: 710rpx;
-  background: #ededed;
   border-radius: 10rpx;
-  padding: 10rpx;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
 }
 

@@ -1,24 +1,15 @@
-<!--components/FoodItem/food_item.wxml-->
+<!--今日特价列表item-->
 <view class="food_content" data-id="{{food_info.id}}" bindtap="goDetail">
-  <!-- 左侧图片 -->
   <image class="food_icon" src="{{food_info.food_img}}"></image>
-  <!-- 右侧 -->
-  <view class="store_right">
-    <view>
-      <view class="store_title">{{food_info.goods_name}}</view>
-      <view class="has_rob" wx:if="{{page_type == 'list'}}">{{food_info.store_name}}</view>
+  <view class="food_info">
+    <view class="store_title">{{food_info.goods_name}}</view>
+    <view class="sub_desc">月售185 | 好评率85%</view>
+    <view class="price_box">
+      <text class="price_icon">¥</text>
+      <text class="price_text">{{food_info.now_price}}</text>
+      <text class="hua">¥{{food_info.old_price}}</text>
     </view>
-    <view class="right_bottom">
-      <view class="price_box">
-        <view class="price red_color">¥{{food_info.now_price}}</view>
-        <view>
-          <tag val="{{food_info.discount}}折" background="#f9d9d0" color="#ff5858" />
-          <view class="hua">¥{{food_info.old_price}}</view>
-        </view>
-      </view>
-      <view class="rob_num red_color">
-        {{food_info.rob_num}}人已抢
-      </view>
-    </view>
+    <view class="line"></view>
+    <item_store/>
   </view>
 </view>

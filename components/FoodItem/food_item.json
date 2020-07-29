@@ -1,6 +1,6 @@
 {
   "component": true,
   "usingComponents": {
-    "tag": "../../components/Tag/tag"
+    "item_store": "../../components/ItemStore/item_store"
   }
 }

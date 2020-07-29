@@ -1,0 +1,120 @@
+/* components/PackageItem/package_item.wxss */
+
+.package_item {
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  background: #fff;
+  padding: 15rpx;
+  width: 100%;
+}
+.item_top{
+  width: 100%;
+  display: flex;
+}
+.package_img_box{
+  margin-right: 10rpx;
+  position: relative;
+  width: 264rpx;
+  height: 216rpx;
+}
+.package_img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.rate{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100rpx;
+  height: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to top, #e84d2a, #ec722e);
+  font-size: 20rpx;
+  color: #fff;
+}
+.package_right{
+  flex: 1;
+  height: 216rpx;
+}
+.package_name{
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  font-size: 32rpx;
+  color: #0b0d1d;
+  font-weight: 700;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.package_desc{
+  margin-bottom: 10rpx;
+  font-size: 26rpx;
+  color: #8a8a8a;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.border_box{
+  border-radius: 5rpx;
+  padding-left: 6rpx;
+  padding-right: 6rpx;
+  font-size: 22rpx;
+  color: #ff5858;
+}
+.line{
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+  width: 100%;
+  border-top: 1rpx solid #e6e6e6;
+}
+.bottom_info{
+  height: 81rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.price_box{
+  margin-left: 10rpx;
+  margin-right: 15rpx;
+  height: 100rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.old_price{
+  text-decoration: line-through;
+  font-size: 26rpx;
+  color: #8a8a8a;
+}
+.now_price{
+  display: table-cell;
+  vertical-align: bottom;
+  color: #ff5858;
+  font-weight: 700;
+}
+.price_icon{
+  font-size: 26rpx;
+}
+.price_text{
+  font-size: 30rpx;
+}
+.button{
+  background:#ff5858;
+  border-radius: 8rpx;
+  width: 130rpx;
+  text-align: center;
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 26rpx;
+  color: #fff;
+}

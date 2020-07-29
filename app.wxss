@@ -1,6 +1,6 @@
 /**app.wxss**/
 .container {
-  background: #fbfbfb;
+  background: #EFEFEF;
   position: absolute;
   top: 0;
   left: 0;

@@ -166,20 +166,26 @@ Page({
     // let req = { level_01_id: 0 }
     // this.getInfoList(req);
   },
-  //进入店铺详情
+  //套餐列表
+  packageList(){
+    wx.navigateTo({
+      url: '/pages/package_list/package_list',
+    });
+  },
+  //店铺详情
   storeDetail() {
     wx.navigateTo({
       url: '/pages/store_detail/store_detail',
     });
   },
-  //进入特价菜列表
-  goList() {
+  //特价菜列表
+  foodList() {
     wx.navigateTo({
       url: '/pages/food_list/food_list',
     });
   },
   //券商场
-  goCoupons() {
+  vouchersList() {
     wx.navigateTo({
       url: '/pages/coupons_list/coupons_list',
     });

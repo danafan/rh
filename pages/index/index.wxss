@@ -63,7 +63,7 @@
 /* 顶部背景色 */
 
 .top_back {
-  background-image: linear-gradient(to bottom, #e9532b, #e9532b, #e9532b, #f07f52, #fbfbfb);
+  background-image: linear-gradient(to bottom, #e9532b, #e9532b, #e9532b, #f07f52, #EFEFEF);
   width: 100%;
   height: 480rpx;
   position: relative;
@@ -116,7 +116,7 @@
 /* 下面部分 */
 
 .content {
-  background: #fbfbfb;
+  background: #EFEFEF;
   margin-top: 90rpx;
   padding: 0 15rpx;
 }

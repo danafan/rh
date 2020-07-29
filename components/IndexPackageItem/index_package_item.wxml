@@ -9,9 +9,9 @@
       <image class="store_icon" src="../../images/store_icon.png"></image>
       <view class="store_name">{{package_info.store_name}}</view>
     </view>
-    <view class="rob_num">
-      <text>月售{{package_info.sold_num}}</text> |
-      <text>87%好评</text>
+    <view class="hot_num">
+      <view class="border_box margin">月售{{package_info.sold_num}}</view>
+      <view class="border_box">87%好评</view>
     </view>
     <view class="right_bottom">
       <view class="price_box">

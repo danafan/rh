@@ -85,18 +85,27 @@
   color: #8a8a8a;
 }
 
-.rob_num {
-  font-size: 24rpx;
+.hot_num{
+  display: flex;
+}
+.margin{
+  margin-right: 10rpx;
+}
+.border_box{
+  border-radius: 5rpx;
+  border:1rpx solid #e6e6e6;
+  padding-left: 6rpx;
+  padding-right: 6rpx;
+  font-size: 22rpx;
   color: #8a8a8a;
 }
-
 .rob {
   background:#ff5858;
   border-radius: 8rpx;
-  width: 120rpx;
+  width: 130rpx;
   text-align: center;
-  height: 48rpx;
-  line-height: 48rpx;
-  font-size: 24rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 26rpx;
   color: #fff;
 }
