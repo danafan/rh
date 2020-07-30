@@ -14,11 +14,10 @@ Component({
 
   },
   methods: {
-    //进入特价菜详情
-    goDetail(e) {
-      let id = e.currentTarget.dataset.id;
+    //特价菜详情
+    foodDetail() {
       wx.navigateTo({
-        url: '/pages/food_detail/food_detail?id=' + id,
+        url: '/pages/food_detail/food_detail',
       });
     },
   }

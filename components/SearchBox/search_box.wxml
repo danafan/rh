@@ -1,0 +1,17 @@
+<!--components/SearchBox/search_box.wxml-->
+<view class="search_box">
+  <view class="location_text" bindtap="getLocationInfo">乌兰浩特</view>
+  <image class="location_icon" src="../../images/xia.png" bindtap="getLocationInfo"></image>
+  <view class="search_input" bindtap="search">
+    <image class="search_icon" src="../../images/search_icon.png"></image>
+    <swiper class="swiper_search" autoplay interval="3000" circular vertical>
+      <swiper-item>
+        <view class="input_text">搜店铺 优惠</view>
+      </swiper-item>
+      <swiper-item>
+        <view class="input_text">上热乎 吃点儿好的</view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="zhan"></view>
+</view>

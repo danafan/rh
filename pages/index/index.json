@@ -4,11 +4,11 @@
   "navigationStyle": "custom",
   "enablePullDownRefresh": true,
   "usingComponents": {
-    "push_item": "../../components/PushItem/push_item",
-    "index_package_item": "../../components/IndexPackageItem/index_package_item",
-    "food_item": "../../components/FoodItem/food_item",
-    "bottom": "../../components/Bottom/bottom",
-    "tag": "../../components/Tag/tag",
-    "web_tag": "../../components/WebTag/web_tag"
+    "cate_store_item": "../../components/CateStoreItem/cate_store_item",
+    "search_box": "../../components/SearchBox/search_box",
+    "category_index": "../../components/CateGoryIndex/category_index",
+    "index_center": "../../components/IndexCenter/index_center",
+    "the_query": "../../components/TheQuery/the_query",
+    "bottom": "../../components/Bottom/bottom"
   }
 }

@@ -1,5 +1,5 @@
 <!--首页券商场列表-->
-<view class="container">
+<view>
   <view class="top_back"></view>
   <view class="list_box">
     <coupons_item coupons_info="{{item}}" wx:for="{{preferential}}" wx:key="index" />

@@ -1,5 +1,5 @@
 <!--首页套餐列表-->
-<view class="container">
+<view>
   <view class="package_list_box">
     <package_item/>
     <package_item/>

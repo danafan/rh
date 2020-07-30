@@ -1,5 +1,5 @@
 <!--首页今日特价列表-->
-<view class="container food_list_box">
+<view>
   <view class="package_list_box">
     <food_item food_info="{{item}}" page_type="list" wx:for="{{preferential}}" wx:key="id" />
   </view>

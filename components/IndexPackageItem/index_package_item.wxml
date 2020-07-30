@@ -1,7 +1,10 @@
 <!--首页精选套餐item-->
 <view class="food_content" data-id="{{package_info.package_id}}" bindtap="goDetail">
   <!-- 左侧图片 -->
-  <image class="food_icon" src="{{package_info.package_img}}"></image>
+  <view class="img_box">
+    <image class="food_icon" src="{{package_info.package_img}}"></image>
+    <view class="rate">87%好评</view>
+  </view>
   <!-- 右侧 -->
   <view class="store_right">
     <view class="store_title">{{package_info.package_name}}</view>
@@ -11,7 +14,6 @@
     </view>
     <view class="hot_num">
       <view class="border_box margin">月售{{package_info.sold_num}}</view>
-      <view class="border_box">87%好评</view>
     </view>
     <view class="right_bottom">
       <view class="price_box">

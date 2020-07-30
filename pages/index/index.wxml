@@ -1,108 +1,33 @@
 <!--index.wxml-->
-<view class="container">
+<view>
   <!-- 顶部标题栏 -->
   <view class="navgation_box">
     <view class='startBar' style='height:{{startBarHeight}}px'></view>
-    <view class="search_box" style="height:{{navgationHeight}}px">
-      <view class="location_text" bindtap="getLocationInfo">乌兰浩特</view>
-      <image class="location_icon" src="../../images/xia.png" bindtap="getLocationInfo"></image>
-      <view class="search_input" bindtap="search">
-        <image class="search_icon" src="../../images/search_icon.png"></image>
-        <swiper class="swiper_search" autoplay interval="3000" circular vertical>
-          <swiper-item>
-            <view class="input_text">搜店铺 优惠</view>
-          </swiper-item>
-          <swiper-item>
-            <view class="input_text">上热乎 吃点儿好的</view>
-          </swiper-item>
-        </swiper>
-      </view>
-      <view class="zhan"></view>
-    </view>
+    <!-- 标题 -->
+    <view class="title_text" style="height:{{navgationHeight}}px">热乎优选</view>
   </view>
-  <!-- 背景色和分类 -->
-  <view class="top_back">
-    <view class="category_box">
-      <view class="category_row">
-        <view class="category_item" wx:for="{{category_list}}" wx:key="id" data-id="{{item.id}}" data-index="{{index}}" bindtap="goCategory">
-          <tag class="category_tag" val="{{item.tag}}" background="#ff5858" color="#fff" wx:if="{{item.tag}}" />
-          <image class="cate_icon" src="{{item.iocn}}"></image>
-          <view class="cate_txt">{{item.name}}</view>
-        </view>
-      </view>
-      <web_tag/>
-    </view>
-  </view>
+  <!-- 背景 -->
+  <view class="top_back"></view>
   <!-- 下面内容 -->
-  <view class="content">
+  <view class="content" style='margin-top:{{startBarHeight + navgationHeight}}px'>
+    <!-- 搜索框 -->
+    <search_box/>
+    <!-- 分类组件 -->
+    <category_index/>
     <!-- 中间模块 -->
-    <view class="seconds_box">
-      <!-- 顶部标题 -->
-      <view class="seconds_top">
-        <view class="seconds_top_left">
-          <view class="kill">精选套餐</view>
-          <swiper class="swiper_second" autoplay interval="3600" circular vertical>
-            <swiper-item>
-              <text class="swiper_second_text">0元福利 每天上新</text>
-            </swiper-item>
-            <swiper-item>
-              <text class="swiper_second_text">好吃不上火</text>
-            </swiper-item>
-          </swiper>
-        </view>
-        <view class="all" bindtap="packageList">
-          <view class="all_text">发现更多</view>
-          <image class="more_right" src="../../images/more_right.png"></image>
-        </view>
-      </view>
-      <!-- 精选套餐轮播 -->
-      <swiper class="offer_box" autoplay="true" circular="true" duration="80" interval="3000">
-        <swiper-item wx:for="{{package_list}}" wx:key="package_id">
-          <index_package_item package_info="{{item}}" />
-        </swiper-item>
-      </swiper>
-      <!-- 横线 -->
-      <view class="cross_line"></view>
-      <!-- 下面特价菜和代金券 -->
-      <view class="food_vouchers">
-        <!-- 左侧特价菜 -->
-        <view class="food_box">
-          <view class="food_box_top">
-            <view class="food_title">今日特价</view>
-            <view class="all_food" bindtap="foodList">全部特价</view>
-          </view>
-          <view class="food_toast">低价好菜，限量抢购</view>
-          <swiper class="food_swiper" autoplay="true" circular="true" display-multiple-items="2" interval="2000">
-            <swiper-item wx:for="{{preferential}}" wx:key="id">
-              <view class="food_item">
-                <image class="food_img" src="{{item.food_img}}"></image>
-                <view class="food_name">{{item.goods_name}}</view>
-                <view class="food_price_box">
-                  <text class="food_price_icon">¥</text>
-                  <text class="food_now_price">{{item.now_price}}</text>
-                  <text class="food_old_price">¥{{item.old_price}}</text>
-                </view>
-              </view>
-            </swiper-item>
-          </swiper>
-        </view>
-        <view class="longitudinal_line"></view>
-        <view class="vouchers_box" bindtap="vouchersList">
-          <view class="food_title">券商场</view>
-          <view class="vouchers_toast">大额神券 等你来拿</view>
-          <image class="vouchers_img" src="https://photo-static-api.fotomore.com/creative/vcg/176/new/e2447eaa43844379aeb4c76e1726cc7a.jpg"></image>
-        </view>
-      </view>
-    </view>
-    <!-- 热乎优选 -->
+    <index_center/>
+    <!-- 标题 -->
     <view class="title_box">
       <view class="title">
         <image class="good_icon" src="../../images/big_line.png"></image>
-        <view class="good_text">热乎优选</view>
+        <view class="good_text">优选商家</view>
       </view>
     </view>
+    <!-- 筛选条件 -->
+    <the_query/>
     <!-- 优选列表 -->
-    <push_item wx:for="{{store_list}}" wx:key="store_id" storeItem="{{item}}" />
+    <!-- <push_item wx:for="{{store_list}}" wx:key="store_id" storeItem="{{item}}" /> -->
+    <cate_store_item wx:for="{{store_list}}" wx:key="store_id" storeItem="{{item}}" />
   </view>
 
   <!-- <bottom wx:if="{{!isLoad && page >= 2}}" /> -->

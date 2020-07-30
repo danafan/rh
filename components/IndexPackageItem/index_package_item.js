@@ -10,7 +10,7 @@ Component({
 
   },
   methods: {
-    //进入套餐详情
+    //套餐详情
     goDetail(e) {
       let id = e.currentTarget.dataset.id;
       wx.navigateTo({

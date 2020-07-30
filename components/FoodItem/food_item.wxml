@@ -1,5 +1,5 @@
 <!--今日特价列表item-->
-<view class="food_content" data-id="{{food_info.id}}" bindtap="goDetail">
+<view class="food_content" data-id="{{food_info.id}}" bindtap="foodDetail">
   <image class="food_icon" src="{{food_info.food_img}}"></image>
   <view class="food_info">
     <view class="store_title">{{food_info.goods_name}}</view>

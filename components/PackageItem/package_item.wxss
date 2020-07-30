@@ -64,11 +64,8 @@
   overflow: hidden;
 }
 .border_box{
-  border-radius: 5rpx;
-  padding-left: 6rpx;
-  padding-right: 6rpx;
-  font-size: 22rpx;
-  color: #ff5858;
+  font-size: 24rpx;
+  color: #8a8a8a;
 }
 .line{
   margin-top: 15rpx;
@@ -111,7 +108,7 @@
 .button{
   background:#ff5858;
   border-radius: 8rpx;
-  width: 130rpx;
+  width: 150rpx;
   text-align: center;
   height: 56rpx;
   line-height: 56rpx;

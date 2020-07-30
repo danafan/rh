@@ -1,0 +1,15 @@
+<!--components/TheQuery/the_query.wxml-->
+<view class="screening_box" id="the-id">
+  <view class="select_item" bindtap="getQuery">
+    <view class="select_text {{type != '4'?'active_item':''}}">{{left_text}}</view>
+    <image class="index_direction" src="../../images/index_up.png" wx:if="{{showSelect}}"></image>
+    <image class="index_direction" src="../../images/index_down.png" wx:else></image>
+  </view>
+  <view class="click_item {{type == '4'?'active_item':''}}" data-type="4" bindtap="checkItem">离我最近</view>
+  <!-- 下面拉框 -->
+  <view class="select_box" wx:if="{{showSelect}}">
+    <view class="item_box {{type=='1' ? 'active_select':''}}" data-type="1" bindtap="checkItem">智能排序</view>
+    <view class="item_box {{type=='2' ? 'active_select':''}}" data-type="2" bindtap="checkItem">销量最高</view>
+    <view class="item_box {{type == '3'?'active_select':''}}" data-type="3" bindtap="checkItem">评价最高</view>
+  </view>
+</view>

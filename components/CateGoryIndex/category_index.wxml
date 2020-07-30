@@ -1,0 +1,11 @@
+<!--components/CateGoryIndex/category_index.wxml-->
+<view class="category_box">
+  <view class="category_row">
+    <view class="category_item" wx:for="{{category_list}}" wx:key="id" data-id="{{item.id}}" data-index="{{index}}" bindtap="goCategory">
+      <tag class="category_tag" val="{{item.tag}}" background="#ff5858" color="#fff" wx:if="{{item.tag}}" />
+      <image class="cate_icon" src="{{item.iocn}}"></image>
+      <view class="cate_txt">{{item.name}}</view>
+    </view>
+  </view>
+  <web_tag/>
+</view>

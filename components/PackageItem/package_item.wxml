@@ -1,5 +1,5 @@
 <!--套餐列表中套餐item-->
-<view class="package_item">
+<view class="package_item" bindtap="packageDetail">
   <view class="item_top">
     <view class="package_img_box">
       <image class="package_img" src="../../images/banner_01.png"></image>

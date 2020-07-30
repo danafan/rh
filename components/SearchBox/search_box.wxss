@@ -1,0 +1,52 @@
+/* components/SearchBox/search_box.wxss */
+
+.search_box {
+  padding-left: 15rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.location_icon {
+  width: 26rpx;
+  height: 28rpx;
+}
+
+.location_text {
+  margin-right: 5rpx;
+  font-size: 24rpx;
+  color: #fff;
+}
+
+.search_input {
+  margin-left: 15rpx;
+  border-radius: 32rpx;
+  background: rgba(255, 255, 255, 0.5);
+  flex: 1;
+  height: 52rpx;
+  display: flex;
+  align-items: center;
+}
+
+.search_icon {
+  margin-right: 10rpx;
+  margin-left: 20rpx;
+  width: 35rpx;
+  height: 35rpx;
+}
+
+.swiper_search {
+  flex: 1;
+  height: 30rpx;
+}
+
+.input_text {
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 24rpx;
+  color: #fff;
+}
+
+.zhan {
+  width: 180rpx;
+}

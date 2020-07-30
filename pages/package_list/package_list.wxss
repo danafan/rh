@@ -1,6 +1,5 @@
 /* pages/package_list/package_list.wxss */
 .package_list_box{
-  background: #EFEFEF;
   width: 100%;
   padding: 15rpx;
 }

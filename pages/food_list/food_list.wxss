@@ -1,10 +1,8 @@
 /* pages/food_list/food_list.wxss */
-.food_list_box{
-  background: #f6b837;
-  padding: 15rpx;
-}
+
 .package_list_box{
   width: 100%;
+  padding: 18rpx;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

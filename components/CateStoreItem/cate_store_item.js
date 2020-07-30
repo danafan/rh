@@ -8,14 +8,20 @@ Component({
     }
   },
   data: {
-    baseUrl: app.globalData.baseUrl,
+    baseUrl: app.globalData.baseUrl
   },
   methods: {
-    //进入详情
+    //店铺详情
     goDetail() {
       wx.navigateTo({
         url: '/pages/store_detail/store_detail',
       });
     },
+    //套餐详情
+    packageDetail(){
+      wx.navigateTo({
+        url: '/pages/goods_detail/goods_detail',
+      });
+    }
   }
 })

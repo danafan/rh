@@ -18,6 +18,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    //进入套餐详情
+    packageDetail() {
+      wx.navigateTo({
+        url: '/pages/goods_detail/goods_detail',
+      });
+    },
   }
 })

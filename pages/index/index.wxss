@@ -9,316 +9,34 @@
   z-index: 2;
 }
 
-.search_box {
+/* 应用名称 */
+
+.title_text {
   padding-left: 15rpx;
   width: 100%;
   display: flex;
   align-items: center;
-}
-
-.location_icon {
-  width: 30rpx;
-  height: 32rpx;
-}
-
-.location_text {
-  margin-right: 5rpx;
-  font-size: 24rpx;
   color: #fff;
-}
-
-.search_input {
-  margin-left: 15rpx;
-  border-radius: 32rpx;
-  background: rgba(255, 255, 255, 0.5);
-  flex: 1;
-  height: 60rpx;
-  display: flex;
-  align-items: center;
-}
-
-.search_icon {
-  margin-right: 10rpx;
-  margin-left: 20rpx;
-  width: 35rpx;
-  height: 35rpx;
-}
-
-.swiper_search {
-  width: 100%;
-  height: 30rpx;
-}
-
-.input_text {
-  height: 30rpx;
-  line-height: 30rpx;
-  font-size: 26rpx;
-  color: #fff;
-}
-
-.zhan {
-  width: 210rpx;
+  font-weight: 800rpx;
 }
 
 /* 顶部背景色 */
 
 .top_back {
-  background-image: linear-gradient(to bottom, #e9532b, #e9532b, #e9532b, #f07f52, #EFEFEF);
+  /* background-image: linear-gradient(to bottom, #e9532b, #e9532b, #e9532b, #f07f52, #EFEFEF); */
+  background-image: linear-gradient(to left, #e84d2a, #ec722e);
   width: 100%;
   height: 480rpx;
   position: relative;
 }
 
-/* 分类 */
-
-.category_box {
-  position: absolute;
-  bottom: -80rpx;
-  left: 50%;
-  transform: translate(-50%);
-  border-radius: 20rpx 20rpx 0 0;
-  background: #fff;
-  width: 96%;
-  padding-bottom: 20rpx;
-}
-
-.category_row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.category_item {
-  height: 160rpx;
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.category_tag {
-  position: absolute;
-  top: -10rpx;
-  right: -20rpx;
-}
-
-.cate_icon {
-  width: 90rpx;
-  height: 90rpx;
-}
-
-.cate_txt {
-  font-size: 28rpx;
-  color: #333;
-}
-
 /* 下面部分 */
 
 .content {
-  background: #EFEFEF;
-  margin-top: 90rpx;
-  padding: 0 15rpx;
-}
-
-/* 中间模块 */
-
-.seconds_box {
-  background: #fff;
-  padding: 0 10rpx 10rpx 10rpx;
-  width: 100%;
-}
-
-.seconds_top {
-  height: 80rpx;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.seconds_top_left {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.kill {
-  font-size: 36rpx;
-  font-weight: 800;
-  color: #0b0d1d;
-}
-
-.swiper_second {
-  position: relative;
-  left: 10rpx;
-  top: -18rpx;
-  width: 200rpx;
-  height: 24rpx;
-}
-
-.swiper_second_text {
-  height: 24rpx;
-  display: flex;
-  align-items: center;
-  font-size: 20rpx;
-  color: #ff5858;
-  font-weight: 700;
-}
-
-.all {
-  display: flex;
-  align-items: center;
-  font-size: 22rpx;
-  color: #8a8a8a;
-}
-
-.more_right {
-  width: 30rpx;
-  height: 30rpx;
-}
-
-.offer_box {
-  height: 198rpx;
-}
-
-/* 横线 */
-
-.cross_line {
-  margin-top: 30rpx;
-  margin-bottom: 20rpx;
-  width: 100%;
-  border-top: 1rpx solid #e6e6e6;
-}
-
-/* 特价菜和券 */
-
-.food_vouchers {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-/* 特价菜 */
-
-.food_box {
-  width: 50%;
-}
-
-.food_box_top {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 10rpx;
-}
-
-.food_title {
-  font-size: 30rpx;
-  color: #333;
-  font-weight: 700;
-}
-
-.all_food {
-  border: 1rpx solid #f6b837;
-  height: 30rpx;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 15rpx;
-  width: 100rpx;
-  font-size: 20rpx;
-  color: #f6b837;
-}
-
-.food_toast {
-  font-size: 26rpx;
-  color: #f6b837;
-}
-
-.vouchers_toast {
-  background-image: linear-gradient(to right, #48b9a3, #fff);
-  height: 38rpx;
-  line-height: 38rpx;
-  padding-left: 10rpx;
-  font-size: 22rpx;
-  /* color: #48b9a3; */
-  color: #fff;
-}
-
-.food_swiper {
-  margin-top: 10rpx;
-  width: 100%;
-  height: 230rpx;
-}
-
-.food_item {
-  width: 165rpx;
-  margin-right: 10rpx;
-}
-
-.food_img {
-  border-radius: 10rpx 10rpx 0 0;
-  width: 100%;
-  height: 130rpx;
-}
-
-.food_name {
-  width: 100%;
-  text-align: center;
-  font-size: 26rpx;
-  color: #333;
-  font-weight: 700;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.food_price_box {
-  width: 100%;
-  text-align: center;
-}
-
-.food_price_icon {
-  font-size: 20rpx;
-  color: #ff5858;
-  font-weight: 700;
-}
-
-.food_now_price {
-  font-size: 26rpx;
-  color: #ff5858;
-  font-weight: 700;
-}
-
-.food_old_price {
-  margin-left: 10rpx;
-  text-decoration: line-through;
-  font-size: 20rpx;
-  color: #8a8a8a;
-}
-
-/* 竖线 */
-
-.longitudinal_line {
-  /* margin-left: 10rpx; */
-  margin-right: 10rpx;
-  height: 300rpx;
-  border-left: 3rpx solid #e6e6e6;
-}
-
-.vouchers_box {
-  /* border:1rpx solid red; */
-  width: 50%;
-  height: 200rpx;
-}
-
-.vouchers_img {
-  margin-top: 10rpx;
-  width: 100%;
-  height: 215rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 15rpx 15rpx 15rpx;
 }
 
 /* 热乎优选 */

@@ -41,7 +41,7 @@
   },
   "window": {
     "enablePullDownRefresh": true,
-    "backgroundColor": "#fbfbfb",
+    "backgroundColor": "#EFEFEF",
     "navigationBarBackgroundColor": "#0b0d1d",
     "navigationBarTextStyle": "white",
     "backgroundTextStyle": "light",
