@@ -20,7 +20,7 @@ Component({
     //套餐详情
     packageDetail(){
       wx.navigateTo({
-        url: '/pages/goods_detail/goods_detail',
+        url: '/pages/package_detail/package_detail',
       });
     }
   }

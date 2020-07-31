@@ -1,4 +1,4 @@
-// pages/coupons_detail/coupons_detail.vue.js
+// pages/store_detail/store_detail.js
 Page({
   data: {
     rules_list: [{
@@ -26,8 +26,7 @@ Page({
     }, {
       id: '3',
       val: '免费停车'
-    }],
-    type: '1',   //优惠类型（1:特价菜；2:优惠券）
+    }]
   },
   onLoad(option) {
     // this.setData({

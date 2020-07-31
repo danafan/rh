@@ -1,6 +1,6 @@
 <!--components/ItemStore/item_store.wxml-->
 <view class="store_box" catchtap="goDetail">
-  <image class="store_img" src="../../images/banner_02.jpg"></image>
+  <image class="store_img" mode="aspectFill" src="../../images/banner_02.jpg"></image>
   <view class="store_info">
     <view class="store_name">虾小哥 浇汁虾米饭（钱江世纪城店）</view>
     <view class="hot_box">

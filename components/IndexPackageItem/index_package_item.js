@@ -14,7 +14,7 @@ Component({
     goDetail(e) {
       let id = e.currentTarget.dataset.id;
       wx.navigateTo({
-        url: '/pages/goods_detail/goods_detail?id=' + id,
+        url: '/pages/package_detail/package_detail?id=' + id,
       });
     },
   }

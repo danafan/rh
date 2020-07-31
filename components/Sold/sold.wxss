@@ -1,9 +1,9 @@
 /* components/Sold/sold.wxss */
 .sold_box {
-  margin-top: 30rpx;
-  box-shadow: 0 0 15rpx #bfbfbf;
-  width: 100%;
-  padding: 30rpx 10rpx;
+  background: #fff;
+  margin-top: 15rpx;
+  width: 702rpx;
+  padding: 30rpx 15rpx;
 }
 
 .sold_top {
@@ -14,6 +14,7 @@
 }
 
 .sold_left {
+  flex: 1;
   display: flex;
   align-items: center;
 }
@@ -68,4 +69,8 @@
   border-radius: 50%;
   width: 10rpx;
   height: 10rpx;
+}
+.bian{
+  margin-left: 8rpx;
+  margin-right: 8rpx;
 }

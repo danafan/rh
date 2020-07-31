@@ -1,20 +1,19 @@
 <!--分类列表商家item-->
 <view class="store_container" bindtap="goDetail">
   <view class="store_tag">
-    <image class="badge_icon" src="../../images/badge_icon.png"></image>
+    <image class="badge_icon" mode="aspectFill" src="../../images/badge_icon.png"></image>
     <view class="tag_text">「{{storeItem.store_type}}」品类优选商家</view>
   </view>
   <view class="store_top_box">
     <image class="store_img" src="{{storeItem.store_img}}"></image>
     <view class="store_right">
-      <view class="store_name">{{storeItem.store_name}}</view>
-      <view class="two_row">
-        <view class="star_box">
+      <view>
+        <view class="store_name">{{storeItem.store_name}}</view>
+        <view class="two_row">
           <image class="hot_icon" src="../../images/hot_icon.png"></image>
           <view class="star_num">4.8</view>
-          <view class="on_the_pin">月销182</view>
+          <view class="on_the_pin">五一广场 | 5.2km</view>
         </view>
-        <view class="on_the_pin">五一广场</view>
       </view>
       <view class="preferential_list">
         <view class="tag_label hui">优惠套餐2个</view>
@@ -26,7 +25,7 @@
   <view class="package_list_box">
     <scroll-view class="package_list" scroll-x="true" style="width:100%">
       <view class="package_item" wx:for="{{storeItem.package_list}}" wx:key="package_id" catchtap="packageDetail">
-        <image class="package_img" src="{{item.package_img}}"></image>
+        <image class="package_img" mode="aspectFill" src="{{item.package_img}}"></image>
         <view class="package_name">{{item.package_name}}重庆火锅重庆火锅</view>
         <view>
           <text class="price_box">

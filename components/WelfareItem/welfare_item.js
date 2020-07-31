@@ -31,7 +31,7 @@ Component({
         });
       } else if (type == '2') {
         wx.navigateTo({
-          url: '/pages/goods_detail/goods_detail',
+          url: '/pages/package_detail/package_detail',
         });
       }
 

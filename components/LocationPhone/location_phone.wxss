@@ -1,5 +1,7 @@
 /* components/LocationPhone/location_phone.wxss */
 .location_phone {
+  /* padding: 20rpx; */
+  background: #fff;
   width: 100%;
   display: flex;
   align-items: center;
@@ -13,8 +15,7 @@
 .location_top {
   display: flex;
   align-items: center;
-  font-size: 28rpx;
-  color: #515151;
+  
 }
 
 .location_icon {
@@ -24,6 +25,8 @@
 }
 .location_text{
   flex: 1;
+  font-size: 28rpx;
+  color: #515151;
 }
 .distance {
   margin-top: 5rpx;

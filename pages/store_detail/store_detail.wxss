@@ -1,18 +1,21 @@
 /* pages/store_detail/store_detail.wxss */
-.top_back{
+
+.top_back {
   background: #0b0d1d;
   width: 100%;
   height: 320rpx;
   position: relative;
 }
-.back_img{
+
+.back_img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.mask{
+
+.mask {
   backdrop-filter: blur(20rpx);
   position: absolute;
   top: 0;
@@ -20,7 +23,8 @@
   width: 100%;
   height: 100%;
 }
-.content_box{
+
+.content_box {
   position: absolute;
   top: 0;
   left: 0;
@@ -30,7 +34,8 @@
   padding-left: 10rpx;
   padding-right: 10rpx;
 }
-.shadow_box{
+
+.shadow_box {
   box-shadow: 0 0 6rpx #bfbfbf;
   border-radius: 15rpx;
   margin: 30rpx auto;
@@ -41,115 +46,172 @@
   flex-direction: column;
   align-items: center;
 }
-.store_img{
+
+.store_img {
   border-radius: 8rpx;
   width: 100%;
   height: 320rpx;
 }
-.store_center_box{
+
+.store_tag {
+  margin-top: 20rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.badge_icon {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.tag_text {
+  margin-left: 6rpx;
+  border-radius: 0 10rpx 10rpx 0;
+  height: 42rpx;
+  line-height: 42rpx;
+  background: #fdf7d8;
+  font-size: 22rpx;
+  color: #61573d;
+  padding-left: 8rpx;
+  padding-right: 8rpx;
+}
+
+.store_center_box {
+  margin-top: 15rpx;
+  margin-bottom: 20rpx;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.store_name{
-  margin-top: 20rpx;
-  width: 670rpx;
+
+.center_box_left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.store_name {
+  margin-bottom: 5rpx;
   font-size: 36rpx;
   color: #333;
   font-weight: 800;
 }
-.type_sort{
-  margin-top: 10rpx;
-  width: 100%;
+
+.er_box {
   display: flex;
-  align-items: center;
 }
-.store_type{
+
+.store_type {
   margin-right: 20rpx;
-  background: rgba(0, 0, 0, .6);
+  background: rgba(0, 0, 0, 0.6);
   padding: 5rpx 8rpx;
   font-size: 22rpx;
   color: #fff;
 }
 
-.tags{
-  margin-bottom: 20rpx;
-  margin-top: 20rpx;
-  width: 100%;
+.hot_box {
   display: flex;
-  align-content: center;
+  align-items: center;
 }
-.center_box_right{
+
+.hot_icon {
+  width: 35rpx;
+  height: 35rpx;
+}
+
+.hot_text {
+  font-weight: 700;
+  font-size: 26rpx;
+  color: #e84d2a;
+}
+
+.center_box_right {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.share_icon{
+
+.share_icon {
   width: 58rpx;
   height: 58rpx;
 }
-.share_text{
+
+.share_text {
   margin-top: 5rpx;
   font-size: 24rpx;
   color: #515151;
 }
-.business_hours{
+
+.business_hours {
   margin-top: 20rpx;
   width: 100%;
   display: flex;
   align-items: center;
 }
-.time_text{
+
+.time_text {
   margin-left: 10rpx;
   font-size: 26rpx;
   color: #333;
 }
+
 /* 下面菜品和券 */
-.store_tabs{
+
+.store_tabs {
   margin-top: 40rpx;
   margin-bottom: 20rpx;
   width: 100%;
   display: flex;
   align-items: center;
 }
-.tab{
+
+.tab {
   height: 68rpx;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-right: 50rpx;
 }
-.tab_label{
+
+.tab_label {
   font-weight: 700;
   font-size: 32rpx;
   color: #333;
 }
-.active_label{
+
+.active_label {
   color: #ff5858;
 }
-.active_line{
+
+.active_line {
   border-radius: 3rpx;
   margin-top: 10rpx;
   background-image: linear-gradient(to right, #f37464, #ff5858);
   width: 80%;
   height: 6rpx;
 }
+
 /* 到店套餐 */
-.package_list{
+
+.package_list {
   margin-bottom: 20rpx;
   box-shadow: 0 0 6rpx #bfbfbf;
   padding: 10rpx;
 }
-.package_title{
+
+.package_title {
   margin-top: 10rpx;
   margin-bottom: 10rpx;
   font-size: 30rpx;
   font-weight: 700;
   color: #333;
 }
+
 /*  菜品列表 */
-.goods_list{
+
+.goods_list {
   box-shadow: 0 0 8rpx #bfbfbf;
   border-radius: 15rpx;
   width: 100%;

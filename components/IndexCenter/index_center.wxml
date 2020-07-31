@@ -33,7 +33,7 @@
           <view class="food_box_top">
             <view class="food_title">今日特价</view>
             <view class="all_food" bindtap="foodList">
-              <image class="goods_icon" src="../../images/goods_icon.png"></image>
+              <image class="goods_icon" mode="aspectFill" src="../../images/goods_icon.png"></image>
               <view class="all_text">全部特价</view>
             </view>
           </view>
@@ -56,7 +56,7 @@
         <view class="vouchers_box" bindtap="vouchersList">
           <view class="vouchers_title">超值好券</view>
           <view class="toast">大额神券 等你来拿</view>
-          <image class="vouchers_img" src="https://photo-static-api.fotomore.com/creative/vcg/176/new/e2447eaa43844379aeb4c76e1726cc7a.jpg"></image>
+          <image class="vouchers_img" mode="aspectFill" src="https://photo-static-api.fotomore.com/creative/vcg/176/new/e2447eaa43844379aeb4c76e1726cc7a.jpg"></image>
         </view>
       </view>
     </view>

@@ -1,0 +1,77 @@
+/* components/BuyButton/buy_button.wxss */
+
+.bottom_but {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  z-index: 2;
+}
+
+.but_left {
+  width: 50%;
+  height: 100rpx;
+  background: #0b0d1d;
+  padding-left: 40rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.but_price_box {
+  display: flex;
+  align-items: center;
+}
+
+.now_price {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.price_icon {
+  font-size: 30rpx;
+  color: #fff;
+  font-weight: 700;
+}
+
+.but_price {
+  color: #fff;
+  font-size: 38rpx;
+  margin-right: 15rpx;
+  font-weight: 700;
+}
+
+.reamin {
+  border: 1rpx solid #d1b171;
+  border-radius: 15rpx 15rpx 15rpx 0;
+  height: 30rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  font-size: 22rpx;
+  color: #d1b171;
+}
+
+.market_price {
+  color: #fff;
+  font-size: 24rpx;
+}
+
+.hua {
+  color: #fff;
+  text-decoration: line-through;
+}
+
+.buy_but {
+  background: #ff5858;
+  width: 50%;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 38rpx;
+  color: #fff;
+}

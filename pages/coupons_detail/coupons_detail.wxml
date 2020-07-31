@@ -1,56 +1,65 @@
-<!--pages/coupons_detail/coupons_detail.vue.wxml-->
+<!--代金券详情-->
 <view class="container">
-  <view class="coupons_info">
-    <view class="store_name">【千岛湖酸菜鱼】</view>
-    <view class="coupons_text">88元代100元代金券</view>
+  <!-- 代金券 -->
+  <view class="vouchers_box">
+    <view class="top_back"></view>
+    <view class="vouchers_content">100元代金券</view>
   </view>
-  <!-- 下面内容 -->
-  <view class="coupons_money_box">
-    <!-- 商家信息 -->
-    <view class="store_info">
-      <view class="store_name_box">
-        <view class="store_name">全聚德烤鸭</view>
-        <sort val="萧山区烤鱼人气第一名" />
-      </view>
-      <view class="tags">
-        <tag val="{{item.val}}" background="#fdf0dd" color="#ff5858" margin="{{true}}" wx:for="{{tag_list}}" wx:key="id" />
+  <!-- 已售 -->
+  <sold/>
+  <!-- 使用规则 -->
+  <view class="rules">
+    <view class="page_title">
+      <view class="title_text">购买须知</view>
+    </view>
+    <view class="pick_box">
+      <image class="pick_icon" src="../../images/pick_icon.png"></image>
+      <view>
+        <view class="pick_title">有效期</view>
+        <view class="pick_val">2020-07-26至2020-08-26（周末、法定节假日通用）</view>
       </view>
     </view>
+    <view class="pick_box">
+      <image class="pick_icon" src="../../images/time_icon.png"></image>
+      <view>
+        <view class="pick_title">使用时间</view>
+        <view class="pick_val">10:30 - 20:00</view>
+      </view>
+    </view>
+    <view class="pick_box">
+      <image class="rules_icon" src="../../images/rules_icon.png"></image>
+      <view>
+        <view class="pick_title">使用规则</view>
+        <view class="rule_text" wx:for="{{rules_list}}" wx:key="id">- {{item.val}}</view>
+      </view>
+    </view>
+    <!-- 免费退提示 -->
+    <web_tag/>
+  </view>
+  <!-- 商家信息 -->
+  <view class="store_info">
+    <view class="page_title">
+      <view class="title_text">商家信息</view>
+    </view>
+    <item_store/>
+    <view class="line"></view>
     <!-- 位置和电话 -->
     <location_phone/>
-    <!-- 已售 -->
-    <sold/>
-    <view class="rules_title">使用规则</view>
-    <view class="rules">
-      <rules_item wx:for="{{rules_list}}" wx:key="id" val="{{item.val}}" />
-    </view>
-    <!-- 温馨提示 -->
-    <view class="toast_desc">
-      温馨提示：特价产品不支持退款，请提前购买，在有效期内使用。
-    </view>
-    <web_tag />
   </view>
-  <view class="coupons_money_box">
-    <view class="coupons_title">
-      <view class="rules_title">商家推荐</view>
-      <view class="go_store" bindtap="storeDetail">进店看看>></view>
-    </view>
-    <view class="goods_list">
-      <goods_item/>
-      <goods_item/>
-      <goods_item/>
-    </view>
-  </view>
-  <view class="bottom_but">
-    <view class="but_left">
-      <view class="but_price_box">
-        <text class="but_price">¥108</text>
-        <text class="reamin">6.5折</text>
-      </view>
-      <view class="market_price">门店价：
-        <text class="hua">¥288</text>
+
+  <!-- 评论 -->
+  <view class="comments_box">
+    <view class="page_title">
+      <view class="title_text">套餐评价</view>
+      <view class="title_toast">
+        <view class="toast_text">更多评价（1051）</view>
+        <image class="right" src="../../images/right.png"></image>
       </view>
     </view>
-    <view class="buy_but">立即抢购</view>
+    <comment_item/>
+    <comment_item/>
   </view>
+  <!-- 底部按钮 -->
+  <buy_button/>
+
 </view>

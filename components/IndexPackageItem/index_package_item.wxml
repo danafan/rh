@@ -2,7 +2,7 @@
 <view class="food_content" data-id="{{package_info.package_id}}" bindtap="goDetail">
   <!-- 左侧图片 -->
   <view class="img_box">
-    <image class="food_icon" src="{{package_info.package_img}}"></image>
+    <image class="food_icon" mode="aspectFill" src="{{package_info.package_img}}"></image>
     <view class="rate">87%好评</view>
   </view>
   <!-- 右侧 -->
@@ -11,9 +11,6 @@
     <view class="store_info">
       <image class="store_icon" src="../../images/store_icon.png"></image>
       <view class="store_name">{{package_info.store_name}}</view>
-    </view>
-    <view class="hot_num">
-      <view class="border_box margin">月售{{package_info.sold_num}}</view>
     </view>
     <view class="right_bottom">
       <view class="price_box">

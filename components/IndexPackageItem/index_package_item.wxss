@@ -115,23 +115,6 @@
   color: #8a8a8a;
 }
 
-.hot_num {
-  display: flex;
-}
-
-.margin {
-  margin-right: 10rpx;
-}
-
-.border_box {
-  border-radius: 5rpx;
-  border: 1rpx solid #e6e6e6;
-  padding-left: 6rpx;
-  padding-right: 6rpx;
-  font-size: 22rpx;
-  color: #8a8a8a;
-}
-
 .rob {
   background: #ff5858;
   border-radius: 8rpx;

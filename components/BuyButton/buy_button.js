@@ -1,4 +1,4 @@
-// components/PackageItem/package_item.js
+// components/BuyButton/buy_button.js
 Component({
   /**
    * 组件的属性列表
@@ -18,11 +18,6 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    //进入套餐详情
-    packageDetail() {
-      wx.navigateTo({
-        url: '/pages/package_detail/package_detail',
-      });
-    },
+
   }
 })

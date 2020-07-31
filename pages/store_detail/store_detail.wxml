@@ -1,5 +1,5 @@
 <!--pages/store_detail/store_detail.wxml-->
-<view class="container">
+<view>
   <view class="top_back">
     <image class="back_img" src="../../images/banner_02.jpg"></image>
     <view class="mask"></view>
@@ -8,18 +8,21 @@
     <!-- 店铺信息 -->
     <view class="shadow_box">
       <image class="store_img" src="../../images/banner_02.jpg"></image>
-      <!-- 店铺名 -->
-      <view class="store_name">木屋烤鱼·有机鱼馆</view>
+      <!-- 排名 -->
+      <view class="store_tag">
+        <image class="badge_icon" mode="aspectFill" src="../../images/badge_icon.png"></image>
+        <view class="tag_text">「烤鱼」品类优选商家</view>
+      </view>
       <view class="store_center_box">
         <view class="center_box_left">
-          <!-- 类型和排名 -->
-          <view class="type_sort">
+          <!-- 店铺名 -->
+          <view class="store_name">木屋烤鱼·有机鱼馆</view>
+          <view class="er_box">
             <view class="store_type">烤鱼</view>
-            <sort val="萧山区烤鱼人气第一名" />
-          </view>
-          <!-- 标签 -->
-          <view class="tags">
-            <tag val="{{item.val}}" background="#fdf0dd" color="#ff5858" margin="{{true}}" wx:for="{{tag_list}}" wx:key="id" />
+            <view class="hot_box">
+              <image class="hot_icon" src="../../images/hot_icon.png"></image>
+              <view class="hot_text">4.8</view>
+            </view>
           </view>
         </view>
         <view class="center_box_right">
@@ -28,7 +31,7 @@
         </view>
       </view>
       <!-- 位置和电话 -->
-      <location_phone style="width:670rpx;" />
+      <location_phone />
       <!-- 营业时间 -->
       <view class="business_hours">
         <!-- <text>营业中</text> -->

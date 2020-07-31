@@ -1,0 +1,28 @@
+<!--components/CommentItem/comment_item.wxml-->
+<view class="comment_box">
+  <image class="user_icon" mode="aspectFill" src="../../images/banner_03.jpg"></image>
+  <view class="user_info">
+    <view class="user_content">
+      <view class="content_top">
+        <view class="user_name">伪装的幸福</view>
+        <view class="create_time">2020-07-08</view>
+      </view>
+      <view class="star_list">
+        <image class="hot_icon" src="../../images/hot_icon.png"></image>
+        <image class="hot_icon" src="../../images/hot_icon.png"></image>
+        <image class="hot_icon" src="../../images/hot_icon.png"></image>
+      </view>
+    </view>
+    <view class="comment_info">
+      天启年间，北京城里流传着一句歌谣：“委鬼当头立，茄花满地红。”这个“委鬼”合起来写就是“魏”，暗指专权太监魏忠贤；“茄花”暗指朱由校的乳母客氏，因为在北京话里面，“客”这个字便读作“茄”音，意思是这两人相互勾结，把皇宫内外搞得昏天黑地。
+    </view>
+    <view class="comment_imgs">
+      <image class="comment_img" mode="aspectFill" src="../../images/banner_02.jpg"></image>
+      <image class="comment_img" mode="aspectFill" src="../../images/banner_02.jpg"></image>
+      <image class="comment_img" mode="aspectFill" src="../../images/banner_02.jpg"></image>
+      <image class="comment_img" mode="aspectFill" src="../../images/banner_02.jpg"></image>
+      <image class="comment_img" mode="aspectFill" src="../../images/banner_02.jpg"></image>
+    </view>
+  </view>
+
+</view>

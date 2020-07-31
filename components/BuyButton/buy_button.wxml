@@ -1,0 +1,17 @@
+<!--components/BuyButton/buy_button.wxml-->
+<view class="bottom_but">
+  <view class="but_left">
+    <view class="but_price_box">
+      <view class="now_price">
+        <text class="price_icon">¥</text>
+        <text class="but_price">108</text>
+      </view>
+      <view class="reamin">6.5折</view>
+    </view>
+    <view class="market_price">
+      <text>门店价：</text>
+      <text class="hua">¥288</text>
+    </view>
+  </view>
+  <view class="buy_but">立即抢购</view>
+</view>

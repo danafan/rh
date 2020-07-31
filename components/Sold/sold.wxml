@@ -1,22 +1,22 @@
 <!--components/Sold/sold.wxml-->
 <view class="sold_box">
-      <view class="sold_top">
-        <view class="sold_left">
-          <image class="crowd_icon" src="../../images/crowd.png"></image>
-          <view class="sold_num">已售323份</view>
-        </view>
-        <view class="sold_right">邀请好友一起抢</view>
-      </view>
-      <view class="solds">
-        <image class="sold_icon" src="../../images/banner_01.png"></image>
-        <image class="sold_icon" src="../../images/banner_01.png"></image>
-        <image class="sold_icon" src="../../images/banner_01.png"></image>
-        <image class="sold_icon" src="../../images/banner_01.png"></image>
-        <image class="sold_icon" src="../../images/banner_01.png"></image>
-        <view class="dians">
-          <view class="dian"></view>
-          <view class="dian bian"></view>
-          <view class="dian"></view>
-        </view>
-      </view>
+  <view class="sold_top">
+    <view class="sold_left">
+      <image class="crowd_icon" src="../../images/crowd.png"></image>
+      <view class="sold_num">已售323份</view>
     </view>
+    <view class="sold_right">邀请好友一起抢</view>
+  </view>
+  <view class="solds">
+    <image class="sold_icon" mode="aspectFill" src="../../images/banner_01.png"></image>
+    <image class="sold_icon" mode="aspectFill" src="../../images/banner_02.jpg"></image>
+    <image class="sold_icon" mode="aspectFill" src="../../images/banner_03.jpg"></image>
+    <image class="sold_icon" mode="aspectFill" src="../../images/banner_01.png"></image>
+    <image class="sold_icon" mode="aspectFill" src="../../images/banner_03.jpg"></image>
+    <view class="dians">
+      <view class="dian"></view>
+      <view class="dian bian"></view>
+      <view class="dian"></view>
+    </view>
+  </view>
+</view>

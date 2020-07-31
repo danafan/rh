@@ -30,9 +30,9 @@ Page({
     type: '1',   //优惠类型（1:特价菜；2:优惠券）
   },
   onLoad(option) {
-    this.setData({
-      type: option.type
-    })
+    // this.setData({
+    //   type: option.type
+    // })
   },
   //进入店铺详情
   storeDetail() {
