@@ -19,11 +19,18 @@ Page({
           mask: true,
           duration: 2000
         })
+        
       } else {
         this.setData({
           number: this.data.number - 1
         })
       }
     }
+  },
+  //选择红包
+  envelopeList(){
+    wx.navigateTo({
+      url: '/pages/red_envelope/red_envelope',
+    });
   }
 })

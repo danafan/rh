@@ -1,0 +1,33 @@
+<!--pages/red_envelope/red_ envelope.wxml-->
+<view class="red_envelope_box">
+  <view class="red_envelope_item" wx:for="{{list}}" wx:key="id" data-index="{{index}}" bindtap="check">
+    <view class="select_box" wx:if="{{index === active_index}}">
+      <image class="dui_icon" src="../../images/dui_icon.png"></image>
+    </view>
+    <view class="top_box">
+      <view class="top_left">
+        <view class="name">{{item.title}}</view>
+        <view class="time">有效期至{{item.time}}</view>
+      </view>
+      <view class="top_right">
+        <view class="price_box">
+          <text class="price_icon">¥</text>
+          <text class="price_text">{{item.money}}</text>
+        </view>
+        <view class="toast">无门槛</view>
+      </view>
+    </view>
+    <view class="center_box">
+      <view class="yuan center_left"></view>
+      <view class="line"></view>
+      <view class="yuan center_right"></view>
+    </view>
+    <view class="bottom_box">
+      限到店套类使用，限登录用户13067882143使用
+    </view>
+  </view>
+  <view class="bottom_but">
+    <view class="but_left">红包优惠：¥{{now_price}}</view>
+    <view class="submit_but" bindtap="placeOrder">确认</view>
+  </view>
+</view>

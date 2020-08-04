@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/red_envelope/red_envelope",
     "pages/place_order/place_order",
     "pages/my/my",
     "pages/store_detail/store_detail",

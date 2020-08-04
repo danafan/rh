@@ -1,0 +1,140 @@
+/* pages/red_envelope/red_ envelope.wxss */
+.red_envelope_box{
+  padding: 20rpx 20rpx 150rpx;
+}
+.red_envelope_item{
+  margin-bottom: 20rpx;
+  position: relative;
+  overflow: hidden;
+}
+.select_box{
+  background: #e84d2a;
+  position: absolute;
+  top: -50rpx;
+  right: -50rpx;
+  width: 100rpx;
+  height: 100rpx;
+  transform: rotate(45deg);
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.dui_icon{
+  position: relative;
+  bottom: 10rpx;
+  width: 24rpx;
+  height: 24rpx;
+  transform: rotate(-30deg);
+}
+.top_box{
+  border-radius: 5rpx 5rpx 0 0;
+  background: rgba(243, 116, 100, 0.1);
+  padding-left: 20rpx;
+  padding-right: 60rpx;
+  width: 100%;
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.name{
+  margin-bottom: 20rpx;
+  font-size: 32rpx;
+  color: #0b0d1d;
+  font-weight: 800;
+}
+.time{
+  font-size: 26rpx;
+  color: #8a8a8a;
+}
+.top_right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.price_box {
+  margin-bottom: 10rpx;
+  display: table-cell;
+  vertical-align: bottom;
+}
+.price_icon {
+  color: #ff5858;
+  font-weight: 700;
+  font-size: 28rpx;
+}
+.price_text {
+  color: #ff5858;
+  font-size: 46rpx;
+  font-weight: 700;
+}
+.toast{
+  font-size: 24rpx;
+  color: #0b0d1d;
+}
+.center_box{
+  background: rgba(243, 116, 100, 0.1);
+  height: 30rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.yuan{
+  background: #f6f6f6;
+  border-radius: 50%;
+  width: 30rpx;
+  height: 30rpx;
+}
+.line{
+  border-top: 1rpx dashed #f6f6f6;
+  width: 80%;
+}
+.center_left{
+  position: relative;
+  left: -10rpx;
+}
+.center_right{
+  position: relative;
+  right: -10rpx;
+}
+.bottom_box{
+  background: rgba(243, 116, 100, 0.1);
+  height: 56rpx;
+  line-height: 56rpx;
+  width: 100%;
+  padding-left: 20rpx;
+  font-size: 24rpx;
+  color: #8a8a8a;
+}
+.bottom_but{
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 30rpx;
+  border-radius: 45rpx;
+  box-shadow: 0 0 8rpx #8a8a8a;
+  width: 88%;
+  height: 90rpx;
+  display: flex;
+}
+.but_left{
+  border-radius: 45rpx 0 0 45rpx;
+  width: 70%;
+  height: 90rpx;
+  line-height: 90rpx;
+  background: #0b0d1d;
+  padding-left: 40rpx;
+  font-size: 28rpx;
+  color: #fff;
+}
+.submit_but{
+  border-radius: 0 45rpx 45rpx 0;
+  background-image: linear-gradient(to left, #e84d2a, #ec722e);
+  width: 30%;
+  text-align: center;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 32rpx;
+  color: #fff;
+}

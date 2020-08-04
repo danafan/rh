@@ -27,7 +27,7 @@
   </view>
   <view class="order_info_item margin_top padding">
     <view class="item_label">红包</view>
-    <view class="red_package">
+    <view class="red_package" bindtap="envelopeList">
       <view class="available" wx:if="{{red_package_num > 0}}">1张可用</view>
       <view class="not_use" wx:else>暂无可用</view>
       <image class="right_icon" src="../../images/right.png"></image>
