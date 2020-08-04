@@ -1,13 +1,13 @@
 <!--pages/store_detail/store_detail.wxml-->
 <view>
   <view class="top_back">
-    <image class="back_img" src="../../images/banner_02.jpg"></image>
+    <image class="back_img" mode="aspectFill" src="../../images/banner_02.jpg"></image>
     <view class="mask"></view>
   </view>
   <view class="content_box">
     <!-- 店铺信息 -->
     <view class="shadow_box">
-      <image class="store_img" src="../../images/banner_02.jpg"></image>
+      <image class="store_img" mode="aspectFill" src="../../images/banner_02.jpg"></image>
       <!-- 排名 -->
       <view class="store_tag">
         <image class="badge_icon" mode="aspectFill" src="../../images/badge_icon.png"></image>
@@ -42,23 +42,29 @@
     <!-- 店铺优惠 菜品 -->
     <view class="store_tabs">
       <view class="tab" data-tab_index="1" bindtap="checkTab">
-        <view class="tab_label {{active_tab == '1'?'active_label':''}}">店铺优惠</view>
+        <view class="tab_label {{active_tab == '1'?'active_label':''}}">优惠</view>
         <view class="active_line" wx:if="{{active_tab == '1'}}"></view>
       </view>
       <view class="tab" data-tab_index="2" bindtap="checkTab">
         <view class="tab_label {{active_tab == '2'?'active_label':''}}">菜品</view>
         <view class="active_line" wx:if="{{active_tab == '2'}}"></view>
       </view>
+      <view class="tab" data-tab_index="3" bindtap="checkTab">
+        <view class="tab_label {{active_tab == '3'?'active_label':''}}">评价</view>
+        <view class="active_line" wx:if="{{active_tab == '3'}}"></view>
+      </view>
     </view>
     <!-- 套餐/券 -->
     <view wx:if="{{active_tab == '1'}}">
       <!-- 特价菜 -->
-      <welfare_item type="1" />
+      <view class="package_list">
+        <view class="package_title">特价单品</view>
+        <welfare_item type="1" />
+      </view>
       <!-- 优惠券 -->
       <view class="package_list">
         <view class="package_title">优惠券</view>
-        <vouchers data-type="2" bindtap="goDetail" />
-        <vouchers data-type="2" bindtap="goDetail" />
+        <coupons_item page_type="detail" />
       </view>
       <!-- 套餐 -->
       <view class="package_list">
@@ -73,6 +79,17 @@
       <goods_item/>
       <goods_item/>
       <goods_item/>
+    </view>
+    <!-- 评价 -->
+    <view class="comments_box" wx:if="{{active_tab == '3'}}">
+      <view class="page_title">
+        <view class="title_text">
+          <text>套餐评价</text>
+          <text class="toast_text">（1051）</text>
+        </view>
+      </view>
+      <comment_item/>
+      <comment_item/>
     </view>
   </view>
 </view>

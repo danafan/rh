@@ -13,5 +13,5 @@
       <text class="hua">¥288</text>
     </view>
   </view>
-  <view class="buy_but">立即抢购</view>
+  <view class="buy_but" bindtap="placeOrder">立即抢购</view>
 </view>

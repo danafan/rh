@@ -28,7 +28,7 @@
 .active_tab {
   position: absolute;
   bottom: 0;
-  background-image: linear-gradient(to right, #f37464, #ff5858);
+  background-image: linear-gradient(to left, #e84d2a, #ec722e);
   width: 50%;
   height: 8rpx;
   border-radius: 4rpx;

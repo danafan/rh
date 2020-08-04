@@ -17,12 +17,7 @@
     <!-- 中间模块 -->
     <index_center/>
     <!-- 标题 -->
-    <view class="title_box">
-      <view class="title">
-        <image class="good_icon" src="../../images/big_line.png"></image>
-        <view class="good_text">优选商家</view>
-      </view>
-    </view>
+    <view class="title">优选商家</view>
     <!-- 筛选条件 -->
     <the_query/>
     <!-- 优选列表 -->

@@ -49,12 +49,11 @@
   <!-- 评论 -->
   <view class="comments_box">
     <view class="page_title">
-      <view class="title_text">套餐评价</view>
-      <view class="title_toast">
-        <view class="toast_text">更多评价（1051）</view>
-        <image class="right" src="../../images/right.png"></image>
+        <view class="title_text">
+          <text>套餐评价</text>
+          <text class="toast_text">（1051）</text>
+        </view>
       </view>
-    </view>
     <comment_item/>
     <comment_item/>
   </view>

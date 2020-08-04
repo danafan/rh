@@ -1,7 +1,10 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/place_order/place_order",
+    "pages/my/my",
     "pages/store_detail/store_detail",
+    "pages/comment_detail/comment_detail",
     "pages/coupons_detail/coupons_detail",
     "pages/package_detail/package_detail",
     "pages/food_detail/food_detail",
@@ -10,13 +13,11 @@
     "pages/category/category",
     "pages/coupons_list/coupons_list",
     "pages/order/order",
-    "pages/my/my",
-    "pages/auth/auth",
-    "pages/store_list/store_list"
+    "pages/auth/auth"
   ],
   "tabBar": {
     "color": "#8a8a8a",
-    "selectedColor": "#ff5858",
+    "selectedColor": "#ec722e",
     "borderStyle": "black",
     "list": [
       {
@@ -26,10 +27,10 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/store_list/store_list",
-        "iconPath": "/images/brand.png",
-        "selectedIconPath": "/images/brand_active.png",
-        "text": "品牌墙"
+        "pagePath": "pages/order/order",
+        "iconPath": "/images/order.png",
+        "selectedIconPath": "/images/order_active.png",
+        "text": "订单"
       },
       {
         "pagePath": "pages/my/my",

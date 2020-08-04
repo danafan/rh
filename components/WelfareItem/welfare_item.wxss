@@ -1,5 +1,6 @@
 /* components/WelfareItem/welfare_item.wxss */
 .bus_item{
+  background: #fff;
   border-bottom:1rpx solid #e6e6e6;
   padding: 15rpx 10rpx;
   width: 100%;
@@ -9,8 +10,8 @@
 }
 
 .special{
+  background: #fff;
   margin-bottom: 20rpx;
-  box-shadow: 0 0 6rpx #bfbfbf;
   padding: 15rpx 10rpx;
   width: 100%;
   display: flex;

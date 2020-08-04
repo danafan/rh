@@ -1,8 +1,11 @@
-/* components/CommentItem/comment_item.wxss */
+/* pages/comment_detail/comment_detail.wxss */
+.comment_detail_box{
+  background: #fff;
+}
+
 .comment_box{
-  border-top:1rpx solid #f6f6f6; 
-  padding-top: 20rpx;
-  margin-bottom: 20rpx;
+  margin-bottom: 70rpx;
+  padding: 20rpx;
   display: flex;
 }
 .user_icon{
@@ -47,11 +50,6 @@
   margin-top: 10rpx;
   font-size: 28rpx;
   color: #0b0d1d;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 .comment_imgs{
   margin-top: 8rpx;
@@ -78,7 +76,7 @@
   background: #f6f6f6;
   display: flex;
   align-items: center;
-  width: 70%;
+  width: 60%;
   padding-left: 10rpx;
   padding-right: 10rpx;
 }
@@ -96,5 +94,63 @@
   width: 22rpx;
   height: 22rpx;
 }
-
-
+.comment_set_box{
+  display: flex;
+  align-items: center;
+}
+.comment_icon{
+  margin-right: 5rpx;
+  width: 36rpx;
+  height: 36rpx;
+}
+.comment_text{
+  font-size: 24rpx;
+  color: #8a8a8a;
+}
+/* 回复 */
+.reply_box{
+  border-top: 1rpx solid #f6f6f6;
+  margin-top: 10rpx;
+  padding-top: 10rpx;
+}
+.reply_item{
+  margin-bottom: 10rpx;
+  font-size: 24rpx;
+}
+.store_reply{
+  color: #8a8a8a;
+}
+.reply_those{
+  color: #3D5165;
+}
+.reply_text,.reply_title{
+  color: #333;
+}
+.bottom_input{
+  background: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border-top:1rpx solid #f6f6f6; 
+  height: 90rpx;
+  width: 100%;
+  padding-left: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+.comment_content{
+  border-radius: 8rpx;
+  flex: 1;
+  padding-left: 10rpx;
+  height: 60rpx;
+  border: 1rpx solid #bfbfbf;
+  font-size: 26rpx;
+}
+.send_but{
+  width: 100rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #e84d2a;
+}

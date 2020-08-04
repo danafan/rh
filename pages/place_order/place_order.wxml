@@ -1,0 +1,52 @@
+<!--pages/place_order/place_order.wxml-->
+<view class="place_order_box">
+  <view class="goods_info_box">
+    <view class="goods_info">
+      <image class="goods_img" mode="aspectFill" src="../../images/banner_03.jpg"></image>
+      <view class="info_content">
+        <view class="goods_name">石锅鱼4人套餐</view>
+        <view class="time">周一至周日 10:00 - 21:00</view>
+        <web_tag/>
+      </view>
+    </view>
+    <view class="order_info_item border_top">
+      <view class="item_label">数量</view>
+      <view class="change_num">
+        <image class="change_icon" src="../../images/jian_icon.png" data-type="jian" bindtap="changeNum"></image>
+        <input class="number_input" type="number" value="{{number}}"></input>
+        <image class="change_icon" src="../../images/add_icon.png" data-type="add" bindtap="changeNum"></image>
+      </view>
+    </view>
+    <view class="order_info_item border_top">
+      <view class="item_label">小计</view>
+      <view class="price_box">
+        <text class="price_icon">¥</text>
+        <text class="price_text">158</text>
+      </view>
+    </view>
+  </view>
+  <view class="order_info_item margin_top padding">
+    <view class="item_label">红包</view>
+    <view class="red_package">
+      <view class="available" wx:if="{{red_package_num > 0}}">1张可用</view>
+      <view class="not_use" wx:else>暂无可用</view>
+      <image class="right_icon" src="../../images/right.png"></image>
+    </view>
+  </view>
+  <view class="order_info_item border_top padding">
+    <view class="item_label">实付金额</view>
+    <view class="price_box">
+      <text class="price_icon">¥</text>
+      <text class="price_text">158</text>
+    </view>
+  </view>
+  <view class="order_info_item margin_top padding">
+    <view class="item_label">手机号</view>
+    <view class="desc">13067882143</view>
+  </view>
+  <view class="order_info_item margin_top padding">
+    <view class="item_label">支付方式</view>
+    <view class="desc">微信支付</view>
+  </view>
+  <view class="submit_but">提交订单</view>
+</view>

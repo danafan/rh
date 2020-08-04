@@ -69,20 +69,12 @@
   color: #0b0d1d;
 }
 
-.title_toast {
-  display: flex;
-  align-items: center;
-}
 
 .toast_text {
   font-size: 26rpx;
   color: #333;
 }
 
-.right {
-  width: 22rpx;
-  height: 22rpx;
-}
 
 /* 购买须知 */
 

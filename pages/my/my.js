@@ -19,7 +19,7 @@ Page({
   //我的订单
   goOrder(e) {
     let index = e.currentTarget.dataset.index;
-    wx.navigateTo({
+    wx.switchTab({
       url: '/pages/order/order?index=' + index
     });
     // if (!this.data.wxUser) {

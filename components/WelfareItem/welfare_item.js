@@ -27,7 +27,7 @@ Component({
       let type = e.currentTarget.dataset.type;
       if (type == '1') {
         wx.navigateTo({
-          url: '/pages/coupons_detail/coupons_detail',
+          url: '/pages/food_detail/food_detail',
         });
       } else if (type == '2') {
         wx.navigateTo({

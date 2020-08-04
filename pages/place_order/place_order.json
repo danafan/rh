@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "确认订单",
+  "navigationBarBackgroundColor": "#0b0d1d",
+  "usingComponents": {
+    "web_tag": "../../components/WebTag/web_tag"
+  }
+}

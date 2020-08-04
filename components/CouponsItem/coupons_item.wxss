@@ -2,7 +2,9 @@
 
 .coupons_content {
   width: 100%;
-  border-bottom: 1rpx solid #e6e6e6;
+}
+.coupons_css{
+  border-bottom: 1rpx solid #F6F6F6;
   padding-top: 15rpx;
   padding-bottom: 36rpx;
   margin-bottom: 21rpx;

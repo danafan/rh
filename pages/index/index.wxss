@@ -41,36 +41,12 @@
 
 /* 热乎优选 */
 
-.title_box {
-  display: flex;
-}
 
 .title {
   height: 90rpx;
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 150rpx;
-}
-
-.good_icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 120rpx;
-  height: 36rpx;
-}
-
-.good_text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  transform: translate(-50%, -50%);
   font-size: 36rpx;
   color: #0b0d1d;
   font-weight: 800;
-  z-index: 1;
 }

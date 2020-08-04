@@ -1,7 +1,7 @@
 <!--components/CouponsItem/coupons_item.wxml-->
-<view class="coupons_content" data-id="{{coupons_info.id}}" bindtap="goDetail">
+<view class="coupons_content {{page_type == 'list'?'coupons_css':''}}" data-id="{{coupons_info.id}}" bindtap="goDetail">
   <!-- 顶部店铺信息 -->
-  <item_store/>
+  <item_store wx:if="{{page_type == 'list'}}"/>
   <!-- 券轮播图 -->
   <swiper class="vouchers_box" circular="true" next-margin="120rpx">
     <swiper-item>

@@ -1,7 +1,7 @@
 // pages/store_detail/store_detail.js
 Page({
   data: {
-    active_tab:'1',         //选中的导航
+    active_tab:'3',         //选中的导航
     tag_list: [{
       id: '1',
       val: '有宝宝椅'

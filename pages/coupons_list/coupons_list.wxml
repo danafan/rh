@@ -2,6 +2,6 @@
 <view>
   <view class="top_back"></view>
   <view class="list_box">
-    <coupons_item coupons_info="{{item}}" wx:for="{{preferential}}" wx:key="index" />
+    <coupons_item page_type="list" coupons_info="{{item}}" wx:for="{{preferential}}" wx:key="index" />
   </view>
 </view>

@@ -1,9 +1,8 @@
 /* pages/store_detail/store_detail.wxss */
 
 .top_back {
-  background: #0b0d1d;
   width: 100%;
-  height: 320rpx;
+  height: 350rpx;
   position: relative;
 }
 
@@ -50,7 +49,7 @@
 .store_img {
   border-radius: 8rpx;
   width: 100%;
-  height: 320rpx;
+  height: 350rpx;
 }
 
 .store_tag {
@@ -196,8 +195,8 @@
 /* 到店套餐 */
 
 .package_list {
+  background: #fff;
   margin-bottom: 20rpx;
-  box-shadow: 0 0 6rpx #bfbfbf;
   padding: 10rpx;
 }
 
@@ -212,11 +211,39 @@
 /*  菜品列表 */
 
 .goods_list {
-  box-shadow: 0 0 8rpx #bfbfbf;
-  border-radius: 15rpx;
+  background: #fff;
   width: 100%;
   padding: 10rpx;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+/* 评价 */
+
+.comments_box {
+  padding: 20rpx;
+  width: 100%;
+  background: #fff;
+  margin-top: 15rpx;
+}
+
+/* 标题 */
+
+.page_title {
+  margin-bottom: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title_text {
+  font-size: 30rpx;
+  font-weight: 700;
+  color: #0b0d1d;
+}
+
+.toast_text {
+  font-size: 26rpx;
+  color: #333;
 }

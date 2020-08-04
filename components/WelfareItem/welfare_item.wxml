@@ -1,6 +1,6 @@
 <!--components/WelfareItem/welfare_item.wxml-->
-<view class="{{type == '1'?'special':'bus_item'}}" data-type="{{type}}" bindtap="goDetail">
-  <image class="store_banner" src="../../images/banner_02.jpg"></image>
+<view class="bus_item" data-type="{{type}}" bindtap="goDetail">
+  <image class="store_banner" mode="aspectFill" src="../../images/banner_02.jpg"></image>
   <view class="bus_content">
     <view class="bus_title">【特价】泰式珍珠蟹一份</view>
     <view>

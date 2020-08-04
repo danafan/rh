@@ -1,9 +1,4 @@
 /* pages/order/order.wxss */
-
-.order_contailer {
-  background: #ededed;
-}
-
 .tab_back {
   position: fixed;
   background: #fff;
@@ -35,16 +30,14 @@
 .active_tab {
   position: absolute;
   bottom: 0;
-  background-image: linear-gradient(to right, #f37464, #ff5858);
+  background-image: linear-gradient(to left, #e84d2a, #ec722e);
   width: 80%;
   height: 8rpx;
   border-radius: 4rpx;
 }
 
 .list_box {
-  padding: 15rpx;
-  background: #ededed;
-  margin-top: 90rpx;
+  padding: 105rpx 15rpx 0 15rpx;
   width: 100%;
 }
 

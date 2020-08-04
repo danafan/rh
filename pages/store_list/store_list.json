@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "品牌榜",
-  "navigationBarBackgroundColor": "#0b0d1d",
-  "usingComponents": {
-    "store_item": "../../components/StoreItem/store_item",
-    "bottom": "../../components/Bottom/bottom"
-  }
-}

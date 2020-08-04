@@ -1,13 +1,10 @@
 /* pages/my/my.wxss */
-.my_container {
-  background: #efefef;
-}
+
 .top_back {
   background: #0b0d1d;
   width: 100%;
   height: 300rpx;
   display: flex;
-  /* align-items: center; */
 }
 
 .user_img_box {
@@ -36,13 +33,14 @@
 
 .user_content {
   flex: 1;
-  height: 120rpx;
+  height: 160rpx;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .username {
+  margin-bottom: 20rpx;
   font-size: 36rpx;
   color: #d1b171;
   font-weight: 700;
@@ -65,10 +63,37 @@
 
 .order_box {
   border-radius: 10rpx;
-  box-shadow: 0 0 8rpx #bfbfbf;
   background: #fff;
   width: 100%;
-  padding: 20rpx;
+  padding: 0 20rpx 20rpx;
+}
+
+.order_top {
+  border-bottom: 1rpx solid #f6f6f6;
+  margin-bottom: 20rpx;
+  width: 100%;
+  height: 86rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order_title {
+  font-size: 30rpx;
+  color: #0b0d1d;
+  font-weight: 700;
+}
+
+.order_toast {
+  font-size: 24rpx;
+  color: #8a8a8a;
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  width: 20rpx;
+  height: 20rpx;
 }
 
 .order_list_box {
@@ -93,13 +118,14 @@
   font-size: 26rpx;
   color: #333;
 }
-.number{
+
+.number {
   position: absolute;
   top: -10rpx;
   right: -10rpx;
 }
+
 .my_item {
-  box-shadow: 0 0 8rpx #bfbfbf;
   margin-top: 30rpx;
   margin-bottom: 30rpx;
   background: #fff;
@@ -119,19 +145,19 @@
 }
 
 .order_icon {
-  margin-right: 10rpx;
-  width: 40rpx;
-  height: 40rpx;
+  margin-right: 20rpx;
+  width: 32rpx;
+  height: 32rpx;
 }
 
 .item_text {
-  font-size: 32rpx;
+  font-size: 30rpx;
   color: #333;
 }
 
 .right_icon {
-  width: 30rpx;
-  height: 30rpx;
+  width: 28rpx;
+  height: 28rpx;
 }
 
 .feek_but {

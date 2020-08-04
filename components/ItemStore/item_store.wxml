@@ -8,4 +8,5 @@
       <view class="hot_text">4.8</view>
     </view>
   </view>
+  <image class="right" src="../../images/right.png"></image>
 </view>

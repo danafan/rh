@@ -4,6 +4,10 @@ Component({
     coupons_info:{
       type:Object,
       value:{}
+    },
+    page_type:{
+      type:String,
+      value:'list'
     }
   },
   data: {

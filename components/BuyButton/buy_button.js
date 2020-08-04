@@ -18,6 +18,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    //确认订单
+    placeOrder(){
+      wx.navigateTo({
+        url: '/pages/place_order/place_order',
+      });
+    }
   }
 })
