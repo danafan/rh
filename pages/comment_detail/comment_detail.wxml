@@ -18,18 +18,10 @@
         天启年间，北京城里流传着一句歌谣：“委鬼当头立，茄花满地红。”这个“委鬼”合起来写就是“魏”，暗指专权太监魏忠贤；“茄花”暗指朱由校的乳母客氏，因为在北京话里面，“客”这个字便读作“茄”音，意思是这两人相互勾结，把皇宫内外搞得昏天黑地。
       </view>
       <view class="comment_imgs">
-        <image class="comment_img" mode="aspectFill" src="../../images/banner_02.jpg"></image>
-        <image class="comment_img" mode="aspectFill" src="../../images/banner_02.jpg"></image>
-        <image class="comment_img" mode="aspectFill" src="../../images/banner_02.jpg"></image>
-        <image class="comment_img" mode="aspectFill" src="../../images/banner_02.jpg"></image>
-        <image class="comment_img" mode="aspectFill" src="../../images/banner_02.jpg"></image>
+        <image class="comment_img" mode="aspectFill" src="{{item}}" wx:for="{{imgs}}" wx:key="*this" data-index="{{index}}" bindtap="openBigImg"></image>
       </view>
       <!-- 底部操作栏 -->
       <view class="setting_box">
-        <view class="package_box">
-          <view class="package_text">东坡肉2人套餐东坡肉2人套餐东坡肉2人套餐</view>
-          <image class="right" src="../../images/right.png"></image>
-        </view>
         <view class="comment_set_box" bindtap="sendComment">
           <image class="comment_icon" src="../../images/comment_icon.png"></image>
           <view class="comment_text">评论</view>
@@ -54,4 +46,5 @@
     <input class="comment_content" focus="{{is_focus}}" placeholder="请输入评论内容"></input>
     <view class="send_but">发送</view>
   </view>
+  <big_img big_imgs="{{imgs}}" current_index="{{current_index}}" wx:if="{{show_big_img}}" bind:onEmit="close" />
 </view>

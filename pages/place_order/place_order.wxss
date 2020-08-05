@@ -111,8 +111,11 @@
   color: #8a8a8a;
 }
 .submit_but{
-  margin: 100rpx auto;
-  border-radius: 8rpx;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 30rpx;
+  border-radius: 45rpx;
   background-image: linear-gradient(to left, #e84d2a, #ec722e);
   width: 80%;
   text-align: center;

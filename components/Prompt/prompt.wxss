@@ -1,0 +1,38 @@
+/* components/Prompt/prompt.wxss */
+.rules {
+  margin-top: 15rpx;
+  background: #fff;
+  padding: 20rpx;
+}
+.title_text {
+  margin-bottom: 20rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+  color: #0b0d1d;
+}
+.pick_box {
+  display: flex;
+  margin-bottom: 20rpx;
+  font-size: 28rpx;
+  color: #0b0d1d;
+}
+
+.pick_icon {
+  margin-right: 10rpx;
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.rules_icon {
+  margin-right: 10rpx;
+  width: 40rpx;
+  height: 32rpx;
+}
+
+.rule_text {
+  margin-bottom: 6rpx;
+}
+
+.pick_title {
+  margin-bottom: 10rpx;
+}

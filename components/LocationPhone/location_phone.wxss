@@ -1,6 +1,5 @@
 /* components/LocationPhone/location_phone.wxss */
 .location_phone {
-  /* padding: 20rpx; */
   background: #fff;
   width: 100%;
   display: flex;

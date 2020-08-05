@@ -30,7 +30,25 @@ Page({
       old_price: "42.5",
       now_price: "19.8",
       discount: "7.5"
-    }], //特价菜列表
+      }, {
+        id: "4",
+        food_img: 'https://p0.meituan.net/dealwatera/7b90611c137f2c2dc0122a79c7e58ade95682.jpg@130w_130h_1e_1c',
+        store_name: "叫了只炸鸡",
+        goods_name: "椒盐整鸡一份",
+        rob_num: 65,
+        old_price: "42.5",
+        now_price: "19.8",
+        discount: "7.5"
+      }, {
+        id: "5",
+        food_img: 'https://p0.meituan.net/dealwatera/7b90611c137f2c2dc0122a79c7e58ade95682.jpg@130w_130h_1e_1c',
+        store_name: "叫了只炸鸡",
+        goods_name: "椒盐整鸡一份",
+        rob_num: 65,
+        old_price: "42.5",
+        now_price: "19.8",
+        discount: "7.5"
+      }], //特价菜列表
   },
   onLoad: function (options) {
 

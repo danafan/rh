@@ -1,20 +1,22 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/order/order",
+    "pages/order_detail/order_detail",
+    "pages/food_detail/food_detail",
+    "pages/coupons_detail/coupons_detail",
+    "pages/package_detail/package_detail",
     "pages/red_envelope/red_envelope",
     "pages/place_order/place_order",
     "pages/my/my",
     "pages/store_detail/store_detail",
     "pages/comment_detail/comment_detail",
-    "pages/coupons_detail/coupons_detail",
-    "pages/package_detail/package_detail",
-    "pages/food_detail/food_detail",
     "pages/food_list/food_list",
     "pages/package_list/package_list",
     "pages/category/category",
     "pages/coupons_list/coupons_list",
-    "pages/order/order",
-    "pages/auth/auth"
+    "pages/auth/auth",
+    "pages/my_order/my_order"
   ],
   "tabBar": {
     "color": "#8a8a8a",
@@ -42,12 +44,10 @@
     ]
   },
   "window": {
-    "enablePullDownRefresh": true,
-    "backgroundColor": "#EFEFEF",
     "navigationBarBackgroundColor": "#0b0d1d",
     "navigationBarTextStyle": "white",
     "backgroundTextStyle": "light",
-    "navigationBarTitleText": "热乎"
+    "navigationBarTitleText": "热乎优选"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

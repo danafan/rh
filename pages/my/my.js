@@ -17,10 +17,10 @@ Page({
     });
   },
   //我的订单
-  goOrder(e) {
+  orderList(e) {
     let index = e.currentTarget.dataset.index;
-    wx.switchTab({
-      url: '/pages/order/order?index=' + index
+    wx.navigateTo({
+      url: '/pages/my_order/my_order?index=' + index
     });
     // if (!this.data.wxUser) {
     //   wx.navigateTo({

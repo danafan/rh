@@ -1,0 +1,73 @@
+/* components/PackageContent/package_content.wxss */
+.package_box {
+  margin-top: 15rpx;
+  padding: 20rpx;
+  background: #fff;
+  width: 710rpx;
+}
+
+.package_title {
+  margin-bottom: 10rpx;
+  width: 100%;
+  text-align: center;
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #d1b171;
+}
+
+.package_item {
+  margin-bottom: 36rpx;
+}
+
+.package_cate_title {
+  margin-bottom: 10rpx;
+  font-size: 28rpx;
+  font-weight: 700;
+  color: #0b0d1d;
+}
+
+.cate_item {
+  margin-bottom: 15rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.package_name {
+  display: flex;
+  align-items: center;
+}
+
+.goods_name {
+  font-size: 26rpx;
+  color: #0b0d1d;
+}
+
+.num {
+  font-size: 26rpx;
+  color: #8a8a8a;
+}
+
+.item_money {
+  font-size: 26rpx;
+  font-weight: 700;
+  color: #0b0d1d;
+}
+
+.store_price {
+  margin-top: 20rpx;
+  width: 100%;
+  text-align: end;
+  text-decoration: line-through;
+  font-size: 26rpx;
+  color: #8a8a8a;
+}
+
+.total_money {
+  width: 100%;
+  text-align: end;
+  font-size: 30rpx;
+  font-weight: 700;
+  color: #0b0d1d;
+}

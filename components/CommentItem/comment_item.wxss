@@ -1,49 +1,59 @@
 /* components/CommentItem/comment_item.wxss */
-.comment_box{
-  border-top:1rpx solid #f6f6f6; 
+
+.comment_box {
+  border-top: 1rpx solid #f6f6f6;
   padding-top: 20rpx;
   margin-bottom: 20rpx;
   display: flex;
 }
-.user_icon{
+
+.user_icon {
   margin-right: 15rpx;
   border-radius: 50%;
   width: 90rpx;
   height: 90rpx;
 }
-.user_info{
+
+.user_info {
   flex: 1;
 }
-.user_content{
+
+.user_content {
   width: 100%;
   height: 90rpx;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.content_top{
+
+.content_top {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.user_name{
+
+.user_name {
   font-size: 28rpx;
-  color: #3D5165;
+  color: #3d5165;
   font-weight: 700;
 }
-.create_time{
+
+.create_time {
   font-size: 26rpx;
   color: #8a8a8a;
 }
-.star_list{
+
+.star_list {
   display: flex;
   align-items: center;
 }
-.hot_icon{
+
+.hot_icon {
   width: 30rpx;
   height: 30rpx;
 }
-.comment_info{
+
+.comment_info {
   margin-top: 10rpx;
   font-size: 28rpx;
   color: #0b0d1d;
@@ -53,48 +63,43 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.comment_imgs{
+
+.comment_imgs {
   margin-top: 8rpx;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-.comment_img{
+
+.comment_img {
   margin-right: 6rpx;
   margin-bottom: 6rpx;
   width: 180rpx;
   height: 180rpx;
 }
+
 /* 操作评论 */
-.setting_box{
+
+.setting_box {
   margin-top: 10rpx;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
-.package_box{
-  height: 52rpx;
-  background: #f6f6f6;
+
+.comment_set_box {
   display: flex;
   align-items: center;
-  width: 70%;
-  padding-left: 10rpx;
-  padding-right: 10rpx;
 }
-.package_text{
-  flex: 1;
+
+.comment_icon {
+  margin-right: 5rpx;
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.comment_text {
   font-size: 24rpx;
   color: #8a8a8a;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
-.right{
-  width: 22rpx;
-  height: 22rpx;
-}
-
-

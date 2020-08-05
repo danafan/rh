@@ -1,8 +1,6 @@
 {
   "navigationBarTitleText": "首页",
-  "backgroundColor": "#ff5858",
   "navigationStyle": "custom",
-  "enablePullDownRefresh": true,
   "usingComponents": {
     "cate_store_item": "../../components/CateStoreItem/cate_store_item",
     "search_box": "../../components/SearchBox/search_box",

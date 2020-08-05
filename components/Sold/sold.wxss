@@ -2,7 +2,7 @@
 .sold_box {
   background: #fff;
   margin-top: 15rpx;
-  width: 702rpx;
+  width: 710rpx;
   padding: 30rpx 15rpx;
 }
 

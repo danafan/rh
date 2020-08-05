@@ -1,4 +1,4 @@
-<!--pages/order/order.wxml-->
+<!--pages/my_order/my_order.wxml-->
 <view>
   <view class="tab_back">
     <view class="tab_item" data-index="0" bindtap="checkTab">

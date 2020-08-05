@@ -17,38 +17,30 @@
     <view class="order_box">
       <view class="order_top">
         <view class="order_title">我的订单</view>
-        <view class="order_toast">
-        <view>查看全部</view>
-        <image class="right" src="../../images/right.png"></image>
+        <view class="order_toast" data-index="0" bindtap="orderList">
+          <view>查看全部</view>
+          <image class="right" src="../../images/right.png"></image>
         </view>
       </view>
       <view class="order_list_box">
-        <view class="order_item" data-index="0" bindtap="goOrder">
+        <view class="order_item" data-index="1" bindtap="orderList">
           <image class="order_box_icon" src="../../images/cate_05.png"></image>
           <view class="order_label">待使用</view>
         </view>
-        <view class="order_item" data-index="1" bindtap="goOrder">
+        <view class="order_item" data-index="2" bindtap="orderList">
           <image class="order_box_icon" src="../../images/cate_02.png"></image>
           <view class="order_label">待支付</view>
           <tag class="number" val="21" background="#ff5858" color="#fff" />
         </view>
-        <view class="order_item" data-index="2" bindtap="goOrder">
+        <view class="order_item" data-index="3" bindtap="orderList">
           <image class="order_box_icon" src="../../images/cate_03.png"></image>
           <view class="order_label">待评价</view>
         </view>
-        <view class="order_item" data-index="3" bindtap="goOrder">
+        <view class="order_item" data-index="4" bindtap="orderList">
           <image class="order_box_icon" src="../../images/cate_04.png"></image>
           <view class="order_label">退款/售后</view>
         </view>
       </view>
-    </view>
-    <view class="my_item">
-      <button class="feek_but" open-type="feedback"></button>
-      <view class="item_left">
-        <image class="order_icon" src="../../images/vouchers.png"></image>
-        <view class="item_text">红包</view>
-      </view>
-      <image class="right_icon" src="../../images/right.png"></image>
     </view>
     <view class="my_item">
       <button class="feek_but" open-type="feedback"></button>

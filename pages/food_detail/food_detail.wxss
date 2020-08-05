@@ -1,7 +1,7 @@
 /* pages/food_detail/food_detail.wxss */
 
 .container {
-  padding: 0 25rpx 110rpx 25rpx;
+  padding: 0 20rpx 110rpx 20rpx;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,13 +47,6 @@
   border-top: 1rpx solid #f6f6f6;
 }
 
-.tags {
-  margin-top: 20rpx;
-  width: 100%;
-  display: flex;
-  align-content: center;
-}
-
 /* 标题 */
 
 .page_title {
@@ -73,42 +66,6 @@
 .toast_text {
   font-size: 26rpx;
   color: #333;
-}
-
-
-/* 购买须知 */
-
-.rules {
-  margin-top: 15rpx;
-  background: #fff;
-  padding: 20rpx;
-}
-
-.pick_box {
-  display: flex;
-  margin-bottom: 20rpx;
-  font-size: 28rpx;
-  color: #0b0d1d;
-}
-
-.pick_icon {
-  margin-right: 10rpx;
-  width: 36rpx;
-  height: 36rpx;
-}
-
-.rules_icon {
-  margin-right: 10rpx;
-  width: 40rpx;
-  height: 32rpx;
-}
-
-.rule_text {
-  margin-bottom: 6rpx;
-}
-
-.pick_title {
-  margin-bottom: 10rpx;
 }
 
 

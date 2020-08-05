@@ -2,90 +2,15 @@
 <view class="container">
   <!-- 特价菜 -->
   <view class="special_box">
-    <image class="food_icon" mode="aspectFill" src="../../images/banner_02.jpg"></image>
+    <image class="food_icon" mode="aspectFill" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1942169203,2282777752&fm=26&gp=0.jpg"></image>
     <view class="food_name">新鲜石锅鱼</view>
   </view>
   <!-- 已售 -->
   <sold/>
   <!-- 套餐（只有套餐才显示） -->
-  <view class="package_box">
-    <view class="package_title">-- 套餐内容 --</view>
-    <view class="package_item">
-      <view class="package_cate_title">鱼锅</view>
-      <view class="cate_item">
-        <view class="package_name">
-          <text class="goods_name">大丰收</text>
-          <text class="num">（1份）</text>
-        </view>
-        <view class="item_money">¥48</view>
-      </view>
-      <view class="cate_item">
-        <view class="package_name">
-          <text class="goods_name">大丰收</text>
-          <text class="num">（1份）</text>
-        </view>
-        <view class="item_money">¥48</view>
-      </view>
-      <view class="cate_item">
-        <view class="package_name">
-          <text class="goods_name">大丰收</text>
-          <text class="num">（1份）</text>
-        </view>
-        <view class="item_money">¥48</view>
-      </view>
-    </view>
-    <view class="package_item">
-      <view class="package_cate_title">鱼锅</view>
-      <view class="cate_item">
-        <view class="package_name">
-          <text class="goods_name">大丰收</text>
-          <text class="num">（1份）</text>
-        </view>
-        <view class="item_money">¥48</view>
-      </view>
-    </view>
-    <view class="package_item">
-      <view class="package_cate_title">鱼锅</view>
-      <view class="cate_item">
-        <view class="package_name">
-          <text class="goods_name">大丰收</text>
-          <text class="num">（1份）</text>
-        </view>
-        <view class="item_money">¥48</view>
-      </view>
-    </view>
-    <view class="store_price">门店价：¥288</view>
-    <view class="total_money">总价：¥78</view>
-  </view>
+  <package_content/>
   <!-- 使用规则 -->
-  <view class="rules">
-    <view class="page_title">
-      <view class="title_text">购买须知</view>
-    </view>
-    <view class="pick_box">
-      <image class="pick_icon" src="../../images/pick_icon.png"></image>
-      <view>
-        <view class="pick_title">有效期</view>
-        <view class="pick_val">2020-07-26至2020-08-26（周末、法定节假日通用）</view>
-      </view>
-    </view>
-    <view class="pick_box">
-      <image class="pick_icon" src="../../images/time_icon.png"></image>
-      <view>
-        <view class="pick_title">使用时间</view>
-        <view class="pick_val">10:30 - 20:00</view>
-      </view>
-    </view>
-    <view class="pick_box">
-      <image class="rules_icon" src="../../images/rules_icon.png"></image>
-      <view>
-        <view class="pick_title">使用规则</view>
-        <view class="rule_text" wx:for="{{rules_list}}" wx:key="id">- {{item.val}}</view>
-      </view>
-    </view>
-    <!-- 免费退提示 -->
-    <web_tag/>
-  </view>
+  <prompt/>
   <!-- 商家信息 -->
   <view class="store_info">
     <view class="page_title">

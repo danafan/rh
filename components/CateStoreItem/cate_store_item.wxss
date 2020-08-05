@@ -37,17 +37,17 @@
 
 .store_img {
   border-radius: 6rpx;
-  width: 202rpx;
-  height: 151rpx;
+  width: 160rpx;
+  height: 160rpx;
 }
 
 .store_right {
-  margin-left: 15rpx;
+  margin-left: 20rpx;
   flex: 1;
-  height: 151rpx;
+  height: 160rpx;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .store_name {
@@ -93,13 +93,13 @@
 }
 
 .tag_label {
-  border-radius: 5rpx;
-  padding-left: 8rpx;
-  padding-right: 8rpx;
+  border-radius: 6rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
   text-align: center;
-  height: 28rpx;
-  line-height: 28rpx;
-  font-size: 20rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  font-size: 22rpx;
   color: #fff;
   margin-right: 10rpx;
 }
@@ -119,7 +119,7 @@
 /* 商家的套餐列表 */
 
 .package_list_box {
-  margin-top: 25rpx;
+  margin-top: 20rpx;
   position: relative;
   width: 100%;
   height: 298rpx;

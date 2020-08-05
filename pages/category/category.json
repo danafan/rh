@@ -1,6 +1,5 @@
 {
   "navigationBarTitleText": "分类",
-  "navigationBarBackgroundColor": "#0b0d1d",
   "usingComponents": {
     "cate_store_item": "../../components/CateStoreItem/cate_store_item",
     "bottom": "../../components/Bottom/bottom"

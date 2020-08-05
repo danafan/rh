@@ -1,0 +1,50 @@
+<!--components/PackageContent/package_content.wxml-->
+<view class="package_box">
+    <view class="package_title">-- 套餐内容 --</view>
+    <view class="package_item">
+      <view class="package_cate_title">鱼锅</view>
+      <view class="cate_item">
+        <view class="package_name">
+          <text class="goods_name">大丰收</text>
+          <text class="num">（1份）</text>
+        </view>
+        <view class="item_money">¥48</view>
+      </view>
+      <view class="cate_item">
+        <view class="package_name">
+          <text class="goods_name">大丰收</text>
+          <text class="num">（1份）</text>
+        </view>
+        <view class="item_money">¥48</view>
+      </view>
+      <view class="cate_item">
+        <view class="package_name">
+          <text class="goods_name">大丰收</text>
+          <text class="num">（1份）</text>
+        </view>
+        <view class="item_money">¥48</view>
+      </view>
+    </view>
+    <view class="package_item">
+      <view class="package_cate_title">鱼锅</view>
+      <view class="cate_item">
+        <view class="package_name">
+          <text class="goods_name">大丰收</text>
+          <text class="num">（1份）</text>
+        </view>
+        <view class="item_money">¥48</view>
+      </view>
+    </view>
+    <view class="package_item">
+      <view class="package_cate_title">鱼锅</view>
+      <view class="cate_item">
+        <view class="package_name">
+          <text class="goods_name">大丰收</text>
+          <text class="num">（1份）</text>
+        </view>
+        <view class="item_money">¥48</view>
+      </view>
+    </view>
+    <view class="store_price">门店价：¥288</view>
+    <view class="total_money">总价：¥78</view>
+  </view>

@@ -5,7 +5,8 @@
     "sold": "../../components/Sold/sold",
     "item_store": "../../components/ItemStore/item_store",
     "location_phone": "../../components/LocationPhone/location_phone",
-    "web_tag": "../../components/WebTag/web_tag",
+    "package_content": "../../components/PackageContent/package_content",
+    "prompt": "../../components/Prompt/prompt",
     "comment_item": "../../components/CommentItem/comment_item",
     "buy_button": "../../components/BuyButton/buy_button"
   }
