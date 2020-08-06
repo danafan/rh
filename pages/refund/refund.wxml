@@ -1,0 +1,24 @@
+<!--pages/refund/refund.wxml-->
+<view>
+  <view class="top_toast">退款金额将在1-3个工作日内退回至原账户</view>
+  <view class="refund_item">
+    <view class="refund_label">订单号</view>
+    <view class="order_code">23146719283764827346</view>
+  </view>
+  <view class="refund_item">
+    <view class="refund_label">退款金额</view>
+    <view class="order_code">¥88</view>
+  </view>
+  <view class="why_title">
+    <text class="title_label">退款原因</text>
+    <text class="title_toast">（至少选择1项）</text>
+  </view>
+  <view class="why_box">
+    <view class="why_item" wx:for="{{refund_list}}" wx:key="id" data-id="{{item.id}}" data-index="{{index}}" bindtap="checkItem">
+      <view class="item_text">{{item.name}}</view>
+      <image class="kuang" src="../../images/kuang_active.png" wx:if="{{item.checked}}"></image>
+      <image class="kuang" src="../../images/kuang.png" wx:else></image>
+    </view>
+  </view>
+<view class="submit_but" bindtap="applyRefund">申请退款</view>
+</view>

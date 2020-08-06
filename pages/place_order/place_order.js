@@ -3,6 +3,14 @@ Page({
   data: {
     number: 1, //默认数量
     red_package_num: 1, //红包数量
+    order_id:""
+  },
+  onLoad(options){
+    let order_id = options.order_id;
+    this.setData({
+      order_id: order_id
+    })
+    console.log(this.data.order_id)
   },
   // 操作数量
   changeNum(e) {

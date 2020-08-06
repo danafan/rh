@@ -2,19 +2,30 @@
 Page({
   data: {
     order_info:{
-      order_status: '5',            //1:待使用；2:待支付；3:待评价；4:退款/售后；5:已完成
-      refund_status: '',            //1:退款中；2:已退款；3:退款失败
-      order_status_text:'退款中',    //退款描述
-      order_type: '1',              //1:套餐；2:优惠券；3:特价菜
+      order_id: ''
     }
   },
   onLoad: function (options) {
-    console.log(options.order_id)
+    let order_id = options.order_id;
+    console.log(order_id)
+    let obj = {
+      order_id: order_id
+    }
+    this.setData({
+      order_info: obj
+    })
   },
-  //确认订单
+  //再来一单
   placeOrder() {
     wx.navigateTo({
       url: '/pages/place_order/place_order',
+    });
+  },
+  //申请退款
+  applyRefund(e){
+    let order_id = e.currentTarget.dataset.order_id;
+    wx.navigateTo({
+      url: '/pages/refund/refund?order_id=' + order_id
     });
   }
 })

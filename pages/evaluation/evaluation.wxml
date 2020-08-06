@@ -1,0 +1,29 @@
+<!--pages/evaluation/evaluation.wxml-->
+<view class="evaluation_box">
+  <view class="top_toast">
+    <image class="integral_icon" src="../../images/integral_icon.png"></image>
+    <view class="toast_text">优质评价有机会获得积分，可直接抵扣现金哦～</view>
+  </view>
+  <view class="star_box">
+    <view class="star_label">热度</view>
+    <view class="star_icon_box">
+      <image class="star_icon" src="{{item}}" wx:for="{{star_list}}" wx:key="index" data-index="{{index}}" bindtap="changeStar"></image>
+    </view>
+    <view class="star_toast">{{star_toast}}</view>
+  </view>
+  <textarea class="textarea" bindinput="changeInuput" maxlength="20" placeholder="亲，来评价一下吧，选为优秀评价可换取积分哦，还可输入140字" />
+  <view class="images_box">
+    <view class="img_box" wx:for="{{upload_imgs}}" wx:key="index">
+      <image class="img" mode="aspectFill" src="{{item}}"></image>
+      <view class="close_box" data-index="{{index}}" bindtap="deleteImg">
+        <image class="close_icon" src="../../images/close_icon.png"></image>
+      </view>
+    </view>
+    <upload_file bind:onEmit="upload_file" wx:if="{{upload_imgs.length < 9}}"/>
+  </view>
+  <view class="anonymous">
+    <view class="anonymous_label">匿名</view>
+    <switch checked="{{anonymous}}" bindchange="anonymousChange"/>
+  </view>
+  <view class="submit_but">发布评价</view>
+</view>

@@ -9,7 +9,7 @@
     <view class="order_status">{{order_info.order_status_text}}</view>
   </view>
   <!-- 中间套餐或优惠券信息 -->
-  <view class="center_box">
+  <view class="center_box" data-order_id="{{order_info.order_id}}" data-order_status="{{order_info.order_status}}" bindtap="orderDetail">
     <!-- 左侧图片 -->
     <!-- 优惠券 -->
     <view class="preferential_icon vouchers_back" wx:if="{{order_info.order_type == '2'}}">
@@ -19,37 +19,33 @@
       </view>
     </view>
     <!-- 套餐或特价菜 -->
-    <image class="preferential_icon" mode="aspectFill" src="{{order_info.goods_icon}}" wx:else></image>
+    <image class="preferential_icon" mode="aspectFill" lazy-load="true" src="{{order_info.goods_icon}}" wx:else></image>
     <!-- 右侧优惠信息文字 -->
     <view class="center_info">
       <view class="preferential_name" wx:if="{{order_info.order_type == '2'}}">{{order_info.vouchers_money}}元代金券</view>
       <view class="preferential_name" wx:else>{{order_info.order_name}}</view>
-      <!-- 除了退款之外显示 -->
-      <view wx:if="{{order_info.order_status != '4'}}">
-        <view class="info_item">下单时间：{{order_info.create_time}}</view>
-        <view class="info_item">数量：{{order_info.number}}</view>
-        <view class="info_item">总价：¥{{order_info.total_money}}</view>
-      </view>
-      <!-- 退款售后 -->
-      <view wx:else>
-        <view class="info_item">申请时间：{{order_info.apply_time}}</view>
-        <view class="info_item">退款金额：¥{{order_info.total_money}}</view>
-      </view>
+      <view class="info_item" wx:if="{{order_info.order_status == '1'}}">付款时间：{{order_info.create_time}}</view>
+      <view class="info_item" wx:if="{{order_info.order_status == '2'}}">下单时间：{{order_info.create_time}}</view>
+      <view class="info_item" wx:if="{{order_info.order_status == '3' || order_info.order_status == '5'}}">消费时间：{{order_info.create_time}}</view>
+      <view class="info_item" wx:if="{{order_info.order_status == '4'}}">申请时间：{{order_info.apply_time}}</view>
+      <view class="info_item" wx:if="{{order_info.order_status == '4' && order_info.refund_status == '2'}}">到账时间：{{order_info.apply_time}}</view>
+      <view class="info_item">数量：{{order_info.number}}</view>
+      <view class="info_item">总金额：¥{{order_info.total_money}}</view>
     </view>
   </view>
   <!-- 下面操作栏 -->
   <view class="bottom_box">
     <!-- 待使用 -->
     <view class="end_time" wx:if="{{order_info.order_status == '1'}}">有效期至：{{order_info.end_time}}</view>
-     <!-- 待评价 -->
+    <!-- 待评价 -->
     <view class="end_time" wx:if="{{order_info.order_status == '3'}}">优质评价可获得积分哦～</view>
-     <!-- 退款中 -->
+    <!-- 退款中 -->
     <view class="end_time" wx:if="{{order_info.order_status == '4' && order_info.refund_status == '1'}}">退款金额将在1-3个工作日内退回至原账户</view>
     <view class="buts">
-      <view class="but border" wx:if="{{order_info.order_status == '3'}}">去评价</view>
-      <view class="but but_back" wx:if="{{order_info.order_status == '1'}}">去使用</view>
-      <view class="but but_back" wx:if="{{order_info.order_status == '3' || order_info.order_status == '4'|| order_info.order_status == '5'}}">再来一单</view>
-      <view class="but but_back" wx:if="{{order_info.order_status == '2'}}">去付款</view>
+      <view class="but border" wx:if="{{order_info.order_status == '3'}}" data-order_id="{{order_info.order_id}}" bindtap="evaluation">去评价</view>
+      <view class="but but_back" wx:if="{{order_info.order_status == '1'}}" data-order_id="{{order_info.order_id}}" bindtap="orderDetail">去使用</view>
+      <view class="but but_back" wx:if="{{order_info.order_status == '4'|| order_info.order_status == '5'}}" data-order_id="{{order_info.order_id}}" bindtap="placeOrder">再来一单</view>
+      <view class="but but_back" wx:if="{{order_info.order_status == '2'}}" data-order_id="{{order_info.order_id}}" bindtap="orderDetail">去付款</view>
     </view>
   </view>
 </view>

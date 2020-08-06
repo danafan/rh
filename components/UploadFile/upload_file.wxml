@@ -1,0 +1,5 @@
+<!--components/UploadFile/upload_file.wxml-->
+<view class="upload_box" bindtap="chooseImg">
+  <image class="upload_icon" src="../../images/camera.png"></image>
+  <view class="upload_text">上传图片</view>
+</view>

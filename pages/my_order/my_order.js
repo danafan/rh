@@ -168,13 +168,6 @@ Page({
       tab_index: e.currentTarget.dataset.index
     })
   },
-  //订单详情
-  orderDetail(e) {
-    let order_id = e.currentTarget.dataset.order_id;
-    wx.navigateTo({
-      url: '/pages/order_detail/order_detail?order_id=' + order_id
-    });
-  },
   //上拉加载
   onReachBottom() {
     console.log('上拉加载')

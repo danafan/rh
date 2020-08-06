@@ -24,7 +24,7 @@
   </view>
   <!-- 列表 -->
   <view class="list_box">
-    <order_item order_info="{{item}}" wx:for="{{order_list}}" wx:key="order_id" data-order_id="{{item.order_id}}" bindtap="orderDetail"/>
+    <order_item order_info="{{item}}" wx:for="{{order_list}}" wx:key="order_id" data-order_id="{{item.order_id}}"/>
   </view>
   
 </view>

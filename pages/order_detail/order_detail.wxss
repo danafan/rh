@@ -102,6 +102,13 @@
 .hua{
   text-decoration: line-through;
 }
+.order_toast{
+  
+  margin-top: 10rpx;
+  width: 100%;
+  font-size: 24rpx;
+  color: #ec722e;
+}
 .margin {
   margin-top: 10rpx;
   margin-bottom: 30rpx;

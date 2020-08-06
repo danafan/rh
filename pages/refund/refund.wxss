@@ -1,0 +1,87 @@
+/* pages/refund/refund.wxss */
+
+.top_toast {
+  background: #fceee7;
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24rpx;
+  color: #e84d2a;
+}
+
+.refund_item {
+  margin-top: 20rpx;
+  background: #fff;
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+
+.refund_label {
+  font-size: 28rpx;
+  color: #0b0d1d;
+}
+
+.order_code {
+  font-size: 28rpx;
+  color: #8a8a8a;
+}
+
+.why_title {
+  padding-left: 20rpx;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.title_label {
+  font-size: 32rpx;
+  color: #333;
+  font-weight: 700;
+}
+
+.title_toast {
+  font-size: 28rpx;
+  color: #8a8a8a;
+}
+
+.why_box {
+  background: #fff;
+  width: 100%;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+
+.why_item {
+  border-bottom: 1rpx solid #f6f6f6;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item_text {
+  font-size: 26rpx;
+  color: #333;
+}
+
+.kuang {
+  width: 36rpx;
+  height: 36rpx;
+}
+.submit_but{
+  margin: 50rpx auto;
+  border-radius: 45rpx;
+  background-image: linear-gradient(to left, #e84d2a, #ec722e);
+  width: 80%;
+  text-align: center;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 32rpx;
+  color: #fff;
+}

@@ -1,0 +1,135 @@
+/* pages/evaluation/evaluation.wxss */
+page{
+  background: #fff;
+}
+.evaluation_box {
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top_toast {
+  border: 1rpx solid #e84d2a;
+  background: #fceee7;
+  border-radius: 40rpx;
+  padding-left: 20rpx;
+  width: 100%;
+  height: 70rpx;
+  display: flex;
+  align-items: center;
+}
+
+.integral_icon {
+  margin-right: 10rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.toast_text {
+  font-size: 24rpx;
+  color: #e84d2a;
+}
+
+.star_box {
+  margin-top: 20rpx;
+  border-bottom: 1rpx solid #f6f6f6;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+
+.star_label {
+  margin-right: 20rpx;
+  font-size: 32rpx;
+  color: #333;
+  font-weight: 700;
+}
+
+.star_icon_box {
+  display: flex;
+  align-items: center;
+}
+
+.star_icon {
+  margin-right: 10rpx;
+  width: 42rpx;
+  height: 42rpx;
+}
+
+.star_toast {
+  margin-left: 20rpx;
+  font-size: 24rpx;
+  color: #8a8a8a;
+}
+
+.textarea {
+  margin-top: 20rpx;
+  width: 100%;
+}
+
+.images_box {
+  margin-top: 20rpx;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img_box {
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  width: 210rpx;
+  height: 210rpx;
+  position: relative;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.close_box {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 36rpx;
+  height: 36rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.close_icon {
+  width: 22rpx;
+  height: 22rpx;
+}
+
+.anonymous {
+  border-bottom: 1rpx solid #f6f6f6;
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.anonymous_label{
+  font-size: 30rpx;
+  color: #333;
+}
+.submit_but{
+  margin: 50rpx auto;
+  border-radius: 45rpx;
+  background-image: linear-gradient(to left, #e84d2a, #ec722e);
+  width: 80%;
+  text-align: center;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 32rpx;
+  color: #fff;
+}

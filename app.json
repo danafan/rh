@@ -1,7 +1,10 @@
 {
   "pages": [
+    "pages/search/search",
     "pages/index/index",
     "pages/order/order",
+    "pages/refund/refund",
+    "pages/evaluation/evaluation",
     "pages/order_detail/order_detail",
     "pages/food_detail/food_detail",
     "pages/coupons_detail/coupons_detail",

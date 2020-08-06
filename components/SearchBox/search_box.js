@@ -36,5 +36,11 @@ Component({
         }
       })
     },
+    // 搜索
+    search(){
+      wx.navigateTo({
+        url: '/pages/search/search',
+      });
+    }
   }
 })

@@ -5,7 +5,7 @@
     <view class="tag_text">「{{storeItem.store_type}}」品类优选商家</view>
   </view>
   <view class="store_top_box">
-    <image class="store_img" mode="aspectFill" src="{{storeItem.store_img}}"></image>
+    <image class="store_img" mode="aspectFill" lazy-load="true" src="{{storeItem.store_img}}"></image>
     <view class="store_right">
       <view>
         <view class="store_name">{{storeItem.store_name}}</view>

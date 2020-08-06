@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "发布评价",
+  "usingComponents": {
+    "upload_file": "../../components/UploadFile/upload_file"
+  }
+}

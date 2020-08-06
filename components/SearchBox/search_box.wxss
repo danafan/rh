@@ -23,7 +23,7 @@
   border-radius: 32rpx;
   background: rgba(255, 255, 255, 0.5);
   flex: 1;
-  height: 52rpx;
+  height: 56rpx;
   display: flex;
   align-items: center;
 }
