@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "搜索",
+  "navigationStyle": "custom",
   "usingComponents": {
-    
+    "empty_list": "../../components/EmptyList/empty_list"
   }
 }

@@ -1,0 +1,19 @@
+/* components/EmptyList/empty_list.wxss */
+.empty_box{
+  width: 100%;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.null_icon{
+  margin-top: 60rpx;
+  margin-bottom: 10rpx;
+  width: 262rpx;
+  height: 201rpx;
+}
+.null_toast{
+  font-size: 24rpx;
+  color: #8a8a8a;
+}

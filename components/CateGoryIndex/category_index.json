@@ -1,6 +1,5 @@
 {
   "component": true,
   "usingComponents": {
-    "web_tag": "../../components/WebTag/web_tag"
   }
 }

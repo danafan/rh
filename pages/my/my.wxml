@@ -42,10 +42,20 @@
         </view>
       </view>
     </view>
+    <view class="my_item" bindtap="envelopeList">
+      <view class="item_left">
+        <image class="red_package_icon" src="../../images/red_package_icon.png"></image>
+        <view class="item_text">红包</view>
+      </view>
+      <view class="item_right">
+        <view class="{{red_package_num == 0?'hui':'red_num'}}">{{red_package_num == 0?'暂无可用':red_package_num + '张可用'}}</view>
+        <image class="right_icon" src="../../images/right.png"></image>
+      </view>
+    </view>
     <view class="my_item">
       <button class="feek_but" open-type="feedback"></button>
       <view class="item_left">
-        <image class="order_icon" src="../../images/feedback.png"></image>
+        <image class="feek_icon" src="../../images/feedback.png"></image>
         <view class="item_text">意见反馈</view>
       </view>
       <image class="right_icon" src="../../images/right.png"></image>

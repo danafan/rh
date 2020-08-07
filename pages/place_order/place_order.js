@@ -3,6 +3,7 @@ Page({
   data: {
     number: 1, //默认数量
     red_package_num: 1, //红包数量
+    integral_use:false,
     order_id:""
   },
   onLoad(options){
@@ -38,7 +39,13 @@ Page({
   //选择红包
   envelopeList(){
     wx.navigateTo({
-      url: '/pages/red_envelope/red_envelope',
+      url: '/pages/red_envelope/red_envelope?page_type=order',
     });
+  },
+  //操作积分
+  checkUse(){
+    this.setData({
+      integral_use: !this.data.integral_use
+    })
   }
 })

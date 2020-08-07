@@ -1,6 +1,5 @@
 {
   "navigationBarTitleText": "特价菜详情",
-  "navigationBarBackgroundColor": "#0b0d1d",
   "usingComponents": {
     "sold": "../../components/Sold/sold",
     "item_store": "../../components/ItemStore/item_store",

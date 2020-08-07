@@ -1,5 +1,7 @@
 /* pages/food_list/food_list.wxss */
-
+page{
+  background: #f6b837;
+}
 .package_list_box{
   width: 100%;
   padding: 18rpx;

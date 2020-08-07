@@ -1,10 +1,12 @@
 /* pages/coupons_list/coupons_list.wxss */
-.top_back {
+/* .top_back {
   border-radius: 0 0 50rpx 50rpx;
   background-image: linear-gradient(to bottom, #44ad99, #48b9a3);
   height: 320rpx;
+} */
+page{
+  background: #44AD99;
 }
-
 .list_box{
   background: #fff;
   position: absolute;

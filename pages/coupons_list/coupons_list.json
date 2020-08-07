@@ -1,6 +1,5 @@
 {
   "navigationBarTitleText": "券商场",
-  "backgroundColor": "#44AD99",
   "navigationBarBackgroundColor": "#44AD99",
   "enablePullDownRefresh": true,
   "usingComponents": {

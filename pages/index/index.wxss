@@ -43,7 +43,7 @@
 
 
 .title {
-  height: 90rpx;
+  height: 120rpx;
   display: flex;
   align-items: center;
   font-size: 36rpx;

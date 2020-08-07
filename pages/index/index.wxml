@@ -17,9 +17,9 @@
     <!-- 中间模块 -->
     <index_center/>
     <!-- 标题 -->
-    <view class="title">优选商家</view>
+    <!-- <view class="title">优选商家</view> -->
     <!-- 筛选条件 -->
-    <the_query/>
+    <the_query id="query_id"/>
     <!-- 优选列表 -->
     <!-- <push_item wx:for="{{store_list}}" wx:key="store_id" storeItem="{{item}}" /> -->
     <cate_store_item wx:for="{{store_list}}" wx:key="store_id" storeItem="{{item}}" />

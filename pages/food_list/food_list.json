@@ -1,6 +1,5 @@
 {
   "navigationBarTitleText": "今日特价",
-  "backgroundColor": "#f6b837",
   "navigationBarBackgroundColor": "#f6b837",
   "enablePullDownRefresh": true,
   "usingComponents": {

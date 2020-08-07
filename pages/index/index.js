@@ -124,11 +124,6 @@ Page({
       url: '/pages/store_detail/store_detail',
     });
   },
-  onPageScroll: function(e) { // 页面滚动监听
-    this.setData({
-      scrollTop: (e.scrollTop) / 100
-    })
-  },
   //获取当前位置
   getLocationInfo() {
     // if (this.data.location == '点击获取') {
@@ -221,18 +216,6 @@ Page({
   //分享自定义
   onShareAppMessage: function(res) {
     return app.globalData.shareObj
-  },
-  //下拉刷新
-  onPullDownRefresh() {
-    console.log('下拉刷新')
-    // this.setData({
-    //   isLoad: true,
-    //   page: 1,
-    //   info_list: []
-    // })
-    //获取信息列表
-    // let req = { level_01_id: 0, page: this.data.page }
-    // this.getInfoList(req);
   },
   //上拉加载
   onReachBottom() {

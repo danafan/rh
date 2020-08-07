@@ -1,0 +1,5 @@
+<!--components/EmptyList/empty_list.wxml-->
+<view class="empty_box">
+  <image class="null_icon" src="../../images/null_icon.png"></image>
+  <view class="null_toast">{{toast}}</view>
+</view>

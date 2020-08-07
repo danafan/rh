@@ -1,6 +1,5 @@
 {
   "navigationBarTitleText": "订单详情",
-  "navigationBarBackgroundColor": "#0b0d1d",
   "usingComponents": {
     "web_tag": "../../components/WebTag/web_tag",
     "location_phone": "../../components/LocationPhone/location_phone",

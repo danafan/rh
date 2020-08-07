@@ -9,7 +9,7 @@
 
 .location_icon {
   width: 26rpx;
-  height: 28rpx;
+  height: 26rpx;
 }
 
 .location_text {

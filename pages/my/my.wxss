@@ -50,7 +50,6 @@
   font-size: 26rpx;
   color: #fff;
 }
-
 .content_box {
   width: 100%;
   padding-left: 15rpx;
@@ -144,7 +143,12 @@
   align-items: center;
 }
 
-.order_icon {
+.red_package_icon {
+  margin-right: 20rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.feek_icon {
   margin-right: 20rpx;
   width: 32rpx;
   height: 32rpx;
@@ -154,10 +158,21 @@
   font-size: 30rpx;
   color: #333;
 }
-
+.item_right{
+  display: flex;
+  align-items: center;
+}
+.hui{
+  font-size: 24rpx;
+  color: #8a8a8a;
+}
+.red_num{
+  font-size: 24rpx;
+  color: #ff5858;
+}
 .right_icon {
-  width: 28rpx;
-  height: 28rpx;
+  width: 26rpx;
+  height: 26rpx;
 }
 
 .feek_but {

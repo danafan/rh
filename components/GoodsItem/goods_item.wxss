@@ -14,16 +14,17 @@
 }
 
 .recommended {
-  background: #d1b171;
-  border-radius: 0 21rpx 21rpx 21rpx;
+  background-image: linear-gradient(to top, #e84d2a, #ec722e);
+  border-radius: 8rpx 21rpx 21rpx 21rpx;
   position: absolute;
   top: 0;
   left: 0;
-  height:42rpx;
-  line-height: 42rpx;
-  padding-left: 18rpx;
-  padding-right: 18rpx;
-  font-size: 24rpx;
+  width: 100rpx;
+  height: 36rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22rpx;
   color: #fff;
   z-index: 1;
 }
@@ -38,7 +39,7 @@
 }
 .price{
   position: absolute;
-  right: 10rpx;
+  left: 10rpx;
   bottom: 10rpx;
   border-radius: 21rpx;
   height: 42rpx;
@@ -47,7 +48,7 @@
   padding-right: 20rpx;
   background: rgba(0, 0, 0, .8);
   font-size: 24rpx;
-  color: #ff5858;
+  color: #fff;
   z-index: 1;
 }
 .goods_name {
@@ -57,9 +58,4 @@
   font-size: 28rpx;
   color: #333;
   font-weight: 700;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }

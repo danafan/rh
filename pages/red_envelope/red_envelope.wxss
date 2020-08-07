@@ -1,6 +1,9 @@
 /* pages/red_envelope/red_ envelope.wxss */
-.red_envelope_box{
+.red_envelope_order{
   padding: 20rpx 20rpx 150rpx;
+}
+.red_envelope_my{
+  padding: 20rpx;
 }
 .red_envelope_item{
   margin-bottom: 20rpx;

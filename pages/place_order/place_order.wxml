@@ -34,6 +34,23 @@
     </view>
   </view>
   <view class="order_info_item border_top padding">
+    <view class="item_label">积分</view>
+    <!-- 无积分 -->
+    <!-- <view class="integral_toast">
+      <view class="toast_top">当前积分不足以抵扣</view>
+      <view class="toast_bottom">现有积分0，可写优质评价获得</view>
+    </view> -->
+    <!-- 有积分 -->
+    <view class="integral_have">
+      <view class="left_box">
+        <view class="toast_top">现有积分167</view>
+        <view class="dikou">可抵扣：-¥10</view>
+      </view>
+      <image class="change_icon" src="../../images/selected_active.png" wx:if="{{integral_use}}" bindtap="checkUse"></image>
+      <image class="change_icon" src="../../images/selected.png" bindtap="checkUse" wx:else></image>
+    </view>
+  </view>
+  <view class="order_info_item border_top padding">
     <view class="item_label">实付金额</view>
     <view class="price_box">
       <text class="price_icon">¥</text>

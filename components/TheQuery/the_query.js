@@ -16,6 +16,12 @@ Component({
         showSelect: !this.data.showSelect
       })
     },
+    //点击左侧选择
+    closeQuery() {
+      this.setData({
+        showSelect: false
+      })
+    },
     //选择
     checkItem(e) {
       let type = e.currentTarget.dataset.type;

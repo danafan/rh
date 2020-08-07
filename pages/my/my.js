@@ -3,6 +3,7 @@ const app = getApp();
 Page({
   data: {
     wxUser: null, //微信用户信息
+    red_package_num:2
   },
   onLoad: function(options) {
     console.log(app.globalData.wxUser)
@@ -22,15 +23,12 @@ Page({
     wx.navigateTo({
       url: '/pages/my_order/my_order?index=' + index
     });
-    // if (!this.data.wxUser) {
-    //   wx.navigateTo({
-    //     url: '/pages/auth/auth',
-    //   });
-    // } else {
-    //   wx.navigateTo({
-    //     url: '/pages/order/order',
-    //   });
-    // }
+  },
+  //我的红包
+  envelopeList() {
+    wx.navigateTo({
+      url: '/pages/red_envelope/red_envelope?page_type=my',
+    });
   },
   bindGetUserInfo(e) {
     app.globalData.wxUser = e.detail.userInfo;

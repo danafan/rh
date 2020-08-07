@@ -1,5 +1,5 @@
 <!--pages/red_envelope/red_ envelope.wxml-->
-<view class="red_envelope_box">
+<view class="{{page_type == 'order'?'red_envelope_order':'red_envelope_my'}}">
   <view class="red_envelope_item" wx:for="{{list}}" wx:key="id" data-index="{{index}}" bindtap="check">
     <view class="select_box" wx:if="{{index === active_index}}">
       <image class="dui_icon" src="../../images/dui_icon.png"></image>
@@ -26,7 +26,7 @@
       限到店套类使用，限登录用户13067882143使用
     </view>
   </view>
-  <view class="bottom_but">
+  <view class="bottom_but" wx:if="{{page_type == 'order'}}">
     <view class="but_left">红包优惠：¥{{now_price}}</view>
     <view class="submit_but" bindtap="placeOrder">确认</view>
   </view>

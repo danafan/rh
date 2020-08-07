@@ -39,21 +39,27 @@ Page({
       is_check: false
     }],
     active_index: "",
-    now_price: 0
+    now_price: 0,
+    page_type:'',
   },
   onLoad: function(options) {
-
+    let page_type = options.page_type;
+    this.setData({
+      page_type: page_type
+    })
   },
   //选择红包
   check(e) {
     let index = e.currentTarget.dataset.index;
-    this.setData({
-      active_index: this.data.active_index === index ? '' : index
-    }, () => {
+    if (this.data.page_type == 'order'){
       this.setData({
-        now_price: this.data.active_index === '' ? 0 : this.data.list[this.data.active_index].money
+        active_index: this.data.active_index === index ? '' : index
+      }, () => {
+        this.setData({
+          now_price: this.data.active_index === '' ? 0 : this.data.list[this.data.active_index].money
+        })
       })
-    })
+    }
   },
   //返回确认订单
   placeOrder() {

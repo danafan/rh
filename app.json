@@ -1,7 +1,10 @@
 {
   "pages": [
-    "pages/search/search",
     "pages/index/index",
+    "pages/store_detail/store_detail",
+    "pages/place_order/place_order",
+    "pages/my/my",
+    "pages/search/search",
     "pages/order/order",
     "pages/refund/refund",
     "pages/evaluation/evaluation",
@@ -10,9 +13,6 @@
     "pages/coupons_detail/coupons_detail",
     "pages/package_detail/package_detail",
     "pages/red_envelope/red_envelope",
-    "pages/place_order/place_order",
-    "pages/my/my",
-    "pages/store_detail/store_detail",
     "pages/comment_detail/comment_detail",
     "pages/food_list/food_list",
     "pages/package_list/package_list",

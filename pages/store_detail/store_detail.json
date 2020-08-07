@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "店铺详情",
-  "navigationBarBackgroundColor": "#0b0d1d",
+  "enablePullDownRefresh": true,
   "usingComponents": {
     "location_phone": "../../components/LocationPhone/location_phone",
     "welfare_item": "../../components/WelfareItem/welfare_item",
