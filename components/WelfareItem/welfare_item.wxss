@@ -18,7 +18,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.store_banner{
+.package_img{
   margin-right: 10rpx;
   width: 180rpx;
   height: 180rpx;
@@ -28,47 +28,26 @@
   height: 180rpx;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .bus_title{
   font-size: 28rpx;
   font-weight: 700;
   color: #0b0d1d;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-
-.bus_price_top{
+.right_box{
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.bus_price{
-  font-size: 34rpx;
-  font-weight: 700;
-  color: #ff5858;
-}
-.tag_icon{
-  position: relative;
-  top: -10rpx;
-  right: -5rpx;
-}
-.hua{
-  margin-left: 8rpx;
-  margin-right: 8rpx;
-  text-decoration:line-through;
+.desc{
   font-size: 26rpx;
   color: #8a8a8a;
-}
-.right_box{
-  width: 130rpx;
-  height: 150rpx;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
 }
 .but{
   background-image: linear-gradient(to right, #f37464, #ff5858);
@@ -80,9 +59,32 @@
   border-radius: 25rpx;
   color: #fff;
 }
-.desc{
-  position: absolute;
-  bottom: 0;
-  font-size: 22rpx;
+
+.price_box {
+  margin-top: 5rpx;
+  display: flex;
+}
+
+.pagkage_price {
+  margin-right: 15rpx;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.price_icon {
+  font-size: 26rpx;
+  color: #ff5858;
+}
+
+.price_now {
+  margin-right: 8rpx;
+  font-size: 34rpx;
+  font-weight: 700;
+  color: #ff5858;
+}
+
+.price_old {
+  text-decoration: line-through;
+  font-size: 26rpx;
   color: #8a8a8a;
 }

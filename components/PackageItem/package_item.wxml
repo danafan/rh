@@ -1,26 +1,25 @@
-<!--套餐列表中套餐item-->
-<view class="package_item" bindtap="packageDetail">
-  <view class="item_top">
-    <view class="package_img_box">
-      <image class="package_img" mode="aspectFill" lazy-load="true" src="../../images/banner_01.png"></image>
-      <view class="rate">87%好评</view>
-    </view>
-    <view class="package_right">
-      <view class="package_name">大吉大利今晚吃鸡套餐大吉大利今晚吃鸡套餐</view>
-      <view class="package_desc">我是散养的鸡，我只吃虫子和粗粮，从不吃饲料，所以我很健康我是散养的鸡，我只吃虫子和粗粮，从不吃饲料，所以我很健康</view>
-      <view class="border_box">月售176</view>
-    </view>
+<!--首页和精选套餐列表中的套餐item-->
+<view class="package_item" style="width:{{image_height*1.5}}rpx" bindtap="packageDetail">
+  <view class="package_img_box" style="height:{{image_height}}rpx">
+    <image class="package_img" mode="aspectFill" src="{{package_info.package_img}}"></image>
+    <view class="img_tag">{{package_info.category_name}} · {{package_info.distance}}km</view>
   </view>
-  <view class="line"></view>
-  <view class="bottom_info">
-    <item_store/>
+  <view class="package_content">
+    <view class="package_name">{{package_info.package_name}}</view>
     <view class="price_box">
-      <view class="old_price">¥238.3</view>
-      <view class="now_price">
+      <view class="pagkage_price">
         <text class="price_icon">¥</text>
-        <text class="price_text">328.8</text>
+        <text class="price_now">{{package_info.now_price}}</text>
+        <text class="price_old">¥{{package_info.old_price}}</text>
       </view>
+      <tag val="{{package_info.discount}}折" background="#f9d9d0" color="#ff5858" />
     </view>
-    <view class="button">立即抢购</view>
+    <view class="store_name_box" wx:if="{{page_type == 'index_center'}}">
+      <image class="store_icon" src="../../images/store_icon.png"></image>
+      <view class="store_name">{{package_info.store_name}}</view>
+    </view>
+    <view class="line" wx:if="{{page_type == 'package_list'}}"></view>
+    <item_store wx:if="{{page_type == 'package_list'}}"/>
   </view>
+
 </view>

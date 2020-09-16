@@ -14,18 +14,14 @@
     <search_box/>
     <!-- 分类组件 -->
     <category_index/>
-    <!-- 中间模块 -->
+    <!-- 精选套餐 -->
     <index_center/>
-    <!-- 标题 -->
-    <!-- <view class="title">优选商家</view> -->
+    <!-- 代金券列表入口 -->
+    <view class="coupons_list" bindtap="couponsList">代金券入口</view>
     <!-- 筛选条件 -->
     <the_query id="query_id"/>
     <!-- 优选列表 -->
-    <!-- <push_item wx:for="{{store_list}}" wx:key="store_id" storeItem="{{item}}" /> -->
     <cate_store_item wx:for="{{store_list}}" wx:key="store_id" storeItem="{{item}}" />
   </view>
-
   <!-- <bottom wx:if="{{!isLoad && page >= 2}}" /> -->
-
-
 </view>

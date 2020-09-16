@@ -1,5 +1,12 @@
-/* pages/package_list/package_list.wxss */
+/* pages/food_list/food_list.wxss */
+page{
+  background: #ec722e;
+}
 .package_list_box{
   width: 100%;
   padding: 15rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+

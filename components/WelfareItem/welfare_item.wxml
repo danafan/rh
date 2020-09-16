@@ -1,18 +1,19 @@
 <!--components/WelfareItem/welfare_item.wxml-->
-<view class="bus_item" data-type="{{type}}" bindtap="goDetail">
-  <image class="store_banner" mode="aspectFill" src="../../images/banner_02.jpg"></image>
+<view class="bus_item" bindtap="goDetail">
+  <image class="package_img" mode="aspectFill" src="../../images/banner_02.jpg"></image>
   <view class="bus_content">
-    <view class="bus_title">【特价】泰式珍珠蟹一份</view>
-    <view>
-      <view class="bus_price_top">
-        <view class="bus_price">¥78</view>
-        <tag class="tag_icon" val="7.8折" background="#f9d9d0" color="#ff5858" />
-      </view>
-      <view class="hua">门店价：¥188</view>
+    <view class="bus_title">大众精选杭帮菜2人特惠套餐</view>
+    <view class="right_box">
+      <view class="desc">108已抢</view>
+      <view class="but">立即抢购</view>
     </view>
-  </view>
-  <view class="right_box">
-    <view class="but">{{type == '1'?'马上抢':'立即抢购'}}</view>
-    <view class="desc">108人已抢</view>
+    <view class="price_box">
+      <view class="pagkage_price">
+        <text class="price_icon">¥</text>
+        <text class="price_now">108</text>
+        <text class="price_old">¥188</text>
+      </view>
+      <tag val="7.8折" background="#f9d9d0" color="#ff5858" />
+    </view>
   </view>
 </view>

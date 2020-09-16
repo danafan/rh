@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "今日特价",
-  "navigationBarBackgroundColor": "#f6b837",
-  "enablePullDownRefresh": true,
-  "usingComponents": {
-    "food_item": "../../components/FoodItem/food_item"
-  }
-}

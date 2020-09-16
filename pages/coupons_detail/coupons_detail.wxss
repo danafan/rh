@@ -1,10 +1,7 @@
 /* pages/coupons_detail/coupons_detail.vue.wxss */
 
 .container {
-  padding: 0 20rpx 110rpx 20rpx;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 0 20rpx 110rpx;
 }
 
 /* 顶部商品信息 */

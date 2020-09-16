@@ -7,18 +7,18 @@
   <view class="store_top_box">
     <image class="store_img" mode="aspectFill" lazy-load="true" src="{{storeItem.store_img}}"></image>
     <view class="store_right">
-      <view>
-        <view class="store_name">{{storeItem.store_name}}</view>
-        <view class="two_row">
+      <view class="store_name">{{storeItem.store_type}}·{{storeItem.store_name}}</view>
+      <view class="two_row">
+        <view class="two_row_left">
           <image class="hot_icon" src="../../images/hot_icon.png"></image>
           <view class="star_num">4.8</view>
-          <view class="on_the_pin">五一广场 | 5.2km</view>
+          <view class="on_the_pin">月销182</view>
         </view>
+        <view class="loaction">五一广场 | 5.2km</view>
       </view>
       <view class="preferential_list">
-        <view class="tag_label hui">优惠套餐2个</view>
-        <view class="tag_label quan">代金券3张</view>
-        <view class="tag_label te">特价菜3个</view>
+        <view class="tag_label">80抵100</view>
+        <view class="tag_label">100抵180</view>
       </view>
     </view>
   </view>
@@ -27,15 +27,12 @@
       <view class="package_item" wx:for="{{storeItem.package_list}}" wx:key="package_id" catchtap="packageDetail">
         <image class="package_img" mode="aspectFill" src="{{item.package_img}}"></image>
         <view class="package_name">{{item.package_name}}重庆火锅重庆火锅</view>
-        <view>
-          <text class="price_box">
-            <text class="now_price">
-              <text class="price_icon">¥</text>
-          <text class="price_text">{{item.now_price}}</text>
-          </text>
+        <view class="price_box">
+          <text class="price_icon">¥</text>
+          <text class="now_price">{{item.now_price}}</text>
           <text class="old_price">¥{{item.old_price}}</text>
-          </text>
         </view>
+        <view class="sold_num">已售88</view>
       </view>
     </scroll-view>
   </view>

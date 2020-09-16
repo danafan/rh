@@ -18,10 +18,10 @@
           <!-- 店铺名 -->
           <view class="store_name">木屋烤鱼·有机鱼馆</view>
           <view class="er_box">
-            <view class="store_type">烤鱼</view>
             <view class="hot_box">
               <image class="hot_icon" src="../../images/hot_icon.png"></image>
               <view class="hot_text">4.8</view>
+              <view class="on_the_pin">月销182</view>
             </view>
           </view>
         </view>
@@ -39,28 +39,19 @@
         <view class="time_text">10:00-2:00（周一到周日）</view>
       </view>
     </view>
-    <!-- 店铺优惠 菜品 -->
+    <!-- 优惠 评价 -->
     <view class="store_tabs">
       <view class="tab" data-tab_index="1" bindtap="checkTab">
         <view class="tab_label {{active_tab == '1'?'active_label':''}}">优惠</view>
         <view class="active_line" wx:if="{{active_tab == '1'}}"></view>
       </view>
       <view class="tab" data-tab_index="2" bindtap="checkTab">
-        <view class="tab_label {{active_tab == '2'?'active_label':''}}">菜品</view>
+        <view class="tab_label {{active_tab == '2'?'active_label':''}}">评价</view>
         <view class="active_line" wx:if="{{active_tab == '2'}}"></view>
-      </view>
-      <view class="tab" data-tab_index="3" bindtap="checkTab">
-        <view class="tab_label {{active_tab == '3'?'active_label':''}}">评价</view>
-        <view class="active_line" wx:if="{{active_tab == '3'}}"></view>
       </view>
     </view>
     <!-- 套餐/券 -->
     <view wx:if="{{active_tab == '1'}}">
-      <!-- 特价菜 -->
-      <view class="package_list">
-        <view class="package_title">特价单品</view>
-        <welfare_item type="1" />
-      </view>
       <!-- 优惠券 -->
       <view class="package_list">
         <view class="package_title">优惠券</view>
@@ -69,19 +60,13 @@
       <!-- 套餐 -->
       <view class="package_list">
         <view class="package_title">到店套餐</view>
-        <welfare_item type="2" />
-        <welfare_item type="2" />
-        <welfare_item type="2" />
+        <welfare_item />
+        <welfare_item />
+        <welfare_item />
       </view>
     </view>
-    <!-- 菜品 -->
-    <view class="goods_list" wx:if="{{active_tab == '2'}}">
-      <goods_item/>
-      <goods_item/>
-      <goods_item/>
-    </view>
     <!-- 评价 -->
-    <view class="comments_box" wx:if="{{active_tab == '3'}}">
+    <view class="comments_box" wx:if="{{active_tab == '2'}}">
       <view class="page_title">
         <view class="title_text">
           <text>套餐评价</text>

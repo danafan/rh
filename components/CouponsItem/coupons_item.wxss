@@ -50,7 +50,6 @@
 
 .money_icon {
   font-size: 32rpx;
-  font-weight: 700;
 }
 
 .money_text {
@@ -104,6 +103,7 @@
 .store_title {
   margin-bottom: 10rpx;
   font-size: 32rpx;
+  font-weight: 700;
   color: #0b0d1d;
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -131,7 +131,6 @@
 }
 .price_icon{
   font-size: 26rpx;
-  font-weight: 700;
 }
 .price_text{
   font-size: 34rpx;

@@ -6,7 +6,7 @@
       <image class="location_icon" src="../../images/location_icon.png"></image>
       <view class="location_text">杭州市萧山区宁围街道107号国泰科技大厦a幢16楼</view>
     </view>
-    <view class="distance">5.2km</view>
+    <view class="distance">距您5.2km</view>
   </view>
   <view class="center_line"></view>
   <view class="phone_box">

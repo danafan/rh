@@ -50,6 +50,7 @@
   font-size: 26rpx;
   color: #fff;
 }
+
 .content_box {
   width: 100%;
   padding-left: 15rpx;
@@ -64,118 +65,74 @@
   border-radius: 10rpx;
   background: #fff;
   width: 100%;
-  padding: 0 20rpx 20rpx;
+  padding: 0 20rpx;
+}
+.margin{
+  margin-top: 20rpx;
 }
 
 .order_top {
   border-bottom: 1rpx solid #f6f6f6;
-  margin-bottom: 20rpx;
   width: 100%;
   height: 86rpx;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.order_title {
   font-size: 30rpx;
   color: #0b0d1d;
   font-weight: 700;
 }
 
-.order_toast {
-  font-size: 24rpx;
-  color: #8a8a8a;
-  display: flex;
-  align-items: center;
-}
-
-.right {
-  width: 20rpx;
-  height: 20rpx;
-}
-
 .order_list_box {
+  padding-top: 25rpx;
+  padding-bottom: 25rpx;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .order_item {
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
 }
 
-.order_box_icon {
-  width: 85rpx;
-  height: 85rpx;
-}
-
-.order_label {
-  font-size: 26rpx;
-  color: #333;
-}
-
-.number {
-  position: absolute;
-  top: -10rpx;
-  right: -10rpx;
-}
-
-.my_item {
-  margin-top: 30rpx;
-  margin-bottom: 30rpx;
-  background: #fff;
-  width: 100%;
-  height: 100rpx;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 15rpx;
-  padding-right: 15rpx;
-  position: relative;
-}
-
-.item_left {
+.item_label {
   display: flex;
   align-items: center;
 }
 
-.red_package_icon {
-  margin-right: 20rpx;
+.item_icon {
   width: 40rpx;
   height: 40rpx;
 }
-.feek_icon {
-  margin-right: 20rpx;
-  width: 32rpx;
-  height: 32rpx;
-}
 
 .item_text {
-  font-size: 30rpx;
+  font-size: 28rpx;
   color: #333;
+  font-weight: 700;
 }
-.item_right{
-  display: flex;
-  align-items: center;
+
+.order_val {
+  margin-top: 5rpx;
+  display: table-cell;
+  vertical-align: bottom;
 }
-.hui{
+
+.val_num {
+  font-size: 32rpx;
+  color: #ff5858;
+}
+
+.val_text {
+  margin-left: 3rpx;
   font-size: 24rpx;
   color: #8a8a8a;
 }
-.red_num{
-  font-size: 24rpx;
-  color: #ff5858;
-}
-.right_icon {
-  width: 26rpx;
-  height: 26rpx;
-}
 
-.feek_but {
+/* 服务 */
+.feek_but{
   position: absolute;
   top: 0;
   left: 0;
@@ -184,19 +141,12 @@
   z-index: 1;
   opacity: 0;
 }
-
-.login {
-  margin: 50rpx auto;
-  background-image: linear-gradient(to right, #f37464, #ff5858);
-  border-radius: 40rpx;
-  width: 80% !important;
-  text-align: center !important;
-  font-size: 32rpx;
-  color: #fff;
+.service_icon {
+  margin-bottom: 10rpx;
+  width: 46rpx;
+  height: 46rpx;
 }
-
-.login::after {
-  height: 80rpx !important;
-  line-height: 80rpx !important;
-  border: none;
+.service_text{
+  font-size: 26rpx;
+  color: #333;
 }

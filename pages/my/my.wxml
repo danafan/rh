@@ -13,54 +13,52 @@
     </view>
   </view>
   <view class="content_box">
-    <!-- 订单框 -->
+    <!-- 我的资产 -->
     <view class="order_box">
-      <view class="order_top">
-        <view class="order_title">我的订单</view>
-        <view class="order_toast" data-index="0" bindtap="orderList">
-          <view>查看全部</view>
-          <image class="right" src="../../images/right.png"></image>
-        </view>
-      </view>
+      <view class="order_top">我的资产</view>
       <view class="order_list_box">
-        <view class="order_item" data-index="1" bindtap="orderList">
-          <image class="order_box_icon" src="../../images/cate_05.png"></image>
-          <view class="order_label">待使用</view>
+        <view class="order_item" bindtap="envelopeList">
+          <view class="item_label">
+            <image class="item_icon" src="../../images/red_package_icon.png"></image>
+            <view class="item_text">红包</view>
+          </view>
+          <view class="order_val">
+            <text class="val_num">{{red_envelope}}</text>
+            <text class="val_text">张可用</text>
+          </view>
         </view>
-        <view class="order_item" data-index="2" bindtap="orderList">
-          <image class="order_box_icon" src="../../images/cate_02.png"></image>
-          <view class="order_label">待支付</view>
-          <tag class="number" val="21" background="#ff5858" color="#fff" />
+        <view class="order_item">
+          <view class="item_label">
+            <image class="item_icon" src="../../images/red_package_icon.png"></image>
+            <view class="item_text">余额</view>
+          </view>
+          <view class="order_val">
+            <text class="val_num">{{balance}}</text>
+            <text class="val_text">元未使用</text>
+          </view>
         </view>
-        <view class="order_item" data-index="3" bindtap="orderList">
-          <image class="order_box_icon" src="../../images/cate_03.png"></image>
-          <view class="order_label">待评价</view>
-        </view>
-        <view class="order_item" data-index="4" bindtap="orderList">
-          <image class="order_box_icon" src="../../images/cate_04.png"></image>
-          <view class="order_label">退款/售后</view>
+        <view class="order_item">
+          <view class="item_label">
+            <image class="item_icon" src="../../images/red_package_icon.png"></image>
+            <view class="item_text">积分</view>
+          </view>
+          <view class="order_val">
+            <text class="val_num">{{integral}}</text>
+            <text class="val_text">分未使用</text>
+          </view>
         </view>
       </view>
     </view>
-    <view class="my_item" bindtap="envelopeList">
-      <view class="item_left">
-        <image class="red_package_icon" src="../../images/red_package_icon.png"></image>
-        <view class="item_text">红包</view>
-      </view>
-      <view class="item_right">
-        <view class="{{red_package_num == 0?'hui':'red_num'}}">{{red_package_num == 0?'暂无可用':red_package_num + '张可用'}}</view>
-        <image class="right_icon" src="../../images/right.png"></image>
+    <!-- 服务 -->
+    <view class="order_box margin">
+      <view class="order_top">服务</view>
+      <view class="order_list_box">
+        <view class="order_item">
+          <button class="feek_but" open-type="feedback"></button>
+          <image class="service_icon" src="../../images/feedback.png"></image>
+          <view class="service_text">意见反馈</view>
+        </view>
       </view>
     </view>
-    <view class="my_item">
-      <button class="feek_but" open-type="feedback"></button>
-      <view class="item_left">
-        <image class="feek_icon" src="../../images/feedback.png"></image>
-        <view class="item_text">意见反馈</view>
-      </view>
-      <image class="right_icon" src="../../images/right.png"></image>
-    </view>
-    <button class="login" wx:if="{{!wxUser}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">快速登录</button>
   </view>
-
 </view>

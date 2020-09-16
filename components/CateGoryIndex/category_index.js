@@ -43,15 +43,15 @@ Component({
     }, {
       id: '8',
       iocn: '../../images/cate_02.png',
-      name: '小吃快餐'
+      name: '蛋糕甜点'
     }, {
       id: '9',
       iocn: '../../images/cate_04.png',
-      name: '西餐'
+      name: '快餐西餐'
     }, {
       id: '10',
       iocn: '../../images/cate_03.png',
-      name: '蛋糕奶茶'
+      name: '全部分类'
     }], //分类列表
   },
 

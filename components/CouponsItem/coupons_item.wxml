@@ -3,7 +3,7 @@
   <!-- 顶部店铺信息 -->
   <item_store wx:if="{{page_type == 'list'}}"/>
   <!-- 券轮播图 -->
-  <swiper class="vouchers_box" circular="true" next-margin="120rpx">
+  <swiper class="vouchers_box" next-margin="120rpx">
     <swiper-item>
       <!-- 代金券 -->
       <view class="vouchers_content">
@@ -23,7 +23,7 @@
         <view class="store_right">
           <view>
             <view class="store_title">华莱士 100元代金券</view>
-            <view class="has_rob">月销182</view>
+            <view class="has_rob">182已抢</view>
           </view>
           <view class="right_bottom">
             <view class="price_box">
@@ -55,7 +55,7 @@
         <view class="store_right">
           <view>
             <view class="store_title">华莱士 100元代金券</view>
-            <view class="has_rob">月销182</view>
+            <view class="has_rob">182已抢</view>
           </view>
           <view class="right_bottom">
             <view class="price_box">

@@ -1,6 +1,6 @@
 {
   "component": true,
   "usingComponents": {
-    "index_package_item": "../../components/IndexPackageItem/index_package_item"
+    "package_item": "../../components/PackageItem/package_item"
   }
 }

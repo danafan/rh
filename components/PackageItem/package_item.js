@@ -1,22 +1,19 @@
 // components/PackageItem/package_item.js
 Component({
-  /**
-   * 组件的属性列表
-   */
   properties: {
-
+    package_info:{
+      type:Object,
+      value:{}
+    },
+    image_height:{
+      type:String,
+      value:""
+    },
+    page_type:{
+      type: String,
+      value: ""
+    }
   },
-
-  /**
-   * 组件的初始数据
-   */
-  data: {
-
-  },
-
-  /**
-   * 组件的方法列表
-   */
   methods: {
     //进入套餐详情
     packageDetail() {

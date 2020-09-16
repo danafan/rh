@@ -1,11 +1,12 @@
 {
   "navigationBarTitleText": "套餐详情",
   "usingComponents": {
+    "web_tag": "../../components/WebTag/web_tag",
     "sold": "../../components/Sold/sold",
-    "item_store": "../../components/ItemStore/item_store",
-    "location_phone": "../../components/LocationPhone/location_phone",
     "package_content": "../../components/PackageContent/package_content",
     "prompt": "../../components/Prompt/prompt",
+    "item_store": "../../components/ItemStore/item_store",
+    "location_phone": "../../components/LocationPhone/location_phone",
     "comment_item": "../../components/CommentItem/comment_item",
     "buy_button": "../../components/BuyButton/buy_button"
   }

@@ -1,9 +1,0 @@
-<!--商家菜品的item-->
-<view class="goods_item">
-  <view class="goods_img_box">
-    <view class="recommended">推荐</view>
-    <image class="goods_img" mode="aspectFill" src="../../images/banner_01.png" lazy-load="true"></image>
-    <view class="price">¥28</view>
-  </view>
-  <view class="goods_name">泰式咖喱珍宝蟹</view>
-</view>

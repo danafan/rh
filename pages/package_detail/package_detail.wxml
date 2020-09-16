@@ -1,9 +1,14 @@
 <!--套餐详情-->
 <view class="container">
-  <!-- 特价菜 -->
+  <!-- 顶部图片 -->
   <view class="special_box">
     <image class="food_icon" mode="aspectFill" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1942169203,2282777752&fm=26&gp=0.jpg"></image>
-    <view class="food_name">新鲜石锅鱼</view>
+    <view class="food_name">2人烤鱼套餐</view>
+    <view class="store_name_box">
+      <image class="store_icon" src="../../images/store_icon.png"></image>
+      <view class="store_name">好得火锅</view>
+    </view>
+    <web_tag/>
   </view>
   <!-- 已售 -->
   <sold/>

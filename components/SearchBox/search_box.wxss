@@ -1,19 +1,22 @@
-/* components/SearchBox/search_box.wxss */
-
 .search_box {
-  padding-left: 15rpx;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.location_box {
   display: flex;
   align-items: center;
 }
 
 .location_icon {
-  width: 26rpx;
-  height: 26rpx;
+  width: 32rpx;
+  height: 32rpx;
 }
 
 .location_text {
-  margin-right: 5rpx;
+  margin-left: 5rpx;
   font-size: 24rpx;
   color: #fff;
 }
@@ -23,7 +26,7 @@
   border-radius: 32rpx;
   background: rgba(255, 255, 255, 0.5);
   flex: 1;
-  height: 56rpx;
+  height: 60rpx;
   display: flex;
   align-items: center;
 }
@@ -31,10 +34,9 @@
 .search_icon {
   margin-right: 10rpx;
   margin-left: 20rpx;
-  width: 35rpx;
-  height: 35rpx;
+  width: 32rpx;
+  height: 32rpx;
 }
-
 .swiper_search {
   flex: 1;
   height: 30rpx;
@@ -43,8 +45,13 @@
 .input_text {
   height: 30rpx;
   line-height: 30rpx;
-  font-size: 24rpx;
+  font-size: 26rpx;
   color: #fff;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .zhan {

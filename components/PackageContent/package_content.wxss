@@ -3,7 +3,6 @@
   margin-top: 15rpx;
   padding: 20rpx;
   background: #fff;
-  width: 710rpx;
 }
 
 .package_title {

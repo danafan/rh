@@ -37,15 +37,11 @@ Page({
     }, {
       id: '8',
       iocn: '../../images/cate_02.png',
-      name: '小吃快餐'
+      name: '蛋糕甜点'
     }, {
       id: '9',
       iocn: '../../images/cate_04.png',
-      name: '西餐'
-    }, {
-      id: '10',
-      iocn: '../../images/cate_03.png',
-      name: '蛋糕奶茶'
+      name: '快餐西餐'
     }], //分类列表
     active_index: 0, //默认选中的顶部导航下标
     show_index: 0, //解决顶部滑动bug
@@ -146,8 +142,8 @@ Page({
   },
   onLoad(option) {
     this.setData({
-      active_index: parseInt(option.index) + 1,
-      show_index: parseInt(option.index) >= 9 ? 6 : parseInt(option.index) >= 5 ? 5 : parseInt(option.index),
+      active_index: option.index == '9' ? 0 : parseInt(option.index) + 1,
+      show_index: option.index >= 6 && option.index < 9 ? 6 : option.index == '9' ? 0 : option.index,
       info_id: option.id
     })
     // console.log(this.data.show_index)
@@ -159,13 +155,13 @@ Page({
   //获取一级分类列表
   getCateGory() {
     let obj = {
-      id: 0,
+      id: "0",
       name: '全部分类'
     }
-    let hh = this.data.category_list;
-    hh.unshift(obj);
+    let category_list = this.data.category_list;
+    category_list.unshift(obj);
     this.setData({
-      category_list: hh
+      category_list: category_list
     })
     console.log(this.data.category_list)
     // util.get(api.getCategoryList, {

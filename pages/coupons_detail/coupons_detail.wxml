@@ -27,7 +27,6 @@
     <!-- 位置和电话 -->
     <location_phone/>
   </view>
-
   <!-- 评论 -->
   <view class="comments_box">
     <view class="page_title">
@@ -41,5 +40,4 @@
   </view>
   <!-- 底部按钮 -->
   <buy_button/>
-
 </view>

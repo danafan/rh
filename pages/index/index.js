@@ -9,7 +9,6 @@ const app = getApp()
 // var qqmapsdk;
 Page({
   data: {
-    baseUrl: app.globalData.baseUrl,
     store_list: [{
       store_id: '1',
       store_img: "https://img.meituan.net/msmerchant/c79e7df9b2f6af4c5ed51f76cf9b5ea5199546.jpg@220w_125h_1e_1c",
@@ -118,10 +117,10 @@ Page({
     //获取地理位置信息
     // this.wxLocationInfo();
   },
-  //店铺详情
-  storeDetail() {
+  //抵扣券列表
+  couponsList() {
     wx.navigateTo({
-      url: '/pages/store_detail/store_detail',
+      url: '/pages/coupons_list/coupons_list',
     });
   },
   //获取当前位置

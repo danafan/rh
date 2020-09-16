@@ -2,7 +2,7 @@
 .category_box {
   margin-top: 25rpx;
   margin-bottom: 15rpx;
-  border-radius: 20rpx 20rpx 0 0;
+  border-radius: 15rpx 15rpx 0 0;
   background: #fff;
   padding-bottom: 20rpx;
 }
