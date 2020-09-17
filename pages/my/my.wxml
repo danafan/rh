@@ -27,7 +27,7 @@
             <text class="val_text">张可用</text>
           </view>
         </view>
-        <view class="order_item">
+        <view class="order_item" bindtap="balanceList">
           <view class="item_label">
             <image class="item_icon" src="../../images/red_package_icon.png"></image>
             <view class="item_text">余额</view>
@@ -37,7 +37,7 @@
             <text class="val_text">元未使用</text>
           </view>
         </view>
-        <view class="order_item">
+        <view class="order_item" bindtap="integralList">
           <view class="item_label">
             <image class="item_icon" src="../../images/red_package_icon.png"></image>
             <view class="item_text">积分</view>

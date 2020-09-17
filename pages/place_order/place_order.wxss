@@ -1,6 +1,6 @@
 /* pages/place_order/place_order.wxss */
 .place_order_box{
-  padding: 20rpx 10rpx;
+  padding: 20rpx 15rpx 150rpx;
 }
 .goods_info_box{
   background: #fff;
@@ -26,7 +26,7 @@
   justify-content: space-around;
 }
 .goods_name{
-  font-size: 28rpx;
+  font-size: 30rpx;
   color: #0b0d1d;
   font-weight: 700;
   display: -webkit-box;
@@ -36,19 +36,19 @@
   overflow: hidden;
 }
 .time{
-  font-size: 26rpx;
+  font-size: 28rpx;
   color: #333;
 }
 .order_info_item{
   background: #fff;
   width: 100%;
-  height: 90rpx;
+  height: 100rpx;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .item_label{
-  font-size: 30rpx;
+  font-size: 32rpx;
   color: #0b0d1d;
 }
 .integral_toast{
@@ -57,11 +57,11 @@
   align-items: flex-end;
 }
 .toast_top{
-  font-size: 26rpx;
+  font-size: 28rpx;
   color: #333;
 }
 .toast_bottom{
-  font-size: 22rpx;
+  font-size: 24rpx;
   color: #8a8a8a;
 }
 .integral_have{
@@ -74,6 +74,9 @@
   flex-direction: column;
   align-items: flex-end;
 }
+.yan{
+  color: #ec722e;
+}
 .dikou{
   font-size: 24rpx;
   color: #ec722e;
@@ -83,8 +86,8 @@
   align-items: center;
 }
 .number_input{
-  width: 50rpx;
-  text-align: center;
+  margin-left: 15rpx;
+  margin-right: 15rpx;
 }
 .change_icon{
   width: 48rpx;
@@ -96,12 +99,11 @@
 }
 .price_icon {
   color: #ec722e;
-  font-weight: 700;
   font-size: 28rpx;
 }
 .price_text {
   color: #ec722e;
-  font-size: 32rpx;
+  font-size: 35rpx;
   font-weight: 700;
 }
 
@@ -133,17 +135,35 @@
   height: 22rpx;
 }
 .desc{
-  font-size: 28rpx;
+  font-size: 30rpx;
   color: #8a8a8a;
 }
-.submit_but{
+
+.bottom_but{
   position: fixed;
   left: 50%;
   transform: translate(-50%);
   bottom: 30rpx;
   border-radius: 45rpx;
+  box-shadow: 0 0 8rpx #8a8a8a;
+  width: 88%;
+  height: 90rpx;
+  display: flex;
+}
+.but_left{
+  border-radius: 45rpx 0 0 45rpx;
+  width: 70%;
+  height: 90rpx;
+  line-height: 90rpx;
+  background: #0b0d1d;
+  padding-left: 40rpx;
+  font-size: 28rpx;
+  color: #fff;
+}
+.submit_but{
+  border-radius: 0 45rpx 45rpx 0;
   background-image: linear-gradient(to left, #e84d2a, #ec722e);
-  width: 80%;
+  width: 30%;
   text-align: center;
   height: 90rpx;
   line-height: 90rpx;

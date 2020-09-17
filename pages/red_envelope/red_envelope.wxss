@@ -90,7 +90,7 @@
   height: 30rpx;
 }
 .line{
-  border-top: 1rpx dashed #f6f6f6;
+  border-top: 1rpx dashed #8a8a8a;
   width: 80%;
 }
 .center_left{

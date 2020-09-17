@@ -46,7 +46,7 @@
     <location_phone/>
   </view>
   <!-- 套餐内容 -->
-  <package_content wx:if="{{order_info.order_id != '2'}}" />
+  <package_content/>
   <!-- 购买须知 -->
   <prompt/>
   <!-- 订单信息 -->

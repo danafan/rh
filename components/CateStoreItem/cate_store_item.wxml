@@ -9,17 +9,11 @@
     <view class="store_right">
       <view class="store_name">{{storeItem.store_type}}·{{storeItem.store_name}}</view>
       <view class="two_row">
-        <view class="two_row_left">
-          <image class="hot_icon" src="../../images/hot_icon.png"></image>
-          <view class="star_num">4.8</view>
-          <view class="on_the_pin">月销182</view>
-        </view>
-        <view class="loaction">五一广场 | 5.2km</view>
+        <image class="hot_icon" src="../../images/hot_icon.png"></image>
+        <view class="star_num">4.8</view>
+        <view class="on_the_pin">月销182</view>
       </view>
-      <view class="preferential_list">
-        <view class="tag_label">80抵100</view>
-        <view class="tag_label">100抵180</view>
-      </view>
+      <view class="loaction">五一广场 | 5.2km</view>
     </view>
   </view>
   <view class="package_list_box">

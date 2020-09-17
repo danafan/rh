@@ -1,17 +1,14 @@
 // pages/place_order/place_order.js
 Page({
   data: {
-    number: 1, //默认数量
+    number: 1, //默认商品数量
     red_package_num: 1, //红包数量
-    integral_use:false,
-    order_id:""
+    red_package_money:30,  //使用红包金额
+    integral_use:false, //是否使用积分
+    balance_use:false,   //是否使用余额
   },
   onLoad(options){
-    let order_id = options.order_id;
-    this.setData({
-      order_id: order_id
-    })
-    console.log(this.data.order_id)
+    console.log(options)
   },
   // 操作数量
   changeNum(e) {
@@ -42,8 +39,14 @@ Page({
       url: '/pages/red_envelope/red_envelope?page_type=order',
     });
   },
+  //操作余额
+  checkBalance() {
+    this.setData({
+      balance_use: !this.data.balance_use
+    })
+  },
   //操作积分
-  checkUse(){
+  checkIntegral(){
     this.setData({
       integral_use: !this.data.integral_use
     })

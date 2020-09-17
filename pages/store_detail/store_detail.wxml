@@ -50,14 +50,8 @@
         <view class="active_line" wx:if="{{active_tab == '2'}}"></view>
       </view>
     </view>
-    <!-- 套餐/券 -->
+    <!-- 到店套餐 -->
     <view wx:if="{{active_tab == '1'}}">
-      <!-- 优惠券 -->
-      <view class="package_list">
-        <view class="package_title">优惠券</view>
-        <coupons_item page_type="detail" />
-      </view>
-      <!-- 套餐 -->
       <view class="package_list">
         <view class="package_title">到店套餐</view>
         <welfare_item />

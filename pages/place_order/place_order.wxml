@@ -13,7 +13,7 @@
       <view class="item_label">数量</view>
       <view class="change_num">
         <image class="change_icon" src="../../images/jian_icon.png" data-type="jian" bindtap="changeNum"></image>
-        <input class="number_input" type="number" value="{{number}}"></input>
+        <view class="number_input">{{number}}</view>
         <image class="change_icon" src="../../images/add_icon.png" data-type="add" bindtap="changeNum"></image>
       </view>
     </view>
@@ -25,20 +25,41 @@
       </view>
     </view>
   </view>
+  <!-- 红包 -->
   <view class="order_info_item margin_top padding">
     <view class="item_label">红包</view>
     <view class="red_package" bindtap="envelopeList">
       <view class="available" wx:if="{{red_package_num > 0}}">1张可用</view>
-      <view class="not_use" wx:else>暂无可用</view>
+      <!-- <view class="available" wx:if="{{red_package_money > 0}}">红包抵扣：-¥30</view>
+      <view class="not_use" wx:else>暂无可用</view> -->
       <image class="right_icon" src="../../images/right.png"></image>
     </view>
   </view>
+  <!-- 余额 -->
+  <view class="order_info_item border_top padding">
+    <view class="item_label">余额</view>
+    <!-- 无余额 -->
+    <!-- <view class="not_use">暂无可用余额</view> -->
+    <!-- 有余额 -->
+    <view class="integral_have">
+      <view class="left_box">
+        <view class="toast_top">
+          <text>当前余额</text>:
+          <text class="yan">¥168</text>
+        </view>
+        <view class="dikou">可抵扣：-¥10</view>
+      </view>
+      <image class="change_icon" src="../../images/selected_active.png" wx:if="{{balance_use}}" bindtap="checkBalance"></image>
+      <image class="change_icon" src="../../images/selected.png" bindtap="checkBalance" wx:else></image>
+    </view>
+  </view>
+  <!-- 积分 -->
   <view class="order_info_item border_top padding">
     <view class="item_label">积分</view>
     <!-- 无积分 -->
     <!-- <view class="integral_toast">
-      <view class="toast_top">当前积分不足以抵扣</view>
-      <view class="toast_bottom">现有积分0，可写优质评价获得</view>
+      <view class="toast_top">当前无可用积分</view>
+      <view class="toast_bottom">可写优质评价获得</view>
     </view> -->
     <!-- 有积分 -->
     <view class="integral_have">
@@ -46,24 +67,23 @@
         <view class="toast_top">现有积分167</view>
         <view class="dikou">可抵扣：-¥10</view>
       </view>
-      <image class="change_icon" src="../../images/selected_active.png" wx:if="{{integral_use}}" bindtap="checkUse"></image>
-      <image class="change_icon" src="../../images/selected.png" bindtap="checkUse" wx:else></image>
+      <image class="change_icon" src="../../images/selected_active.png" wx:if="{{integral_use}}" bindtap="checkIntegral"></image>
+      <image class="change_icon" src="../../images/selected.png" bindtap="checkIntegral" wx:else></image>
     </view>
   </view>
-  <view class="order_info_item border_top padding">
-    <view class="item_label">实付金额</view>
-    <view class="price_box">
-      <text class="price_icon">¥</text>
-      <text class="price_text">158</text>
-    </view>
-  </view>
+  <!-- 手机号 -->
   <view class="order_info_item margin_top padding">
     <view class="item_label">手机号</view>
     <view class="desc">13067882143</view>
   </view>
+  <!-- 支付方式 -->
   <view class="order_info_item margin_top padding">
     <view class="item_label">支付方式</view>
     <view class="desc">微信支付</view>
   </view>
-  <view class="submit_but">提交订单</view>
+  <!-- 提交订单 -->
+  <view class="bottom_but">
+    <view class="but_left">实付金额：¥158</view>
+    <view class="submit_but" bindtap="placeOrder">提交订单</view>
+  </view>
 </view>

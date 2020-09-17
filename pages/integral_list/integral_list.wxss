@@ -1,0 +1,27 @@
+/* pages/integral_list/integral_list.wxss */
+.integral_item{
+  background: #fff;
+  border-bottom: 1rpx solid #f6f6f6;
+  padding: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.desc{
+  font-size: 30rpx;
+  color: #0b0d1d;
+  font-weight: 700;
+}
+.create_time{
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #8a8a8a;
+}
+.change_money{
+  font-size: 40rpx;
+  color: #333;
+  font-weight: 700;
+}
+.add_text{
+  color: #ec722e;
+}

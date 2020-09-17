@@ -2,7 +2,8 @@
 Page({
   data: {
     order_info:{
-      order_id: ''
+      order_status: "",
+      refund_status:""
     }
   },
   onLoad: function (options) {

@@ -53,7 +53,7 @@
   color: #333;
 }
 
-/* 中间优惠券或套餐信息 */
+/* 中间套餐信息 */
 
 .center_box {
   border-bottom: 1rpx dashed #e6e6e6;
@@ -69,37 +69,10 @@
   height: 120rpx;
 }
 
-.vouchers_back {
-  background-image: linear-gradient(to left, #e84d2a, #ec722e);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-}
-
-.money_center {
-  height: 60rpx;
-  display: table-cell;
-  vertical-align: bottom;
-}
-
-.money_icon {
-  font-size: 28rpx;
-  font-weight: 700;
-}
-
-.money_text {
-  font-size: 42rpx;
-  font-weight: 700;
-}
-
-/* 右侧文字信息 */
-
 .center_info {
   flex: 1;
   margin-left: 15rpx;
 }
-
 .preferential_name {
   margin-bottom: 10rpx;
   font-size: 26rpx;
@@ -129,7 +102,7 @@
   align-items: center;
 }
 
-.end_time {
+.bottom_toast {
   position: absolute;
   left: 0;
   font-size: 24rpx;
@@ -144,6 +117,8 @@
 }
 
 .but {
+  background-image: linear-gradient(to left, #e84d2a, #ec722e);
+  color: #fff;
   margin-left: 15rpx;
   border-radius: 10rpx;
   height: 56rpx;
@@ -151,14 +126,4 @@
   padding-left: 12rpx;
   padding-right: 12rpx;
   font-size: 26rpx;
-}
-
-.but_back {
-  border: none;
-  background-image: linear-gradient(to left, #e84d2a, #ec722e);
-  color: #fff;
-}
-.border {
-  border: 1rpx solid #bfbfbf;
-  color: #8a8a8a;
 }

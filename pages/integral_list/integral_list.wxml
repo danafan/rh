@@ -1,0 +1,87 @@
+<!--pages/integral_list/integral_list.wxml-->
+<view>
+  <view class="integral_item">
+    <view class="item_left">
+      <view class="desc">店铺优质评价获得</view>
+      <view class="create_time">2020-09-20 12:31:42</view>
+    </view>
+    <view class="change_money add_text">+6</view>
+  </view>
+  <view class="integral_item">
+    <view class="item_left">
+      <view class="desc">店铺优质评价获得</view>
+      <view class="create_time">2020-09-20 12:31:42</view>
+    </view>
+    <view class="change_money add_text">+6</view>
+  </view>
+  <view class="integral_item">
+    <view class="item_left">
+      <view class="desc">店铺优质评价获得</view>
+      <view class="create_time">2020-09-20 12:31:42</view>
+    </view>
+    <view class="change_money add_text">+6</view>
+  </view>
+  <view class="integral_item">
+    <view class="item_left">
+      <view class="desc">店铺优质评价获得</view>
+      <view class="create_time">2020-09-20 12:31:42</view>
+    </view>
+    <view class="change_money add_text">+6</view>
+  </view>
+  <view class="integral_item">
+    <view class="item_left">
+      <view class="desc">店铺优质评价获得</view>
+      <view class="create_time">2020-09-20 12:31:42</view>
+    </view>
+    <view class="change_money add_text">+6</view>
+  </view>
+  <view class="integral_item">
+    <view class="item_left">
+      <view class="desc">店铺优质评价获得</view>
+      <view class="create_time">2020-09-20 12:31:42</view>
+    </view>
+    <view class="change_money add_text">+6</view>
+  </view>
+  <view class="integral_item">
+    <view class="item_left">
+      <view class="desc">店铺优质评价获得</view>
+      <view class="create_time">2020-09-20 12:31:42</view>
+    </view>
+    <view class="change_money add_text">+6</view>
+  </view>
+  <view class="integral_item">
+    <view class="item_left">
+      <view class="desc">店铺优质评价获得</view>
+      <view class="create_time">2020-09-20 12:31:42</view>
+    </view>
+    <view class="change_money add_text">+6</view>
+  </view>
+  <view class="integral_item">
+    <view class="item_left">
+      <view class="desc">店铺优质评价获得</view>
+      <view class="create_time">2020-09-20 12:31:42</view>
+    </view>
+    <view class="change_money add_text">+6</view>
+  </view>
+  <view class="integral_item">
+    <view class="item_left">
+      <view class="desc">店铺优质评价获得</view>
+      <view class="create_time">2020-09-20 12:31:42</view>
+    </view>
+    <view class="change_money add_text">+6</view>
+  </view>
+  <view class="integral_item">
+    <view class="item_left">
+      <view class="desc">店铺优质评价获得</view>
+      <view class="create_time">2020-09-20 12:31:42</view>
+    </view>
+    <view class="change_money add_text">+6</view>
+  </view>
+  <view class="integral_item">
+    <view class="item_left">
+      <view class="desc">店铺优质评价获得</view>
+      <view class="create_time">2020-09-20 12:31:42</view>
+    </view>
+    <view class="change_money add_text">+6</view>
+  </view>
+</view>

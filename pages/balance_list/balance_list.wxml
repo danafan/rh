@@ -1,0 +1,157 @@
+<!--pages/balance_list/balance_list.wxml-->
+<view>
+  <view class="balance_item">
+    <view class="row">
+      <view class="store_info">
+        <image class="store_img" mode="aspectFill" src="../../images/banner_01.png"></image>
+        <view class="record_name">好得火锅·2-3人套餐</view>
+      </view>
+      <view class="money add_text">+8</view>
+    </view>
+    <view class="row padding_left">
+      <view class="order_code">订单号：123571623571623</view>
+      <view class="desc add_text">订单退款</view>
+    </view>
+    <view class="create_time padding_left">2020-09-20 12:31:42</view>
+  </view>
+  <view class="balance_item">
+    <view class="row">
+      <view class="store_info">
+        <image class="store_img" mode="aspectFill" src="../../images/banner_01.png"></image>
+        <view class="record_name">好得火锅·2-3人套餐</view>
+      </view>
+      <view class="money add_text">+8</view>
+    </view>
+    <view class="row padding_left">
+      <view class="order_code">订单号：123571623571623</view>
+      <view class="desc add_text">订单退款</view>
+    </view>
+    <view class="create_time padding_left">2020-09-20 12:31:42</view>
+  </view>
+  <view class="balance_item">
+    <view class="row">
+      <view class="store_info">
+        <image class="store_img" mode="aspectFill" src="../../images/banner_01.png"></image>
+        <view class="record_name">好得火锅·2-3人套餐</view>
+      </view>
+      <view class="money add_text">+8</view>
+    </view>
+    <view class="row padding_left">
+      <view class="order_code">订单号：123571623571623</view>
+      <view class="desc add_text">订单退款</view>
+    </view>
+    <view class="create_time padding_left">2020-09-20 12:31:42</view>
+  </view>
+  <view class="balance_item">
+    <view class="row">
+      <view class="store_info">
+        <image class="store_img" mode="aspectFill" src="../../images/banner_01.png"></image>
+        <view class="record_name">好得火锅·2-3人套餐</view>
+      </view>
+      <view class="money add_text">+8</view>
+    </view>
+    <view class="row padding_left">
+      <view class="order_code">订单号：123571623571623</view>
+      <view class="desc add_text">订单退款</view>
+    </view>
+    <view class="create_time padding_left">2020-09-20 12:31:42</view>
+  </view>
+  <view class="balance_item">
+    <view class="row">
+      <view class="store_info">
+        <image class="store_img" mode="aspectFill" src="../../images/banner_01.png"></image>
+        <view class="record_name">好得火锅·2-3人套餐</view>
+      </view>
+      <view class="money add_text">+8</view>
+    </view>
+    <view class="row padding_left">
+      <view class="order_code">订单号：123571623571623</view>
+      <view class="desc add_text">订单退款</view>
+    </view>
+    <view class="create_time padding_left">2020-09-20 12:31:42</view>
+  </view>
+  <view class="balance_item">
+    <view class="row">
+      <view class="store_info">
+        <image class="store_img" mode="aspectFill" src="../../images/banner_01.png"></image>
+        <view class="record_name">好得火锅·2-3人套餐</view>
+      </view>
+      <view class="money add_text">+8</view>
+    </view>
+    <view class="row padding_left">
+      <view class="order_code">订单号：123571623571623</view>
+      <view class="desc add_text">订单退款</view>
+    </view>
+    <view class="create_time padding_left">2020-09-20 12:31:42</view>
+  </view>
+  <view class="balance_item">
+    <view class="row">
+      <view class="store_info">
+        <image class="store_img" mode="aspectFill" src="../../images/banner_01.png"></image>
+        <view class="record_name">好得火锅·2-3人套餐</view>
+      </view>
+      <view class="money add_text">+8</view>
+    </view>
+    <view class="row padding_left">
+      <view class="order_code">订单号：123571623571623</view>
+      <view class="desc add_text">订单退款</view>
+    </view>
+    <view class="create_time padding_left">2020-09-20 12:31:42</view>
+  </view>
+  <view class="balance_item">
+    <view class="row">
+      <view class="store_info">
+        <image class="store_img" mode="aspectFill" src="../../images/banner_01.png"></image>
+        <view class="record_name">好得火锅·2-3人套餐</view>
+      </view>
+      <view class="money add_text">+8</view>
+    </view>
+    <view class="row padding_left">
+      <view class="order_code">订单号：123571623571623</view>
+      <view class="desc add_text">订单退款</view>
+    </view>
+    <view class="create_time padding_left">2020-09-20 12:31:42</view>
+  </view>
+  <view class="balance_item">
+    <view class="row">
+      <view class="store_info">
+        <image class="store_img" mode="aspectFill" src="../../images/banner_01.png"></image>
+        <view class="record_name">好得火锅·2-3人套餐</view>
+      </view>
+      <view class="money add_text">+8</view>
+    </view>
+    <view class="row padding_left">
+      <view class="order_code">订单号：123571623571623</view>
+      <view class="desc add_text">订单退款</view>
+    </view>
+    <view class="create_time padding_left">2020-09-20 12:31:42</view>
+  </view>
+  <view class="balance_item">
+    <view class="row">
+      <view class="store_info">
+        <image class="store_img" mode="aspectFill" src="../../images/banner_01.png"></image>
+        <view class="record_name">好得火锅·2-3人套餐</view>
+      </view>
+      <view class="money add_text">+8</view>
+    </view>
+    <view class="row padding_left">
+      <view class="order_code">订单号：123571623571623</view>
+      <view class="desc add_text">订单退款</view>
+    </view>
+    <view class="create_time padding_left">2020-09-20 12:31:42</view>
+  </view>
+  <view class="balance_item">
+    <view class="row">
+      <view class="store_info">
+        <image class="store_img" mode="aspectFill" src="../../images/banner_01.png"></image>
+        <view class="record_name">好得火锅·2-3人套餐</view>
+      </view>
+      <view class="money add_text">+8</view>
+    </view>
+    <view class="row padding_left">
+      <view class="order_code">订单号：123571623571623</view>
+      <view class="desc add_text">订单退款</view>
+    </view>
+    <view class="create_time padding_left">2020-09-20 12:31:42</view>
+  </view>
+</view>

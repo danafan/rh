@@ -5,156 +5,93 @@ Page({
     order_list: [{
       order_id: "1",
       store_icon: '../../images/banner_01.png',
-      store_name: "星巴克（西湖店）",
-      order_status: '1', //1:待使用；2:待支付；3:待评价；4:退款/售后；5:已完成
-      order_status_text: "待使用",
-      apply_time: '', //申请退款时间
-      failure_desc: '', //失败说明
-      refund_status: '', //1:退款中；2:已退款；3:退款失败
-      order_type: '1', //1:套餐；2:优惠券；3:特价菜
+      store_name: "沪小川",
       goods_icon: '../../images/banner_02.jpg',
-      vouchers_money: "",
       order_name: '沪小川双人套餐',
-      create_time: '2020-07-12 13:24:52', //下单时间
-      number: '1',
-      total_money: '36',
-      end_time: '2020-08-12 13:24:52' //有效期
+      order_status: '1', //1:待使用；2:待支付；3:待评价；4:已退款；5:已完成；6:已取消
+      order_status_text: "待使用",
+      create_order_time: '2020-07-12 13:24:52', //下单时间
+      pay_time: '2020-07-12 13:24:52', //付款时间
+      consumption_time: '2020-07-12 13:24:52', //消费时间
+      arrive_time: '2020-07-12 13:24:52', //退款时间
+      end_time: '2020-08-12 13:24:52', //订单有效期
+      number: '1', //商品数量
+      total_money: '88' //总金额
     }, {
       order_id: "2",
-      store_icon: '../../images/banner_02.jpg',
-      store_name: "竹筷子松江味",
-      order_status: '1', //1:待使用；2:待支付；3:待评价；4:退款/售后；5:已完成
-      order_status_text: "待使用",
-      apply_time: '', //申请退款时间
-      failure_desc: '', //失败说明
-      refund_status: '', //1:退款中；2:已退款；3:退款失败
-      order_type: '2', //1:套餐；2:优惠券；3:特价菜
-      goods_icon: '',
-      vouchers_money: "100",
-      order_name: '',
-      create_time: '2020-07-12 13:24:52',
-      number: '1',
-      total_money: '100',
-      end_time: '2020-08-12 13:24:52'
+      store_icon: '../../images/banner_03.jpg',
+      store_name: "渝上侬重庆火锅",
+      goods_icon: '../../images/banner_02.jpg',
+      order_name: '渝上侬火锅2-4人套餐',
+      order_status: '2', //1:待使用；2:待支付；3:待评价；4:已退款；5:已完成；6:已取消
+      order_status_text: "待支付",
+      create_order_time: '2020-07-12 13:24:52', //下单时间
+      pay_time: '2020-07-12 13:24:52', //付款时间
+      consumption_time: '2020-07-12 13:24:52', //消费时间
+        arrive_time: '2020-07-12 13:24:52', //退款时间
+      end_time: '2020-08-12 13:24:52', //订单有效期
+      number: '1', //商品数量
+      total_money: '88' //总金额
     }, {
       order_id: "3",
-      store_icon: '../../images/banner_02.jpg',
-      store_name: "遇见川芙蓉",
-      order_status: '1', //1:待使用；2:待支付；3:待评价；4:退款/售后；5:已完成
-      order_status_text: "待使用",
-      apply_time: '', //申请退款时间
-      failure_desc: '', //失败说明
-      refund_status: '', //1:退款中；2:已退款；3:退款失败
-      order_type: '3', //1:套餐；2:优惠券；3:特价菜
-      goods_icon: '../../images/banner_03.jpg',
-      vouchers_money: "",
-      order_name: '烤墨鱼一份',
-      create_time: '2020-07-12 13:24:52',
-      number: '2',
-      total_money: '18',
-      end_time: '2020-08-12 13:24:52'
+      store_icon: '../../images/banner_01.png',
+      store_name: "老好人象山海鲜",
+      goods_icon: '../../images/banner_01.png',
+      order_name: '江巴人重庆市井火锅2人餐',
+      order_status: '3', //1:待使用；2:待支付；3:待评价；4:已退款；5:已完成；6:已取消
+      order_status_text: "待评价",
+      create_order_time: '2020-07-12 13:24:52', //下单时间
+      pay_time: '2020-07-12 13:24:52', //付款时间
+      consumption_time: '2020-07-12 13:24:52', //消费时间
+        arrive_time: '2020-07-12 13:24:52', //退款时间
+      end_time: '2020-08-12 13:24:52', //订单有效期
+      number: '1', //商品数量
+      total_money: '88' //总金额
     }, {
       order_id: "4",
       store_icon: '../../images/banner_03.jpg',
-      store_name: "渝上侬重庆火锅",
-      order_status: '2', //1:待使用；2:待支付；3:待评价；4:退款/售后；5:已完成
-      order_status_text: "待支付",
-      apply_time: '', //申请退款时间
-      failure_desc: '', //失败说明
-      refund_status: '', //1:退款中；2:已退款；3:退款失败
-      order_type: '1', //1:套餐；2:优惠券；3:特价菜
+      store_name: "原生态自助烤肉",
       goods_icon: '../../images/banner_02.jpg',
-      vouchers_money: "",
-      order_name: '渝上侬火锅2-4人套餐',
-      create_time: '2020-07-12 13:24:52',
-      number: '1',
-      total_money: '108',
-      end_time: '2020-08-12 13:24:52'
+      order_name: '龙井先生私房餐厅2-3人餐',
+      order_status: '4', //1:待使用；2:待支付；3:待评价；4:已退款；5:已完成；6:已取消
+      order_status_text: "已退款",
+      create_order_time: '2020-07-12 13:24:52', //下单时间
+      pay_time: '2020-07-12 13:24:52', //付款时间
+      consumption_time: '2020-07-12 13:24:52', //消费时间
+        arrive_time: '2020-07-12 13:24:52', //退款时间
+      end_time: '2020-08-12 13:24:52', //订单有效期
+      number: '1', //商品数量
+      total_money: '88' //总金额
     }, {
       order_id: "5",
-      store_icon: '../../images/banner_01.png',
-      store_name: "老好人象山海鲜",
-      order_status: '3', //1:待使用；2:待支付；3:待评价；4:退款/售后；5:已完成
-      order_status_text: "待评价",
-      apply_time: '', //申请退款时间
-      failure_desc: '', //失败说明
-      refund_status: '', //1:退款中；2:已退款；3:退款失败
-      order_type: '1', //1:套餐；2:优惠券；3:特价菜
-      goods_icon: '../../images/banner_01.png',
-      vouchers_money: "",
-      order_name: '江巴人重庆市井火锅2人餐',
-      create_time: '2020-07-12 13:24:52',
-      number: '1',
-      total_money: '180',
-      end_time: '2020-08-12 13:24:52'
-    }, {
-      order_id: "6",
-      store_icon: '../../images/banner_03.jpg',
-      store_name: "原生态自助烤肉",
-      order_status: '4', //1:待使用；2:待支付；3:待评价；4:退款/售后；5:已完成
-      order_status_text: "退款中",
-      apply_time: '2020-07-12 13:24:52', //申请退款时间
-      failure_desc: '', //失败说明
-      refund_status: '1', //1:退款中；2:已退款；3:退款失败
-      order_type: '1', //1:套餐；2:优惠券；3:特价菜
-      goods_icon: '../../images/banner_02.jpg',
-      vouchers_money: "",
-      order_name: '龙井先生私房餐厅2-3人餐',
-      create_time: '2020-07-12 13:24:52',
-      number: '1',
-      total_money: '100',
-      end_time: '2020-08-12 13:24:52'
-    }, {
-      order_id: "7",
       store_icon: '../../images/banner_02.jpg',
       store_name: "海蒸鲜（绿地新都会店）",
-      order_status: '4', //1:待使用；2:待支付；3:待评价；4:退款/售后；5:已完成
-      order_status_text: "已退款",
-      apply_time: '2020-07-12 13:24:52', //申请退款时间
-      failure_desc: '', //失败说明
-      refund_status: '2', //1:退款中；2:已退款；3:退款失败
-      order_type: '1', //1:套餐；2:优惠券；3:特价菜
       goods_icon: '../../images/banner_01.png',
-      vouchers_money: "",
       order_name: '遇见川夫人单人餐',
-      create_time: '2020-07-12 13:24:52',
-      number: '1',
-      total_money: '88',
-      end_time: '2020-08-12 13:24:52'
-    }, {
-      order_id: "8",
-      store_icon: '../../images/banner_01.png',
-      store_name: "万福烤肉",
-      order_status: '4', //1:待使用；2:待支付；3:待评价；4:退款/售后；5:已完成
-      order_status_text: "退款失败",
-      apply_time: '2020-07-12 13:24:52', //申请退款时间
-      failure_desc: '不想给你退款', //失败说明
-      refund_status: '3', //1:退款中；2:已退款；3:退款失败
-      order_type: '1', //1:套餐；2:优惠券；3:特价菜
-      goods_icon: '../../images/banner_01.png',
-      vouchers_money: "",
-      order_name: '遵义羊肉粉',
-      create_time: '2020-07-12 13:24:52',
-      number: '1',
-      total_money: '69.8',
-      end_time: '2020-08-12 13:24:52'
-    }, {
-      order_id: "9",
-      store_icon: '../../images/banner_01.png',
-      store_name: "万福烤肉",
-      order_status: '5', //1:待使用；2:待支付；3:待评价；4:退款/售后；5:已完成
+      order_status: '5', //1:待使用；2:待支付；3:待评价；4:已退款；5:已完成；6:已取消
       order_status_text: "已完成",
-      apply_time: '', //申请退款时间
-      failure_desc: '', //失败说明
-      refund_status: '', //1:退款中；2:已退款；3:退款失败
-      order_type: '1', //1:套餐；2:优惠券；3:特价菜
-      goods_icon: '../../images/banner_02.jpg',
-      vouchers_money: "",
-      order_name: '叫了只炸鸡',
-      create_time: '2020-07-12 13:24:52',
-      number: '1',
-      total_money: '88',
-      end_time: '2020-08-12 13:24:52'
+      create_order_time: '2020-07-12 13:24:52', //下单时间
+      pay_time: '2020-07-12 13:24:52', //付款时间
+      consumption_time: '2020-07-12 13:24:52', //消费时间
+        arrive_time: '2020-07-12 13:24:52', //退款时间
+      end_time: '2020-08-12 13:24:52', //订单有效期
+      number: '1', //商品数量
+      total_money: '88' //总金额
+    }, {
+      order_id: "6",
+      store_icon: '../../images/banner_01.png',
+      store_name: "万福烤肉",
+      goods_icon: '../../images/banner_01.png',
+      order_name: '遵义羊肉粉',
+      order_status: '5', //1:待使用；2:待支付；3:待评价；4:已退款；5:已完成；6:已取消
+      order_status_text: "已取消",
+      create_order_time: '2020-07-12 13:24:52', //下单时间
+      pay_time: '2020-07-12 13:24:52', //付款时间
+      consumption_time: '2020-07-12 13:24:52', //消费时间
+        arrive_time: '2020-07-12 13:24:52', //退款时间
+      end_time: '2020-08-12 13:24:52', //订单有效期
+      number: '1', //商品数量
+      total_money: '88' //总金额
     }]
   },
   onLoad: function(options) {

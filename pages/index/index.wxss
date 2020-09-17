@@ -37,11 +37,3 @@
   left: 0;
   padding: 0 15rpx 15rpx;
 }
- /* 代金券入口 */
-.coupons_list{
-  background: #ff5858;
-  height: 80rpx;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}

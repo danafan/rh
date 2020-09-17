@@ -1,22 +1,23 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/my/my",
-    "pages/store_detail/store_detail",
     "pages/place_order/place_order",
+    "pages/refund/refund",
+    "pages/integral_list/integral_list",
+    "pages/my/my",
+    "pages/balance_list/balance_list",
+    "pages/store_detail/store_detail",
     "pages/search/search",
     "pages/order/order",
-    "pages/refund/refund",
     "pages/evaluation/evaluation",
     "pages/order_detail/order_detail",
-    "pages/coupons_detail/coupons_detail",
     "pages/package_detail/package_detail",
     "pages/red_envelope/red_envelope",
     "pages/comment_detail/comment_detail",
     "pages/package_list/package_list",
     "pages/category/category",
-    "pages/coupons_list/coupons_list",
-    "pages/auth/auth"
+    "pages/auth/auth",
+    "pages/pay_order/pay_order"
   ],
   "tabBar": {
     "color": "#8a8a8a",

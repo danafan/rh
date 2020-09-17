@@ -18,6 +18,18 @@ Page({
       url: '/pages/red_envelope/red_envelope?page_type=my',
     });
   },
+  //余额
+  balanceList() {
+    wx.navigateTo({
+      url: '/pages/balance_list/balance_list',
+    });
+  },
+  //积分
+  integralList() {
+    wx.navigateTo({
+      url: '/pages/integral_list/integral_list',
+    });
+  },
   //分享自定义
   onShareAppMessage: function(res) {
     return app.globalData.shareObj

@@ -1,0 +1,55 @@
+/* pages/balance_list/balance_list.wxss */
+.balance_item{
+  background: #fff;
+  border-bottom: 1rpx solid #f6f6f6;
+  padding: 20rpx;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.padding_left{
+  padding-left: 100rpx;
+}
+.store_info{
+  display: flex;
+  align-items: center;
+}
+.store_img{
+  margin-right: 15rpx;
+  border-radius: 50%;
+  width: 80rpx;
+  height: 80rpx;
+}
+.record_name{
+  font-size: 30rpx;
+  color: #0b0d1d;
+  font-weight: 700;
+}
+.order_code{
+  margin-bottom: 10rpx;
+  font-size: 26rpx;
+  color: #333;
+}
+.create_time{
+  font-size: 24rpx;
+  color: #8a8a8a;
+}
+.change_money{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.money{
+  font-size: 40rpx;
+  color: #333;
+  font-weight: 700;
+}
+.desc{
+  font-size: 22rpx;
+  color: #333;
+}
+.add_text{
+  color: #ec722e;
+}

@@ -64,12 +64,6 @@
 .two_row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.two_row_left {
-  display: flex;
-  align-items: center;
 }
 
 .hot_icon {
@@ -92,23 +86,6 @@
 .loaction {
   font-size: 24rpx;
   color: #8a8a8a;
-}
-
-/* 优惠数量 */
-
-.preferential_list {
-  display: flex;
-  align-items: center;
-}
-
-.tag_label {
-  border:1rpx solid #ff5858;
-  border-radius: 5rpx;
-  padding-left: 10rpx;
-  padding-right: 10rpx;
-  font-size: 22rpx;
-  color: #ff5858;
-  margin-right: 10rpx;
 }
 
 /* 商家的套餐列表 */

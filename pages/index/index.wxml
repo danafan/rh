@@ -16,8 +16,6 @@
     <category_index/>
     <!-- 精选套餐 -->
     <index_center/>
-    <!-- 代金券列表入口 -->
-    <view class="coupons_list" bindtap="couponsList">代金券入口</view>
     <!-- 筛选条件 -->
     <the_query id="query_id"/>
     <!-- 优选列表 -->
