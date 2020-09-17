@@ -1,7 +1,10 @@
 // components/CommentItem/comment_item.js
 Component({
   properties: {
-    
+    page_type:{
+      type:String,
+      value:""
+    }
   },
   data: {
     comment_info:{
@@ -30,11 +33,11 @@ Component({
         show_big_img: false
       })
     },
-    // 查看评价详情
-    commentDetail(){
+    //进入套餐详情
+    packageDetail() {
       wx.navigateTo({
-        url: '/pages/comment_detail/comment_detail',
+        url: '/pages/package_detail/package_detail',
       });
-    }
+    },
   }
 })

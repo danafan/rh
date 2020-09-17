@@ -11,16 +11,21 @@
         <image class="hot_icon" src="../../images/hot_icon.png" wx:for="{{comment_info.star_num}}" wx:key="*this"></image>
       </view>
     </view>
-    <view class="comment_info" bindtap="commentDetail">{{comment_info.content}}</view>
+    <view class="comment_info">{{comment_info.content}}</view>
     <view class="comment_imgs">
       <image class="comment_img" mode="aspectFill" src="{{item}}" wx:for="{{comment_info.imgs}}" wx:key="*this" data-index="{{index}}" bindtap="openBigImg"></image>
     </view>
-    <!-- 底部操作栏 -->
-    <view class="setting_box">
-      <view class="comment_set_box" bindtap="sendComment">
-        <image class="comment_icon" src="../../images/comment_icon.png"></image>
-        <view class="comment_text">评论</view>
+    <!-- 消费套餐 -->
+    <view class="package_box" bindtap="packageDetail" wx:if="{{page_type == 'store_detail'}}">
+      <view class="package_con">
+        <view class="package_name">好得火锅2人烤鱼套餐</view>
+        <image class="right_icon" src="../../images/right.png"></image>
       </view>
+    </view>
+    <!-- 商家回复 -->
+    <view class="reply_box">
+      <text class="reply_those">商家回复：</text>
+      <text class="reply_text">感谢您的支持！江巴人全体员工欢迎您再次光临</text>
     </view>
   </view>
   <big_img big_imgs="{{comment_info.imgs}}" current_index="{{current_index}}" wx:if="{{show_big_img}}" bind:onEmit="close" />

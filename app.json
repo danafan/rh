@@ -1,6 +1,8 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/package_detail/package_detail",
+    "pages/order_detail/order_detail",
     "pages/place_order/place_order",
     "pages/refund/refund",
     "pages/integral_list/integral_list",
@@ -10,10 +12,7 @@
     "pages/search/search",
     "pages/order/order",
     "pages/evaluation/evaluation",
-    "pages/order_detail/order_detail",
-    "pages/package_detail/package_detail",
     "pages/red_envelope/red_envelope",
-    "pages/comment_detail/comment_detail",
     "pages/package_list/package_list",
     "pages/category/category",
     "pages/auth/auth",

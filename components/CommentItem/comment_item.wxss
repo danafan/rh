@@ -1,9 +1,9 @@
 /* components/CommentItem/comment_item.wxss */
 
 .comment_box {
-  border-top: 1rpx solid #f6f6f6;
+  border-bottom: 1rpx solid #f6f6f6;
   padding-top: 20rpx;
-  margin-bottom: 20rpx;
+  padding-bottom: 20rpx;
   display: flex;
 }
 
@@ -57,11 +57,6 @@
   margin-top: 10rpx;
   font-size: 28rpx;
   color: #0b0d1d;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 .comment_imgs {
@@ -78,28 +73,52 @@
   height: 180rpx;
 }
 
-/* 操作评论 */
+/* 消费套餐 */
 
-.setting_box {
+.package_box {
   margin-top: 10rpx;
-  width: 100%;
+  display: flex;
+}
+
+.package_con {
+  background: #F1F6F9;
+  width: 50%;
+  height: 62rpx;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
 }
 
-.comment_set_box {
-  display: flex;
-  align-items: center;
+.package_name {
+  flex: 1;
+  font-size: 25rpx;
+  color: #333;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
-.comment_icon {
-  margin-right: 5rpx;
-  width: 36rpx;
-  height: 36rpx;
+.right_icon {
+  width: 26rpx;
+  height: 26rpx;
 }
 
-.comment_text {
-  font-size: 24rpx;
-  color: #8a8a8a;
+/* 回复 */
+
+.reply_box {
+  border-top: 1rpx solid #f6f6f6;
+  margin-top: 10rpx;
+  padding-top: 10rpx;
+  font-size: 25rpx;
+}
+
+.reply_those {
+  color: #3d5165;
+}
+
+.reply_text {
+  color: #333;
 }

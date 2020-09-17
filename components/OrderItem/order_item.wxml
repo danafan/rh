@@ -1,5 +1,5 @@
 <!--components/OrderItem/order_item.wxml-->
-<view class="order_item" data-order_info="{{order_id}}" bindtap="orderDetail">
+<view class="order_item" data-order_id="{{order_info.order_id}}" bindtap="orderDetail">
   <!-- 顶部店铺信息 -->
   <view class="item_top">
     <view class="store_info" catchtap="storeOrder">

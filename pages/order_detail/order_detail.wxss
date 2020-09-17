@@ -1,7 +1,7 @@
 /* pages/order_detail/order_detail.wxss */
 
 .order_detail_box {
-  padding: 20rpx 20rpx 0;
+  padding: 20rpx 15rpx;
 }
 
 /* 商品信息 */
@@ -37,7 +37,16 @@
   font-size: 26rpx;
   color: #333;
 }
-
+.right_box{
+  width: 40rpx;
+  height: 160rpx;
+  display: flex;
+  align-items: center
+}
+.right_icon{
+  width: 30rpx;
+  height: 30rpx;
+}
 /* 虚线 */
 
 .dashed {
@@ -81,9 +90,9 @@
   flex-direction: column;
   align-items: center;
 }
-
+/* 待使用部分 */
 .qr_title {
-  margin-bottom: 20rpx;
+  margin-bottom: 15rpx;
   font-size: 32rpx;
   color: #0b0d1d;
   font-weight: 700;
@@ -102,19 +111,12 @@
 .hua{
   text-decoration: line-through;
 }
-.order_toast{
-  
-  margin-top: 10rpx;
-  width: 100%;
-  font-size: 24rpx;
-  color: #ec722e;
-}
 .margin {
   margin-top: 10rpx;
   margin-bottom: 30rpx;
 }
-
 .bottom_box {
+  margin-top: 15rpx;
   width: 100%;
   display: flex;
   align-items: center;
@@ -136,6 +138,32 @@
   justify-content: center;
   font-size: 24rpx;
   color: #fff;
+}
+/* 待支付部分 */
+.count_down{
+  margin-bottom: 15rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+}
+.count_down_title{
+  color: #0b0d1d;
+}
+.count_down_time{
+  color: #e84d2a;
+}
+
+/* 按钮 */
+
+.submit_but {
+  border-radius: 45rpx;
+  background-image: linear-gradient(to left, #e84d2a, #ec722e);
+  width: 320rpx;
+  height: 70rpx;
+  font-size: 30rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* 商家信息 */
@@ -182,42 +210,4 @@
 .value {
   font-size: 26rpx;
   color: #333;
-}
-
-/* 底部按钮 */
-
-.submit_but {
-  margin: 30rpx auto;
-  border-radius: 45rpx;
-  background-image: linear-gradient(to left, #e84d2a, #ec722e);
-  width: 80%;
-  height: 90rpx;
-  font-size: 32rpx;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* 待支付按钮 */
-
-.price_box {
-  display: table-cell;
-  vertical-align: bottom;
-  color: #fff;
-}
-
-.price_icon {
-  margin-right: 3rpx;
-  font-size: 26rpx;
-  font-weight: 700;
-}
-
-.price_text {
-  font-size: 32rpx;
-  font-weight: 700;
-}
-
-.but_text {
-  margin-left: 20rpx;
 }

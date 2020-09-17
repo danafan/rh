@@ -18,7 +18,7 @@
         <view class="active_tab" wx:if="{{tab_index == '3'}}"></view>
     </view>
      <view class="tab_item" data-index="4" bindtap="checkTab">
-        <view class="tab_label {{tab_index == '4'?'active_tab_label':''}}">退款/售后</view>
+        <view class="tab_label {{tab_index == '4'?'active_tab_label':''}}">已退款</view>
         <view class="active_tab" wx:if="{{tab_index == '4'}}"></view>
     </view>
   </view>

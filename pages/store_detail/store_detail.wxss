@@ -191,7 +191,7 @@
 .package_list {
   background: #fff;
   margin-bottom: 20rpx;
-  padding: 10rpx;
+  padding: 20rpx;
 }
 
 .package_title {
@@ -201,32 +201,8 @@
   font-weight: 700;
   color: #333;
 }
-
-/* 评价 */
-
-.comments_box {
-  padding: 20rpx;
-  width: 100%;
-  background: #fff;
-  margin-top: 15rpx;
-}
-
-/* 标题 */
-
-.page_title {
-  margin-bottom: 20rpx;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.title_text {
-  font-size: 30rpx;
-  font-weight: 700;
-  color: #0b0d1d;
-}
-
 .toast_text {
   font-size: 26rpx;
   color: #333;
 }
+

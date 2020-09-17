@@ -1,43 +1,62 @@
 <!--pages/order_detail/order_detail.wxml-->
 <view class="order_detail_box">
   <!-- 顶部商品信息 -->
-  <view class="goods_info">
-    <image class="goods_img" mode="aspectFill" src="../../images/banner_03.jpg"></image>
+  <view class="goods_info" bindtap="packageDetail">
+    <image class="goods_img" mode="aspectFill" src="{{order_info.goods_icon}}"></image>
     <view class="info_content">
-      <view class="goods_name">石锅鱼4人套餐</view>
+      <view class="goods_name">{{order_info.order_name}}</view>
       <view class="time">周一至周日 10:00 - 21:00</view>
       <web_tag/>
     </view>
+    <view class="right_box">
+    <image class="right_icon" src="../../images/right.png"></image>
+    </view>
   </view>
   <!-- 券横线 -->
-  <view class="dashed" wx:if="{{order_info.order_id == '1' || order_info.order_id == '2' || order_info.order_id == '3' || order_info.order_id == '6'}}">
+  <view class="dashed">
     <view class="yuan left"></view>
     <view class="heng_line"></view>
     <view class="yuan right"></view>
   </view>
   <!-- 待使用 -->
-  <view class="to_be_used" wx:if="{{order_info.order_id == '1' || order_info.order_id == '2' || order_info.order_id == '3'}}">
+  <view class="to_be_used" wx:if="{{order_info.order_status == '1'}}">
     <view class="qr_title">券码信息</view>
     <image class="qr_code_img" src="../../images/banner_02.jpg"></image>
     <view class="qr_code_text margin">7789 3267 3874 358</view>
     <view class="bottom_box">
-      <view class="period">有效期至：2020-08-25</view>
+      <view class="period">有效期至：2020-08-25 09:30:21</view>
       <view class="apply_refund" data-order_id="{{order_info.order_id}}" bindtap="applyRefund">申请退款</view>
     </view>
   </view>
-  <!-- 退款/售后 -->
-  <view class="to_be_used" wx:if="{{order_info.order_id == '6' || order_info.order_id == '7' || order_info.order_id == '8'}}">
-    <view class="qr_title">券码信息</view>
-    <view class="bottom_box">
-      <view class="qr_code_text hua">7789 3267 3874 358</view>
-      <view class="period" wx:if="{{order_info.order_id == '6'}}">退款中</view>
-      <view class="period" wx:if="{{order_info.order_id == '7'}}">已退款</view>
-      <view class="period" wx:if="{{order_info.order_id == '8'}}">退款失败</view>
-      <view class="period" wx:if="{{order_info.order_id == '9'}}">已完成</view>
+  <!-- 待支付 -->
+  <view class="to_be_used" wx:if="{{order_info.order_status == '2'}}">
+    <view class="count_down">
+      <text class="count_down_title">剩余支付时间：</text>
+      <text class="count_down_time">14:32</text>
     </view>
-    <view class="order_toast" wx:if="{{order_info.order_id == '6'}}">退款金额将在1-3个工作日内退回至原账户</view>
-    <view class="order_toast" wx:if="{{order_info.order_id == '7'}}">退款金额已退回至原账户</view>
-    <view class="order_toast" wx:if="{{order_info.order_id == '8'}}">失败原因：就是不想给你退</view>
+    <view class="submit_but" bindtap="payOrder">立即支付</view>
+  </view>
+  <!-- 待评价 -->
+  <view class="to_be_used" wx:if="{{order_info.order_status == '3'}}">
+    <view class="count_down">
+      <text class="count_down_title">套餐已消费</text>
+    </view>
+    <view class="submit_but" bindtap="evaluation">评价得10积分</view>
+  </view>
+  <!-- 已退款 -->
+  <view class="to_be_used" wx:if="{{order_info.order_status == '4'}}">
+    <view class="qr_title">已退款</view>
+    <view class="submit_but" bindtap="placeOrder">再来一单</view>
+    <view class="bottom_box">
+      <view class="qr_code_text">退款金额：¥188</view>
+      <view class="period">已退至系统余额</view>
+    </view>
+  </view>
+  <!-- 已完成 -->
+  <view class="to_be_used" wx:if="{{order_info.order_status == '5' || order_info.order_status == '6'}}">
+    <view class="qr_title" wx:if="{{order_info.order_status == '5'}}">订单已完成</view>
+    <view class="qr_title" wx:if="{{order_info.order_status == '6'}}">订单已取消</view>
+    <view class="submit_but" bindtap="placeOrder">再来一单</view>
   </view>
   <!-- 商家信息 -->
   <view class="store_info">
@@ -60,24 +79,20 @@
       <view class="label">手机号：</view>
       <view class="value">13067882143</view>
     </view>
-    <view class="info_item" wx:if="{{order_info.order_id == '4'}}">
-      <view class="label">下单时间：</view>
-      <view class="value">2020-08-02 19:28:30</view>
-    </view>
-    <view class="info_item" wx:if="{{order_info.order_id == '1' || order_info.order_id == '2' || order_info.order_id == '3'}}">
+    <view class="info_item" wx:if="{{order_info.order_status == '1'}}">
       <view class="label">付款时间：</view>
       <view class="value">2020-08-02 19:28:30</view>
     </view>
-    <view class="info_item" wx:if="{{order_info.order_id == '5' || order_info.order_id == '9'}}">
+    <view class="info_item" wx:if="{{order_info.order_status == '2' || order_info.order_status == '6'}}">
+      <view class="label">下单时间：</view>
+      <view class="value">2020-08-02 19:28:30</view>
+    </view>
+    <view class="info_item" wx:if="{{order_info.order_status == '3' || order_info.order_status == '5'}}">
       <view class="label">消费时间：</view>
       <view class="value">2020-08-02 19:28:30</view>
     </view>
-    <view class="info_item" wx:if="{{order_info.order_id == '6' || order_info.order_id == '7' || order_info.order_id == '8'}}">
-      <view class="label">申请时间：</view>
-      <view class="value">2020-08-02 19:28:30</view>
-    </view>
-    <view class="info_item" wx:if="{{order_info.order_id == '7'}}">
-      <view class="label">到账时间：</view>
+    <view class="info_item" wx:if="{{order_info.order_status == '4'}}">
+      <view class="label">退款时间：</view>
       <view class="value">2020-08-02 19:28:30</view>
     </view>
     <view class="info_item">
@@ -89,14 +104,4 @@
       <view class="value">¥138</view>
     </view>
   </view>
-  <!-- 未支付 -->
-  <view class="submit_but" wx:if="{{order_info.order_id == '4'}}" bindtap="placeOrder">
-    <view class="price_box">
-      <text class="price_icon">¥</text>
-      <text class="price_text">88</text>
-      <text class="but_text">继续购买</text>
-    </view>
-  </view>
-  <!-- 待使用 -->
-  <view class="submit_but" wx:else bindtap="placeOrder">再来一单</view>
 </view>

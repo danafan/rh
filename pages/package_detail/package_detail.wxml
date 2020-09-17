@@ -34,8 +34,8 @@
           <text class="toast_text">（1051）</text>
         </view>
       </view>
-    <comment_item/>
-    <comment_item/>
+    <comment_item page_type="package_detail"/>
+    <comment_item page_type="package_detail"/>
   </view>
   <!-- 底部按钮 -->
   <buy_button/>

@@ -83,7 +83,7 @@ Page({
       store_name: "万福烤肉",
       goods_icon: '../../images/banner_01.png',
       order_name: '遵义羊肉粉',
-      order_status: '5', //1:待使用；2:待支付；3:待评价；4:已退款；5:已完成；6:已取消
+      order_status: '6', //1:待使用；2:待支付；3:待评价；4:已退款；5:已完成；6:已取消
       order_status_text: "已取消",
       create_order_time: '2020-07-12 13:24:52', //下单时间
       pay_time: '2020-07-12 13:24:52', //付款时间

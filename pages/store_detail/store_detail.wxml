@@ -50,25 +50,28 @@
         <view class="active_line" wx:if="{{active_tab == '2'}}"></view>
       </view>
     </view>
-    <!-- 到店套餐 -->
+    <!-- 优惠 -->
     <view wx:if="{{active_tab == '1'}}">
       <view class="package_list">
-        <view class="package_title">到店套餐</view>
+        <view class="package_title">
+          <text>到店套餐</text>
+          <text class="toast_text">（3）</text>
+        </view>
         <welfare_item />
         <welfare_item />
         <welfare_item />
       </view>
     </view>
     <!-- 评价 -->
-    <view class="comments_box" wx:if="{{active_tab == '2'}}">
-      <view class="page_title">
-        <view class="title_text">
+    <view wx:if="{{active_tab == '2'}}">
+      <view class="package_list">
+        <view class="package_title">
           <text>套餐评价</text>
           <text class="toast_text">（1051）</text>
         </view>
+        <comment_item page_type="store_detail"/>
+        <comment_item page_type="store_detail"/>
       </view>
-      <comment_item/>
-      <comment_item/>
     </view>
   </view>
 </view>
