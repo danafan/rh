@@ -11,13 +11,31 @@
   <!-- 下面内容 -->
   <view class="content" style='margin-top:{{startBarHeight + navgationHeight}}px'>
     <!-- 搜索框 -->
-    <search_box/>
+    <view class="search_box">
+      <view class="location_box" bindtap="chooseLocation">
+        <image class="location_icon" src="../../images/location_down.png"></image>
+        <view class="location_text">乌兰浩特</view>
+      </view>
+      <view class="search_input" bindtap="search">
+        <image class="search_icon" src="../../images/search_icon.png"></image>
+        <swiper class="swiper_search" autoplay interval="3000" circular vertical>
+          <swiper-item>
+            <view class="input_text">搜店铺 优惠</view>
+          </swiper-item>
+          <swiper-item>
+            <view class="input_text">上热乎，吃点儿好的</view>
+          </swiper-item>
+        </swiper>
+      </view>
+      <view class="zhan"></view>
+    </view>
+    <!-- <search_box/> -->
     <!-- 分类组件 -->
     <category_index/>
     <!-- 精选套餐 -->
     <index_center/>
     <!-- 筛选条件 -->
-    <the_query id="query_id"/>
+    <the_query bind:onEmit="checkQuery" />
     <!-- 优选列表 -->
     <cate_store_item wx:for="{{store_list}}" wx:key="store_id" storeItem="{{item}}" />
   </view>

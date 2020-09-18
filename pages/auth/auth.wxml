@@ -1,12 +1,23 @@
 <!--pages/auth/auth.wxml-->
-<view class="container auth_box">
+<view class="auth_box">
   <image class="logo" src="../../images/rh_icon.png"></image>
-  <view class="title">-- 上热乎，吃点儿好的 --</view>
-  <view class="toast">欢迎加入「热乎」</view>
-  <view class="auth_content">
+  <view class="title">-- 上热乎 吃点儿好的 --</view>
+  <view class="toast">欢迎加入热乎优选</view>
+  <view class="auth_content" wx:if="{{type == '-1'}}">
+    <view class="qing">请确认授权以下信息</view>
+    <view class="ti">获取当前地址，才能精准的展示附近的信息</view>
+    <button class="login" bindtap="wxLocationInfo">确认授权</button>
+  </view>
+  <view class="auth_content" wx:if="{{type == '1'}}">
     <view class="qing">请确认授权以下信息</view>
     <view class="ti">获取你的公开信息（昵称、头像等）</view>
     <button class="login" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">微信授权</button>
+  </view>
+  <view class="auth_content" wx:if="{{type == '2'}}">
+    <view class="qing">青青芒果申请使用</view>
+    <view class="ti">你的手机号码</view>
+    <!-- <button class="login" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">快速注册</button> -->
+    <button class="login" bindtap="register">快速注册</button>
   </view>
   
   

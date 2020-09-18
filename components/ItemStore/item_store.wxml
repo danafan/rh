@@ -2,7 +2,7 @@
 <view class="store_box" catchtap="goDetail">
   <image class="store_img" mode="aspectFill" src="../../images/banner_02.jpg"></image>
   <view class="store_info">
-    <view class="store_name">虾小哥 浇汁虾米饭（钱江世纪城店）</view>
+    <view class="store_name">川湘菜·浇汁虾米饭（钱江世纪城店）</view>
     <view class="hot_box">
       <image class="hot_icon" src="../../images/hot_icon.png"></image>
       <view class="hot_text">4.8</view>

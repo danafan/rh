@@ -31,7 +31,7 @@
   <!-- 待支付 -->
   <view class="to_be_used" wx:if="{{order_info.order_status == '2'}}">
     <view class="count_down">
-      <text class="count_down_title">剩余支付时间：</text>
+      <text class="count_down_title">支付剩余时间：</text>
       <text class="count_down_time">14:32</text>
     </view>
     <view class="submit_but" bindtap="payOrder">立即支付</view>

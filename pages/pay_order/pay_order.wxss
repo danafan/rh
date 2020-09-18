@@ -1,1 +1,107 @@
 /* pages/pay_order/pay_order.wxss */
+
+.pay_order_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+/* 剩余时间 */
+
+.rem_time {
+  margin-top: 150rpx;
+  font-size: 24rpx;
+  color: #333;
+}
+
+.time_text {
+  color: #e84d2a;
+}
+
+.pay_money {
+  display: table-cell;
+  vertical-align: bottom;
+  color: #0b0d1d;
+  font-weight: 700;
+}
+
+/* 支付金额 */
+
+.money_icon {
+  margin-right: 8rpx;
+  font-size: 40rpx;
+}
+
+.money_val {
+  font-size: 68rpx;
+}
+
+/* 订单详情 */
+.order_con {
+  background: #f1f6f9;
+  height: 58rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  font-size: 24rpx;
+  color: #333;
+}
+
+.store_name {
+  margin-right: 20rpx;
+}
+
+.right_icon {
+  margin-left: 5rpx;
+  width: 22rpx;
+  height: 22rpx;
+}
+/* 支付信息 */
+.pay_content{
+  margin-top: 50rpx;
+  width: 100%;
+  border-radius: 20rpx;
+  background: #fff;
+  padding: 0 20rpx;
+}
+.content_item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100rpx;
+}
+.item_left{
+  display: flex;
+  align-items: center;
+}
+.icon{
+  margin-right: 8rpx;
+  width: 36rpx;
+  height: 36rpx;
+}
+.label{
+  font-size: 32rpx;
+  color: #0b0d1d;
+}
+.value{
+  font-size: 30rpx;
+  color: #8a8a8a;
+}
+.line{
+  width: 100%;
+  border-top: 1rpx solid #f6f6f6;
+}
+.pay_but{
+  margin-top: 100rpx;
+  background-image: linear-gradient(to left, #e84d2a, #ec722e);
+  border-radius: 45rpx;
+  width: 80%;
+  text-align: center;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 32rpx;
+  color: #fff;
+}

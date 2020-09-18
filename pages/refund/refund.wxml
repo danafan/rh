@@ -1,13 +1,17 @@
 <!--pages/refund/refund.wxml-->
 <view>
-  <view class="top_toast">退款须知：退款金额 = 订单实际支付金额 + 余额抵扣，红包、积分不支持退款；退款金额将自动转成系统余额，可在购买其他商品直接抵扣</view>
+  <view class="top_toast">退款须知：由于是折扣商品，退款金额将自动转成系统余额，红包、积分不支持退款，系统余额可在购买其他商品时使用（退款金额 = 订单实际支付金额 + 余额抵扣）</view>
   <view class="refund_item">
     <view class="refund_label">订单号</view>
     <view class="order_code">23146719283764827346</view>
   </view>
   <view class="refund_item">
     <view class="refund_label">退款金额</view>
-    <view class="order_code">¥88</view>
+    <view class="return_box">
+      <text class="icon">¥</text>
+      <text class="money">88</text>
+      <text class="toast">（实付金额：¥80 + 余额抵扣：¥8）</text>
+    </view>
   </view>
   <view class="why_title">
     <text class="title_label">退款原因</text>

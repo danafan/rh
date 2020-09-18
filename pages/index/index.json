@@ -2,7 +2,6 @@
   "navigationBarTitleText": "首页",
   "navigationStyle": "custom",
   "usingComponents": {
-    "search_box": "../../components/SearchBox/search_box",
     "cate_store_item": "../../components/CateStoreItem/cate_store_item",
     "category_index": "../../components/CateGoryIndex/category_index",
     "index_center": "../../components/IndexCenter/index_center",

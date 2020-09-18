@@ -1,12 +1,16 @@
 <!--pages/place_order/place_order.wxml-->
 <view class="place_order_box">
   <view class="goods_info_box">
-    <view class="goods_info">
+    <!-- 顶部商品信息 -->
+    <view class="goods_info" bindtap="packageDetail">
       <image class="goods_img" mode="aspectFill" src="../../images/banner_03.jpg"></image>
       <view class="info_content">
         <view class="goods_name">石锅鱼4人套餐</view>
         <view class="time">周一至周日 10:00 - 21:00</view>
         <web_tag/>
+      </view>
+      <view class="right_box">
+        <image class="right_icon" src="../../images/right.png"></image>
       </view>
     </view>
     <view class="order_info_item border_top">

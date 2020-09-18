@@ -24,7 +24,23 @@
   font-size: 28rpx;
   color: #0b0d1d;
 }
-
+.return_box{
+  display: table-cell;
+  vertical-align: bottom;
+}
+.icon{
+  font-size: 28rpx;
+  color: #ec722e;
+}
+.toast{
+  font-size: 22rpx;
+  color: #8a8a8a;
+}
+.money{
+  font-size: 32rpx;
+  color: #ec722e;
+  font-weight: 600;
+}
 .order_code {
   font-size: 28rpx;
   color: #8a8a8a;

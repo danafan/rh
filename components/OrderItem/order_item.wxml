@@ -29,6 +29,8 @@
     <view class="bottom_toast" wx:if="{{order_info.order_status == '1'}}">有效期至：{{order_info.end_time}}</view>
     <!-- 待评价 -->
     <view class="bottom_toast" wx:if="{{order_info.order_status == '3'}}">积分可以当钱用哦～</view>
+    <!-- 已退款 -->
+    <view class="bottom_toast" wx:if="{{order_info.order_status == '4'}}">已退还至系统余额</view>
     <view class="buts">
       <view class="but" wx:if="{{order_info.order_status == '1'}}">去使用</view>
       <view class="but" wx:if="{{order_info.order_status == '2'}}" data-order_id="{{order_info.order_id}}" catchtap="payOrder">立即支付</view>

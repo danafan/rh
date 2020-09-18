@@ -1,6 +1,8 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/auth/auth",
+    "pages/pay_order/pay_order",
     "pages/package_detail/package_detail",
     "pages/order_detail/order_detail",
     "pages/place_order/place_order",
@@ -14,9 +16,7 @@
     "pages/evaluation/evaluation",
     "pages/red_envelope/red_envelope",
     "pages/package_list/package_list",
-    "pages/category/category",
-    "pages/auth/auth",
-    "pages/pay_order/pay_order"
+    "pages/category/category"
   ],
   "tabBar": {
     "color": "#8a8a8a",

@@ -7,38 +7,50 @@
   width: 100%;
   padding: 20rpx 20rpx 0;
 }
-.goods_info{
-  padding-bottom: 20rpx;
+/* 商品信息 */
+
+.goods_info {
+  background: #fff;
+  padding: 0 0 20rpx;
   width: 100%;
   display: flex;
-  align-items: center;
 }
-.goods_img{
+
+.goods_img {
   margin-right: 15rpx;
   width: 160rpx;
   height: 160rpx;
 }
-.info_content{
-  height: 160rpx;
+
+.info_content {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
-.goods_name{
-  font-size: 30rpx;
+
+.goods_name {
+  margin-bottom: 15rpx;
+  font-size: 28rpx;
   color: #0b0d1d;
   font-weight: 700;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
-.time{
-  font-size: 28rpx;
+
+.time {
+  margin-bottom: 15rpx;
+  font-size: 26rpx;
   color: #333;
 }
+.right_box{
+  width: 40rpx;
+  height: 160rpx;
+  display: flex;
+  align-items: center
+}
+.right_icon{
+  width: 30rpx;
+  height: 30rpx;
+}
+
 .order_info_item{
   background: #fff;
   width: 100%;

@@ -1,12 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
-// const api = require('../../utils/api.js')
-// const util = require('../../utils/util.js')
-// const dateTime = require('../../utils/dateTime.js')
-//获取地理位置
-// var QQMapWX = require('../../utils/qqmap-wx-jssdk.min.js');
-// var qqmapsdk;
+const locationApi = require('../../utils/getLocation.js')
 Page({
   data: {
     store_list: [{
@@ -106,10 +101,12 @@ Page({
         now_price: "98",
       }]
     }], //店铺列表
+    loaction_info: {}, //地址信息
     startBarHeight: 0,
     navgationHeight: 0,
     isLoad: true, //默认可以加载
     page: 1, //当前页码
+    sort_id:'1',    //筛选条件编号
   },
   onLoad: function(options) {
     //获取顶部导航栏信息
@@ -117,82 +114,35 @@ Page({
     //获取地理位置信息
     // this.wxLocationInfo();
   },
-  //抵扣券列表
-  couponsList() {
+  // 搜索
+  search() {
     wx.navigateTo({
-      url: '/pages/coupons_list/coupons_list',
+      url: '/pages/search/search',
     });
   },
-  //获取当前位置
-  getLocationInfo() {
-    // if (this.data.location == '点击获取') {
-    //   //获取地理位置信息
-    //   this.openSet();
-    // }
+  //切换筛选条件
+  checkQuery(e){
+    this.setData({
+      sort_id:e.detail.sort_id
+    })
+    console.log(this.data.sort_id)
   },
   //获取地理位置信息
   wxLocationInfo() {
-    wx.getSetting({
-      success: (res) => {
-        if (!res.authSetting['scope.userLocation']) {
-          wx.authorize({
-            scope: 'scope.userLocation',
-            success: () => {
-              this.wxGetLocation();
-            },
-            fail: (err) => {
-              this.setData({
-                location: "点击获取"
-              })
-            }
-          })
-        } else {
-          this.wxGetLocation();
-        }
-      }
+    locationApi.wxLocationInfo().then(res => {
+      this.setData({
+        loaction_info: res
+      })
+      console.log(this.data.loaction_info)
     })
   },
-  openSet() {
-    wx.openSetting({
-      success: (res) => {
-        this.wxGetLocation();
-      }
-    })
-  },
-  // wx.getLocation
-  wxGetLocation() {
-    wx.getLocation({
-      type: 'wgs84',
-      success: (res) => {
-        app.globalData.locationObj.latitude = res.latitude;
-        app.globalData.locationObj.longitude = res.longitude;
-        let req = {
-          latitude: res.latitude,
-          longitude: res.longitude
-        }
-        this.getApi(req);
-      }
-    })
-  },
-  // api
-  getApi(req) {
-    qqmapsdk = new QQMapWX({
-      key: 'L4BBZ-KNVK6-TAXSF-M4PC6-TLLAZ-5UBGR'
-    });
-    this.setData({
-      location: "获取中"
-    })
-    qqmapsdk.reverseGeocoder({
-      location: req,
-      success: (res) => {
-        let address_obj = res.result.address_component;
-        app.globalData.locationObj.address = address_obj.city;
-        let detail_address = address_obj.city + address_obj.district + address_obj.street;
-        app.globalData.locationObj.detail_address = detail_address;
-        this.setData({
-          location: res.result.address_component.city
-        })
-      }
+  //重新选择位置
+  chooseLocation() {
+    locationApi.chooseLocation().then(res => {
+      this.setData({
+        loaction_info: res
+      })
+      console.log(this.data.loaction_info)
     })
   },
   //获取顶部导航栏信息
@@ -219,14 +169,6 @@ Page({
   //上拉加载
   onReachBottom() {
     console.log('上拉加载')
-    // if (this.data.isLoad) {
-    //   this.setData({
-    //     page: this.data.page + 1
-    //   })
-    //   //获取信息列表
-    //   let req = { level_01_id: 0, page: this.data.page }
-    //   this.getInfoList(req);
-    // }
   }
 
 

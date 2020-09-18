@@ -33,6 +33,12 @@ Page({
       }
     }
   },
+  //套餐详情
+  packageDetail() {
+    wx.navigateTo({
+      url: '/pages/package_detail/package_detail'
+    });
+  },
   //选择红包
   envelopeList(){
     wx.navigateTo({
@@ -50,5 +56,11 @@ Page({
     this.setData({
       integral_use: !this.data.integral_use
     })
+  },
+  //提交订单
+  placeOrder(){
+    wx.navigateTo({
+      url: '/pages/pay_order/pay_order',
+    });
   }
 })
