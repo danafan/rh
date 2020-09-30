@@ -15,6 +15,7 @@
       </view>
       <view class="loaction">五一广场 | 5.2km</view>
     </view>
+    <image class="right_icon" src="../../images/right.png"></image>
   </view>
   <view class="package_list_box">
     <scroll-view class="package_list" scroll-x="true" style="width:100%">

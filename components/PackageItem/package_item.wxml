@@ -1,5 +1,5 @@
 <!--首页和精选套餐列表中的套餐item-->
-<view class="package_item" style="width:{{image_height*1.5}}rpx" bindtap="packageDetail">
+<view class="package_item" style="width:{{image_height*1.3}}rpx" bindtap="packageDetail">
   <view class="package_img_box" style="height:{{image_height}}rpx">
     <image class="package_img" mode="aspectFill" src="{{package_info.package_img}}"></image>
     <view class="img_tag">{{package_info.category_name}} · {{package_info.distance}}km</view>

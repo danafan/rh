@@ -65,7 +65,7 @@
 
 .preferential_icon {
   border-radius: 8rpx;
-  width: 120rpx;
+  width: 156rpx;
   height: 120rpx;
 }
 

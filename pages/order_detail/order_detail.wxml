@@ -8,9 +8,6 @@
       <view class="time">周一至周日 10:00 - 21:00</view>
       <web_tag/>
     </view>
-    <view class="right_box">
-    <image class="right_icon" src="../../images/right.png"></image>
-    </view>
   </view>
   <!-- 券横线 -->
   <view class="dashed">

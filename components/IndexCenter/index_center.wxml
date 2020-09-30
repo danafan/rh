@@ -20,6 +20,6 @@
   </view>
   <!-- 套餐列表 -->
   <view class="page_list">
-    <package_item wx:for="{{package_list}}" package_info="{{item}}" page_type="index_center" image_height="230" wx:key="package_id" />
+    <package_item wx:for="{{package_list}}" package_info="{{item}}" page_type="index_center" image_height="262" wx:key="package_id" />
   </view>
 </view>

@@ -2,7 +2,12 @@
 <view class="container">
   <!-- 顶部图片 -->
   <view class="special_box">
-    <image class="food_icon" mode="aspectFill" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1942169203,2282777752&fm=26&gp=0.jpg"></image>
+  <!-- 轮播图 -->
+    <swiper class="banner_box" indicator-dots="true" indicator-color="#fff" indicator-active-color="#ec722e" autoplay="true" interval="5000" duration="80" circular="true">
+      <swiper-item wx:for="{{banner_list}}" wx:key="*this">
+        <image class="food_icon" mode="aspectFill" src="{{item}}" data-index="{{index}}" bindtap="openBigImg"></image>
+      </swiper-item>
+    </swiper>
     <view class="food_name">2人烤鱼套餐</view>
     <view class="store_name_box">
       <image class="store_icon" src="../../images/store_icon.png"></image>
@@ -12,7 +17,7 @@
   </view>
   <!-- 已售 -->
   <sold/>
-  <!-- 套餐（只有套餐才显示） -->
+  <!-- 套餐 -->
   <package_content/>
   <!-- 使用规则 -->
   <prompt/>

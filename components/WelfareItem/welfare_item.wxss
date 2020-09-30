@@ -20,7 +20,7 @@
 }
 .package_img{
   margin-right: 10rpx;
-  width: 180rpx;
+  width: 234rpx;
   height: 180rpx;
 }
 .bus_content{
@@ -40,24 +40,10 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.right_box{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+
 .desc{
   font-size: 26rpx;
   color: #8a8a8a;
-}
-.but{
-  background-image: linear-gradient(to right, #f37464, #ff5858);
-  height: 50rpx;
-  line-height: 50rpx;
-  width: 125rpx;
-  text-align: center;
-  font-size: 24rpx;
-  border-radius: 25rpx;
-  color: #fff;
 }
 
 .price_box {
@@ -87,4 +73,8 @@
   text-decoration: line-through;
   font-size: 26rpx;
   color: #8a8a8a;
+}
+.right_icon{
+  width: 30rpx;
+  height: 30rpx;
 }

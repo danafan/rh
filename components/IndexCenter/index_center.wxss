@@ -3,7 +3,7 @@
 
 .seconds_box {
   background: #fff;
-  padding: 0 10rpx 10rpx;
+  padding: 0 15rpx 10rpx;
 }
 /* 顶部标题 */
 .seconds_top {

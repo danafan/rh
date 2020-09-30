@@ -1,6 +1,6 @@
 <!--首页今日特价列表-->
 <view>
   <view class="package_list_box">
-    <package_item wx:for="{{package_list}}" package_info="{{item}}" page_type="package_list" image_height="236" wx:key="package_id" />
+    <package_item wx:for="{{package_list}}" package_info="{{item}}" page_type="package_list" image_height="272" wx:key="package_id" />
   </view>
 </view>

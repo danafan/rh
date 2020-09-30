@@ -1,27 +1,48 @@
 <!--components/Prompt/prompt.wxml-->
 <view class="rules">
-    <view class="title_text">温馨提示</view>
-    <view class="pick_box">
-      <image class="pick_icon" src="../../images/pick_icon.png"></image>
-      <view>
-        <view class="pick_title">有效期</view>
-        <view class="pick_val">2020-07-26至2020-08-26（周末、法定节假日通用）</view>
-      </view>
+  <view class="title_text">温馨提示</view>
+  <view class="pick_box">
+    <image class="pick_icon" src="../../images/pick_icon.png"></image>
+    <view>
+      <view class="pick_title">有效期</view>
+      <view class="pick_val">自购买之日起15日之内（周末、法定节假日通用）</view>
     </view>
-    <view class="pick_box">
-      <image class="pick_icon" src="../../images/time_icon.png"></image>
-      <view>
-        <view class="pick_title">使用时间</view>
-        <view class="pick_val">10:30 - 20:00</view>
-      </view>
+  </view>
+  <view class="pick_box">
+    <image class="pick_icon" src="../../images/time_icon.png"></image>
+    <view>
+      <view class="pick_title">使用时间</view>
+      <view class="pick_val">此处为店铺营业时间</view>
     </view>
-    <view class="pick_box">
-      <image class="rules_icon" src="../../images/rules_icon.png"></image>
-      <view>
-        <view class="pick_title">使用规则</view>
-        <view class="rule_text">- 每桌限用一份</view>
-        <view class="rule_text">- 满400可用</view>
-        <view class="rule_text">- 不与其他优惠叠加使用</view>
+  </view>
+  <view class="pick_box">
+    <image class="rules_icon" src="../../images/rules_icon.png"></image>
+    <view>
+      <view class="pick_title">使用规则</view>
+      <view class="rule_text">
+        <view class="tag_icon"></view>
+        <view>每桌限用一份</view>
+      </view>
+      <view class="rule_text">
+        <view class="tag_icon"></view>
+        <view>仅限堂食，不提供餐前外带，如餐品未吃完打包费用请咨询商家</view>
+      </view>
+      <view class="rule_text">
+        <view class="tag_icon"></view>
+        <view>团购用户不可同时享受商家其他优惠</view>
+      </view>
+      <view class="rule_text">
+        <view class="tag_icon"></view>
+        <view>酒水饮料、wifi、停车位等问题，请联系商家，以商家反馈为准</view>
+      </view>
+      <view class="rule_text">
+        <view class="tag_icon"></view>
+        <view>发票问题请咨询商家</view>
+      </view>
+      <view class="rule_text">
+        <view class="tag_icon"></view>
+        <view>无需预约，消费高峰期可能需要等位</view>
       </view>
     </view>
   </view>
+</view>

@@ -28,5 +28,4 @@
       <text class="reply_text">感谢您的支持！江巴人全体员工欢迎您再次光临</text>
     </view>
   </view>
-  <big_img big_imgs="{{comment_info.imgs}}" current_index="{{current_index}}" wx:if="{{show_big_img}}" bind:onEmit="close" />
 </view>

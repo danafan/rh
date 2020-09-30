@@ -3,10 +3,7 @@
   <image class="package_img" mode="aspectFill" src="../../images/banner_02.jpg"></image>
   <view class="bus_content">
     <view class="bus_title">大众精选杭帮菜2人特惠套餐</view>
-    <view class="right_box">
-      <view class="desc">108已抢</view>
-      <view class="but">立即抢购</view>
-    </view>
+    <view class="desc">108已抢</view>
     <view class="price_box">
       <view class="pagkage_price">
         <text class="price_icon">¥</text>
@@ -16,4 +13,5 @@
       <tag val="7.8折" background="#f9d9d0" color="#ff5858" />
     </view>
   </view>
+  <image class="right_icon" src="../../images/right.png"></image>
 </view>

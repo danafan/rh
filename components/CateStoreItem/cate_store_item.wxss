@@ -33,6 +33,8 @@
 
 .store_top_box {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .store_img {
@@ -87,6 +89,10 @@
   font-size: 24rpx;
   color: #8a8a8a;
 }
+.right_icon{
+  width: 30rpx;
+  height: 30rpx;
+}
 
 /* 商家的套餐列表 */
 
@@ -116,12 +122,12 @@
   margin-right: 15rpx;
   display: inline-block;
   background: #fbfbfb;
-  width: 300rpx;
+  width: 260rpx;
 }
 
 .package_img {
   border-radius: 8rpx 8rpx 0 0;
-  width: 300rpx;
+  width: 260rpx;
   height: 200rpx;
 }
 

@@ -23,14 +23,9 @@ Component({
     //点击放大图片
     openBigImg(e){
       let index = e.currentTarget.dataset.index;
-      this.setData({
-        current_index: index,
-        show_big_img:true
-      })
-    },
-    close(){
-      this.setData({
-        show_big_img: false
+      wx.previewImage({
+        current: this.data.comment_info.imgs[index], // 当前显示图片的http链接
+        urls: this.data.comment_info.imgs // 需要预览的图片http链接列表
       })
     },
     //进入套餐详情
