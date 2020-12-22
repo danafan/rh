@@ -3,18 +3,29 @@
 // const utils = require('./utils/util.js')
 App({
   onLaunch: function () {
-    //获取后台用户信息
-    // this.login();
+    //获取顶部导航栏信息
+    this.setNavigation();
     //获取微信用户信息
-    wx.getSetting({
+    this.wxUserInfo();
+    //获取用户登录信息
+    // this.login();
+  },
+  //获取顶部导航栏信息
+  setNavigation() {
+    let menuButtonObject = wx.getMenuButtonBoundingClientRect();
+    wx.getSystemInfo({
       success: res => {
-        if (res.authSetting['scope.userInfo']) {
-          //获取用户信息
-          this.wxUserInfo();
-        }
+        let statusBarHeight = res.statusBarHeight,
+          navHeight = statusBarHeight + menuButtonObject.height + (menuButtonObject.top - statusBarHeight) * 2; //导航高度
+        this.globalData.startBarHeight = statusBarHeight,
+        this.globalData.navgationHeight = navHeight - statusBarHeight
+      },
+      fail(err) {
+        console.log(err);
       }
     })
   },
+  //获取用户登录信息
   login() {
     const openid = wx.getStorageSync('openid');
     if (openid) {
@@ -38,7 +49,28 @@ App({
       }
     })
   },
-
+  //微信登录
+  _wxLogin() {
+    wx.login({
+      success: (res) => {
+        this._serLogin(res.code)
+      },
+      fail: (err) => {
+        console.log(err);
+      }
+    })
+  },
+  //用户登录
+  _serLogin(code) {
+    utils.get(api.getOpenId, {
+      code: code
+    }).then(res => {
+      wx.setStorageSync('openid', res.openid);
+      this.globalData.session_key = res.session_key;
+      //获取用户状态
+      this.getUserStatus();
+    })
+  },
   //获取用户状态
   getUserStatus() {
     utils.get(api.getUserStatus, {
@@ -53,52 +85,33 @@ App({
     })
   },
 
-  //先微信登录，再用户登录
-  _wxLogin() {
-    wx.login({
-      success: (res) => {
-        this._serLogin(res.code)
-      },
-      fail: (err) => {
-        console.log(err);
-      }
-    })
-  },
-
-  //用户登录
-  _serLogin(code) {
-    utils.get(api.getOpenId, {
-      code: code
-    }).then(res => {
-      wx.setStorageSync('openid', res.openid);
-      this.globalData.session_key = res.session_key;
-      //获取用户状态
-      this.getUserStatus();
-    })
-  },
   //获取微信用户信息
   wxUserInfo() {
-    let that = this;
-    return new Promise((resolve, reject) => {
-      wx.getUserInfo({
-        success: res => {
-          this.globalData.wxUser = res.userInfo;
-          resolve(res);
+    wx.getSetting({
+      success: res => {
+        if (res.authSetting['scope.userInfo']) {
+          //获取用户信息
+          wx.getUserInfo({
+            success: res => {
+              this.globalData.wxInfo = res.userInfo;
+            }
+          })
         }
-      })
-
+      }
     })
   },
   globalData: {
     baseUrl: "http://localhost:8089/static/uploads/",
-    wxUser: null, //微信用户信息
+    startBarHeight: "",             //导航栏信息
+    navgationHeight: "",
+    wxInfo: null, //微信用户信息
     userInfo: null, //后台用户信息
+    locationInfo: null, //用户地址信息（市，地区编号、经纬度）
     session_key: null,
     shareObj: {
       title: '免费的本地信息服务平台',
       // imageUrl: "/images/banner_01.png",
       path: '/pages/index/index'
     }, //自定义分享的内容
-    locationObj: {}, //用户地址信息（市，经纬度）
   }
 })

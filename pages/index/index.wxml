@@ -12,9 +12,9 @@
   <view class="content" style='margin-top:{{startBarHeight + navgationHeight}}px'>
     <!-- 搜索框 -->
     <view class="search_box">
-      <view class="location_box" bindtap="chooseLocation">
+      <view class="location_box" bindtap="checkAddress">
         <image class="location_icon" src="../../images/location_down.png"></image>
-        <view class="location_text">乌兰浩特</view>
+        <view class="location_text">{{loaction_info.district_name}}</view>
       </view>
       <view class="search_input" bindtap="search">
         <image class="search_icon" src="../../images/search_icon.png"></image>

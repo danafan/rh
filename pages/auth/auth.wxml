@@ -5,7 +5,7 @@
   <view class="toast">欢迎加入热乎优选</view>
   <view class="auth_content" wx:if="{{type == '-1'}}">
     <view class="qing">请确认授权以下信息</view>
-    <view class="ti">获取当前地址，才能精准的展示附近的信息</view>
+    <view class="ti">获取当前位置，才能更精准的向您推荐优选美食哦</view>
     <button class="login" bindtap="wxLocationInfo">确认授权</button>
   </view>
   <view class="auth_content" wx:if="{{type == '1'}}">
@@ -14,7 +14,7 @@
     <button class="login" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">微信授权</button>
   </view>
   <view class="auth_content" wx:if="{{type == '2'}}">
-    <view class="qing">青青芒果申请使用</view>
+    <view class="qing">热乎优选申请使用</view>
     <view class="ti">你的手机号码</view>
     <!-- <button class="login" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">快速注册</button> -->
     <button class="login" bindtap="register">快速注册</button>

@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/check_address/check_address",
     "pages/auth/auth",
     "pages/pay_order/pay_order",
     "pages/package_detail/package_detail",
@@ -50,5 +51,10 @@
     "navigationBarTitleText": "热乎优选"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取当前位置，才能更精准的向您推荐优选美食哦"
+    }
+  }
 }

@@ -34,7 +34,7 @@
     <view class="buts">
       <view class="but" wx:if="{{order_info.order_status == '1'}}">去使用</view>
       <view class="but" wx:if="{{order_info.order_status == '2'}}" data-order_id="{{order_info.order_id}}" catchtap="payOrder">立即支付</view>
-      <view class="but" wx:if="{{order_info.order_status == '3'}}" data-order_id="{{order_info.order_id}}" catchtap="evaluation">评价得10积分</view>
+      <view class="but" wx:if="{{order_info.order_status == '3'}}" data-order_id="{{order_info.order_id}}" catchtap="evaluation">评价得积分</view>
       <view class="but" wx:if="{{order_info.order_status == '4' || order_info.order_status == '5' || order_info.order_status == '6'}}" data-order_id="{{order_info.order_id}}" catchtap="placeOrder">再来一单</view>
     </view>
   </view>

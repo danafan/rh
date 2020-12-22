@@ -5,30 +5,19 @@
   width: 100%;
   height: 300rpx;
   display: flex;
+  align-items: flex-start;
 }
 
 .user_img_box {
-  border: 7rpx solid #d1b171;
-  margin-right: 20rpx;
-  border-radius: 50%;
-  width: 160rpx;
-  height: 160rpx;
-  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .user_img {
+  margin-right: 15rpx;
   border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.rh_icon {
-  margin-right: 20rpx;
-  width: 110rpx;
-  height: 110rpx;
+  width: 160rpx;
+  height: 160rpx;
 }
 
 .user_content {
@@ -40,7 +29,7 @@
 }
 
 .username {
-  margin-bottom: 20rpx;
+  margin-bottom: 10rpx;
   font-size: 36rpx;
   color: #d1b171;
   font-weight: 700;
@@ -67,7 +56,8 @@
   width: 100%;
   padding: 0 20rpx;
 }
-.margin{
+
+.margin {
   margin-top: 20rpx;
 }
 
@@ -132,7 +122,20 @@
 }
 
 /* 服务 */
-.feek_but{
+.service_list_box{
+  padding-top: 25rpx;
+  padding-bottom: 25rpx;
+  display: flex;
+  align-items: center;
+}
+.service_item{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.feek_but {
   position: absolute;
   top: 0;
   left: 0;
@@ -141,12 +144,14 @@
   z-index: 1;
   opacity: 0;
 }
+
 .service_icon {
   margin-bottom: 10rpx;
   width: 46rpx;
   height: 46rpx;
 }
-.service_text{
+
+.service_text {
   font-size: 26rpx;
   color: #333;
 }

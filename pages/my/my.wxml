@@ -2,14 +2,19 @@
 <view>
   <!-- 顶部黑色 -->
   <view class="top_back">
-    <view class="user_img_box" wx:if="{{wxUser}}">
-      <image class="user_img" src="{{wxUser.avatarUrl}}"></image>
+    <view class="user_img_box" wx:if="{{userInfo}}">
+      <image class="user_img" src="{{wxInfo.avatarUrl}}"></image>
+      <view class="user_content">
+        <view class="username">{{wxInfo.nickName}}</view>
+        <view class="desc">上热乎，吃点儿好的</view>
+      </view>
     </view>
-    <image class="rh_icon" src="../../images/rh_icon.png" wx:else></image>
-    <view class="user_content">
-      <view class="username">{{wxUser?wxUser.nickName:'热乎优选'}}</view>
-      <view class="desc" wx:if="{{wxUser}}">上热乎，吃点儿好的</view>
-      <view class="desc" wx:else>快速登录，抢更多优惠</view>
+    <view class="user_img_box" wx:else bindtap="login">
+      <image class="user_img" src="../../images/rh_icon.png"></image>
+      <view class="user_content">
+        <view class="username">立即登录</view>
+        <view class="desc">抢更多优惠</view>
+      </view>
     </view>
   </view>
   <view class="content_box">
@@ -24,7 +29,7 @@
           </view>
           <view class="order_val">
             <text class="val_num">{{red_envelope}}</text>
-            <text class="val_text">张可用</text>
+            <text class="val_text">张</text>
           </view>
         </view>
         <view class="order_item" bindtap="balanceList">
@@ -34,7 +39,7 @@
           </view>
           <view class="order_val">
             <text class="val_num">{{balance}}</text>
-            <text class="val_text">元未使用</text>
+            <text class="val_text">元</text>
           </view>
         </view>
         <view class="order_item" bindtap="integralList">
@@ -44,7 +49,7 @@
           </view>
           <view class="order_val">
             <text class="val_num">{{integral}}</text>
-            <text class="val_text">分未使用</text>
+            <text class="val_text">分</text>
           </view>
         </view>
       </view>
@@ -52,11 +57,15 @@
     <!-- 服务 -->
     <view class="order_box margin">
       <view class="order_top">服务</view>
-      <view class="order_list_box">
-        <view class="order_item">
+      <view class="service_list_box">
+        <view class="service_item">
           <button class="feek_but" open-type="feedback"></button>
           <image class="service_icon" src="../../images/feedback.png"></image>
           <view class="service_text">意见反馈</view>
+        </view>
+        <view class="service_item" bindtap="tenants">
+          <image class="service_icon" src="../../images/feedback.png"></image>
+          <view class="service_text">商户入驻</view>
         </view>
       </view>
     </view>

@@ -1,4 +1,6 @@
 // pages/order/order.js
+var app = getApp();
+
 Page({
   data: {
     tab_index: '0', //默认选中全部
@@ -28,7 +30,7 @@ Page({
       create_order_time: '2020-07-12 13:24:52', //下单时间
       pay_time: '2020-07-12 13:24:52', //付款时间
       consumption_time: '2020-07-12 13:24:52', //消费时间
-        arrive_time: '2020-07-12 13:24:52', //退款时间
+      arrive_time: '2020-07-12 13:24:52', //退款时间
       end_time: '2020-08-12 13:24:52', //订单有效期
       number: '1', //商品数量
       total_money: '88' //总金额
@@ -43,7 +45,7 @@ Page({
       create_order_time: '2020-07-12 13:24:52', //下单时间
       pay_time: '2020-07-12 13:24:52', //付款时间
       consumption_time: '2020-07-12 13:24:52', //消费时间
-        arrive_time: '2020-07-12 13:24:52', //退款时间
+      arrive_time: '2020-07-12 13:24:52', //退款时间
       end_time: '2020-08-12 13:24:52', //订单有效期
       number: '1', //商品数量
       total_money: '88' //总金额
@@ -58,7 +60,7 @@ Page({
       create_order_time: '2020-07-12 13:24:52', //下单时间
       pay_time: '2020-07-12 13:24:52', //付款时间
       consumption_time: '2020-07-12 13:24:52', //消费时间
-        arrive_time: '2020-07-12 13:24:52', //退款时间
+      arrive_time: '2020-07-12 13:24:52', //退款时间
       end_time: '2020-08-12 13:24:52', //订单有效期
       number: '1', //商品数量
       total_money: '88' //总金额
@@ -73,7 +75,7 @@ Page({
       create_order_time: '2020-07-12 13:24:52', //下单时间
       pay_time: '2020-07-12 13:24:52', //付款时间
       consumption_time: '2020-07-12 13:24:52', //消费时间
-        arrive_time: '2020-07-12 13:24:52', //退款时间
+      arrive_time: '2020-07-12 13:24:52', //退款时间
       end_time: '2020-08-12 13:24:52', //订单有效期
       number: '1', //商品数量
       total_money: '88' //总金额
@@ -88,16 +90,17 @@ Page({
       create_order_time: '2020-07-12 13:24:52', //下单时间
       pay_time: '2020-07-12 13:24:52', //付款时间
       consumption_time: '2020-07-12 13:24:52', //消费时间
-        arrive_time: '2020-07-12 13:24:52', //退款时间
+      arrive_time: '2020-07-12 13:24:52', //退款时间
       end_time: '2020-08-12 13:24:52', //订单有效期
       number: '1', //商品数量
       total_money: '88' //总金额
-    }]
+    }],
+    userInfo: null,       //用户信息
   },
-  onLoad: function(options) {
-    // this.setData({
-    //   tab_index: options.index
-    // })
+  onShow() {
+    this.setData({
+      userInfo: app.globalData.userInfo
+    })
   },
   //切换顶部导航
   checkTab(e) {
@@ -105,12 +108,14 @@ Page({
       tab_index: e.currentTarget.dataset.index
     })
   },
-
   //上拉加载
   onReachBottom() {
     console.log('上拉加载')
   },
-  onShareAppMessage: function() {
-
-  }
+  //去登录
+  login() {
+    wx.navigateTo({
+      url: '/pages/auth/auth'
+    })
+  },
 })

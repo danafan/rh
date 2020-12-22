@@ -1,0 +1,10 @@
+<!--pages/check_address/check_address.wxml-->
+<view>
+  <view class="curren_address">
+    <text>当前位置：</text>
+    <text class="value">乌兰浩特市</text>
+  </view>
+  <view class="address_list">
+    <view class="address_item" wx:for="{{address_list}}" wx:key="add_code">{{item.add_name}}</view>
+  </view>
+</view>

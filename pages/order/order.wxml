@@ -23,8 +23,12 @@
     </view>
   </view>
   <!-- 列表 -->
-  <view class="list_box">
+  <view class="list_box" wx:if="{{userInfo}}">
     <order_item order_info="{{item}}" wx:for="{{order_list}}" wx:key="order_id" data-order_id="{{item.order_id}}"/>
   </view>
-  
+  <!-- 未登录 -->
+  <view class="unlogin" wx:else>
+    <view class="unlogin_text">需要先登录才能查看订单哦～</view>
+    <view class="login" bindtap="login">立即登录</view>
+  </view>
 </view>

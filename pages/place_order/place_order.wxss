@@ -18,7 +18,7 @@
 
 .goods_img {
   margin-right: 15rpx;
-  width: 160rpx;
+  width: 208rpx;
   height: 160rpx;
 }
 
@@ -39,16 +39,6 @@
   margin-bottom: 15rpx;
   font-size: 26rpx;
   color: #333;
-}
-.right_box{
-  width: 40rpx;
-  height: 160rpx;
-  display: flex;
-  align-items: center
-}
-.right_icon{
-  width: 30rpx;
-  height: 30rpx;
 }
 
 .order_info_item{

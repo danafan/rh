@@ -102,20 +102,43 @@ Page({
       }]
     }], //店铺列表
     loaction_info: {}, //地址信息
-    startBarHeight: 0,
-    navgationHeight: 0,
+    startBarHeight: app.globalData.startBarHeight,
+    navgationHeight: app.globalData.navgationHeight,
     isLoad: true, //默认可以加载
     page: 1, //当前页码
     sort_id:'1',    //筛选条件编号
   },
-  onLoad: function(options) {
-    //获取顶部导航栏信息
-    this.setNavigation();
+  onLoad() {
     //获取地理位置信息
-    // this.wxLocationInfo();
+    this.wxLocationInfo();
+  },
+  //获取地理位置信息
+  wxLocationInfo() {
+    locationApi.wxLocationInfo().then(res => {
+      app.globalData.locationInfo = res;
+      this.setData({
+        loaction_info: res
+      })
+      console.log(this.data.loaction_info)
+    })
+  },
+  //重新选择位置
+  // chooseLocation() {
+  //   locationApi.chooseLocation().then(res => {
+  //     this.setData({
+  //       loaction_info: res
+  //     })
+  //     console.log(this.data.loaction_info)
+  //   })
+  // },
+  // 切换位置
+  checkAddress() { 
+    wx.navigateTo({
+      url: '/pages/check_address/check_address',
+    });
   },
   // 搜索
-  search() {
+  search() { 
     wx.navigateTo({
       url: '/pages/search/search',
     });
@@ -126,41 +149,6 @@ Page({
       sort_id:e.detail.sort_id
     })
     console.log(this.data.sort_id)
-  },
-  //获取地理位置信息
-  wxLocationInfo() {
-    locationApi.wxLocationInfo().then(res => {
-      this.setData({
-        loaction_info: res
-      })
-      console.log(this.data.loaction_info)
-    })
-  },
-  //重新选择位置
-  chooseLocation() {
-    locationApi.chooseLocation().then(res => {
-      this.setData({
-        loaction_info: res
-      })
-      console.log(this.data.loaction_info)
-    })
-  },
-  //获取顶部导航栏信息
-  setNavigation() {
-    let menuButtonObject = wx.getMenuButtonBoundingClientRect();
-    wx.getSystemInfo({
-      success: res => {
-        let statusBarHeight = res.statusBarHeight,
-          navHeight = statusBarHeight + menuButtonObject.height + (menuButtonObject.top - statusBarHeight) * 2; //导航高度
-        this.setData({
-          startBarHeight: statusBarHeight,
-          navgationHeight: navHeight - statusBarHeight
-        })
-      },
-      fail(err) {
-        console.log(err);
-      }
-    })
   },
   //分享自定义
   onShareAppMessage: function(res) {

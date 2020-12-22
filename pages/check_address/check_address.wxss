@@ -1,0 +1,30 @@
+/* pages/check_address/check_address.wxss */
+page{
+  background-color: #fff;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+.curren_address{
+  border-bottom: 1rpx solid #F6F6F6;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+.value{
+  color: #ec722e;
+}
+.address_list{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20rpx;
+}
+.address_item{
+  border-radius: 5rpx;
+  background-color: #F6F6F6;
+  padding: 8rpx 15rpx;
+  color: #333;
+  font-size: 26rpx;
+  margin-right: 15rpx;
+  margin-bottom: 15rpx;
+}

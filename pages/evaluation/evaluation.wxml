@@ -1,8 +1,7 @@
 <!--pages/evaluation/evaluation.wxml-->
 <view class="evaluation_box">
   <view class="top_toast">
-    <image class="integral_icon" src="../../images/integral_icon.png"></image>
-    <view class="toast_text">优质评价有机会获得积分，可直接抵扣现金哦～</view>
+    优质评价有机会获得积分，可直接抵扣现金哦～
   </view>
   <view class="star_box">
     <view class="star_label">热度</view>
@@ -11,7 +10,7 @@
     </view>
     <view class="star_toast">{{star_toast}}</view>
   </view>
-  <textarea class="textarea" bindinput="changeInuput" maxlength="20" placeholder="亲，来评价一下吧，选为优秀评价可换取积分哦，还可输入140字" />
+  <textarea class="textarea" bindinput="changeInuput" maxlength="20" placeholder="还可输入140字，快来评价吧～" />
   <view class="images_box">
     <view class="img_box" wx:for="{{upload_imgs}}" wx:key="index">
       <image class="img" mode="aspectFill" src="{{item}}"></image>
@@ -21,6 +20,7 @@
     </view>
     <upload_file bind:onEmit="upload_file" wx:if="{{upload_imgs.length < 9}}"/>
   </view>
+  <view class="size_toast">*最多可上传9张</view>
   <view class="anonymous">
     <view class="anonymous_label">匿名</view>
     <switch checked="{{anonymous}}" bindchange="anonymousChange"/>

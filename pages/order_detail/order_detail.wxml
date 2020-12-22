@@ -38,7 +38,7 @@
     <view class="count_down">
       <text class="count_down_title">套餐已消费</text>
     </view>
-    <view class="submit_but" bindtap="evaluation">评价得10积分</view>
+    <view class="submit_but" bindtap="evaluation">评价得积分</view>
   </view>
   <!-- 已退款 -->
   <view class="to_be_used" wx:if="{{order_info.order_status == '4'}}">

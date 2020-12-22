@@ -33,12 +33,6 @@ Page({
       }
     }
   },
-  //套餐详情
-  packageDetail() {
-    wx.navigateTo({
-      url: '/pages/package_detail/package_detail'
-    });
-  },
   //选择红包
   envelopeList(){
     wx.navigateTo({

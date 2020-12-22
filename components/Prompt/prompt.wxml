@@ -21,27 +21,23 @@
       <view class="pick_title">使用规则</view>
       <view class="rule_text">
         <view class="tag_icon"></view>
-        <view>每桌限用一份</view>
+        <view class="tag_content">仅限堂食，不提供餐前外带，如餐品未吃完打包费用请咨询商家</view>
       </view>
       <view class="rule_text">
         <view class="tag_icon"></view>
-        <view>仅限堂食，不提供餐前外带，如餐品未吃完打包费用请咨询商家</view>
+        <view class="tag_content">不可与商家其他优惠同时享用</view>
       </view>
       <view class="rule_text">
         <view class="tag_icon"></view>
-        <view>团购用户不可同时享受商家其他优惠</view>
+        <view class="tag_content">酒水饮料、WiFi、停车位等问题，请联系商家，以商家反馈为准</view>
       </view>
       <view class="rule_text">
         <view class="tag_icon"></view>
-        <view>酒水饮料、wifi、停车位等问题，请联系商家，以商家反馈为准</view>
+        <view class="tag_content">发票问题请咨询商家</view>
       </view>
       <view class="rule_text">
         <view class="tag_icon"></view>
-        <view>发票问题请咨询商家</view>
-      </view>
-      <view class="rule_text">
-        <view class="tag_icon"></view>
-        <view>无需预约，消费高峰期可能需要等位</view>
+        <view class="tag_content">无需预约，消费高峰期可能需要等位</view>
       </view>
     </view>
   </view>

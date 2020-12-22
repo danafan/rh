@@ -7,7 +7,7 @@ Page({
     console.log(options.order_id)
   },
   // 订单详情
-  orderDetail() {
+  orderDetail(e) {
     let order_id = e.currentTarget.dataset.order_id;
     wx.navigateTo({
       url: '/pages/order_detail/order_detail?order_id=' + order_id

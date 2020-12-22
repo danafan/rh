@@ -1,5 +1,7 @@
 <!--pages/pay_order/pay_order.wxml-->
 <view class="pay_order_box">
+  <image class="store_img" mode="aspectFill" src="../../images/banner_03.jpg"></image>
+  <view class="store_name">好得火锅</view>
   <view class="rem_time">
     <text>支付剩余时间：</text>
     <text class="time_text">14:38</text>
@@ -8,9 +10,8 @@
     <text class="money_icon">¥</text>
     <text class="money_val">99</text>
   </view>
-  <view class="order_con" bindtap="orderDetail">
-    <view class="store_name">好得火锅</view>
-    <view>订单详情</view>
+  <view class="package_box" data-order_id="1" bindtap="orderDetail">
+    <view class="package_name">好得火锅2人烤鱼套餐</view>
     <image class="right_icon" src="../../images/right.png"></image>
   </view>
   <!-- 支付信息 -->
